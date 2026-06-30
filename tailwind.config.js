@@ -4,24 +4,26 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Brand: deep navy blue (built around #010048)
+        // Brand: near-black deep navy (darkest)
         navy: {
-          950: '#010048',
-          900: '#040757',
-          800: '#0a1270',
-          700: '#152089',
-          600: '#2433a6',
-          500: '#3a4ec4',
-          100: '#e6e8f5',
-          50: '#f2f3fb',
+          950: '#000010',
+          900: '#01011d',
+          800: '#03052c',
+          700: '#080d45',
+          600: '#141c6b',
+          500: '#243192',
+          100: '#e4e6f2',
+          50: '#f1f2fa',
         },
-        // Accent: deep, dark red (darker than before)
+        // Accent: ONE red everywhere — exactly the "Get Your Free Estimate"
+        // button red (#7d1420). Every brand shade resolves to it so red is
+        // always identical site-wide. (Lighter "hover" tints handled via /opacity.)
         brand: {
           DEFAULT: '#7d1420',
-          700: '#5f0f18',
+          700: '#7d1420',
           600: '#7d1420',
-          500: '#9a1a29',
-          400: '#c0394a',
+          500: '#7d1420',
+          400: '#7d1420',
           50: '#f7e7e9',
         },
         // Neutrals: clean whites & cool grays

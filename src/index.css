@@ -54,7 +54,7 @@ body {
 
   /* Primary red CTA button — fully rounded */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-brand-700 hover:shadow-red active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#5f0f18] active:scale-[0.98];
   }
 
   /* Navy solid button */
