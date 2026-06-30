@@ -38,19 +38,6 @@ export function PromoBar() {
           shown ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        {/* Clean white logo */}
-        <Link to="/" className="hidden shrink-0 items-center sm:flex" aria-label="Lita Construction — home">
-          <img
-            src="/logo-white.png"
-            alt="Lita Construction LLC"
-            width={120}
-            height={48}
-            className="h-7 w-auto"
-            loading="eager"
-            decoding="async"
-          />
-        </Link>
-
         <span className="flex shrink-0 items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider text-white sm:text-[11px]">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-white" aria-hidden="true" />
           Limited Offer
