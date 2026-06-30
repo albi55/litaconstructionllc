@@ -62,20 +62,30 @@ export function Header() {
                   </svg>
                 </NavLink>
                 <div
-                  className={`absolute left-0 top-full w-60 pt-2 transition-all duration-200 ${
+                  className={`absolute left-1/2 top-full w-80 -translate-x-1/2 pt-3 transition-all duration-200 ${
                     openGroup === item.label
                       ? 'pointer-events-auto translate-y-0 opacity-100'
                       : 'pointer-events-none translate-y-1 opacity-0'
                   }`}
                 >
-                  <div className="overflow-hidden rounded-xl border border-cloud-200 bg-white py-2 shadow-card">
+                  <div className="overflow-hidden rounded-2xl border border-cloud-200 bg-white p-2 shadow-card">
                     {item.children.map((child) => (
                       <Link
                         key={child.to}
                         to={child.to}
-                        className="block px-4 py-2.5 text-sm font-medium text-navy-800 transition-colors hover:bg-cloud-100 hover:text-brand-600"
+                        className="group/item flex items-start gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-cloud-100"
                       >
-                        {child.label}
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cloud-300 transition-colors group-hover/item:bg-brand-600" aria-hidden="true" />
+                        <span className="min-w-0">
+                          <span className="block text-sm font-semibold text-navy-900 transition-colors group-hover/item:text-brand-600">
+                            {child.label}
+                          </span>
+                          {child.description && (
+                            <span className="mt-0.5 block text-xs leading-snug text-cloud-500">
+                              {child.description}
+                            </span>
+                          )}
+                        </span>
                       </Link>
                     ))}
                   </div>
@@ -137,35 +147,47 @@ export function Header() {
         }`}
       >
         <div className="container-x flex flex-col py-5">
-          {navItems.map((item) => (
-            <div key={item.to}>
-              <NavLink
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className={({ isActive }) =>
-                  `block border-b border-cloud-200 py-3.5 font-display text-lg font-semibold ${
-                    isActive ? 'text-brand-600' : 'text-navy-900'
-                  }`
-                }
-              >
-                {item.label}
-              </NavLink>
-              {item.children && (
-                <div className="flex flex-col bg-cloud-100">
-                  {item.children.slice(1).map((child) => (
-                    <Link
-                      key={child.to}
-                      to={child.to}
-                      onClick={() => setOpen(false)}
-                      className="border-b border-cloud-200 py-2.5 pl-4 text-sm font-medium text-cloud-700 hover:text-brand-600"
-                    >
-                      {child.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+          {navItems.map((item) => {
+            const isMore = item.label === 'More'
+            return (
+              <div key={item.label}>
+                {isMore ? (
+                  <span className="block border-b border-cloud-200 py-3.5 font-display text-lg font-semibold text-navy-900">
+                    {item.label}
+                  </span>
+                ) : (
+                  <NavLink
+                    to={item.to}
+                    onClick={() => setOpen(false)}
+                    className={({ isActive }) =>
+                      `block border-b border-cloud-200 py-3.5 font-display text-lg font-semibold ${
+                        isActive ? 'text-brand-600' : 'text-navy-900'
+                      }`
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                )}
+                {item.children && (
+                  <div className="flex flex-col bg-cloud-100">
+                    {item.children
+                      // Drop a child that just repeats the parent link (e.g. Services → All Services)
+                      .filter((child) => isMore || child.to !== item.to)
+                      .map((child) => (
+                        <Link
+                          key={child.to}
+                          to={child.to}
+                          onClick={() => setOpen(false)}
+                          className="border-b border-cloud-200 py-2.5 pl-4 text-sm font-medium text-cloud-700 hover:text-brand-600"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                  </div>
+                )}
+              </div>
+            )
+          })}
           <a href={business.phoneHref} className="mt-5 flex items-center gap-3 text-brand-600">
             <PhoneIcon className="h-5 w-5" />
             <span className="font-display text-2xl font-bold">{business.phone}</span>
