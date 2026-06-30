@@ -93,6 +93,34 @@ export const CloseIcon = (p: SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
+export const MailIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <rect x="3" y="5" width="18" height="14" rx="2" />
+    <path d="m3 7 9 6 9-6" />
+  </svg>
+)
+
+export const DollarIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+  </svg>
+)
+
+export const HandshakeIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+    <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+    <path d="m21 3-2.81 2.81a2 2 0 0 0-.25 1.42l.28.47a5.79 5.79 0 0 1-.87 7.06" />
+    <path d="M3 4h2l3 3" />
+  </svg>
+)
+
+export const QuoteMarkIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" width={32} height={32} {...p}>
+    <path d="M7 7h4v7a4 4 0 0 1-4 4H6v-3h1a1 1 0 0 0 1-1v-1H7a3 3 0 0 1-3-3V9a2 2 0 0 1 2-2h1Zm10 0h4v7a4 4 0 0 1-4 4h-1v-3h1a1 1 0 0 0 1-1v-1h-1a3 3 0 0 1-3-3V9a2 2 0 0 1 2-2h1Z" />
+  </svg>
+)
+
 export const serviceIcon: Record<string, (p: SVGProps<SVGSVGElement>) => JSX.Element> = {
   roofing: RoofIcon,
   siding: SidingIcon,

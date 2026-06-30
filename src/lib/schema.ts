@@ -29,15 +29,20 @@ export const websiteSchema = {
   url: business.url,
 }
 
-export const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
+/** Build a FAQPage schema from any list of Q/A items. */
+export function faqSchemaFrom(items: readonly { q: string; a: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  }
 }
+
+export const faqSchema = faqSchemaFrom(faqs)
 
 export function serviceSchema(slug: string) {
   const s = services.find((x) => x.slug === slug)

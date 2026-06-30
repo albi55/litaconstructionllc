@@ -1,4 +1,5 @@
 import { useReveal } from '../lib/useReveal'
+import { stats } from '../data/business'
 import { ShieldIcon, ClockIcon, StarIcon, CheckIcon } from '../components/icons'
 
 const reasons = [
@@ -26,35 +27,28 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <section id="why" className="relative scroll-mt-24 overflow-hidden border-y border-ink-800 bg-ink-900 py-20 sm:py-28">
-      <div
-        className="pointer-events-none absolute -left-40 top-1/2 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-amber-500/5 blur-[120px]"
-        aria-hidden="true"
-      />
+    <section id="why" className="relative scroll-mt-24 overflow-hidden bg-navy-950 py-20 text-white sm:py-28">
+      <div className="pointer-events-none absolute -left-40 top-1/2 h-[520px] w-[520px] -translate-y-1/2 rounded-full bg-brand-600/15 blur-[130px]" aria-hidden="true" />
       <div className="container-x relative grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div className="lg:sticky lg:top-28">
-          <span className="eyebrow">Why Lita Construction</span>
-          <h2 className="mt-5 font-display text-display-md text-bone-50">
+          <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-400">
+            <span className="h-px w-8 bg-brand-400/60" />
+            Why Lita Construction
+          </span>
+          <h2 className="mt-5 font-display text-display-md">
             The contractor North Jersey homeowners trust.
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-bone-300">
+          <p className="mt-5 text-lg leading-relaxed text-white/70">
             Choosing a contractor is an act of trust. For more than two decades, families across
             Bergen, Passaic, Essex and beyond have trusted Lita Construction to protect the place
             they call home.
           </p>
 
-          {/* Stat band */}
-          <div className="mt-10 grid grid-cols-3 divide-x divide-ink-700 border border-ink-700 bg-ink-950">
-            {[
-              { n: '25+', l: 'Years Experience' },
-              { n: '8', l: 'NJ Counties' },
-              { n: '100%', l: 'Satisfaction Focus' },
-            ].map((s) => (
-              <div key={s.l} className="px-4 py-6 text-center">
-                <div className="font-display text-3xl font-black text-amber-500 sm:text-4xl">
-                  {s.n}
-                </div>
-                <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-bone-300">
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {stats.map((s) => (
+              <div key={s.l} className="rounded-xl border border-white/10 bg-white/[0.06] px-4 py-5 text-center">
+                <div className="font-display text-3xl font-black text-brand-400">{s.n}</div>
+                <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-white/60">
                   {s.l}
                 </div>
               </div>
@@ -65,12 +59,12 @@ export function WhyUs() {
         <div className="grid gap-4 sm:grid-cols-2">
           {reasons.map((r, i) => (
             <ReasonCard key={r.title} index={i}>
-              <div className="group h-full border border-ink-700 bg-ink-950 p-7 transition-colors hover:border-amber-500/50">
-                <span className="flex h-12 w-12 items-center justify-center rounded-sm bg-amber-500/10 text-amber-500">
+              <div className="group h-full rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition-colors hover:border-brand-400/40 hover:bg-white/[0.07]">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600/15 text-brand-400">
                   <r.icon className="h-6 w-6" />
                 </span>
-                <h3 className="mt-5 font-display text-lg font-bold text-bone-50">{r.title}</h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-bone-300">{r.body}</p>
+                <h3 className="mt-5 font-display text-lg font-bold text-white">{r.title}</h3>
+                <p className="mt-2.5 text-sm leading-relaxed text-white/65">{r.body}</p>
               </div>
             </ReasonCard>
           ))}

@@ -8,11 +8,26 @@ Built with **React + TypeScript + Vite + Tailwind CSS**. Fully optimized for **S
 
 ## ✨ Features
 
-- **Premium dark/industrial design** — Archivo display type, safety-amber accent, blueprint-grid texture, film grain, scroll-reveal animations.
-- **Conversion-focused** — sticky mobile click-to-call bar, prominent phone CTAs, and a free-estimate lead form throughout.
-- **Service pages** — dedicated, locally-targeted pages for Roofing, Siding, and Masonry.
+- **Modern navy / red / white design** — clean white surfaces, dark-navy brand, dark-red accent, Archivo display type, fully rounded buttons & cards, scroll-reveal animations.
+- **Multi-page site** — Home, Services hub, 3 rich service pages, Projects, Service Areas, About, Reviews, Financing, FAQ, Contact, plus a 404.
+- **Conversion-focused** — sticky mobile click-to-call bar, prominent phone CTAs, a Services dropdown, and a free-estimate lead form on the Contact page and service pages.
 - **Fully responsive** — mobile-first, accessible (skip link, semantic HTML, reduced-motion support).
-- **Fast** — ~19 KB gzipped app code, code-split React vendor chunk, no heavy dependencies.
+- **Fast** — code-split React vendor chunk, no heavy dependencies (~28 KB gzipped app code).
+
+## 🗂️ Pages
+
+| Route | Purpose |
+|-------|---------|
+| `/` | Home — hero, services, why-us, process, areas, reviews, about, FAQ, CTA |
+| `/services` | Services hub overview |
+| `/services/roofing` · `/siding` · `/masonry` | Rich service pages: sub-services, features, local coverage, FAQs |
+| `/projects` | Filterable project gallery (placeholder images) |
+| `/service-areas` | Counties + towns served |
+| `/about` | Story, values, stats, timeline |
+| `/reviews` | Full testimonials + rating summary |
+| `/financing` | Payment options, free-estimate value props |
+| `/faq` | All FAQs (general + per-service) with FAQPage schema |
+| `/contact` | Contact details + lead form |
 
 ## 🔍 SEO / AEO / GEO
 

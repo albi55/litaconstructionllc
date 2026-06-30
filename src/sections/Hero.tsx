@@ -1,27 +1,24 @@
+import { Link } from 'react-router-dom'
 import { business } from '../data/business'
 import { PhoneIcon, ArrowIcon, StarIcon, ShieldIcon } from '../components/icons'
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-ink-950 pt-[72px]">
-      {/* Blueprint grid + amber glow atmosphere */}
-      <div className="blueprint-grid pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
-      <div
-        className="pointer-events-none absolute -right-40 -top-40 h-[600px] w-[600px] rounded-full bg-amber-500/10 blur-[120px]"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-amber-500/40 to-transparent"
-        aria-hidden="true"
-      />
+    <section className="relative overflow-hidden bg-navy-950 pt-[68px] text-white lg:pt-[104px]">
+      {/* Soft radial atmosphere — no boxy grid */}
+      <div className="pointer-events-none absolute -right-32 -top-20 h-[560px] w-[560px] rounded-full bg-brand-600/20 blur-[130px]" aria-hidden="true" />
+      <div className="pointer-events-none absolute -left-40 bottom-0 h-[460px] w-[460px] rounded-full bg-navy-600/40 blur-[130px]" aria-hidden="true" />
 
-      <div className="container-x relative grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:py-28">
+      <div className="container-x relative grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-[1.12fr_0.88fr] lg:py-24">
         {/* Left — copy */}
         <div className="max-w-2xl">
           <div className="mb-6 flex flex-wrap items-center gap-x-5 gap-y-2 animate-fade-in">
-            <span className="eyebrow">Roofing · Siding · Masonry</span>
-            <span className="flex items-center gap-1.5 text-xs font-medium text-bone-300">
-              <span className="flex text-amber-500">
+            <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-400">
+              <span className="h-px w-8 bg-brand-400/60" />
+              Roofing · Siding · Masonry
+            </span>
+            <span className="flex items-center gap-1.5 text-xs font-medium text-white/70">
+              <span className="flex text-brand-400">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <StarIcon key={i} className="h-3.5 w-3.5" />
                 ))}
@@ -30,17 +27,17 @@ export function Hero() {
             </span>
           </div>
 
-          <h1 className="font-display text-display-xl text-bone-50 animate-fade-up">
+          <h1 className="font-display text-display-xl animate-fade-up">
             Build Your Vision
             <br />
-            <span className="relative inline-block">
-              <span className="text-amber-500">With Confidence.</span>
-              <span className="absolute -bottom-2 left-0 h-1.5 w-full bg-amber-500/30" aria-hidden="true" />
+            <span className="relative inline-block text-brand-400">
+              With Confidence.
+              <span className="absolute -bottom-2 left-0 h-1.5 w-full rounded-full bg-brand-600/40" aria-hidden="true" />
             </span>
           </h1>
 
           <p
-            className="mt-7 max-w-xl text-lg leading-relaxed text-bone-200 animate-fade-up"
+            className="mt-7 max-w-xl text-lg leading-relaxed text-white/70 animate-fade-up"
             style={{ animationDelay: '120ms' }}
           >
             Family-owned and operated since {business.founded}, Lita Construction delivers
@@ -52,11 +49,11 @@ export function Hero() {
             className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center animate-fade-up"
             style={{ animationDelay: '220ms' }}
           >
-            <a href="#quote" className="btn-primary">
+            <Link to="/contact" className="btn-primary">
               Get Your Free Estimate
               <ArrowIcon className="h-4 w-4" />
-            </a>
-            <a href={business.phoneHref} className="btn-ghost">
+            </Link>
+            <a href={business.phoneHref} className="btn-ghost-light">
               <PhoneIcon className="h-4 w-4" />
               {business.phone}
             </a>
@@ -64,54 +61,43 @@ export function Hero() {
 
           {/* Trust strip */}
           <div
-            className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-ink-700 pt-7 animate-fade-up"
+            className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-white/10 pt-7 animate-fade-up"
             style={{ animationDelay: '320ms' }}
           >
-            {[
-              { icon: ShieldIcon, label: 'GAF Certified' },
-              { icon: ShieldIcon, label: 'Fully Insured' },
-              { icon: ShieldIcon, label: business.licenseLabel },
-            ].map((item) => (
-              <div key={item.label} className="flex items-center gap-2.5 text-sm text-bone-200">
-                <item.icon className="h-5 w-5 text-amber-500" />
-                <span className="font-medium">{item.label}</span>
+            {['GAF Certified', 'Fully Insured', business.licenseLabel].map((label) => (
+              <div key={label} className="flex items-center gap-2.5 text-sm text-white/80">
+                <ShieldIcon className="h-5 w-5 text-brand-400" />
+                <span className="font-medium">{label}</span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Right — stat card stack (magazine-style overlap) */}
+        {/* Right — rounded stat card stack */}
         <div className="relative hidden lg:block">
           <div className="relative ml-auto max-w-sm">
-            {/* Big years stat */}
-            <div className="relative z-10 border border-ink-700 bg-ink-900/80 p-8 backdrop-blur-sm">
+            <div className="relative z-10 rounded-2xl border border-white/10 bg-white/[0.06] p-8 backdrop-blur-sm">
               <div className="flex items-baseline gap-3">
-                <span className="font-display text-[5.5rem] font-black leading-none text-amber-500">
-                  25
-                </span>
-                <span className="font-display text-2xl font-bold text-bone-100">+ Years</span>
+                <span className="font-display text-[5.5rem] font-black leading-none text-brand-400">25</span>
+                <span className="font-display text-2xl font-bold text-white">+ Years</span>
               </div>
-              <p className="mt-2 text-sm leading-relaxed text-bone-300">
+              <p className="mt-2 text-sm leading-relaxed text-white/60">
                 of trusted craftsmanship protecting New Jersey homes — one roof, wall, and chimney
                 at a time.
               </p>
             </div>
 
-            {/* Overlapping warranty card */}
-            <div className="relative z-20 -mt-4 ml-10 border border-amber-500/40 bg-amber-500 p-6 text-ink-950 shadow-[0_24px_60px_-20px_rgba(245,166,35,0.5)]">
+            <div className="relative z-20 -mt-4 ml-10 rounded-2xl bg-brand-600 p-6 text-white shadow-red">
               <div className="font-display text-4xl font-black leading-none">25-Yr</div>
-              <div className="mt-1 text-sm font-bold uppercase tracking-wide">
-                Workmanship Warranty
-              </div>
-              <p className="mt-2 text-xs font-medium leading-snug text-ink-900/80">
+              <div className="mt-1 text-sm font-bold uppercase tracking-wide">Workmanship Warranty</div>
+              <p className="mt-2 text-xs font-medium leading-snug text-white/85">
                 On labor &amp; materials — the strongest protection in the industry.
               </p>
             </div>
 
-            {/* Counties served */}
-            <div className="relative z-10 mt-5 border border-ink-700 bg-ink-900/80 p-6 backdrop-blur-sm">
-              <div className="font-display text-3xl font-black text-bone-50">8 Counties</div>
-              <p className="mt-1 text-sm text-bone-300">
+            <div className="relative z-10 mt-5 rounded-2xl border border-white/10 bg-white/[0.06] p-6 backdrop-blur-sm">
+              <div className="font-display text-3xl font-black text-white">8 Counties</div>
+              <p className="mt-1 text-sm text-white/60">
                 Serving Bergen, Passaic, Essex, Morris &amp; more across North &amp; Central NJ.
               </p>
             </div>

@@ -25,34 +25,31 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="relative scroll-mt-24 bg-ink-950 py-20 sm:py-28">
+    <section id="process" className="scroll-mt-24 bg-cloud-100 py-20 sm:py-28">
       <div className="container-x">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <span className="eyebrow">How It Works</span>
-            <h2 className="mt-5 font-display text-display-md text-bone-50">
+            <h2 className="mt-5 font-display text-display-md text-navy-900">
               A simple, transparent process.
             </h2>
           </div>
-          <p className="max-w-md text-bone-300">
+          <p className="max-w-md text-cloud-600">
             No confusion, no runaround. From the first phone call to the final inspection, you
             always know exactly what is happening and what comes next.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-px overflow-hidden border border-ink-700 bg-ink-700 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, i) => (
             <StepCard key={step.n} index={i}>
-              <div className="group relative h-full bg-ink-950 p-8 transition-colors hover:bg-ink-900">
-                <span className="font-display text-6xl font-black text-ink-700 transition-colors group-hover:text-amber-500">
+              <div className="group relative h-full overflow-hidden rounded-2xl border border-cloud-300 bg-white p-8 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-card">
+                <span className="font-display text-6xl font-black text-cloud-200 transition-colors group-hover:text-brand-600">
                   {step.n}
                 </span>
-                <h3 className="mt-5 font-display text-xl font-bold text-bone-50">{step.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-bone-300">{step.body}</p>
-                <span
-                  className="absolute bottom-0 left-0 h-0.5 w-0 bg-amber-500 transition-all duration-500 group-hover:w-full"
-                  aria-hidden="true"
-                />
+                <h3 className="mt-5 font-display text-xl font-bold text-navy-900">{step.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-cloud-600">{step.body}</p>
+                <span className="absolute bottom-0 left-0 h-1 w-0 rounded-full bg-brand-600 transition-all duration-500 group-hover:w-full" aria-hidden="true" />
               </div>
             </StepCard>
           ))}

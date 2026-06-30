@@ -57,18 +57,18 @@ export function QuoteForm() {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center border border-amber-500/40 bg-ink-950 p-10 text-center">
-        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-amber-500 text-ink-950">
+      <div className="flex flex-col items-center justify-center rounded-2xl border border-cloud-300 bg-white p-10 text-center shadow-card">
+        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-600 text-white">
           <CheckIcon className="h-8 w-8" />
         </span>
-        <h3 className="mt-6 font-display text-2xl font-bold text-bone-50">Request received.</h3>
-        <p className="mt-3 max-w-sm text-bone-300">
+        <h3 className="mt-6 font-display text-2xl font-bold text-navy-900">Request received.</h3>
+        <p className="mt-3 max-w-sm text-cloud-600">
           Thank you, {form.name || 'there'}! A member of the Lita Construction team will reach out
           shortly to schedule your free estimate.
         </p>
-        <p className="mt-5 text-sm text-bone-300">
+        <p className="mt-5 text-sm text-cloud-600">
           Need it sooner? Call us now at{' '}
-          <a href={business.phoneHref} className="font-bold text-amber-500 hover:underline">
+          <a href={business.phoneHref} className="font-bold text-brand-600 hover:underline">
             {business.phone}
           </a>
         </p>
@@ -77,19 +77,19 @@ export function QuoteForm() {
   }
 
   const inputBase =
-    'w-full border border-ink-600 bg-ink-950 px-4 py-3.5 text-bone-50 placeholder-ink-500 outline-none transition-colors focus:border-amber-500 focus:ring-1 focus:ring-amber-500'
+    'w-full rounded-xl border border-cloud-300 bg-cloud-100 px-4 py-3.5 text-navy-900 placeholder-cloud-500 outline-none transition-colors focus:border-brand-600 focus:bg-white focus:ring-2 focus:ring-brand-600/20'
 
   return (
-    <form onSubmit={onSubmit} className="border border-ink-700 bg-ink-900 p-7 sm:p-9" noValidate>
-      <h3 className="font-display text-2xl font-bold text-bone-50">Request a Free Estimate</h3>
-      <p className="mt-2 text-sm text-bone-300">
+    <form onSubmit={onSubmit} className="rounded-2xl border border-cloud-300 bg-white p-7 shadow-card sm:p-9" noValidate>
+      <h3 className="font-display text-2xl font-bold text-navy-900">Request a Free Estimate</h3>
+      <p className="mt-2 text-sm text-cloud-600">
         Fill out the form and we&apos;ll get back to you within one business day.
       </p>
 
       <div className="mt-6 grid gap-4">
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="block">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-bone-300">
+            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
               Full Name *
             </span>
             <input
@@ -103,7 +103,7 @@ export function QuoteForm() {
             />
           </label>
           <label className="block">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-bone-300">
+            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
               Phone *
             </span>
             <input
@@ -120,7 +120,7 @@ export function QuoteForm() {
 
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="block">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-bone-300">
+            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
               Email
             </span>
             <input
@@ -133,7 +133,7 @@ export function QuoteForm() {
             />
           </label>
           <label className="block">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-bone-300">
+            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
               ZIP Code
             </span>
             <input
@@ -149,7 +149,7 @@ export function QuoteForm() {
         </div>
 
         <label className="block">
-          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-bone-300">
+          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
             Service Needed *
           </span>
           <select required value={form.service} onChange={update('service')} className={inputBase}>
@@ -166,7 +166,7 @@ export function QuoteForm() {
         </label>
 
         <label className="block">
-          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-bone-300">
+          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
             Project Details
           </span>
           <textarea
@@ -184,7 +184,7 @@ export function QuoteForm() {
         {!busy && <ArrowIcon className="h-4 w-4" />}
       </button>
 
-      <p className="mt-4 text-center text-xs text-ink-500">
+      <p className="mt-4 text-center text-xs text-cloud-500">
         No spam. No obligation. Your information stays private.
       </p>
     </form>
