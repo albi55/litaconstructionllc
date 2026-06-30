@@ -5,7 +5,20 @@ import { PhoneIcon, ArrowIcon, StarIcon, ShieldIcon } from '../components/icons'
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-navy-950 text-white">
-      {/* Soft radial atmosphere — no boxy grid */}
+      {/* Photo background */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url(/hero-bg.jpg)' }}
+        aria-hidden="true"
+      />
+      {/* Navy gradient overlay keeps text readable over the photo */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/95 to-navy-900/70"
+        aria-hidden="true"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-navy-950/40" aria-hidden="true" />
+
+      {/* Soft radial atmosphere */}
       <div className="pointer-events-none absolute -right-32 -top-20 h-[560px] w-[560px] rounded-full bg-brand-600/20 blur-[130px]" aria-hidden="true" />
       <div className="pointer-events-none absolute -left-40 bottom-0 h-[460px] w-[460px] rounded-full bg-navy-600/40 blur-[130px]" aria-hidden="true" />
 
@@ -87,7 +100,7 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="relative z-20 -mt-4 ml-10 rounded-2xl bg-brand-600 p-6 text-white shadow-red">
+            <div className="relative z-20 -mt-4 ml-10 rounded-2xl bg-brand-600 p-6 text-white">
               <div className="font-display text-4xl font-black leading-none">25-Yr</div>
               <div className="mt-1 text-sm font-bold uppercase tracking-wide">Workmanship Warranty</div>
               <p className="mt-2 text-xs font-medium leading-snug text-white/85">
