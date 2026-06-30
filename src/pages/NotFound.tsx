@@ -12,7 +12,7 @@ export function NotFound() {
         path="/404"
         noindex
       />
-      <section className="flex min-h-[70vh] items-center bg-navy-950 pt-[104px] text-white">
+      <section className="flex min-h-[70vh] items-center bg-navy-950 py-20 text-white">
         <div className="container-x text-center">
           <div className="font-display text-[clamp(5rem,18vw,12rem)] font-black leading-none text-brand-400">
             404

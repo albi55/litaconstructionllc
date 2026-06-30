@@ -4,7 +4,7 @@ import { PhoneIcon, ArrowIcon, StarIcon, ShieldIcon } from '../components/icons'
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-navy-950 pt-[68px] text-white lg:pt-[104px]">
+    <section className="relative overflow-hidden bg-navy-950 text-white">
       {/* Soft radial atmosphere — no boxy grid */}
       <div className="pointer-events-none absolute -right-32 -top-20 h-[560px] w-[560px] rounded-full bg-brand-600/20 blur-[130px]" aria-hidden="true" />
       <div className="pointer-events-none absolute -left-40 bottom-0 h-[460px] w-[460px] rounded-full bg-navy-600/40 blur-[130px]" aria-hidden="true" />

@@ -15,14 +15,14 @@ export default {
           100: '#e6e8f5',
           50: '#f2f3fb',
         },
-        // Accent: dark red
+        // Accent: deep, dark red (darker than before)
         brand: {
-          DEFAULT: '#a11d2c',
-          700: '#8a1825',
-          600: '#a11d2c',
-          500: '#bf2436',
-          400: '#d83a4c',
-          50: '#fbeaec',
+          DEFAULT: '#7d1420',
+          700: '#5f0f18',
+          600: '#7d1420',
+          500: '#9a1a29',
+          400: '#c0394a',
+          50: '#f7e7e9',
         },
         // Neutrals: clean whites & cool grays
         cloud: {
@@ -62,7 +62,7 @@ export default {
         soft: '0 10px 40px -12px rgba(15, 27, 61, 0.12)',
         card: '0 18px 50px -20px rgba(15, 27, 61, 0.18)',
         lift: '0 28px 70px -24px rgba(15, 27, 61, 0.28)',
-        red: '0 18px 50px -16px rgba(161, 29, 44, 0.4)',
+        red: '0 18px 50px -16px rgba(125, 20, 32, 0.45)',
       },
       animation: {
         'fade-up': 'fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards',

@@ -3,7 +3,6 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { business } from '../data/business'
 import { navItems } from '../data/nav'
 import { Logo } from './Logo'
-import { PromoBar } from './PromoBar'
 import { PhoneIcon, MenuIcon, CloseIcon } from './icons'
 
 export function Header() {
@@ -33,13 +32,10 @@ export function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled ? 'border-b border-cloud-200 bg-white/95 shadow-soft backdrop-blur-md' : 'bg-white'
       }`}
     >
-      {/* Animated promo / announcement bar */}
-      <PromoBar />
-
       <div className="container-x flex h-[68px] items-center justify-between">
         <Logo />
 
@@ -134,9 +130,9 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile drawer */}
+      {/* Mobile drawer — anchored to the header so it sits directly below it */}
       <div
-        className={`fixed inset-x-0 top-[68px] z-40 max-h-[calc(100vh-68px)] origin-top overflow-y-auto border-b border-cloud-200 bg-white transition-all duration-300 xl:hidden ${
+        className={`absolute inset-x-0 top-full z-40 max-h-[calc(100vh-68px)] origin-top overflow-y-auto border-b border-cloud-200 bg-white transition-all duration-300 xl:hidden ${
           open ? 'pointer-events-auto opacity-100' : 'pointer-events-none -translate-y-2 opacity-0'
         }`}
       >

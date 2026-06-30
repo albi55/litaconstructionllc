@@ -15,7 +15,7 @@ export function PageHero({
   crumbs?: Crumb[]
 }) {
   return (
-    <section className="relative overflow-hidden bg-navy-950 pt-[68px] text-white lg:pt-[104px]">
+    <section className="relative overflow-hidden bg-navy-950 text-white">
       {/* Soft radial glows for depth — no boxy grid */}
       <div className="pointer-events-none absolute -right-32 -top-24 h-[420px] w-[420px] rounded-full bg-brand-600/20 blur-[120px]" aria-hidden="true" />
       <div className="pointer-events-none absolute -left-40 bottom-0 h-[380px] w-[380px] rounded-full bg-navy-600/30 blur-[120px]" aria-hidden="true" />

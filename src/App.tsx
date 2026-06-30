@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { Header } from './components/Header'
+import { PromoBar } from './components/PromoBar'
 import { Footer } from './components/Footer'
 import { MobileCallBar } from './components/MobileCallBar'
 import { Home } from './pages/Home'
@@ -41,6 +42,7 @@ export default function App() {
         Skip to content
       </a>
       <ScrollManager />
+      <PromoBar />
       <Header />
       <main id="main" className="pb-16 lg:pb-0">
         <Routes>
