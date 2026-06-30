@@ -11,12 +11,12 @@ export function Hero() {
         style={{ backgroundImage: 'url(/hero-bg.jpg)' }}
         aria-hidden="true"
       />
-      {/* Navy gradient overlay keeps text readable over the photo */}
+      {/* Left-side navy gradient only — keeps the heading readable while
+          letting the photo show clearly on the right (no flat blue wash) */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/95 to-navy-900/70"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent"
         aria-hidden="true"
       />
-      <div className="pointer-events-none absolute inset-0 bg-navy-950/40" aria-hidden="true" />
 
       {/* Soft radial atmosphere */}
       <div className="pointer-events-none absolute -right-32 -top-20 h-[560px] w-[560px] rounded-full bg-brand-600/20 blur-[130px]" aria-hidden="true" />
