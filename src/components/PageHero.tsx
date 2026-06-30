@@ -29,9 +29,6 @@ export function PageHero({
       />
       <div className="pointer-events-none absolute inset-0 bg-navy-950/40" aria-hidden="true" />
 
-      {/* Soft radial glows for depth */}
-      <div className="pointer-events-none absolute -right-32 -top-24 h-[420px] w-[420px] rounded-full bg-brand-600/20 blur-[120px]" aria-hidden="true" />
-      <div className="pointer-events-none absolute -left-40 bottom-0 h-[380px] w-[380px] rounded-full bg-navy-600/30 blur-[120px]" aria-hidden="true" />
 
       <div className="container-x relative py-16 sm:py-20">
         <nav className="mb-6 flex flex-wrap items-center gap-2 text-sm text-white/50" aria-label="Breadcrumb">

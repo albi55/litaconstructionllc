@@ -95,7 +95,6 @@ function PlaceholderImage({ category }: { category: 'Roofing' | 'Siding' | 'Maso
   const Icon = serviceIcon[category.toLowerCase()]
   return (
     <div className="relative flex h-48 items-center justify-center overflow-hidden bg-navy-900">
-      <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-brand-600/30 blur-[60px]" aria-hidden="true" />
       <Icon className="h-16 w-16 text-white/30" />
     </div>
   )

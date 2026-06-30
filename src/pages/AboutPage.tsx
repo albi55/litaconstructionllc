@@ -81,7 +81,6 @@ export function AboutPage() {
           </div>
 
           <div className="relative overflow-hidden rounded-3xl bg-navy-950 p-10 text-white shadow-lift">
-            <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-brand-600/25 blur-[90px]" aria-hidden="true" />
             <span className="relative font-display text-[clamp(4rem,12vw,8rem)] font-black leading-none text-brand-400">
               {business.founded}
             </span>

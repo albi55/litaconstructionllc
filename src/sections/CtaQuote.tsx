@@ -5,7 +5,6 @@ import { PhoneIcon, ClockIcon, ShieldIcon, CheckIcon } from '../components/icons
 export function CtaQuote() {
   return (
     <section id="quote" className="relative scroll-mt-24 overflow-hidden bg-navy-950 py-20 text-white sm:py-28">
-      <div className="pointer-events-none absolute right-0 top-0 h-[520px] w-[520px] rounded-full bg-brand-600/20 blur-[130px]" aria-hidden="true" />
       <div className="container-x relative grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
         {/* Pitch */}
         <div>

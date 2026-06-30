@@ -14,7 +14,6 @@ export function CtaBand({
     <section className="bg-cloud-100 py-16 sm:py-20">
       <div className="container-x">
         <div className="relative overflow-hidden rounded-3xl bg-navy-900 px-7 py-12 text-white sm:px-12 sm:py-14">
-          <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-brand-600/25 blur-[100px]" aria-hidden="true" />
           <div className="relative flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
             <div className="max-w-xl">
               <h2 className="font-display text-display-md">{title}</h2>

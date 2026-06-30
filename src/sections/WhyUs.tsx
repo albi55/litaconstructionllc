@@ -28,7 +28,6 @@ const reasons = [
 export function WhyUs() {
   return (
     <section id="why" className="relative scroll-mt-24 overflow-hidden bg-navy-950 py-20 text-white sm:py-28">
-      <div className="pointer-events-none absolute -left-40 top-1/2 h-[520px] w-[520px] -translate-y-1/2 rounded-full bg-brand-600/15 blur-[130px]" aria-hidden="true" />
       <div className="container-x relative grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div className="lg:sticky lg:top-28">
           <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-400">
