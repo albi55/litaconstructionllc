@@ -1,23 +1,31 @@
-import { useState } from 'react'
-import { projects, business } from '../data/business'
+import { useMemo, useState } from 'react'
+import { business } from '../data/business'
 import { Seo } from '../components/Seo'
 import { PageHero } from '../components/PageHero'
 import { CtaBand } from '../components/CtaBand'
-import { serviceIcon, PinIcon } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
+import { galleryCategories, imagesByCategory } from '../data/gallery'
 import { useReveal } from '../lib/useReveal'
 
-const categories = ['All', 'Roofing', 'Siding', 'Masonry'] as const
+const PAGE = 12
 
 export function ProjectsPage() {
-  const [active, setActive] = useState<(typeof categories)[number]>('All')
-  const list = active === 'All' ? projects : projects.filter((p) => p.category === active)
+  const [active, setActive] = useState<(typeof galleryCategories)[number]>('All')
+  const [shown, setShown] = useState(PAGE)
+
+  const all = useMemo(() => imagesByCategory(active), [active])
+  const list = all.slice(0, shown)
+
+  const setCategory = (c: (typeof galleryCategories)[number]) => {
+    setActive(c)
+    setShown(PAGE)
+  }
 
   return (
     <>
       <Seo
         title="Our Projects — Roofing, Siding & Masonry Portfolio | Lita Construction"
-        description="Browse completed roofing, siding, and masonry projects by Lita Construction across Northern & Central New Jersey. See the quality and craftsmanship for yourself."
+        description="Browse completed roofing, siding, masonry, and renovation projects by Lita Construction across Northern & Central New Jersey. See the quality and craftsmanship for yourself."
         path="/projects"
         schema={breadcrumbSchema([
           { name: 'Home', url: `${business.url}/` },
@@ -29,21 +37,21 @@ export function ProjectsPage() {
         eyebrow="Our Work"
         title={
           <>
-            Recent <span className="text-brand-400">projects.</span>
+            Recent <span className="text-brand-600">projects.</span>
           </>
         }
-        subtitle="A look at the roofing, siding, and masonry work we've completed for homeowners across New Jersey. Your project could be next."
-        crumbs={[{ label: 'Projects' }]}
+        subtitle="A look at the roofing, siding, masonry, and renovation work we've completed for homeowners across New Jersey. Your project could be next."
+        crumbs={[{ label: 'Portfolio' }]}
       />
 
       <section className="bg-cloud-50 py-16 sm:py-20">
         <div className="container-x">
           {/* Filter */}
           <div className="flex flex-wrap gap-2.5">
-            {categories.map((c) => (
+            {galleryCategories.map((c) => (
               <button
                 key={c}
-                onClick={() => setActive(c)}
+                onClick={() => setCategory(c)}
                 className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${
                   active === c
                     ? 'bg-brand-600 text-white'
@@ -55,33 +63,43 @@ export function ProjectsPage() {
             ))}
           </div>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {list.map((p, i) => (
-              <ProjectCard key={p.title} index={i}>
-                <article className="group h-full overflow-hidden rounded-2xl border border-cloud-300 bg-white shadow-soft transition-all hover:-translate-y-1.5 hover:shadow-card">
-                  {/* Image placeholder — swap with real photos later */}
-                  <PlaceholderImage category={p.category} />
-                  <div className="p-6">
-                    <div className="flex items-center justify-between">
-                      <span className="rounded-full bg-brand-600/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-600">
-                        {p.category}
-                      </span>
-                      <span className="flex items-center gap-1 text-xs font-medium text-cloud-500">
-                        <PinIcon className="h-3.5 w-3.5" />
-                        {p.location}
-                      </span>
-                    </div>
-                    <h2 className="mt-4 font-display text-lg font-bold text-navy-900">{p.title}</h2>
-                    <p className="mt-2 text-sm leading-relaxed text-cloud-600">{p.blurb}</p>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {list.map((img, i) => (
+              <ProjectCard key={img.src} index={i}>
+                <figure className="group relative overflow-hidden rounded-2xl border border-cloud-300 bg-navy-950 shadow-soft transition-all hover:shadow-card">
+                  <div className="aspect-[16/10] w-full overflow-hidden">
+                    <img
+                      src={encodeURI(img.src)}
+                      alt={`${img.category} project by Lita Construction in New Jersey`}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
-                </article>
+                  <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 flex items-end bg-gradient-to-t from-navy-950/85 to-transparent p-4 pt-12">
+                    <span className="rounded-full bg-brand-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
+                      {img.category}
+                    </span>
+                  </figcaption>
+                </figure>
               </ProjectCard>
             ))}
           </div>
 
+          {shown < all.length && (
+            <div className="mt-12 text-center">
+              <button onClick={() => setShown((s) => s + PAGE)} className="btn-ghost">
+                Load More ({all.length - shown} more)
+              </button>
+            </div>
+          )}
+
           <p className="mt-10 text-center text-sm text-cloud-500">
-            Project photos are representative. Ask us for references and a portfolio specific to your
-            project type when you call {business.phone}.
+            Like what you see? Call{' '}
+            <a href={business.phoneHref} className="font-semibold text-brand-600 hover:underline">
+              {business.phone}
+            </a>{' '}
+            for a free estimate on your own project.
           </p>
         </div>
       </section>
@@ -91,19 +109,10 @@ export function ProjectsPage() {
   )
 }
 
-function PlaceholderImage({ category }: { category: 'Roofing' | 'Siding' | 'Masonry' }) {
-  const Icon = serviceIcon[category.toLowerCase()]
-  return (
-    <div className="relative flex h-48 items-center justify-center overflow-hidden bg-navy-900">
-      <Icon className="h-16 w-16 text-white/30" />
-    </div>
-  )
-}
-
 function ProjectCard({ children, index }: { children: React.ReactNode; index: number }) {
   const ref = useReveal()
   return (
-    <div ref={ref} className="reveal" style={{ transitionDelay: `${(index % 3) * 90}ms` }}>
+    <div ref={ref} className="reveal" style={{ transitionDelay: `${(index % 3) * 80}ms` }}>
       {children}
     </div>
   )

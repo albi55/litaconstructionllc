@@ -2,6 +2,7 @@ import { Seo } from '../components/Seo'
 import { Hero } from '../sections/Hero'
 import { TrustBar } from '../sections/TrustBar'
 import { Services } from '../sections/Services'
+import { OurWork } from '../sections/OurWork'
 import { WhyUs } from '../sections/WhyUs'
 import { Process } from '../sections/Process'
 import { ServiceAreas } from '../sections/ServiceAreas'
@@ -23,6 +24,7 @@ export function Home() {
       <Hero />
       <TrustBar />
       <Services />
+      <OurWork />
       <WhyUs />
       <Process />
       <ServiceAreas />
