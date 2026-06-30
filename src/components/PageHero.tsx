@@ -16,7 +16,20 @@ export function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden bg-navy-950 text-white">
-      {/* Soft radial glows for depth — no boxy grid */}
+      {/* Photo background */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url(/hero-bg.jpg)' }}
+        aria-hidden="true"
+      />
+      {/* Navy gradient overlay keeps text readable over the photo */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/95 to-navy-900/70"
+        aria-hidden="true"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-navy-950/40" aria-hidden="true" />
+
+      {/* Soft radial glows for depth */}
       <div className="pointer-events-none absolute -right-32 -top-24 h-[420px] w-[420px] rounded-full bg-brand-600/20 blur-[120px]" aria-hidden="true" />
       <div className="pointer-events-none absolute -left-40 bottom-0 h-[380px] w-[380px] rounded-full bg-navy-600/30 blur-[120px]" aria-hidden="true" />
 
