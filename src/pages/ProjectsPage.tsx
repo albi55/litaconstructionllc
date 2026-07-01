@@ -55,7 +55,7 @@ export function ProjectsPage() {
                 className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${
                   active === c
                     ? 'bg-brand-600 text-white'
-                    : 'border border-cloud-300 bg-white text-navy-800 hover:border-brand-600 hover:text-brand-600'
+                    : 'border border-cloud-300 bg-white text-ink-800 hover:border-brand-600 hover:text-brand-600'
                 }`}
               >
                 {c}

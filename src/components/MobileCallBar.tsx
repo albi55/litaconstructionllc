@@ -9,7 +9,7 @@ export function MobileCallBar() {
       <div className="grid grid-cols-2 gap-2.5">
         <a
           href={business.phoneHref}
-          className="flex items-center justify-center gap-2 rounded-full border-2 border-navy-900/15 py-3 text-sm font-bold uppercase tracking-wide text-navy-900"
+          className="flex items-center justify-center gap-2 rounded-full border-2 border-navy-900/15 py-3 text-sm font-bold uppercase tracking-wide text-ink-900"
         >
           <PhoneIcon className="h-5 w-5 text-brand-600" />
           Call Now

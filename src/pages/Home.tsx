@@ -1,14 +1,13 @@
 import { Seo } from '../components/Seo'
 import { Hero } from '../sections/Hero'
+import { WhoWeAre } from '../sections/WhoWeAre'
 import { Services } from '../sections/Services'
-import { OurWork } from '../sections/OurWork'
 import { WhyUs } from '../sections/WhyUs'
 import { Process } from '../sections/Process'
 import { ServiceAreas } from '../sections/ServiceAreas'
 import { Reviews } from '../sections/Reviews'
-import { About } from '../sections/About'
+import { OurWork } from '../sections/OurWork'
 import { Faq } from '../sections/Faq'
-import { CtaQuote } from '../sections/CtaQuote'
 import { localBusinessSchema, websiteSchema, faqSchema } from '../lib/schema'
 
 export function Home() {
@@ -21,15 +20,14 @@ export function Home() {
         schema={[localBusinessSchema, websiteSchema, faqSchema]}
       />
       <Hero />
+      <WhoWeAre />
       <Services />
-      <OurWork />
       <WhyUs />
       <Process />
       <ServiceAreas />
       <Reviews />
-      <About />
+      <OurWork />
       <Faq />
-      <CtaQuote />
     </>
   )
 }

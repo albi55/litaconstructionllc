@@ -168,6 +168,90 @@ export const services: Service[] = [
   },
 ]
 
+/**
+ * Homepage services grid — the full range of work, shown as cards.
+ * The three core trades (roofing/siding/masonry) deep-link to their rich
+ * service pages; the additional trades link to the portfolio, where their
+ * completed projects live.
+ */
+export type HomeService = {
+  key: string
+  name: string
+  blurb: string
+  features: string[]
+  to: string
+  icon: string
+}
+
+export const homeServices: HomeService[] = [
+  {
+    key: 'roofing',
+    name: 'Roofing',
+    blurb: services[0].blurb,
+    features: services[0].features.slice(0, 4),
+    to: '/services/roofing',
+    icon: '/services/roofing-icon.png',
+  },
+  {
+    key: 'siding',
+    name: 'Siding',
+    blurb: services[1].blurb,
+    features: services[1].features.slice(0, 4),
+    to: '/services/siding',
+    icon: '/services/siding-icon.png',
+  },
+  {
+    key: 'masonry',
+    name: 'Masonry',
+    blurb: services[2].blurb,
+    features: services[2].features.slice(0, 4),
+    to: '/services/masonry',
+    icon: '/services/masonry-icon.png',
+  },
+  {
+    key: 'renovation',
+    name: 'Renovation',
+    blurb:
+      'Full interior and exterior remodeling that transforms how your home lives and looks — from single rooms to whole-house renovations, finished with meticulous craftsmanship.',
+    features: [
+      'Whole-home & room remodels',
+      'Kitchens & living spaces',
+      'Interior & exterior upgrades',
+      'Permits handled for you',
+    ],
+    to: '/projects',
+    icon: '/services/renovation-icon.png',
+  },
+  {
+    key: 'bathroom',
+    name: 'Bathroom',
+    blurb:
+      'Modern, functional bathroom remodels done right — from tile and vanities to plumbing and waterproofing, built to look beautiful and last for years.',
+    features: [
+      'Full bathroom remodels',
+      'Tile, tubs & showers',
+      'Vanities & fixtures',
+      'Waterproofing done right',
+    ],
+    to: '/projects',
+    icon: '/services/bathroom-icon.png',
+  },
+  {
+    key: 'chimney',
+    name: 'Chimney',
+    blurb:
+      'Chimney repair, repointing, and full rebuilds that restore safety, function, and curb appeal — keeping your home protected from the top down.',
+    features: [
+      'Repointing & crown repair',
+      'Full chimney rebuilds',
+      'Flashing & leak repair',
+      'Free safety inspection',
+    ],
+    to: '/projects',
+    icon: '/services/chimney-icon.png',
+  },
+]
+
 /** Headline trust stats reused across pages. */
 export const stats = [
   { n: '25+', l: 'Years of Experience' },

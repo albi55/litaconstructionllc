@@ -4,16 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Brand: near-black deep navy (darkest)
+        // Brand navy — tuned to the logo's blue hue (#000048), but lifted in
+        // luminance so the dark SECTIONS actually read as that blue instead of
+        // near-black. navy-950 is the section backdrop; the ramp climbs cohesively.
         navy: {
-          950: '#000010',
-          900: '#01011d',
-          800: '#03052c',
-          700: '#080d45',
-          600: '#141c6b',
-          500: '#243192',
-          100: '#e4e6f2',
-          50: '#f1f2fa',
+          950: '#000d26', // DARK SECTION BACKDROP — deeper true navy-blue (no purple)
+          900: '#031a42', // cards/panels on dark sections
+          800: '#0a3068',
+          700: '#124088',
+          600: '#1c53a8',
+          500: '#2d6bc9',
+          100: '#e5e7f6',
+          50: '#f1f2fb',
         },
         // Accent: ONE red everywhere — exactly the "Get Your Free Estimate"
         // button red (#7d1420). Every brand shade resolves to it so red is
@@ -26,26 +28,43 @@ export default {
           400: '#7d1420',
           50: '#f7e7e9',
         },
-        // Neutrals: clean whites & cool grays
+        // Neutrals — subtly warm so the light-dominant palette reads premium,
+        // not cold/corporate. cloud-100 is the "paper" base for light sections.
         cloud: {
           50: '#ffffff',
-          100: '#f7f8fa',
-          200: '#eef1f5',
-          300: '#dde2ea',
-          400: '#c2c9d6',
-          500: '#8b95a7',
-          600: '#5b6577',
-          700: '#3a4254',
+          100: '#f7f6f3', // warm paper base
+          200: '#efede8',
+          300: '#e0ddd5',
+          400: '#c4bfb4',
+          500: '#8f887b',
+          600: '#5f5a50',
+          700: '#3a3730',
+        },
+        // Ink — near-black for body text & headings on light backgrounds
+        // (so copy reads BLACK, not blue). Navy stays for dark backgrounds/brand.
+        ink: {
+          DEFAULT: '#15171c',
+          900: '#15171c',
+          800: '#2a2d34',
+          700: '#40444d',
+        },
+        // Sand — a warm secondary accent for dividers, eyebrows, subtle highlights.
+        sand: {
+          100: '#f3ead9',
+          400: '#cba876',
+          500: '#b7935f',
+          600: '#9c7c4c',
         },
       },
       fontFamily: {
-        display: ['Archivo', 'system-ui', 'sans-serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        // Manrope — clean, neutral, modern sans for headlines.
+        display: ['Manrope', 'system-ui', 'sans-serif'],
+        sans: ['"Inter Tight"', 'system-ui', 'sans-serif'],
       },
       fontSize: {
-        'display-xl': ['clamp(2.75rem, 7vw, 6rem)', { lineHeight: '0.96', letterSpacing: '-0.03em', fontWeight: '800' }],
-        'display-lg': ['clamp(2.25rem, 5vw, 4rem)', { lineHeight: '1.0', letterSpacing: '-0.02em', fontWeight: '800' }],
-        'display-md': ['clamp(1.75rem, 3.5vw, 2.75rem)', { lineHeight: '1.06', letterSpacing: '-0.02em', fontWeight: '700' }],
+        'display-xl': ['clamp(2.9rem, 7vw, 6rem)', { lineHeight: '1.0', letterSpacing: '-0.03em', fontWeight: '800' }],
+        'display-lg': ['clamp(2.35rem, 5vw, 4.25rem)', { lineHeight: '1.03', letterSpacing: '-0.025em', fontWeight: '800' }],
+        'display-md': ['clamp(1.9rem, 3.6vw, 3rem)', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '700' }],
       },
       maxWidth: {
         container: '1280px',

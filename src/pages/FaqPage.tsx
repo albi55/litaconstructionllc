@@ -36,7 +36,7 @@ export function FaqPage() {
         <div className="container-x max-w-3xl">
           <div className="mb-10">
             <span className="eyebrow">General</span>
-            <h2 className="mt-4 font-display text-2xl font-bold text-navy-900">About Lita Construction</h2>
+            <h2 className="mt-4 font-display text-2xl font-bold text-ink-900">About Lita Construction</h2>
           </div>
           <FaqAccordion items={faqs} />
 
@@ -44,7 +44,7 @@ export function FaqPage() {
             <div key={s.slug} className="mt-14">
               <div className="mb-6">
                 <span className="eyebrow">{s.name}</span>
-                <h2 className="mt-4 font-display text-2xl font-bold text-navy-900">{s.name} questions</h2>
+                <h2 className="mt-4 font-display text-2xl font-bold text-ink-900">{s.name} questions</h2>
               </div>
               <FaqAccordion items={s.faqs} defaultOpen={null} />
             </div>

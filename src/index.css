@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  @apply bg-cloud-50 text-navy-900 font-sans antialiased;
+  @apply bg-cloud-50 text-ink-900 font-sans antialiased;
   overflow-x: hidden;
 }
 
@@ -43,42 +43,42 @@ body {
     @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-12;
   }
 
-  /* Eyebrow label — small caps red tag above headings */
+  /* Eyebrow label — refined uppercase tag with a sand rule */
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-600;
+    @apply inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-600;
   }
   .eyebrow::before {
     content: '';
-    @apply h-px w-8 bg-brand-600/60;
+    @apply h-px w-9 bg-brand-600/50;
   }
 
-  /* Primary red CTA button — fully rounded */
+  /* Primary red CTA — architectural rounded-xl, crisp UI sans */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#5f0f18] active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:bg-[#5f0f18] hover:shadow-red active:scale-[0.98];
   }
 
   /* Navy solid button */
   .btn-navy {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-navy-900 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-navy-800 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-navy-900 px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:bg-navy-800 active:scale-[0.98];
   }
 
-  /* Outlined button (navy on light) */
+  /* Outlined button (ink on light) */
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-navy-900/15 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-navy-900 transition-all duration-300 hover:border-brand-600 hover:text-brand-600 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-navy-900/20 px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-ink-900 transition-all duration-300 hover:border-brand-600 hover:text-brand-600 active:scale-[0.98];
   }
 
   /* Outlined button on dark backgrounds */
   .btn-ghost-light {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/25 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:border-white hover:bg-white hover:text-navy-900 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:border-white hover:bg-white hover:text-ink-900 active:scale-[0.98];
   }
 
   .section-label {
-    @apply font-display text-[11px] font-bold uppercase tracking-[0.3em] text-cloud-500;
+    @apply text-[11px] font-semibold uppercase tracking-[0.28em] text-cloud-500;
   }
 
   /* Rounded surface card */
   .card {
-    @apply rounded-2xl border border-cloud-300 bg-white shadow-soft;
+    @apply rounded-2xl border border-cloud-200 bg-white shadow-soft;
   }
 }
 

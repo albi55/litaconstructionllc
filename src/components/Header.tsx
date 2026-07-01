@@ -32,11 +32,11 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'border-b border-cloud-200 bg-white/95 shadow-soft backdrop-blur-md' : 'bg-white'
+      className={`sticky top-0 z-50 bg-white transition-all duration-300 ${
+        scrolled ? 'border-b border-cloud-200 shadow-soft' : ''
       }`}
     >
-      <div className="container-x flex h-[68px] items-center justify-between">
+      <div className="container-x flex h-[80px] items-center justify-between">
         <Logo />
 
         <nav className="hidden items-center xl:flex">
@@ -51,8 +51,8 @@ export function Header() {
                 <NavLink
                   to={item.to}
                   className={({ isActive }) =>
-                    `flex items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold transition-colors ${
-                      isActive ? 'text-brand-600' : 'text-navy-800 hover:text-brand-600'
+                    `flex items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-[15px] font-semibold transition-colors ${
+                      isActive ? 'text-brand-600' : 'text-ink-800 hover:text-brand-600'
                     }`
                   }
                 >
@@ -77,7 +77,7 @@ export function Header() {
                       >
                         <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cloud-300 transition-colors group-hover/item:bg-brand-600" aria-hidden="true" />
                         <span className="min-w-0">
-                          <span className="block text-sm font-semibold text-navy-900 transition-colors group-hover/item:text-brand-600">
+                          <span className="block text-sm font-semibold text-ink-900 transition-colors group-hover/item:text-brand-600">
                             {child.label}
                           </span>
                           {child.description && (
@@ -96,8 +96,8 @@ export function Header() {
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold transition-colors ${
-                    isActive ? 'text-brand-600' : 'text-navy-800 hover:text-brand-600'
+                  `whitespace-nowrap rounded-full px-3 py-2 text-[15px] font-semibold transition-colors ${
+                    isActive ? 'text-brand-600' : 'text-ink-800 hover:text-brand-600'
                   }`
                 }
               >
@@ -120,7 +120,7 @@ export function Header() {
               <span className="text-[10px] font-semibold uppercase tracking-wider text-cloud-500">
                 Free Estimate
               </span>
-              <span className="whitespace-nowrap font-display text-[15px] font-bold text-navy-900">
+              <span className="whitespace-nowrap font-display text-[15px] font-bold text-ink-900">
                 {business.phone}
               </span>
             </span>
@@ -132,7 +132,7 @@ export function Header() {
 
         <button
           onClick={() => setOpen((v) => !v)}
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-cloud-300 text-navy-900 xl:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-cloud-300 text-ink-900 xl:hidden"
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
         >
@@ -152,7 +152,7 @@ export function Header() {
             return (
               <div key={item.label}>
                 {isMore ? (
-                  <span className="block border-b border-cloud-200 py-3.5 font-display text-lg font-semibold text-navy-900">
+                  <span className="block border-b border-cloud-200 py-3.5 font-display text-lg font-semibold text-ink-900">
                     {item.label}
                   </span>
                 ) : (
@@ -161,7 +161,7 @@ export function Header() {
                     onClick={() => setOpen(false)}
                     className={({ isActive }) =>
                       `block border-b border-cloud-200 py-3.5 font-display text-lg font-semibold ${
-                        isActive ? 'text-brand-600' : 'text-navy-900'
+                        isActive ? 'text-brand-600' : 'text-ink-900'
                       }`
                     }
                   >

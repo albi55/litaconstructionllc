@@ -17,7 +17,7 @@ export function ReviewCardGrid({ limit }: { limit?: number }) {
               </span>
               <QuoteMarkIcon className="h-8 w-8 text-cloud-200" />
             </div>
-            <blockquote className="mt-5 flex-1 text-base leading-relaxed text-navy-800">
+            <blockquote className="mt-5 flex-1 text-base leading-relaxed text-ink-800">
               {t.quote}
             </blockquote>
             <figcaption className="mt-6 flex items-center gap-3 border-t border-cloud-200 pt-5">
@@ -25,7 +25,7 @@ export function ReviewCardGrid({ limit }: { limit?: number }) {
                 {t.name.charAt(0)}
               </span>
               <span>
-                <span className="block font-display font-bold text-navy-900">{t.name}</span>
+                <span className="block font-display font-bold text-ink-900">{t.name}</span>
                 <span className="block text-sm text-cloud-600">
                   {t.location} · {t.service}
                 </span>
@@ -40,12 +40,12 @@ export function ReviewCardGrid({ limit }: { limit?: number }) {
 
 export function Reviews() {
   return (
-    <section id="reviews" className="scroll-mt-24 bg-cloud-100 py-20 sm:py-28">
+    <section id="reviews" className="scroll-mt-24 bg-white py-24 sm:py-32">
       <div className="container-x">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <span className="eyebrow">Homeowner Reviews</span>
-            <h2 className="mt-5 font-display text-display-md text-navy-900">Built on word of mouth.</h2>
+            <h2 className="mt-5 font-display text-display-md text-ink-900">Built on word of mouth.</h2>
           </div>
           <div className="flex items-center gap-3">
             <span className="flex text-brand-600">

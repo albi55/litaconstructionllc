@@ -49,7 +49,7 @@ export function ServicePage() {
       {/* Quick CTA strip */}
       <div className="border-b border-cloud-200 bg-white">
         <div className="container-x flex flex-col items-center justify-between gap-4 py-5 sm:flex-row">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-navy-800">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-ink-800">
             {['GAF Certified', 'Fully Insured', '25-Yr Warranty', 'Free Estimates'].map((t) => (
               <span key={t} className="flex items-center gap-2">
                 <ShieldIcon className="h-4 w-4 text-brand-600" />
@@ -74,7 +74,7 @@ export function ServicePage() {
         <div className="container-x">
           <div className="max-w-2xl">
             <span className="eyebrow">Our {service.name} Services</span>
-            <h2 className="mt-5 font-display text-display-md text-navy-900">
+            <h2 className="mt-5 font-display text-display-md text-ink-900">
               Everything {service.name.toLowerCase()}, done right.
             </h2>
           </div>
@@ -94,14 +94,14 @@ export function ServicePage() {
         <div className="container-x grid gap-14 lg:grid-cols-[1fr_1fr]">
           <div>
             <span className="eyebrow">What&apos;s Included</span>
-            <h2 className="mt-5 font-display text-display-md text-navy-900">
+            <h2 className="mt-5 font-display text-display-md text-ink-900">
               Complete {service.name.toLowerCase()} services.
             </h2>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {service.features.map((f) => (
                 <li
                   key={f}
-                  className="flex items-start gap-3 rounded-xl border border-cloud-300 bg-cloud-50 p-4 text-sm font-medium text-navy-800"
+                  className="flex items-start gap-3 rounded-xl border border-cloud-300 bg-cloud-50 p-4 text-sm font-medium text-ink-800"
                 >
                   <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
                   {f}
@@ -112,7 +112,7 @@ export function ServicePage() {
 
           <div>
             <span className="eyebrow">Local Coverage</span>
-            <h2 className="mt-5 font-display text-display-md text-navy-900">
+            <h2 className="mt-5 font-display text-display-md text-ink-900">
               {service.name} across North &amp; Central NJ.
             </h2>
             <p className="mt-5 leading-relaxed text-cloud-600">
@@ -123,7 +123,7 @@ export function ServicePage() {
               {serviceCities.map((c) => (
                 <span
                   key={c}
-                  className="rounded-full border border-cloud-300 bg-cloud-50 px-3 py-1.5 text-xs font-medium text-navy-800"
+                  className="rounded-full border border-cloud-300 bg-cloud-50 px-3 py-1.5 text-xs font-medium text-ink-800"
                 >
                   {service.name} in {c}, NJ
                 </span>
@@ -138,7 +138,7 @@ export function ServicePage() {
         <div ref={reveal} className="reveal container-x grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <div className="lg:sticky lg:top-28">
             <span className="eyebrow">{service.name} FAQs</span>
-            <h2 className="mt-5 font-display text-display-md text-navy-900">Good to know.</h2>
+            <h2 className="mt-5 font-display text-display-md text-ink-900">Good to know.</h2>
             <p className="mt-5 text-cloud-600">
               Quick answers to the questions homeowners ask most about {service.name.toLowerCase()}.
             </p>
@@ -185,7 +185,7 @@ export function ServicePage() {
                       <OIcon className="h-6 w-6" />
                     </span>
                     <div>
-                      <h3 className="font-display text-xl font-bold text-navy-900">{o.name}</h3>
+                      <h3 className="font-display text-xl font-bold text-ink-900">{o.name}</h3>
                       <p className="text-sm text-cloud-600">{o.short}</p>
                     </div>
                   </div>
@@ -220,7 +220,7 @@ function SubCard({
           <Icon className="h-6 w-6" />
         </span>
         <div>
-          <h3 className="font-display text-lg font-bold text-navy-900">{children[0]}</h3>
+          <h3 className="font-display text-lg font-bold text-ink-900">{children[0]}</h3>
           <p className="mt-2 text-sm leading-relaxed text-cloud-600">{children[1]}</p>
         </div>
       </div>

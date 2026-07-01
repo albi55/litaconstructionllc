@@ -38,7 +38,7 @@ export function ReviewsPage() {
               <StarIcon key={i} className="h-7 w-7" />
             ))}
           </span>
-          <p className="font-display text-xl font-bold text-navy-900">
+          <p className="font-display text-xl font-bold text-ink-900">
             Rated 5 stars by New Jersey homeowners
           </p>
           <p className="max-w-xl text-cloud-600">

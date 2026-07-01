@@ -1,71 +1,98 @@
 import { useReveal } from '../lib/useReveal'
-import { stats } from '../data/business'
-import { ShieldIcon, ClockIcon, StarIcon, CheckIcon } from '../components/icons'
+import { ShieldIcon, StarIcon, ClockIcon, PinIcon } from '../components/icons'
 
-const reasons = [
+/**
+ * "Why Us" — an editorial manifesto over a softly-blurred showcase home.
+ * Four principles as frosted-glass cards with an icon, a large ghost numeral,
+ * and coordinated entrance + hover animation.
+ */
+
+const principles = [
   {
+    n: '01',
     icon: ShieldIcon,
-    title: 'GAF Certified & Fully Insured',
-    body: 'Factory-certified installation backed by a 25-year warranty on labor and materials. Licensed (NJ #13VH11703800) and insured — your home and investment are fully protected.',
+    title: 'Certified & warrantied',
+    body: 'GAF-certified installation backed by a written 25-year warranty on labor and materials — the strongest protection in the industry.',
   },
   {
+    n: '02',
     icon: StarIcon,
-    title: 'Family-Owned Craftsmanship',
-    body: 'Founded by Johnny Lita in 2004, we are not a faceless franchise. Every project carries our family name — so we treat your home the way we would treat our own.',
+    title: 'Our name is on it',
+    body: 'Founded by Johnny Lita in 2004. Not a franchise, not a call center — a family business that treats your home like its own.',
   },
   {
+    n: '03',
     icon: ClockIcon,
-    title: 'On Time, On Budget',
-    body: 'Detailed written estimates with no hidden fees, clear timelines, and a clean job site. We deliver projects affordably and expertly — exactly as promised.',
+    title: 'On time, on budget',
+    body: 'Detailed written estimates with no hidden fees, clear timelines, and a job site left spotless every single day.',
   },
   {
-    icon: CheckIcon,
-    title: 'Local & Accountable',
-    body: 'We live and work in North Jersey. When you call (201) 540-7772, you reach the people who actually do the work — not a call center three states away.',
+    n: '04',
+    icon: PinIcon,
+    title: 'Local & accountable',
+    body: 'We live and work in North Jersey. Call and you reach the people who actually do the work — same day, every time.',
   },
 ]
 
 export function WhyUs() {
+  const heading = useReveal()
+
   return (
-    <section id="why" className="relative scroll-mt-24 overflow-hidden bg-navy-950 py-20 text-white sm:py-28">
-      <div className="container-x relative grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-        <div className="lg:sticky lg:top-28">
-          <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-400">
-            <span className="h-px w-8 bg-brand-400/60" />
+    <section id="why" className="relative scroll-mt-24 overflow-hidden py-24 text-white sm:py-28">
+      {/* Showcase house photo background — softly blurred */}
+      <div
+        className="pointer-events-none absolute inset-0 scale-105 bg-cover bg-center blur-[3px]"
+        style={{ backgroundImage: 'url("/showcase/house3.png")' }}
+        aria-hidden="true"
+      />
+      {/* Gradient for legibility */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/60 via-black/30 to-black/10"
+        aria-hidden="true"
+      />
+
+      <div className="container-x relative">
+        {/* Header */}
+        <div ref={heading} className="reveal max-w-3xl">
+          <span className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-400">
+            <span className="h-px w-9 bg-brand-400/70" />
             Why Lita Construction
           </span>
-          <h2 className="mt-5 font-display text-display-md">
-            The contractor North Jersey homeowners trust.
+          <h2 className="mt-5 font-display text-display-md text-white drop-shadow-sm">
+            The standards we refuse to cut.
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-white/70">
-            Choosing a contractor is an act of trust. For more than two decades, families across
-            Bergen, Passaic, Essex and beyond have trusted Lita Construction to protect the place
-            they call home.
-          </p>
-
-          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
-            {stats.map((s) => (
-              <div key={s.l} className="rounded-xl border border-white/10 bg-white/[0.06] px-4 py-5 text-center">
-                <div className="font-display text-3xl font-black text-brand-400">{s.n}</div>
-                <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-white/60">
-                  {s.l}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
-          {reasons.map((r, i) => (
-            <ReasonCard key={r.title} index={i}>
-              <div className="group h-full rounded-2xl border border-white/10 bg-white/[0.04] p-7 transition-colors hover:border-brand-400/40 hover:bg-white/[0.07]">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600/15 text-brand-400">
-                  <r.icon className="h-6 w-6" />
+        {/* Manifesto cards */}
+        <div className="mt-12 grid gap-5 sm:grid-cols-2">
+          {principles.map((p, i) => (
+            <Card key={p.n} index={i}>
+              <article className="group relative h-full overflow-hidden rounded-2xl border border-white/15 bg-white/[0.08] p-6 backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-brand-400/50 hover:bg-white/[0.13] sm:p-7">
+                {/* Left accent bar grows on hover */}
+                <span
+                  className="absolute inset-y-0 left-0 w-1 origin-top scale-y-0 bg-brand-500 transition-transform duration-500 group-hover:scale-y-100"
+                  aria-hidden="true"
+                />
+                {/* Ghost numeral watermark */}
+                <span
+                  className="pointer-events-none absolute -right-2 -top-4 select-none font-display text-8xl font-black leading-none text-white/[0.08] transition-all duration-500 group-hover:text-white/[0.14]"
+                  aria-hidden="true"
+                >
+                  {p.n}
                 </span>
-                <h3 className="mt-5 font-display text-lg font-bold text-white">{r.title}</h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-white/65">{r.body}</p>
-              </div>
-            </ReasonCard>
+
+                <div className="relative flex items-start gap-4">
+                  {/* Icon tile */}
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-white shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
+                    <p.icon className="h-6 w-6" />
+                  </span>
+                  <div>
+                    <h3 className="font-display text-xl font-bold text-white">{p.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-white/85">{p.body}</p>
+                  </div>
+                </div>
+              </article>
+            </Card>
           ))}
         </div>
       </div>
@@ -73,10 +100,10 @@ export function WhyUs() {
   )
 }
 
-function ReasonCard({ children, index }: { children: React.ReactNode; index: number }) {
+function Card({ children, index }: { children: React.ReactNode; index: number }) {
   const ref = useReveal()
   return (
-    <div ref={ref} className="reveal" style={{ transitionDelay: `${index * 90}ms` }}>
+    <div ref={ref} className="reveal h-full" style={{ transitionDelay: `${index * 120}ms` }}>
       {children}
     </div>
   )

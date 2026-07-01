@@ -35,7 +35,7 @@ export function FinancingPage() {
       <section className="bg-cloud-50 py-20">
         <div className="container-x">
           <span className="eyebrow">How We Make It Affordable</span>
-          <h2 className="mt-5 font-display text-display-md text-navy-900">Options that work for you.</h2>
+          <h2 className="mt-5 font-display text-display-md text-ink-900">Options that work for you.</h2>
           <div ref={ref} className="reveal mt-12 grid gap-6 sm:grid-cols-2">
             {financing.options.map((o) => (
               <div key={o.title} className="flex gap-5 rounded-2xl border border-cloud-300 bg-white p-7 shadow-soft">
@@ -43,7 +43,7 @@ export function FinancingPage() {
                   <DollarIcon className="h-6 w-6" />
                 </span>
                 <div>
-                  <h3 className="font-display text-lg font-bold text-navy-900">{o.title}</h3>
+                  <h3 className="font-display text-lg font-bold text-ink-900">{o.title}</h3>
                   <p className="mt-2 leading-relaxed text-cloud-600">{o.body}</p>
                 </div>
               </div>
@@ -57,7 +57,7 @@ export function FinancingPage() {
         <div className="container-x grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
             <span className="eyebrow">No Surprises</span>
-            <h2 className="mt-5 font-display text-display-md text-navy-900">
+            <h2 className="mt-5 font-display text-display-md text-ink-900">
               Transparent pricing, every time.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-cloud-600">
@@ -72,7 +72,7 @@ export function FinancingPage() {
                 'Insurance claim documentation & assistance',
                 'Premium materials at fair, competitive prices',
               ].map((t) => (
-                <li key={t} className="flex items-center gap-3 font-medium text-navy-800">
+                <li key={t} className="flex items-center gap-3 font-medium text-ink-800">
                   <CheckIcon className="h-5 w-5 shrink-0 text-brand-600" />
                   {t}
                 </li>

@@ -18,7 +18,7 @@ export function Logo({ onClick, light = false }: { onClick?: () => void; light?:
         alt="Lita Construction LLC logo"
         width={165}
         height={66}
-        className="h-12 w-auto"
+        className="h-16 w-auto"
         loading="eager"
         decoding="async"
       />

@@ -42,7 +42,7 @@ export function ServicesHub() {
                     <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-navy-900 text-white">
                       <Icon className="h-7 w-7" />
                     </span>
-                    <h2 className="mt-6 font-display text-3xl font-bold text-navy-900">{service.name}</h2>
+                    <h2 className="mt-6 font-display text-3xl font-bold text-ink-900">{service.name}</h2>
                     <p className="mt-4 leading-relaxed text-cloud-600">{service.blurb}</p>
                     <Link to={`/services/${service.slug}`} className="btn-primary mt-7">
                       Explore {service.name}
@@ -55,7 +55,7 @@ export function ServicesHub() {
                     </h3>
                     <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                       {service.features.map((f) => (
-                        <li key={f} className="flex items-start gap-2.5 text-sm text-navy-800">
+                        <li key={f} className="flex items-start gap-2.5 text-sm text-ink-800">
                           <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" />
                           {f}
                         </li>

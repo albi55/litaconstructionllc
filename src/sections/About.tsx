@@ -13,7 +13,7 @@ const points = [
 export function About() {
   const ref = useReveal()
   return (
-    <section id="about" className="scroll-mt-24 bg-cloud-50 py-20 sm:py-28">
+    <section id="about" className="scroll-mt-24 bg-cloud-100 py-24 sm:py-32">
       <div ref={ref} className="reveal container-x grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
         {/* Visual block — rounded navy card with the founding year */}
         <div className="relative order-2 lg:order-1">
@@ -39,7 +39,7 @@ export function About() {
 
         <div className="order-1 lg:order-2">
           <span className="eyebrow">Our Story</span>
-          <h2 className="mt-5 font-display text-display-md text-navy-900">
+          <h2 className="mt-5 font-display text-display-md text-ink-900">
             Two decades of building trust, one project at a time.
           </h2>
           <div className="mt-6 space-y-4 text-lg leading-relaxed text-cloud-600">
@@ -58,7 +58,7 @@ export function About() {
 
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {points.map((p) => (
-              <li key={p} className="flex items-start gap-3 text-sm text-navy-800">
+              <li key={p} className="flex items-start gap-3 text-sm text-ink-800">
                 <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
                 {p}
               </li>

@@ -6,10 +6,10 @@ import { HeroServiceOrbit } from '../components/HeroServiceOrbit'
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-navy-950 text-white">
-      {/* Photo background */}
+      {/* Photo background — showcase home */}
       <div
         className="pointer-events-none absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/hero-bg.jpg)' }}
+        style={{ backgroundImage: 'url("/showcase/house%20(2).png")' }}
         aria-hidden="true"
       />
       {/* Left-side navy gradient only — keeps the heading readable while
@@ -73,8 +73,27 @@ export function Hero() {
 
         {/* Right — license badge crowning the animated work showcase */}
         <div className="lg:flex lg:flex-col lg:items-center lg:gap-7">
-          {/* NJ License credential badge — sits on top of the work circles */}
-          <div className="mt-4 animate-fade-up lg:mt-0" style={{ animationDelay: '320ms' }}>
+          {/* Credential badges — GAF + NJ license, crowning the work showcase */}
+          <div
+            className="mt-4 flex flex-wrap items-center justify-center gap-3 animate-fade-up lg:mt-0"
+            style={{ animationDelay: '320ms' }}
+          >
+            {/* GAF certified — official logo */}
+            <div className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.07] py-2 pl-2 pr-4 shadow-soft backdrop-blur-sm transition-colors hover:border-white/30">
+              <img
+                src="/gaf-logo.svg"
+                alt="GAF Certified Contractor"
+                className="h-11 w-11 shrink-0 rounded-lg"
+              />
+              <span className="flex flex-col leading-tight">
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-400">
+                  Factory Certified
+                </span>
+                <span className="text-[15px] font-bold tracking-wide text-white">GAF Contractor</span>
+              </span>
+            </div>
+
+            {/* NJ License */}
             <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] py-2 pl-2 pr-5 shadow-soft backdrop-blur-sm transition-colors hover:border-white/30">
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-600 ring-4 ring-brand-600/15">
                 <ShieldIcon className="h-[22px] w-[22px] text-white" />

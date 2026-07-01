@@ -49,7 +49,7 @@ export function AboutPage() {
         <div className="container-x grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <span className="eyebrow">Who We Are</span>
-            <h2 className="mt-5 font-display text-display-md text-navy-900">
+            <h2 className="mt-5 font-display text-display-md text-ink-900">
               Two decades of building trust, one project at a time.
             </h2>
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-cloud-600">
@@ -72,7 +72,7 @@ export function AboutPage() {
             </div>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {['Founded 2004 by Johnny Lita', 'GAF-certified contractor', 'Fully licensed & insured', '25-year workmanship warranty'].map((p) => (
-                <li key={p} className="flex items-start gap-3 text-sm font-medium text-navy-800">
+                <li key={p} className="flex items-start gap-3 text-sm font-medium text-ink-800">
                   <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
                   {p}
                 </li>
@@ -112,7 +112,7 @@ export function AboutPage() {
         <div className="container-x">
           <div className="max-w-2xl">
             <span className="eyebrow">What We Stand For</span>
-            <h2 className="mt-5 font-display text-display-md text-navy-900">Our values aren&apos;t a slogan.</h2>
+            <h2 className="mt-5 font-display text-display-md text-ink-900">Our values aren&apos;t a slogan.</h2>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {values.map((v) => (
@@ -120,7 +120,7 @@ export function AboutPage() {
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600/10 text-brand-600">
                   <v.icon className="h-6 w-6" />
                 </span>
-                <h3 className="mt-5 font-display text-xl font-bold text-navy-900">{v.title}</h3>
+                <h3 className="mt-5 font-display text-xl font-bold text-ink-900">{v.title}</h3>
                 <p className="mt-2.5 leading-relaxed text-cloud-600">{v.body}</p>
               </div>
             ))}
@@ -133,7 +133,7 @@ export function AboutPage() {
         <div ref={ref} className="reveal container-x">
           <div className="max-w-2xl">
             <span className="eyebrow">Our Journey</span>
-            <h2 className="mt-5 font-display text-display-md text-navy-900">Built over two decades.</h2>
+            <h2 className="mt-5 font-display text-display-md text-ink-900">Built over two decades.</h2>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-4">
             {milestones.map((m) => (

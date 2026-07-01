@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { services, business } from '../data/business'
+import { homeServices, business } from '../data/business'
 import { CheckIcon, ArrowIcon } from './icons'
 
 type FormState = {
@@ -61,7 +61,7 @@ export function QuoteForm() {
         <span className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-600 text-white">
           <CheckIcon className="h-8 w-8" />
         </span>
-        <h3 className="mt-6 font-display text-2xl font-bold text-navy-900">Request received.</h3>
+        <h3 className="mt-6 font-display text-2xl font-bold text-ink-900">Request received.</h3>
         <p className="mt-3 max-w-sm text-cloud-600">
           Thank you, {form.name || 'there'}! A member of the Lita Construction team will reach out
           shortly to schedule your free estimate.
@@ -77,11 +77,11 @@ export function QuoteForm() {
   }
 
   const inputBase =
-    'w-full rounded-xl border border-cloud-300 bg-cloud-100 px-4 py-3.5 text-navy-900 placeholder-cloud-500 outline-none transition-colors focus:border-brand-600 focus:bg-white focus:ring-2 focus:ring-brand-600/20'
+    'w-full rounded-xl border border-cloud-300 bg-cloud-100 px-4 py-3.5 text-ink-900 placeholder-cloud-500 outline-none transition-colors focus:border-brand-600 focus:bg-white focus:ring-2 focus:ring-brand-600/20'
 
   return (
     <form onSubmit={onSubmit} className="rounded-2xl border border-cloud-300 bg-white p-7 shadow-card sm:p-9" noValidate>
-      <h3 className="font-display text-2xl font-bold text-navy-900">Request a Free Estimate</h3>
+      <h3 className="font-display text-2xl font-bold text-ink-900">Request a Free Estimate</h3>
       <p className="mt-2 text-sm text-cloud-600">
         Fill out the form and we&apos;ll get back to you within one business day.
       </p>
@@ -89,7 +89,7 @@ export function QuoteForm() {
       <div className="mt-6 grid gap-4">
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="block">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
+            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink-800">
               Full Name *
             </span>
             <input
@@ -103,7 +103,7 @@ export function QuoteForm() {
             />
           </label>
           <label className="block">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
+            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink-800">
               Phone *
             </span>
             <input
@@ -120,7 +120,7 @@ export function QuoteForm() {
 
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="block">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
+            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink-800">
               Email
             </span>
             <input
@@ -133,7 +133,7 @@ export function QuoteForm() {
             />
           </label>
           <label className="block">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
+            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink-800">
               ZIP Code
             </span>
             <input
@@ -149,15 +149,15 @@ export function QuoteForm() {
         </div>
 
         <label className="block">
-          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
+          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink-800">
             Service Needed *
           </span>
           <select required value={form.service} onChange={update('service')} className={inputBase}>
             <option value="" disabled>
               Select a service…
             </option>
-            {services.map((s) => (
-              <option key={s.slug} value={s.name}>
+            {homeServices.map((s) => (
+              <option key={s.key} value={s.name}>
                 {s.name}
               </option>
             ))}
@@ -166,7 +166,7 @@ export function QuoteForm() {
         </label>
 
         <label className="block">
-          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-navy-800">
+          <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink-800">
             Project Details
           </span>
           <textarea

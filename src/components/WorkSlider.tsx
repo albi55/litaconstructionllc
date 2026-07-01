@@ -77,14 +77,14 @@ export function WorkSlider() {
         <button
           onClick={() => go(-1)}
           aria-label="Previous"
-          className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-navy-900 shadow-soft transition hover:bg-white"
+          className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-ink-900 shadow-soft transition hover:bg-white"
         >
           <ArrowIcon className="h-5 w-5 rotate-180" />
         </button>
         <button
           onClick={() => go(1)}
           aria-label="Next"
-          className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-navy-900 shadow-soft transition hover:bg-white"
+          className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-ink-900 shadow-soft transition hover:bg-white"
         >
           <ArrowIcon className="h-5 w-5" />
         </button>
