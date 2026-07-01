@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { business } from '../data/business'
 import { PhoneIcon, ArrowIcon, StarIcon, ShieldIcon } from '../components/icons'
+import { HeroServiceOrbit } from '../components/HeroServiceOrbit'
 
 export function Hero() {
   return (
@@ -68,50 +69,27 @@ export function Hero() {
               {business.phone}
             </a>
           </div>
-
-          {/* Trust strip */}
-          <div
-            className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-white/10 pt-7 animate-fade-up"
-            style={{ animationDelay: '320ms' }}
-          >
-            {['GAF Certified', 'Fully Insured', business.licenseLabel].map((label) => (
-              <div key={label} className="flex items-center gap-2.5 text-sm text-white/80">
-                <ShieldIcon className="h-5 w-5 text-brand-400" />
-                <span className="font-medium">{label}</span>
-              </div>
-            ))}
-          </div>
         </div>
 
-        {/* Right — rounded stat card stack */}
-        <div className="relative hidden lg:block">
-          <div className="relative ml-auto max-w-sm">
-            <div className="relative z-10 rounded-2xl border border-white/10 bg-white/[0.06] p-8 backdrop-blur-sm">
-              <div className="flex items-baseline gap-3">
-                <span className="font-display text-[5.5rem] font-black leading-none text-brand-400">25</span>
-                <span className="font-display text-2xl font-bold text-white">+ Years</span>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-white/60">
-                of trusted craftsmanship protecting New Jersey homes — one roof, wall, and chimney
-                at a time.
-              </p>
-            </div>
-
-            <div className="relative z-20 -mt-4 ml-10 rounded-2xl bg-brand-600 p-6 text-white">
-              <div className="font-display text-4xl font-black leading-none">25-Yr</div>
-              <div className="mt-1 text-sm font-bold uppercase tracking-wide">Workmanship Warranty</div>
-              <p className="mt-2 text-xs font-medium leading-snug text-white/85">
-                On labor &amp; materials — the strongest protection in the industry.
-              </p>
-            </div>
-
-            <div className="relative z-10 mt-5 rounded-2xl border border-white/10 bg-white/[0.06] p-6 backdrop-blur-sm">
-              <div className="font-display text-3xl font-black text-white">8 Counties</div>
-              <p className="mt-1 text-sm text-white/60">
-                Serving Bergen, Passaic, Essex, Morris &amp; more across North &amp; Central NJ.
-              </p>
+        {/* Right — license badge crowning the animated work showcase */}
+        <div className="lg:flex lg:flex-col lg:items-center lg:gap-7">
+          {/* NJ License credential badge — sits on top of the work circles */}
+          <div className="mt-4 animate-fade-up lg:mt-0" style={{ animationDelay: '320ms' }}>
+            <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] py-2 pl-2 pr-5 shadow-soft backdrop-blur-sm transition-colors hover:border-white/30">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-600 ring-4 ring-brand-600/15">
+                <ShieldIcon className="h-[22px] w-[22px] text-white" />
+              </span>
+              <span className="flex flex-col leading-tight">
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-400">
+                  State Licensed &amp; Insured
+                </span>
+                <span className="text-[15px] font-bold tracking-wide text-white">
+                  {business.licenseLabel}
+                </span>
+              </span>
             </div>
           </div>
+          <HeroServiceOrbit />
         </div>
       </div>
     </section>

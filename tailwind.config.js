@@ -72,8 +72,15 @@ export default {
         'marquee': 'marquee 40s linear infinite',
         'promo-marquee': 'marquee 32s linear infinite',
         'slide-down': 'slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        // Hero service orbit: ring rotates one way, photos counter-rotate to stay upright
+        'hero-orbit': 'heroOrbit 46s linear infinite',
+        'hero-orbit-rev': 'heroOrbit 46s linear infinite reverse',
       },
       keyframes: {
+        heroOrbit: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
         fadeUp: {
           '0%': { opacity: '0', transform: 'translateY(24px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },

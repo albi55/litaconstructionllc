@@ -1,6 +1,5 @@
 import { Seo } from '../components/Seo'
 import { Hero } from '../sections/Hero'
-import { TrustBar } from '../sections/TrustBar'
 import { Services } from '../sections/Services'
 import { OurWork } from '../sections/OurWork'
 import { WhyUs } from '../sections/WhyUs'
@@ -22,7 +21,6 @@ export function Home() {
         schema={[localBusinessSchema, websiteSchema, faqSchema]}
       />
       <Hero />
-      <TrustBar />
       <Services />
       <OurWork />
       <WhyUs />

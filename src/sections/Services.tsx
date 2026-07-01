@@ -19,7 +19,37 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        {/* Featured GAF roof-replacement video */}
+        <div className="mt-12 overflow-hidden rounded-3xl border border-cloud-300 shadow-card">
+          <div className="relative">
+            <video
+              className="aspect-video w-full object-cover"
+              src="/gaf-roof-replacement.mp4"
+              poster="/gaf-roof-replacement-poster.webp"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label="Aerial drone view of a New Jersey home with a brand-new GAF architectural shingle roof, with GAF Timberline shingle bundles staged"
+            />
+            {/* Readability gradient + caption */}
+            <div
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950/75 via-navy-950/10 to-transparent"
+              aria-hidden="true"
+            />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 p-6 sm:p-8">
+              <span className="inline-block rounded-full bg-brand-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
+                GAF Certified Roofing
+              </span>
+              <p className="mt-3 max-w-lg font-display text-xl font-bold leading-tight text-white sm:text-2xl">
+                A brand-new GAF roof — done right.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
           {services.map((service, i) => {
             const Icon = serviceIcon[service.slug]
             return (
