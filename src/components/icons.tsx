@@ -121,8 +121,39 @@ export const QuoteMarkIcon = (p: SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
+export const RenovationIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <path d="M14 6.5 17.5 3 21 6.5 17.5 10Z" />
+    <path d="m16 8-9.5 9.5a2.12 2.12 0 0 1-3-3L13 5" />
+    <path d="m3 21 2.5-1 1-2.5" />
+  </svg>
+)
+
+export const BathroomIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-3Z" />
+    <path d="M7 12V6a3 3 0 0 1 5.5-1.7" />
+    <path d="M4 12V9a1 1 0 0 1 1-1h1M6 20v1M17 20v1" />
+  </svg>
+)
+
+export const ChimneyIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <path d="M9 2h4v5h3l5 6H3l5-6h1z" />
+    <path d="M4 13v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8" />
+    <path d="M9 7v-5M13 7v-5" />
+  </svg>
+)
+
 export const serviceIcon: Record<string, (p: SVGProps<SVGSVGElement>) => JSX.Element> = {
   roofing: RoofIcon,
   siding: SidingIcon,
   masonry: MasonryIcon,
+}
+
+/** Icons for trades that don't have a dedicated /services/:slug page. */
+export const tradeIcon: Record<string, (p: SVGProps<SVGSVGElement>) => JSX.Element> = {
+  Renovation: RenovationIcon,
+  Bathroom: BathroomIcon,
+  Chimney: ChimneyIcon,
 }

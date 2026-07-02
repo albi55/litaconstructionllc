@@ -1,4 +1,4 @@
-import { business, serviceAreas, services, faqs } from '../data/business'
+import { business, serviceAreas, services, faqs, testimonials } from '../data/business'
 
 /** Reusable JSON-LD builders for SEO + AEO/GEO answer engines. */
 
@@ -44,6 +44,30 @@ export function faqSchemaFrom(items: readonly { q: string; a: string }[]) {
 
 export const faqSchema = faqSchemaFrom(faqs)
 
+/** Testimonials whose free-text `service` field mentions the given trade (e.g. "Roofing" also matches "Roofing & Siding"). */
+export function testimonialsFor(serviceName: string) {
+  return testimonials.filter((t) => t.service.includes(serviceName))
+}
+
+/** Review + AggregateRating nodes for a trade, built from real on-site testimonials (all 5-star). Omitted entirely when there are no matching reviews. */
+function reviewNodesFor(serviceName: string) {
+  const matches = testimonialsFor(serviceName)
+  if (matches.length === 0) return {}
+  return {
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: matches.length,
+    },
+    review: matches.map((t) => ({
+      '@type': 'Review',
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      author: { '@type': 'Person', name: t.name },
+      reviewBody: t.quote,
+    })),
+  }
+}
+
 export function serviceSchema(slug: string) {
   const s = services.find((x) => x.slug === slug)
   if (!s) return null
@@ -53,8 +77,9 @@ export function serviceSchema(slug: string) {
     serviceType: s.name,
     provider: { '@id': `${business.url}/#business` },
     areaServed: serviceAreas.map((a) => `${a}, NJ`),
-    description: s.blurb,
+    description: s.quickAnswer,
     url: `${business.url}/services/${s.slug}`,
+    ...reviewNodesFor(s.name),
   }
 }
 

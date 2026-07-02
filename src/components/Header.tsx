@@ -8,23 +8,31 @@ import {
   MenuIcon,
   CloseIcon,
   ArrowIcon,
-  CheckIcon,
   ShieldIcon,
   PinIcon,
   StarIcon,
   DollarIcon,
   QuoteMarkIcon,
   serviceIcon,
+  tradeIcon,
 } from './icons'
 
 /** Extra copy shown in the left promo column of each mega menu. */
-const groupMeta: Record<string, { eyebrow: string; title: string; blurb: string; cta: string }> = {
+const groupMeta: Record<
+  string,
+  { eyebrow: string; title: string; blurb: string; cta: string; image: string; stats: [string, string][] }
+> = {
   Services: {
     eyebrow: 'What We Do',
     title: 'Premium exterior services.',
     blurb:
       'GAF-certified roofing, siding, and masonry — backed by a written 25-year workmanship warranty and two decades of North Jersey craftsmanship.',
     cta: 'View all services',
+    image: '/work/roof-roof30.webp',
+    stats: [
+      [business.yearsExperience, 'Years experience'],
+      ['GAF', 'Certified'],
+    ],
   },
   More: {
     eyebrow: 'Explore',
@@ -32,10 +40,41 @@ const groupMeta: Record<string, { eyebrow: string; title: string; blurb: string;
     blurb:
       'Where we work, what our customers say, flexible financing, and answers to the questions homeowners ask most.',
     cta: 'See our service areas',
+    image: '/work/renovation-Renovation1.webp',
+    stats: [
+      [business.yearsExperience, 'Years in NJ'],
+      ['5.0', 'Avg. rating'],
+    ],
   },
 }
 
-/** Pick the best icon for a mega-menu card based on its route. */
+/** Small real project photo shown on each mega-menu card, keyed by route. */
+const routeThumb: Record<string, string> = {
+  '/service-areas': '/work/mansory-Mansory10.webp',
+  '/reviews': '/work/siding-siding6.webp',
+  '/financing': '/work/renovation-Renovation1.webp',
+  '/faq': '/work/bathroom-Bathroom7.webp',
+}
+const serviceThumb: Record<string, string> = {
+  roofing: '/work/roof-roof30.webp',
+  siding: '/work/siding-siding6.webp',
+  masonry: '/work/mansory-Mansory10.webp',
+}
+/** Trades that share the /projects route — keyed by label instead. */
+const tradeThumb: Record<string, string> = {
+  Renovation: '/work/renovation-Renovation1.webp',
+  Bathroom: '/work/bathroom-Bathroom7.webp',
+  Chimney: '/work/chimney-Chimney1.webp',
+}
+function thumbFor(to: string, label: string): string | undefined {
+  if (to.startsWith('/services/')) {
+    const slug = to.split('/').pop() ?? ''
+    if (serviceThumb[slug]) return serviceThumb[slug]
+  }
+  return tradeThumb[label] ?? routeThumb[to]
+}
+
+/** Pick the best icon for a mega-menu card based on its route (or label, for shared routes). */
 const routeIcon: Record<string, typeof PhoneIcon> = {
   '/services': ShieldIcon,
   '/service-areas': PinIcon,
@@ -43,12 +82,12 @@ const routeIcon: Record<string, typeof PhoneIcon> = {
   '/financing': DollarIcon,
   '/faq': QuoteMarkIcon,
 }
-function iconFor(to: string): typeof PhoneIcon {
+function iconFor(to: string, label: string): typeof PhoneIcon {
   if (to.startsWith('/services/')) {
     const slug = to.split('/').pop() ?? ''
     if (serviceIcon[slug]) return serviceIcon[slug]
   }
-  return routeIcon[to] ?? ArrowIcon
+  return tradeIcon[label] ?? routeIcon[to] ?? ArrowIcon
 }
 
 export function Header() {
@@ -238,58 +277,138 @@ export function Header() {
             onMouseEnter={() => openMenu(item.label)}
             onMouseLeave={scheduleClose}
           >
-            <div className="container-x grid gap-8 py-8 lg:grid-cols-[0.8fr_1.5fr] lg:gap-12">
-              {/* Left — navy feature panel */}
-              <div className="relative flex flex-col overflow-hidden rounded-2xl bg-navy-950 p-7 text-white">
-                <span
-                  className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand-600/15 blur-2xl"
+            <div className="container-x grid gap-8 py-8 lg:grid-cols-[0.86fr_1.5fr] lg:gap-10">
+              {/* Left — photo feature panel */}
+              <div className="group/panel relative flex min-h-[460px] flex-col overflow-hidden rounded-2xl bg-navy-950 text-white shadow-lift">
+                <img
+                  src={meta?.image}
+                  alt=""
+                  aria-hidden="true"
+                  className="absolute inset-0 h-full w-full scale-110 object-cover opacity-45 transition-transform duration-[1400ms] ease-out group-hover/panel:scale-100"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/85 to-navy-950/40"
                   aria-hidden="true"
                 />
-                <span className="relative inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-400">
-                  <span className="h-px w-8 bg-brand-400/70" />
-                  {meta?.eyebrow}
-                </span>
-                <h3 className="relative mt-5 font-display text-2xl font-extrabold leading-tight text-white">
-                  {meta?.title}
-                </h3>
-                <p className="relative mt-3 text-sm leading-relaxed text-white/70">{meta?.blurb}</p>
+                <div
+                  className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-brand-600/25 blur-3xl"
+                  aria-hidden="true"
+                />
 
-                <Link to={item.to} className="btn-primary relative mt-6 w-fit">
-                  {meta?.cta}
-                  <ArrowIcon className="h-4 w-4" />
-                </Link>
+                <div className="relative flex h-full flex-col p-7">
+                  <span className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-400">
+                    <span className="h-px w-8 bg-brand-400/70" />
+                    {meta?.eyebrow}
+                  </span>
+                  <h3 className="mt-5 max-w-xs font-display text-[1.7rem] font-extrabold leading-[1.08] text-white">
+                    {meta?.title}
+                  </h3>
+                  <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/70">{meta?.blurb}</p>
 
-                <a
-                  href={business.phoneHref}
-                  className="group relative mt-auto flex items-center gap-3 rounded-2xl border border-white/15 bg-white/[0.06] p-4 transition-colors hover:border-brand-400/50 hover:bg-white/[0.1]"
-                >
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white">
-                    <PhoneIcon className="h-5 w-5" />
-                  </span>
-                  <span className="flex flex-col leading-tight">
-                    <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">
-                      Call for a free estimate
+                  {/* Quick stats */}
+                  <div className="mt-6 flex items-center gap-5">
+                    {meta?.stats.map(([n, l], i) => (
+                      <div key={l} className="flex items-center gap-5">
+                        {i > 0 && <span className="h-8 w-px bg-white/15" aria-hidden="true" />}
+                        <div>
+                          <div className="font-display text-xl font-extrabold leading-none text-white">
+                            {n}
+                          </div>
+                          <div className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-white/55">
+                            {l}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link to={item.to} className="btn-primary mt-7 w-fit">
+                    {meta?.cta}
+                    <ArrowIcon className="h-4 w-4" />
+                  </Link>
+
+                  <a
+                    href={business.phoneHref}
+                    className="group/call relative mt-5 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/[0.06] p-4 backdrop-blur-sm transition-colors hover:border-brand-400/50 hover:bg-white/[0.1]"
+                  >
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white transition-transform group-hover/call:scale-105">
+                      <PhoneIcon className="h-5 w-5" />
                     </span>
-                    <span className="font-display text-lg font-bold text-white">
-                      {business.phone}
+                    <span className="flex flex-col leading-tight">
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">
+                        Call for a free estimate
+                      </span>
+                      <span className="font-display text-lg font-bold text-white">
+                        {business.phone}
+                      </span>
                     </span>
-                  </span>
-                </a>
+                  </a>
+                </div>
               </div>
 
               {/* Right — cards */}
               <div className="grid content-start gap-3 sm:grid-cols-2">
-                {item.children.map((child) => {
-                  const Icon = iconFor(child.to)
+                {item.children.map((child, i) => {
+                  const Icon = iconFor(child.to, child.label)
+                  const thumb = thumbFor(child.to, child.label)
+                  const isFeatured = i === 0
+
+                  if (isFeatured) {
+                    return (
+                      <Link
+                        key={child.label}
+                        to={child.to}
+                        className="group relative col-span-full flex items-center gap-5 overflow-hidden rounded-2xl border border-navy-950/10 bg-navy-950 p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lift"
+                      >
+                        <span
+                          className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-brand-600/20 blur-2xl transition-opacity group-hover:opacity-80"
+                          aria-hidden="true"
+                        />
+                        <span className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-white shadow-red">
+                          <Icon className="h-6 w-6" />
+                        </span>
+                        <span className="relative min-w-0 flex-1">
+                          <span className="flex items-center justify-between gap-2 font-display text-lg font-bold text-white">
+                            {child.label}
+                            <ArrowIcon className="h-4 w-4 shrink-0 -translate-x-1 text-brand-400 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
+                          </span>
+                          {child.description && (
+                            <span className="mt-1 block text-sm leading-snug text-white/60">
+                              {child.description}
+                            </span>
+                          )}
+                        </span>
+                      </Link>
+                    )
+                  }
+
                   return (
                     <Link
-                      key={child.to}
+                      key={child.label}
                       to={child.to}
-                      className="group flex items-start gap-4 rounded-2xl border border-cloud-200 bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-600/40 hover:shadow-card"
+                      className="group relative flex items-start gap-4 overflow-hidden rounded-2xl border border-cloud-200 bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-600/40 hover:shadow-card"
                     >
-                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cloud-100 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
-                        <Icon className="h-5 w-5" />
-                      </span>
+                      {thumb ? (
+                        <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl shadow-soft ring-1 ring-navy-950/5">
+                          <img
+                            src={thumb}
+                            alt=""
+                            aria-hidden="true"
+                            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                          <span className="absolute inset-0 flex items-center justify-center bg-navy-950/35 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                            <Icon className="h-5 w-5" />
+                          </span>
+                        </span>
+                      ) : (
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cloud-100 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
+                          <Icon className="h-5 w-5" />
+                        </span>
+                      )}
                       <span className="min-w-0 flex-1">
                         <span className="flex items-center justify-between gap-2 font-display text-base font-bold text-ink-900 transition-colors group-hover:text-brand-600">
                           {child.label}
@@ -304,24 +423,6 @@ export function Header() {
                     </Link>
                   )
                 })}
-              </div>
-            </div>
-
-            {/* Trust strip */}
-            <div className="border-t border-cloud-200 bg-cloud-100">
-              <div className="container-x flex flex-wrap items-center justify-center gap-x-8 gap-y-1.5 py-3.5 sm:justify-between">
-                {business.certifications.map((c) => (
-                  <span
-                    key={c}
-                    className="flex items-center gap-2 text-xs font-semibold text-cloud-600"
-                  >
-                    <CheckIcon className="h-4 w-4 shrink-0 text-brand-600" />
-                    {c}
-                  </span>
-                ))}
-                <span className="hidden text-xs font-bold uppercase tracking-wider text-ink-900 lg:block">
-                  {business.licenseLabel}
-                </span>
               </div>
             </div>
           </div>
@@ -363,7 +464,7 @@ export function Header() {
                       .filter((child) => isMore || child.to !== item.to)
                       .map((child) => (
                         <Link
-                          key={child.to}
+                          key={child.label}
                           to={child.to}
                           onClick={() => setOpen(false)}
                           className="border-b border-cloud-200 py-2.5 pl-4 text-sm font-medium text-cloud-700 hover:text-brand-600"
