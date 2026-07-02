@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { business, homeServices, serviceAreas, serviceCities } from '../data/business'
 import { Seo } from '../components/Seo'
@@ -12,6 +13,7 @@ import {
 } from '../components/icons'
 import { localBusinessSchema, breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
+import { NjMap } from '../components/NjMap'
 
 /** Real project photo per service, for the "What We Do" cards. */
 const servicephoto: Record<string, string> = {
@@ -84,6 +86,7 @@ export function AboutPage() {
   const why = useReveal()
   const timeline = useReveal()
   const areas = useReveal()
+  const [activeCounty, setActiveCounty] = useState<string | null>(null)
 
   return (
     <>
@@ -351,7 +354,11 @@ export function AboutPage() {
 
       {/* ── 6. Service areas ── */}
       <section className="bg-white py-20 sm:py-28">
-        <div ref={areas} className="reveal container-x grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div
+          ref={areas}
+          className="reveal container-x grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center"
+        >
+          {/* Left: copy, county chips & CTA */}
           <div>
             <span className="eyebrow">Where We Work</span>
             <h2 className="mt-6 font-display text-display-md text-ink-900">
@@ -362,21 +369,49 @@ export function AboutPage() {
               {serviceAreas.length} counties. If you don&apos;t see your town, call us; chances are
               we cover it.
             </p>
+
+            {/* County chips — hovering highlights the county on the map */}
+            <div className="mt-8 grid grid-cols-2 gap-3">
+              {serviceAreas.map((a) => {
+                const name = a.replace(' County', '')
+                const isActive = activeCounty === name
+                return (
+                  <div
+                    key={a}
+                    onMouseEnter={() => setActiveCounty(name)}
+                    onMouseLeave={() => setActiveCounty(null)}
+                    className={`flex cursor-default items-center gap-2.5 rounded-xl border px-4 py-3 text-sm font-medium transition-colors ${
+                      isActive
+                        ? 'border-brand-600/40 bg-brand-50 text-brand-600'
+                        : 'border-cloud-200 bg-cloud-100 text-ink-800'
+                    }`}
+                  >
+                    <PinIcon className="h-4 w-4 shrink-0 text-brand-600" />
+                    {a}
+                  </div>
+                )
+              })}
+            </div>
+
             <Link to="/service-areas" className="btn-primary mt-8">
               View All Service Areas
               <ArrowIcon className="h-4 w-4" />
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-3">
-            {serviceAreas.map((a) => (
-              <div
-                key={a}
-                className="flex items-center gap-2.5 rounded-xl border border-cloud-200 bg-cloud-100 px-4 py-3 text-sm font-medium text-ink-800 transition-colors hover:border-brand-600/30"
-              >
-                <PinIcon className="h-4 w-4 shrink-0 text-brand-600" />
-                {a}
-              </div>
-            ))}
+
+          {/* Right: interactive New Jersey county map */}
+          <div className="relative mx-auto w-full max-w-xs sm:max-w-sm">
+            <div className="relative aspect-[15.8/33.45]">
+              <NjMap active={activeCounty} onHover={setActiveCounty} />
+            </div>
+
+            {/* Readout pill under the map */}
+            <div className="mt-4 flex justify-center">
+              <span className="inline-flex items-center gap-2 rounded-full border border-cloud-300 bg-white px-4 py-2 text-xs font-bold uppercase tracking-wider text-ink-800 shadow-soft">
+                <span className="h-2.5 w-2.5 rounded-sm bg-brand-600" aria-hidden="true" />
+                {activeCounty ? `${activeCounty} County` : `${serviceAreas.length} counties served`}
+              </span>
+            </div>
           </div>
         </div>
       </section>
