@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { services, business } from '../data/business'
 import { Seo } from '../components/Seo'
-import { CheckIcon, ArrowIcon, PhoneIcon, ShieldIcon, StarIcon } from '../components/icons'
+import { CheckIcon, ArrowIcon, PhoneIcon, ShieldIcon, StarIcon, ServiceGlyph } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
 
@@ -18,7 +18,7 @@ type ServiceCard = {
   image: string
   to: string
   cta: string
-  icon: string
+  slug: string
   hasPage: boolean
 }
 
@@ -31,7 +31,7 @@ const CARDS: ServiceCard[] = [
     image: '/work/roof-roof30.webp',
     to: '/services/roofing',
     cta: 'Explore Roofing',
-    icon: '/services/roofing-icon.png',
+    slug: 'roofing',
     hasPage: true,
   },
   {
@@ -42,7 +42,7 @@ const CARDS: ServiceCard[] = [
     image: '/work/siding-siding6.webp',
     to: '/services/siding',
     cta: 'Explore Siding',
-    icon: '/services/siding-icon.png',
+    slug: 'siding',
     hasPage: true,
   },
   {
@@ -53,7 +53,51 @@ const CARDS: ServiceCard[] = [
     image: '/work/mansory-Mansory10.webp',
     to: '/services/masonry',
     cta: 'Explore Masonry',
-    icon: '/services/masonry-icon.png',
+    slug: 'masonry',
+    hasPage: true,
+  },
+  {
+    name: 'Gutters',
+    eyebrow: 'Seamless Gutters & Drainage',
+    desc: services[3].intro,
+    features: services[3].features,
+    image: '/work/siding-siding1.webp',
+    to: '/services/gutters',
+    cta: 'Explore Gutters',
+    slug: 'gutters',
+    hasPage: true,
+  },
+  {
+    name: 'Windows & Doors',
+    eyebrow: 'Windows & Entry Doors',
+    desc: services[4].intro,
+    features: services[4].features,
+    image: '/work/siding-siding10.webp',
+    to: '/services/windows-doors',
+    cta: 'Explore Windows & Doors',
+    slug: 'windows-doors',
+    hasPage: true,
+  },
+  {
+    name: 'Decks & Pavers',
+    eyebrow: 'Outdoor Living',
+    desc: services[5].intro,
+    features: services[5].features,
+    image: '/work/mansory-Mansory22.webp',
+    to: '/services/decks-pavers',
+    cta: 'Explore Decks & Pavers',
+    slug: 'decks-pavers',
+    hasPage: true,
+  },
+  {
+    name: 'Exterior Painting',
+    eyebrow: 'Painting & Surface Prep',
+    desc: services[6].intro,
+    features: services[6].features,
+    image: '/work/renovation-Renovation20.webp',
+    to: '/services/painting',
+    cta: 'Explore Painting',
+    slug: 'painting',
     hasPage: true,
   },
   {
@@ -69,7 +113,7 @@ const CARDS: ServiceCard[] = [
     image: '/work/renovation-Renovation1.webp',
     to: '/projects',
     cta: 'See Renovation Work',
-    icon: '/services/renovation-icon.png',
+    slug: 'renovation',
     hasPage: false,
   },
   {
@@ -85,7 +129,7 @@ const CARDS: ServiceCard[] = [
     image: '/work/bathroom-Bathroom7.webp',
     to: '/projects',
     cta: 'See Bathroom Work',
-    icon: '/services/bathroom-icon.png',
+    slug: 'bathroom',
     hasPage: false,
   },
   {
@@ -101,13 +145,13 @@ const CARDS: ServiceCard[] = [
     image: '/work/chimney-Chimney1.webp',
     to: '/projects',
     cta: 'See Chimney Work',
-    icon: '/services/chimney-icon.png',
+    slug: 'chimney',
     hasPage: false,
   },
 ]
 
 const HERO_STATS = [
-  { n: '6', l: 'Trades under one roof' },
+  { n: '10', l: 'Trades under one roof' },
   { n: business.yearsExperience, l: 'Years in business' },
   { n: 'GAF', l: 'Certified contractor' },
   { n: '100%', l: 'Licensed & insured' },
@@ -248,12 +292,7 @@ function ServiceRow({
         <div>
           <div className="flex items-center gap-4">
             <span className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#f2f5f8] shadow-soft ring-1 ring-navy-950/5">
-              <img
-                src={card.icon}
-                alt=""
-                aria-hidden="true"
-                className="h-full w-full scale-110 object-cover"
-              />
+              <ServiceGlyph slug={card.slug} name={card.name} />
             </span>
             <div>
               <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-600">

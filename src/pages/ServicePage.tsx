@@ -6,6 +6,7 @@ import { CtaBand } from '../components/CtaBand'
 import { FaqAccordion } from '../components/FaqAccordion'
 import {
   serviceIcon,
+  ServiceGlyph,
   CheckIcon,
   ArrowIcon,
   PhoneIcon,
@@ -22,24 +23,41 @@ const heroPhoto: Record<string, string> = {
   roofing: '/showcase/house%20(1).png',
   siding: '/showcase/house%20(2).png',
   masonry: '/showcase/house3.png',
+  gutters: '/showcase/house%20(2).png',
+  'windows-doors': '/showcase/house%20(1).png',
+  'decks-pavers': '/showcase/house3.png',
+  painting: '/showcase/house%20(2).png',
 }
 /** Social-share (og:image) per service — a project close-up reads better than a wide house shot in link previews. */
 const sharePhoto: Record<string, string> = {
   roofing: '/work/roof-roof30.webp',
   siding: '/work/siding-siding6.webp',
   masonry: '/work/mansory-Mansory22.webp',
+  gutters: '/work/siding-siding1.webp',
+  'windows-doors': '/work/siding-siding10.webp',
+  'decks-pavers': '/work/mansory-Mansory10.webp',
+  painting: '/work/renovation-Renovation20.webp',
 }
 /** Photo shown alongside the "How it works" process steps, per trade. */
 const processPhoto: Record<string, string> = {
   roofing: '/roof/optimized/roof (14).webp',
   siding: '/Siding/optimized/siding (6).webp',
   masonry: '/Mansory/optimized/Mansory (23).webp',
+  gutters: '/Siding/optimized/siding (10).webp',
+  'windows-doors': '/Siding/optimized/siding (14).webp',
+  'decks-pavers': '/Mansory/optimized/Mansory (10).webp',
+  painting: '/Renovation/optimized/Renovation (14).webp',
 }
-/** gallery.ts category names, keyed by service slug (masonry's category folds in chimney work). */
+/** gallery.ts category names, keyed by service slug. Newer trades borrow the
+ *  closest existing category so their gallery section still shows real work. */
 const galleryCategory: Record<string, string> = {
   roofing: 'Roofing',
   siding: 'Siding',
   masonry: 'Masonry',
+  gutters: 'Siding',
+  'windows-doors': 'Siding',
+  'decks-pavers': 'Masonry',
+  painting: 'Renovation',
 }
 
 export function ServicePage() {
@@ -497,14 +515,9 @@ function SubCard({
           className="pointer-events-none absolute inset-y-0 left-0 w-1 origin-top scale-y-0 bg-brand-600 transition-transform duration-300 group-hover:scale-y-100"
           aria-hidden="true"
         />
-        {/* The trade's actual PNG icon in a rounded tile (same treatment as the Services hub) */}
+        {/* The trade's glyph in a rounded tile (same treatment as the Services hub) */}
         <span className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#f2f5f8] shadow-soft ring-1 ring-navy-950/5 transition-colors group-hover:bg-brand-50">
-          <img
-            src={`/services/${slug}-icon.png`}
-            alt=""
-            aria-hidden="true"
-            className="h-full w-full scale-110 object-cover"
-          />
+          <ServiceGlyph slug={slug} />
         </span>
         <div className="min-w-0 flex-1">
           <div className="flex items-center justify-between gap-2">

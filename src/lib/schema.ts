@@ -19,7 +19,20 @@ export const localBusinessSchema = {
   address: { '@type': 'PostalAddress', addressRegion: 'NJ', addressCountry: 'US' },
   areaServed: serviceAreas.map((a) => ({ '@type': 'AdministrativeArea', name: `${a}, NJ` })),
   hasCredential: `NJ Home Improvement Contractor License #${business.license}`,
-  knowsAbout: ['Roofing', 'Siding', 'Masonry', 'Chimney Repair', 'Foundations', 'Gutters'],
+  knowsAbout: [
+    'Roofing',
+    'Siding',
+    'Masonry',
+    'Chimney Repair',
+    'Foundations',
+    'Seamless Gutters',
+    'Replacement Windows',
+    'Entry Doors',
+    'Decks',
+    'Paver Patios',
+    'Retaining Walls',
+    'Exterior Painting',
+  ],
 }
 
 export const websiteSchema = {

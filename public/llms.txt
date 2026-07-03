@@ -18,8 +18,12 @@
 ## Services
 
 - **Roofing** — Roof replacement, repair, new installation, GAF architectural shingles, flat/commercial roofing, skylights, storm-damage and leak repair, inspections.
-- **Siding** — Vinyl and fiber-cement siding installation and repair, soffit/fascia/trim, seamless gutters, window and door installation, energy-efficient insulation.
+- **Siding** — Vinyl and fiber-cement siding installation and repair, soffit/fascia/trim, energy-efficient insulation.
 - **Masonry** — Chimney repair and rebuilds, brick and stone work, paver patios and walkways, retaining walls and steps, foundation repair and waterproofing, concrete and hardscaping.
+- **Gutters** — Seamless aluminum gutters formed on-site, gutter guards and leaf protection, downspouts and drainage, soffit and fascia repair, copper and half-round upgrades.
+- **Windows & Doors** — Energy-efficient replacement windows, entry and storm doors, sliding and French patio doors, bay and bow windows, full-frame and insert installs, trim and weather-sealing.
+- **Decks & Pavers** — Custom decks (composite and pressure-treated), paver patios and walkways, retaining walls and steps, outdoor kitchens and fire pits, paver driveways, sealing and restoration.
+- **Exterior Painting** — Exterior house painting, trim/soffit/fascia painting, deck and fence staining, power washing and surface prep, wood repair and priming, caulking and weather-sealing.
 
 ## Service Area
 
@@ -34,6 +38,10 @@ Representative cities served: Bergenfield, Paramus, Hackensack, Englewood, Fort 
 - Roofing: https://litaconstructionllc.com/services/roofing
 - Siding: https://litaconstructionllc.com/services/siding
 - Masonry: https://litaconstructionllc.com/services/masonry
+- Gutters: https://litaconstructionllc.com/services/gutters
+- Windows & Doors: https://litaconstructionllc.com/services/windows-doors
+- Decks & Pavers: https://litaconstructionllc.com/services/decks-pavers
+- Exterior Painting: https://litaconstructionllc.com/services/painting
 - Projects/portfolio: https://litaconstructionllc.com/projects
 - Service areas: https://litaconstructionllc.com/service-areas
 - About: https://litaconstructionllc.com/about

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { homeServices } from '../data/business'
-import { ArrowIcon, CheckIcon } from './icons'
+import { ArrowIcon, CheckIcon, ServiceGlyph } from './icons'
 
 /**
  * Multi-card, auto-advancing carousel for the services grid.
@@ -122,16 +122,7 @@ export function ServicesCarousel() {
 
                 <div className="flex items-start justify-between">
                   <span className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl bg-cloud-100 ring-1 ring-cloud-200 transition-all duration-300 group-hover:ring-brand-600/30">
-                    <img
-                      src={service.icon}
-                      alt={`${service.name} icon`}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      width={256}
-                      height={256}
-                      loading="lazy"
-                      decoding="async"
-                      draggable={false}
-                    />
+                    <ServiceGlyph slug={service.key} name={service.name} iconClass="h-9 w-9" />
                   </span>
                   <span className="font-display text-6xl font-black leading-none text-cloud-200 transition-colors group-hover:text-brand-600/15">
                     0{i + 1}

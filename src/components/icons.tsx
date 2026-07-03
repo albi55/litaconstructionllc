@@ -145,10 +145,89 @@ export const ChimneyIcon = (p: SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
+export const GutterIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <path d="m3 8 9-5 9 5" />
+    <path d="M4 9h16v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9Z" />
+    <path d="M7 13v3M17 13v6a1 1 0 0 0 1 1h2" />
+    <path d="M9 16h6" />
+  </svg>
+)
+
+export const WindowIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <rect x="4" y="3" width="16" height="18" rx="1" />
+    <path d="M12 3v18M4 12h16" />
+    <path d="M8 21v-2M16 21v-2" />
+  </svg>
+)
+
+export const DeckIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <path d="M3 10h18M3 14h18M3 18h18" />
+    <path d="M6 10v8M12 10v8M18 10v8" />
+    <path d="m3 10 4-4h10l4 4" />
+  </svg>
+)
+
+export const PaintIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} {...p}>
+    <rect x="3" y="3" width="15" height="7" rx="1" />
+    <path d="M18 6h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-7a1 1 0 0 0-1 1v2" />
+    <rect x="10" y="14" width="4" height="7" rx="1" />
+  </svg>
+)
+
 export const serviceIcon: Record<string, (p: SVGProps<SVGSVGElement>) => JSX.Element> = {
   roofing: RoofIcon,
   siding: SidingIcon,
   masonry: MasonryIcon,
+  gutters: GutterIcon,
+  'windows-doors': WindowIcon,
+  'decks-pavers': DeckIcon,
+  painting: PaintIcon,
+}
+
+/** Service slugs/keys that ship an illustrated PNG icon under /public/services. */
+export const servicePngSlugs = new Set([
+  'roofing',
+  'siding',
+  'masonry',
+  'renovation',
+  'bathroom',
+  'chimney',
+])
+
+/**
+ * Renders a service's glyph to fill an existing rounded tile: the illustrated
+ * PNG when one exists for the slug, otherwise the inline SVG icon (used by the
+ * newer services that don't have a bespoke PNG yet). The parent tile supplies
+ * the background, sizing, and centering.
+ */
+export function ServiceGlyph({
+  slug,
+  name = '',
+  iconClass = 'h-1/2 w-1/2',
+}: {
+  slug: string
+  name?: string
+  iconClass?: string
+}) {
+  if (servicePngSlugs.has(slug)) {
+    return (
+      <img
+        src={`/services/${slug}-icon.png`}
+        alt={name ? `${name} icon` : ''}
+        aria-hidden={name ? undefined : true}
+        className="h-full w-full scale-110 object-cover"
+        loading="lazy"
+        decoding="async"
+        draggable={false}
+      />
+    )
+  }
+  const Icon = serviceIcon[slug] ?? RoofIcon
+  return <Icon className={`${iconClass} text-brand-600`} />
 }
 
 /** Icons for trades that don't have a dedicated /services/:slug page. */
