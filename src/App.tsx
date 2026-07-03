@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { PromoBar } from './components/PromoBar'
 import { Footer } from './components/Footer'
 import { MobileCallBar } from './components/MobileCallBar'
+import { ScrollToTop } from './components/ScrollToTop'
 import { Home } from './pages/Home'
 import { ServicesHub } from './pages/ServicesHub'
 import { ServicePage } from './pages/ServicePage'
@@ -61,6 +62,7 @@ export default function App() {
       </main>
       <Footer />
       <MobileCallBar />
+      <ScrollToTop />
     </div>
   )
 }
