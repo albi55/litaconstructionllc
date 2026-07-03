@@ -179,11 +179,13 @@ export function FaqPage() {
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-white">
                   <MailIcon className="h-4 w-4" />
                 </span>
-                <span className="flex flex-col leading-tight">
+                <span className="flex min-w-0 flex-1 flex-col leading-tight">
                   <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">
                     Email us
                   </span>
-                  <span className="truncate font-display text-sm font-bold">{business.email}</span>
+                  <span className="truncate font-display text-[13px] font-bold">
+                    {business.email}
+                  </span>
                 </span>
               </a>
             </div>
