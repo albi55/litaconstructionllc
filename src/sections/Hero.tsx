@@ -111,6 +111,14 @@ export function Hero() {
           <HeroServiceOrbit />
         </div>
       </div>
+
+      {/* White triangle in the bottom-right — a clean diagonal that flows into
+          the white section below */}
+      <div
+        className="pointer-events-none absolute -bottom-px right-0 z-10 h-20 w-1/3 bg-white sm:h-28 lg:h-32"
+        style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }}
+        aria-hidden="true"
+      />
     </section>
   )
 }
