@@ -142,6 +142,13 @@ export function ProjectsPage() {
             ))}
           </div>
         </div>
+
+        {/* Triangle divider flowing into the section below */}
+        <div
+          className="pointer-events-none absolute -bottom-px right-0 z-10 h-16 w-1/3 bg-cloud-100 sm:h-24 lg:h-28"
+          style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }}
+          aria-hidden="true"
+        />
       </section>
 
       {/* ── Gallery ── */}

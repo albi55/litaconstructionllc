@@ -17,7 +17,7 @@ import { ArrowIcon, ShieldIcon, StarIcon } from '../components/icons'
 export function WhoWeAre() {
   const ref = useReveal()
   return (
-    <section id="who-we-are" className="scroll-mt-24 bg-white py-24 sm:py-32">
+    <section id="who-we-are" className="relative overflow-hidden scroll-mt-24 bg-white py-24 sm:py-32">
       <div
         ref={ref}
         className="reveal container-x grid items-center gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:gap-20"
@@ -126,6 +126,14 @@ export function WhoWeAre() {
           </div>
         </div>
       </div>
+
+      {/* Cloud-toned triangle in the bottom-right — a clean diagonal that flows
+          into the cloud-100 section below (same device as the hero) */}
+      <div
+        className="pointer-events-none absolute -bottom-px right-0 z-10 h-20 w-1/3 bg-cloud-100 sm:h-28 lg:h-32"
+        style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }}
+        aria-hidden="true"
+      />
     </section>
   )
 }

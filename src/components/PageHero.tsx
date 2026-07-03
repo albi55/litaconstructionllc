@@ -59,6 +59,14 @@ export function PageHero({
         <h1 className="mt-5 max-w-3xl font-display text-display-lg">{title}</h1>
         {subtitle && <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/70">{subtitle}</p>}
       </div>
+
+      {/* White triangle in the bottom-right — a clean diagonal that flows into
+          the light section below (same device as the homepage hero) */}
+      <div
+        className="pointer-events-none absolute -bottom-px right-0 z-10 h-16 w-1/3 bg-white sm:h-24 lg:h-28"
+        style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }}
+        aria-hidden="true"
+      />
     </section>
   )
 }
