@@ -165,7 +165,7 @@ export function FaqPage() {
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white">
                   <PhoneIcon className="h-4 w-4" />
                 </span>
-                <span className="flex flex-col leading-tight">
+                <span className="flex min-w-0 flex-1 flex-col leading-tight">
                   <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">
                     Call us
                   </span>
@@ -183,7 +183,7 @@ export function FaqPage() {
                   <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">
                     Email us
                   </span>
-                  <span className="truncate font-display text-[13px] font-bold">
+                  <span className="truncate font-display text-[13px] font-bold" title={business.email}>
                     {business.email}
                   </span>
                 </span>
