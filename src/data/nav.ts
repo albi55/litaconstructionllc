@@ -1,6 +1,7 @@
-import { services } from './business'
+import { serviceGroups, serviceBySlug } from './business'
 
-export type NavChild = { label: string; to: string; description?: string }
+/** A menu entry. When `heading` is set, it renders as a group label rather than a link. */
+export type NavChild = { label: string; to: string; description?: string; heading?: string }
 
 export type NavItem = {
   label: string
@@ -13,27 +14,30 @@ export type NavItem = {
  * pages live under the "More" dropdown (with short descriptions). Display
  * labels use polished/premium wording; routes are unchanged so all links work.
  */
-/** Trades without a dedicated /services/:slug page — link to the portfolio instead. */
-const otherTrades: NavChild[] = [
-  { label: 'Renovation', to: '/projects', description: 'Whole-home & room remodels' },
-  { label: 'Bathroom', to: '/projects', description: 'Full bathroom remodels & waterproofing' },
-  { label: 'Chimney', to: '/projects', description: 'Repointing, rebuilds & leak repair' },
-]
+
+/**
+ * The Services dropdown, built from the four trade groups (Roofing, Siding,
+ * Masonry, Exterior). Each group contributes a heading row followed by its
+ * services. Slugs resolve to their live /services/:slug pages.
+ */
+const serviceChildren: NavChild[] = serviceGroups.flatMap((group) => [
+  { label: group.name, to: '/services', heading: group.name },
+  ...group.slugs.map((slug) => {
+    const s = serviceBySlug(slug)
+    return {
+      label: s?.name ?? slug,
+      to: `/services/${slug}`,
+      description: s?.short,
+    }
+  }),
+])
 
 export const navItems: NavItem[] = [
   { label: 'Home', to: '/' },
   {
     label: 'Services',
     to: '/services',
-    children: [
-      { label: 'All Services', to: '/services', description: 'Every trade we offer, in one place' },
-      ...services.map((s) => ({
-        label: s.name,
-        to: `/services/${s.slug}`,
-        description: s.short,
-      })),
-      ...otherTrades,
-    ],
+    children: serviceChildren,
   },
   { label: 'Portfolio', to: '/projects' },
   { label: 'Our Story', to: '/about' },
@@ -44,7 +48,6 @@ export const navItems: NavItem[] = [
     children: [
       { label: 'Areas We Serve', to: '/service-areas', description: 'The NJ counties & towns we cover' },
       { label: 'Testimonials', to: '/reviews', description: 'What North Jersey homeowners say' },
-      { label: 'Financing', to: '/financing', description: 'Flexible options & free estimates' },
       { label: 'FAQ', to: '/faq', description: 'Answers to common questions' },
     ],
   },

@@ -17,12 +17,26 @@ import { NjMap } from '../components/NjMap'
 
 /** Real project photo per service, for the "What We Do" cards. */
 const servicephoto: Record<string, string> = {
+  // Legacy trades (kept for any direct references)
   roofing: '/work/roof-roof30.webp',
   siding: '/work/siding-siding6.webp',
   masonry: '/work/mansory-Mansory22.webp',
   renovation: '/work/renovation-Renovation1.webp',
   bathroom: '/work/bathroom-Bathroom7.webp',
   chimney: '/work/chimney-Chimney1.webp',
+  gutters: '/Siding/optimized/siding (13).webp',
+  'windows-doors': '/work/siding-siding6.webp',
+  painting: '/work/siding-siding1.webp',
+  // Grouped services shown across the site
+  'roof-repair': '/work/roof-roof14.webp',
+  'roof-replacement': '/work/roof-roof30.webp',
+  'commercial-roofing': '/work/roof-roof45.webp',
+  'residential-roofing': '/work/roof-roof30.webp',
+  'siding-installation': '/work/siding-siding6.webp',
+  'siding-repair': '/work/siding-siding10.webp',
+  'masonry-work': '/work/mansory-Mansory22.webp',
+  'chimney-services': '/work/chimney-Chimney1.webp',
+  'decks-pavers': '/Pavec/lita-outdoor-living-space-05-nj.webp',
 }
 
 const aboutStats = [
@@ -240,7 +254,7 @@ export function AboutPage() {
                   className="group relative block h-64 overflow-hidden rounded-2xl bg-navy-950 shadow-soft transition-shadow duration-300 hover:shadow-card"
                 >
                   <img
-                    src={servicephoto[s.key]}
+                    src={encodeURI(servicephoto[s.key])}
                     alt={`${s.name} project by Lita Construction`}
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     loading="lazy"

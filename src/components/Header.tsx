@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { business } from '../data/business'
-import { navItems, type NavItem } from '../data/nav'
+import { navItems, type NavItem, type NavChild } from '../data/nav'
 import { Logo } from './Logo'
 import {
   PhoneIcon,
@@ -59,6 +59,19 @@ const serviceThumb: Record<string, string> = {
   roofing: '/work/roof-roof30.webp',
   siding: '/work/siding-siding6.webp',
   masonry: '/work/mansory-Mansory10.webp',
+  gutters: '/Siding/optimized/siding (13).webp',
+  'windows-doors': '/work/siding-siding6.webp',
+  'decks-pavers': '/Pavec/lita-outdoor-living-space-05-nj.webp',
+  painting: '/work/siding-siding1.webp',
+  // Grouped services shown in the nav dropdown
+  'roof-repair': '/work/roof-roof14.webp',
+  'roof-replacement': '/work/roof-roof30.webp',
+  'commercial-roofing': '/work/roof-roof45.webp',
+  'residential-roofing': '/work/roof-roof30.webp',
+  'siding-installation': '/work/siding-siding6.webp',
+  'siding-repair': '/work/siding-siding10.webp',
+  'masonry-work': '/work/mansory-Mansory22.webp',
+  'chimney-services': '/work/chimney-Chimney1.webp',
 }
 /** Trades that share the /projects route — keyed by label instead. */
 const tradeThumb: Record<string, string> = {
@@ -88,6 +101,78 @@ function iconFor(to: string, label: string): typeof PhoneIcon {
     if (serviceIcon[slug]) return serviceIcon[slug]
   }
   return tradeIcon[label] ?? routeIcon[to] ?? ArrowIcon
+}
+
+type MenuGroup = { heading: string; items: NavChild[] }
+
+/**
+ * Split a flat children list into groups. Children after a `heading` marker
+ * belong to that heading; any children before the first heading (or a list with
+ * no headings at all, like the "More" menu) form a single heading-less group so
+ * they always render.
+ */
+function toGroups(children: NavChild[]): MenuGroup[] {
+  const groups: MenuGroup[] = []
+  for (const child of children) {
+    if (child.heading) {
+      groups.push({ heading: child.heading, items: [] })
+    } else {
+      if (groups.length === 0) groups.push({ heading: '', items: [] })
+      groups[groups.length - 1].items.push(child)
+    }
+  }
+  return groups
+}
+
+/**
+ * Distribute groups across `n` columns in their original order, keeping each
+ * group intact and balancing column heights — so the dropdown stays short and
+ * reads left-to-right, top-to-bottom. Falls back to one column when there are
+ * no headings.
+ */
+function toColumns(children: NavChild[], n: number): MenuGroup[][] {
+  const groups = toGroups(children)
+  if (groups.length === 0) return [[]]
+
+  // A single heading-less group (e.g. the "More" menu) flows its items across
+  // the columns as a row rather than stacking in one tall column.
+  if (groups.length === 1 && !groups[0].heading) {
+    const items = groups[0].items
+    const cols = Math.min(n, items.length)
+    const columns: MenuGroup[][] = Array.from({ length: cols }, () => [])
+    items.forEach((item, i) => {
+      columns[i % cols].push({ heading: '', items: [item] })
+    })
+    return columns
+  }
+
+  const cols = Math.min(n, groups.length)
+  const rowsOf = (g: MenuGroup) => g.items.length + 1 // heading + items
+  const total = groups.reduce((sum, g) => sum + rowsOf(g), 0)
+  const targetPerColumn = total / cols
+
+  const columns: MenuGroup[][] = []
+  let current: MenuGroup[] = []
+  let currentRows = 0
+  for (const group of groups) {
+    current.push(group)
+    currentRows += rowsOf(group)
+    const columnsLeft = cols - columns.length
+    const groupsLeftAfter = groups.length - (columns.flat().length + current.length)
+    // Close this column once it's reached its share, but always leave enough
+    // groups to fill the remaining columns.
+    if (
+      columns.length < cols - 1 &&
+      currentRows >= targetPerColumn &&
+      groupsLeftAfter >= columnsLeft - 1
+    ) {
+      columns.push(current)
+      current = []
+      currentRows = 0
+    }
+  }
+  if (current.length) columns.push(current)
+  return columns
 }
 
 export function Header() {
@@ -277,7 +362,7 @@ export function Header() {
             onMouseEnter={() => openMenu(item.label)}
             onMouseLeave={scheduleClose}
           >
-            <div className="container-x grid gap-8 py-8 lg:grid-cols-[0.86fr_1.5fr] lg:gap-10">
+            <div className="container-x grid gap-8 py-8 lg:grid-cols-[0.7fr_2fr] lg:gap-10">
               {/* Left — photo feature panel */}
               <div className="group/panel relative flex min-h-[460px] flex-col overflow-hidden rounded-2xl bg-navy-950 text-white shadow-lift">
                 <img
@@ -348,81 +433,63 @@ export function Header() {
                 </div>
               </div>
 
-              {/* Right — cards */}
-              <div className="grid content-start gap-3 sm:grid-cols-2">
-                {item.children.map((child, i) => {
-                  const Icon = iconFor(child.to, child.label)
-                  const thumb = thumbFor(child.to, child.label)
-                  const isFeatured = i === 0
-
-                  if (isFeatured) {
-                    return (
-                      <Link
-                        key={child.label}
-                        to={child.to}
-                        className="group relative col-span-full flex items-center gap-5 overflow-hidden rounded-2xl border border-navy-950/10 bg-navy-950 p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lift"
-                      >
-                        <span
-                          className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-brand-600/20 blur-2xl transition-opacity group-hover:opacity-80"
-                          aria-hidden="true"
-                        />
-                        <span className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-white shadow-red">
-                          <Icon className="h-6 w-6" />
-                        </span>
-                        <span className="relative min-w-0 flex-1">
-                          <span className="flex items-center justify-between gap-2 font-display text-lg font-bold text-white">
-                            {child.label}
-                            <ArrowIcon className="h-4 w-4 shrink-0 -translate-x-1 text-brand-400 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
-                          </span>
-                          {child.description && (
-                            <span className="mt-1 block text-sm leading-snug text-white/60">
-                              {child.description}
+              {/* Right — grouped cards laid into three balanced columns for a short dropdown */}
+              <div className="grid content-start gap-x-5 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+                {toColumns(item.children, 3).map((column, ci) => (
+                  <div key={ci} className="flex flex-col gap-5">
+                    {column.map((group, gi) => (
+                      <div key={group.heading || `group-${ci}-${gi}`} className="flex flex-col gap-2.5">
+                        {group.heading && (
+                          <div className="flex items-center gap-3">
+                            <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-brand-600">
+                              {group.heading}
                             </span>
-                          )}
-                        </span>
-                      </Link>
-                    )
-                  }
-
-                  return (
-                    <Link
-                      key={child.label}
-                      to={child.to}
-                      className="group relative flex items-start gap-4 overflow-hidden rounded-2xl border border-cloud-200 bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-600/40 hover:shadow-card"
-                    >
-                      {thumb ? (
-                        <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl shadow-soft ring-1 ring-navy-950/5">
-                          <img
-                            src={thumb}
-                            alt=""
-                            aria-hidden="true"
-                            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                          <span className="absolute inset-0 flex items-center justify-center bg-navy-950/35 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                            <Icon className="h-5 w-5" />
-                          </span>
-                        </span>
-                      ) : (
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cloud-100 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
-                          <Icon className="h-5 w-5" />
-                        </span>
-                      )}
-                      <span className="min-w-0 flex-1">
-                        <span className="flex items-center justify-between gap-2 font-display text-base font-bold text-ink-900 transition-colors group-hover:text-brand-600">
-                          {child.label}
-                          <ArrowIcon className="h-4 w-4 shrink-0 -translate-x-1 text-brand-600 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
-                        </span>
-                        {child.description && (
-                          <span className="mt-1 block text-sm leading-snug text-cloud-500">
-                            {child.description}
-                          </span>
+                            <span className="h-px flex-1 bg-cloud-200" aria-hidden="true" />
+                          </div>
                         )}
-                      </span>
-                    </Link>
-                  )
-                })}
+                        {group.items.map((child) => {
+                          const Icon = iconFor(child.to, child.label)
+                          const thumb = thumbFor(child.to, child.label)
+                          return (
+                            <Link
+                              key={child.label}
+                              to={child.to}
+                              className="group relative flex items-center gap-4 overflow-hidden rounded-2xl border border-cloud-200 bg-white p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-600/40 hover:shadow-card"
+                            >
+                              {thumb ? (
+                                <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl shadow-soft ring-1 ring-navy-950/5">
+                                  <img
+                                    src={encodeURI(thumb)}
+                                    alt=""
+                                    aria-hidden="true"
+                                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    loading="lazy"
+                                    decoding="async"
+                                  />
+                                </span>
+                              ) : (
+                                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-cloud-100 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
+                                  <Icon className="h-6 w-6" />
+                                </span>
+                              )}
+                              <span className="min-w-0 flex-1">
+                                <span className="flex items-center justify-between gap-2 font-display text-base font-bold leading-tight text-ink-900 transition-colors group-hover:text-brand-600">
+                                  {child.label}
+                                  <ArrowIcon className="h-4 w-4 shrink-0 -translate-x-1 text-brand-600 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
+                                </span>
+                                {child.description && (
+                                  <span className="mt-1 block text-sm leading-snug text-cloud-500">
+                                    {child.description}
+                                  </span>
+                                )}
+                              </span>
+                            </Link>
+                          )
+                        })}
+                      </div>
+                    ))}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -460,18 +527,27 @@ export function Header() {
                 {item.children && (
                   <div className="flex flex-col bg-cloud-100">
                     {item.children
-                      // Drop a child that just repeats the parent link (e.g. Services → All Services)
-                      .filter((child) => isMore || child.to !== item.to)
-                      .map((child) => (
-                        <Link
-                          key={child.label}
-                          to={child.to}
-                          onClick={() => setOpen(false)}
-                          className="border-b border-cloud-200 py-2.5 pl-4 text-sm font-medium text-cloud-700 hover:text-brand-600"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
+                      // Drop a non-heading child that just repeats the parent link
+                      .filter((child) => isMore || child.heading || child.to !== item.to)
+                      .map((child) =>
+                        child.heading ? (
+                          <span
+                            key={`m-heading-${child.heading}`}
+                            className="border-b border-cloud-200 bg-cloud-200/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-brand-600"
+                          >
+                            {child.heading}
+                          </span>
+                        ) : (
+                          <Link
+                            key={child.label}
+                            to={child.to}
+                            onClick={() => setOpen(false)}
+                            className="border-b border-cloud-200 py-2.5 pl-6 text-sm font-medium text-cloud-700 hover:text-brand-600"
+                          >
+                            {child.label}
+                          </Link>
+                        ),
+                      )}
                   </div>
                 )}
               </div>

@@ -199,6 +199,27 @@ export const servicePngSlugs = new Set([
 ])
 
 /**
+ * Real project photos used as the circular glyph for services that don't have a
+ * bespoke illustrated icon. Each points at an existing image in /public whose
+ * subject best represents the trade, cropped to a circle by the parent tile.
+ */
+export const servicePhoto: Record<string, string> = {
+  gutters: '/Siding/optimized/siding (13).webp',
+  'windows-doors': '/work/siding-siding6.webp',
+  'decks-pavers': '/Pavec/lita-outdoor-living-space-05-nj.webp',
+  painting: '/work/siding-siding1.webp',
+  // Grouped services shown in the menus
+  'roof-repair': '/work/roof-roof14.webp',
+  'roof-replacement': '/work/roof-roof30.webp',
+  'commercial-roofing': '/work/roof-roof45.webp',
+  'residential-roofing': '/work/roof-roof30.webp',
+  'siding-installation': '/work/siding-siding6.webp',
+  'siding-repair': '/work/siding-siding10.webp',
+  'masonry-work': '/work/mansory-Mansory22.webp',
+  'chimney-services': '/work/chimney-Chimney1.webp',
+}
+
+/**
  * Renders a service's glyph to fill an existing rounded tile: the illustrated
  * PNG when one exists for the slug, otherwise the inline SVG icon (used by the
  * newer services that don't have a bespoke PNG yet). The parent tile supplies
@@ -220,6 +241,19 @@ export function ServiceGlyph({
         alt={name ? `${name} icon` : ''}
         aria-hidden={name ? undefined : true}
         className="h-full w-full scale-110 object-cover"
+        loading="lazy"
+        decoding="async"
+        draggable={false}
+      />
+    )
+  }
+  if (servicePhoto[slug]) {
+    return (
+      <img
+        src={encodeURI(servicePhoto[slug])}
+        alt={name ? `${name} project photo` : ''}
+        aria-hidden={name ? undefined : true}
+        className="h-full w-full object-cover"
         loading="lazy"
         decoding="async"
         draggable={false}

@@ -4,7 +4,7 @@ export type GalleryImage = { src: string; category: string }
 
 export const gallery = raw as GalleryImage[]
 
-export const galleryCategories = ['All', 'Roofing', 'Siding', 'Masonry', 'Renovation'] as const
+export const galleryCategories = ['All', 'Roofing', 'Siding', 'Masonry', 'Renovation', 'Decks & Pavers'] as const
 
 /** A curated, evenly-mixed subset for the homepage slider. */
 export function featuredSlides(perCategory = 4): GalleryImage[] {

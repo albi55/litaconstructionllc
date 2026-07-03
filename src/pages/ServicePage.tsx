@@ -1,11 +1,10 @@
 import { Link, useParams, Navigate } from 'react-router-dom'
-import { services, serviceAreas, serviceCities, business } from '../data/business'
+import { services, serviceAreas, serviceCities, business, menuServiceSlugs } from '../data/business'
 import { Seo } from '../components/Seo'
 import { QuoteForm } from '../components/QuoteForm'
 import { CtaBand } from '../components/CtaBand'
 import { FaqAccordion } from '../components/FaqAccordion'
 import {
-  serviceIcon,
   ServiceGlyph,
   CheckIcon,
   ArrowIcon,
@@ -27,6 +26,15 @@ const heroPhoto: Record<string, string> = {
   'windows-doors': '/showcase/house%20(1).png',
   'decks-pavers': '/showcase/house3.png',
   painting: '/showcase/house%20(2).png',
+  // New grouped services
+  'roof-repair': '/showcase/house%20(1).png',
+  'roof-replacement': '/showcase/house%20(1).png',
+  'commercial-roofing': '/showcase/house3.png',
+  'residential-roofing': '/showcase/house%20(1).png',
+  'siding-installation': '/showcase/house%20(2).png',
+  'siding-repair': '/showcase/house%20(2).png',
+  'masonry-work': '/showcase/house3.png',
+  'chimney-services': '/showcase/house%20(1).png',
 }
 /** Social-share (og:image) per service — a project close-up reads better than a wide house shot in link previews. */
 const sharePhoto: Record<string, string> = {
@@ -35,8 +43,17 @@ const sharePhoto: Record<string, string> = {
   masonry: '/work/mansory-Mansory22.webp',
   gutters: '/work/siding-siding1.webp',
   'windows-doors': '/work/siding-siding10.webp',
-  'decks-pavers': '/work/mansory-Mansory10.webp',
+  'decks-pavers': '/Pavec/lita-paver-patio-design-04-nj.webp',
   painting: '/work/renovation-Renovation20.webp',
+  // New grouped services
+  'roof-repair': '/work/roof-roof14.webp',
+  'roof-replacement': '/work/roof-roof30.webp',
+  'commercial-roofing': '/work/roof-roof45.webp',
+  'residential-roofing': '/work/roof-roof30.webp',
+  'siding-installation': '/work/siding-siding6.webp',
+  'siding-repair': '/work/siding-siding10.webp',
+  'masonry-work': '/work/mansory-Mansory22.webp',
+  'chimney-services': '/work/chimney-Chimney1.webp',
 }
 /** Photo shown alongside the "How it works" process steps, per trade. */
 const processPhoto: Record<string, string> = {
@@ -45,8 +62,17 @@ const processPhoto: Record<string, string> = {
   masonry: '/Mansory/optimized/Mansory (23).webp',
   gutters: '/Siding/optimized/siding (10).webp',
   'windows-doors': '/Siding/optimized/siding (14).webp',
-  'decks-pavers': '/Mansory/optimized/Mansory (10).webp',
+  'decks-pavers': '/Pavec/lita-backyard-deck-design-08-nj.webp',
   painting: '/Renovation/optimized/Renovation (14).webp',
+  // New grouped services
+  'roof-repair': '/roof/optimized/roof (30).webp',
+  'roof-replacement': '/roof/optimized/roof (14).webp',
+  'commercial-roofing': '/roof/optimized/roof (45).webp',
+  'residential-roofing': '/roof/optimized/roof (22).webp',
+  'siding-installation': '/Siding/optimized/siding (6).webp',
+  'siding-repair': '/Siding/optimized/siding (18).webp',
+  'masonry-work': '/Mansory/optimized/Mansory (23).webp',
+  'chimney-services': '/Chimney/optimized/Chimney (1).webp',
 }
 /** gallery.ts category names, keyed by service slug. Newer trades borrow the
  *  closest existing category so their gallery section still shows real work. */
@@ -56,8 +82,17 @@ const galleryCategory: Record<string, string> = {
   masonry: 'Masonry',
   gutters: 'Siding',
   'windows-doors': 'Siding',
-  'decks-pavers': 'Masonry',
+  'decks-pavers': 'Decks & Pavers',
   painting: 'Renovation',
+  // New grouped services
+  'roof-repair': 'Roofing',
+  'roof-replacement': 'Roofing',
+  'commercial-roofing': 'Roofing',
+  'residential-roofing': 'Roofing',
+  'siding-installation': 'Siding',
+  'siding-repair': 'Siding',
+  'masonry-work': 'Masonry',
+  'chimney-services': 'Masonry',
 }
 
 export function ServicePage() {
@@ -70,7 +105,9 @@ export function ServicePage() {
 
   if (!service) return <Navigate to="/services" replace />
 
-  const others = services.filter((s) => s.slug !== service.slug)
+  const others = services.filter(
+    (s) => s.slug !== service.slug && menuServiceSlugs.includes(s.slug),
+  )
   const gallery = imagesByCategory(galleryCategory[service.slug] ?? 'All').slice(0, 8)
   const reviews = testimonialsFor(service.name).slice(0, 3)
 
@@ -465,7 +502,6 @@ export function ServicePage() {
           <span className="eyebrow">More from Lita Construction</span>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             {others.map((o) => {
-              const OIcon = serviceIcon[o.slug]
               return (
                 <Link
                   key={o.slug}
@@ -473,8 +509,8 @@ export function ServicePage() {
                   className="group flex items-center justify-between rounded-2xl border border-cloud-300 bg-white p-7 shadow-soft transition-all hover:-translate-y-1 hover:border-brand-600/30 hover:shadow-card"
                 >
                   <div className="flex items-center gap-5">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-900 text-white group-hover:bg-brand-600">
-                      <OIcon className="h-6 w-6" />
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#f2f5f8] ring-1 ring-navy-950/5">
+                      <ServiceGlyph slug={o.slug} />
                     </span>
                     <div>
                       <h3 className="font-display text-xl font-bold text-ink-900">{o.name}</h3>

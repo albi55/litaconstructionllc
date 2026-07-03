@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom'
-import { services, business } from '../data/business'
+import { business, serviceGroups, serviceBySlug } from '../data/business'
 import { Seo } from '../components/Seo'
-import { CheckIcon, ArrowIcon, PhoneIcon, ShieldIcon, StarIcon, ServiceGlyph } from '../components/icons'
+import { CheckIcon, ArrowIcon, PhoneIcon, ShieldIcon, StarIcon, ServiceGlyph, servicePhoto } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
 
 /**
- * Every service we offer, richest first. The three with dedicated detail pages
- * (roofing / siding / masonry) link there; the rest route to the portfolio.
- * `intro` is used where available for a fuller description than `blurb`.
+ * The /services hub lists every service in the four trade groups as a rich,
+ * alternating editorial row. Cards are derived from `serviceGroups` so the hub,
+ * nav, homepage, and footer always stay in sync. A service that belongs to more
+ * than one group (Commercial Roofing) is shown once, under its first group.
  */
 type ServiceCard = {
   name: string
@@ -22,136 +23,27 @@ type ServiceCard = {
   hasPage: boolean
 }
 
-const CARDS: ServiceCard[] = [
-  {
-    name: 'Roofing',
-    eyebrow: 'GAF-Certified Roofing',
-    desc: services[0].intro,
-    features: services[0].features,
-    image: '/work/roof-roof30.webp',
-    to: '/services/roofing',
-    cta: 'Explore Roofing',
-    slug: 'roofing',
-    hasPage: true,
-  },
-  {
-    name: 'Siding',
-    eyebrow: 'Exterior & Siding',
-    desc: services[1].intro,
-    features: services[1].features,
-    image: '/work/siding-siding6.webp',
-    to: '/services/siding',
-    cta: 'Explore Siding',
-    slug: 'siding',
-    hasPage: true,
-  },
-  {
-    name: 'Masonry',
-    eyebrow: 'Brick, Block & Stone',
-    desc: services[2].intro,
-    features: services[2].features,
-    image: '/work/mansory-Mansory10.webp',
-    to: '/services/masonry',
-    cta: 'Explore Masonry',
-    slug: 'masonry',
-    hasPage: true,
-  },
-  {
-    name: 'Gutters',
-    eyebrow: 'Seamless Gutters & Drainage',
-    desc: services[3].intro,
-    features: services[3].features,
-    image: '/work/siding-siding1.webp',
-    to: '/services/gutters',
-    cta: 'Explore Gutters',
-    slug: 'gutters',
-    hasPage: true,
-  },
-  {
-    name: 'Windows & Doors',
-    eyebrow: 'Windows & Entry Doors',
-    desc: services[4].intro,
-    features: services[4].features,
-    image: '/work/siding-siding10.webp',
-    to: '/services/windows-doors',
-    cta: 'Explore Windows & Doors',
-    slug: 'windows-doors',
-    hasPage: true,
-  },
-  {
-    name: 'Decks & Pavers',
-    eyebrow: 'Outdoor Living',
-    desc: services[5].intro,
-    features: services[5].features,
-    image: '/work/mansory-Mansory22.webp',
-    to: '/services/decks-pavers',
-    cta: 'Explore Decks & Pavers',
-    slug: 'decks-pavers',
-    hasPage: true,
-  },
-  {
-    name: 'Exterior Painting',
-    eyebrow: 'Painting & Surface Prep',
-    desc: services[6].intro,
-    features: services[6].features,
-    image: '/work/renovation-Renovation20.webp',
-    to: '/services/painting',
-    cta: 'Explore Painting',
-    slug: 'painting',
-    hasPage: true,
-  },
-  {
-    name: 'Renovation',
-    eyebrow: 'Remodeling & Renovation',
-    desc: 'Full interior and exterior remodeling that transforms how your home lives and looks — from single rooms to whole-house renovations, permits handled and finished with meticulous craftsmanship.',
-    features: [
-      'Whole-home & room remodels',
-      'Kitchens & living spaces',
-      'Interior & exterior upgrades',
-      'Permits handled for you',
-    ],
-    image: '/work/renovation-Renovation1.webp',
-    to: '/projects',
-    cta: 'See Renovation Work',
-    slug: 'renovation',
-    hasPage: false,
-  },
-  {
-    name: 'Bathroom',
-    eyebrow: 'Bathroom Remodeling',
-    desc: 'Modern, functional bathroom remodels done right — from tile, tubs, and showers to plumbing, vanities, and waterproofing — built to look beautiful and last for years.',
-    features: [
-      'Full bathroom remodels',
-      'Tile, tubs & showers',
-      'Vanities & fixtures',
-      'Waterproofing done right',
-    ],
-    image: '/work/bathroom-Bathroom7.webp',
-    to: '/projects',
-    cta: 'See Bathroom Work',
-    slug: 'bathroom',
-    hasPage: false,
-  },
-  {
-    name: 'Chimney',
-    eyebrow: 'Chimney Repair & Rebuilds',
-    desc: 'Chimney repair, repointing, and full rebuilds that restore safety, function, and curb appeal — keeping your home protected from the top down with a free safety inspection.',
-    features: [
-      'Repointing & crown repair',
-      'Full chimney rebuilds',
-      'Flashing & leak repair',
-      'Free safety inspection',
-    ],
-    image: '/work/chimney-Chimney1.webp',
-    to: '/projects',
-    cta: 'See Chimney Work',
-    slug: 'chimney',
-    hasPage: false,
-  },
-]
+const CARDS: ServiceCard[] = serviceGroups
+  .flatMap((group) => group.slugs.map((slug) => ({ group: group.name, slug })))
+  // De-duplicate services that appear in more than one group (keep first occurrence).
+  .filter((entry, i, arr) => arr.findIndex((e) => e.slug === entry.slug) === i)
+  .map(({ group, slug }) => {
+    const s = serviceBySlug(slug)!
+    return {
+      name: s.name,
+      eyebrow: group,
+      desc: s.intro,
+      features: s.features.slice(0, 6),
+      image: servicePhoto[slug] ?? '/work/roof-roof30.webp',
+      to: `/services/${slug}`,
+      cta: `Explore ${s.name}`,
+      slug,
+      hasPage: true,
+    }
+  })
 
 const HERO_STATS = [
-  { n: '10', l: 'Trades under one roof' },
+  { n: String(CARDS.length), l: 'Services under one roof' },
   { n: business.yearsExperience, l: 'Years in business' },
   { n: 'GAF', l: 'Certified contractor' },
   { n: '100%', l: 'Licensed & insured' },
@@ -232,36 +124,79 @@ export function ServicesHub() {
       {/* ── Closing band ── */}
       <section className="bg-white py-16 sm:py-20">
         <div className="container-x">
-          <div className="relative overflow-hidden rounded-3xl bg-navy-950 p-8 text-white sm:p-12">
+          <div className="relative overflow-hidden rounded-[2rem] bg-navy-950 p-8 text-white shadow-lift ring-1 ring-white/10 sm:p-12 lg:p-14">
+            {/* Layered depth — matches the site's designed-surface treatment */}
             <div
-              className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-brand-600/20 blur-3xl"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/[0.06] via-transparent to-black/30"
               aria-hidden="true"
             />
-            <div className="relative flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
+            <div
+              className="pointer-events-none absolute -right-16 -top-20 h-72 w-72 rounded-full bg-brand-600/25 blur-3xl"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-brand-600/10 blur-3xl"
+              aria-hidden="true"
+            />
+            {/* Faint dot grid for texture */}
+            <div
+              className="pointer-events-none absolute inset-0 opacity-[0.05]"
+              style={{
+                backgroundImage: 'radial-gradient(currentColor 1px, transparent 1px)',
+                backgroundSize: '22px 22px',
+              }}
+              aria-hidden="true"
+            />
+
+            <div className="relative flex flex-col items-start gap-10 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-xl">
-                <div className="flex items-center gap-2 text-brand-400">
-                  <ShieldIcon className="h-5 w-5" />
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.22em]">
-                    {business.licenseLabel}
-                  </span>
-                </div>
-                <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
+                <span className="inline-flex items-center gap-2 rounded-full bg-white/[0.06] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-400 ring-1 ring-white/10">
+                  <ShieldIcon className="h-4 w-4" />
+                  {business.licenseLabel}
+                </span>
+                <h2 className="mt-5 font-display text-3xl font-extrabold leading-[1.1] sm:text-4xl">
                   Not sure which service you need?
                 </h2>
-                <p className="mt-3 text-white/70">
+                <p className="mt-4 text-base leading-relaxed text-white/70 sm:text-lg">
                   Tell us what&apos;s going on with your home and we&apos;ll point you in the right
                   direction — with a free, no-obligation estimate. No pressure, ever.
                 </p>
+
+                {/* Trust row */}
+                <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2.5">
+                  {['GAF Certified', 'Fully Insured', 'Free Estimates'].map((t) => (
+                    <li key={t} className="flex items-center gap-2 text-sm font-medium text-white/80">
+                      <CheckIcon className="h-4 w-4 shrink-0 text-brand-400" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="flex shrink-0 flex-wrap gap-3">
-                <a href={business.phoneHref} className="btn-ghost-light">
-                  <PhoneIcon className="h-4 w-4" />
-                  {business.phone}
-                </a>
-                <Link to="/contact" className="btn-primary">
+
+              <div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto sm:flex-row lg:flex-col xl:flex-row">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-white shadow-red transition-all duration-300 hover:bg-brand-500 active:scale-[0.98]"
+                >
                   Get a Free Estimate
                   <ArrowIcon className="h-4 w-4" />
                 </Link>
+                <a
+                  href={business.phoneHref}
+                  className="group inline-flex items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3.5 backdrop-blur-sm transition-colors hover:border-brand-400/50 hover:bg-white/[0.08]"
+                >
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white transition-transform group-hover:scale-105">
+                    <PhoneIcon className="h-4 w-4" />
+                  </span>
+                  <span className="flex flex-col text-left leading-tight">
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">
+                      Call for a free estimate
+                    </span>
+                    <span className="font-display text-base font-bold text-white">
+                      {business.phone}
+                    </span>
+                  </span>
+                </a>
               </div>
             </div>
           </div>

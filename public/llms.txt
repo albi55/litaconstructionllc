@@ -35,13 +35,15 @@ Representative cities served: Bergenfield, Paramus, Hackensack, Englewood, Fort 
 
 - Home: https://litaconstructionllc.com/
 - Services overview: https://litaconstructionllc.com/services
-- Roofing: https://litaconstructionllc.com/services/roofing
-- Siding: https://litaconstructionllc.com/services/siding
-- Masonry: https://litaconstructionllc.com/services/masonry
-- Gutters: https://litaconstructionllc.com/services/gutters
-- Windows & Doors: https://litaconstructionllc.com/services/windows-doors
+- Roof Repair: https://litaconstructionllc.com/services/roof-repair
+- Roof Replacement: https://litaconstructionllc.com/services/roof-replacement
+- Commercial Roofing: https://litaconstructionllc.com/services/commercial-roofing
+- Residential Roofing NJ: https://litaconstructionllc.com/services/residential-roofing
+- Siding Installation: https://litaconstructionllc.com/services/siding-installation
+- Siding Repair: https://litaconstructionllc.com/services/siding-repair
+- Masonry Work: https://litaconstructionllc.com/services/masonry-work
+- Chimney Services: https://litaconstructionllc.com/services/chimney-services
 - Decks & Pavers: https://litaconstructionllc.com/services/decks-pavers
-- Exterior Painting: https://litaconstructionllc.com/services/painting
 - Projects/portfolio: https://litaconstructionllc.com/projects
 - Service areas: https://litaconstructionllc.com/service-areas
 - About: https://litaconstructionllc.com/about

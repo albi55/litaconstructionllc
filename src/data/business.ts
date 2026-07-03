@@ -100,6 +100,390 @@ export type Service = {
 
 export const services: Service[] = [
   {
+    slug: "roof-repair",
+    name: "Roof Repair",
+    short: "Leak, storm & shingle repair — done fast",
+    blurb:
+      "Fast, lasting roof repairs for leaks, storm and hail damage, missing shingles, and failed flashing. We find the real source of the problem, fix it right, and give you an honest repair-or-replace answer — before a small issue becomes a big one.",
+    intro:
+      "A small roof problem never stays small in New Jersey — a lifted shingle or a cracked flashing joint lets water in, and freeze-thaw cycles pry the gap wider every winter until it reaches your deck, insulation, and ceilings. Lita Construction repairs leaks, storm and hail damage, missing or damaged shingles, and worn flashing across Northern & Central New Jersey, using forensic leak diagnostics to find where water actually enters — not just where it drips inside. As a GAF-certified, fully insured contractor, we fix the real cause with materials matched to your roof, document everything for insurance when a storm is involved, and tell you honestly whether a repair or a replacement is the smarter money.",
+    quickAnswer:
+      "Lita Construction is a GAF-certified roofing contractor that repairs roof leaks, storm and hail damage, missing shingles, and failed flashing across Northern & Central New Jersey — with forensic leak diagnostics, insurance-claim documentation, and an honest repair-or-replace recommendation.",
+    features: [
+      "Roof leak detection & repair",
+      "Storm & hail damage repair",
+      "Missing & damaged shingle replacement",
+      "Flashing & chimney-seal repair",
+      "Insurance claim documentation",
+      "Honest repair-vs-replace assessment",
+    ],
+    subServices: [
+      { name: "Leak Diagnostics & Repair", description: "Forensic tracing to find where water truly enters — often feet from the interior stain — then a targeted, lasting fix at the source, not a guess-and-caulk patch." },
+      { name: "Storm & Hail Damage Repair", description: "Fast repair of wind-lifted, torn, and hail-bruised shingles after NJ storms, with full photo documentation to support your insurance claim." },
+      { name: "Shingle & Flashing Repair", description: "Replacement of missing, cracked, or curling shingles and resealing of failed flashing at chimneys, valleys, vents, and skylights — the spots most leaks start." },
+      { name: "Emergency Leak Tarping", description: "Rapid temporary tarping and dry-in to stop active water intrusion and protect your interior until a permanent repair can be scheduled." },
+    ],
+    process: [
+      { title: "Free inspection & leak diagnosis", description: "We get on the roof and into the attic, trace the leak to its actual entry point, and check flashing, valleys, vents, and shingle condition — so the repair fixes the cause, not just the symptom." },
+      { title: "Honest repair-or-replace recommendation", description: "You get a straight answer and an itemized estimate. If a repair will genuinely hold, we repair it. If the roof is near end-of-life and a repair is throwing good money after bad, we tell you that too." },
+      { title: "Insurance documentation (if storm-related)", description: "For storm or hail damage we photograph everything, write a detailed estimate your insurer can use, and work directly with your adjuster to move the claim along." },
+      { title: "Targeted repair with matched materials", description: "We replace damaged shingles, rebuild failed flashing, and reseal penetrations using materials matched to your existing roof and installed to GAF standards so the repair blends in and lasts." },
+      { title: "Water test & cleanup", description: "We confirm the fix holds — hose-testing the area when needed — magnet-sweep for nails, haul away debris, and walk the repair with you before we call it done." },
+    ],
+    materials: [
+      { name: "Shingle Repair / Replacement", bestFor: "Isolated missing, cracked, or curling shingles on an otherwise sound roof", lifespan: "Matches remaining roof life", notes: "We match your existing GAF or asphalt shingle profile and color as closely as the run allows for a clean blend." },
+      { name: "Flashing Repair & Reseal", bestFor: "Leaks at chimneys, valleys, skylights, and pipe vents — the #1 leak source", lifespan: "15–25 years", notes: "Step and counter-flashing rebuilt and sealed properly; most leaks are a flashing failure, not a bad shingle." },
+      { name: "Emergency Tarp / Dry-In", bestFor: "Active leaks after a storm, before a permanent repair", lifespan: "Temporary (weeks)", notes: "Stops interior damage fast; the cost is credited toward the permanent repair or replacement." },
+      { name: "Full Replacement (when repair won't last)", bestFor: "Roofs past ~20 years, with widespread damage or repeat leaks", lifespan: "25–30 years", notes: "When repairs stop being cost-effective, a GAF replacement qualifies for our 25-year labor-and-materials warranty." },
+    ],
+    faqs: [
+      { q: "How fast can you fix an active roof leak?", a: "When water is actively coming in, we prioritize it — in most cases we can get out to inspect and stop the intrusion quickly, tarping and drying-in the area the same visit if a full repair can't be completed on the spot. From there we schedule the permanent repair as soon as materials and weather allow. Call (201) 540-7772 and tell us it's an active leak so we flag it as urgent." },
+      { q: "How do you find where a roof leak is actually coming from?", a: "The spot where water drips inside is rarely directly below where it enters — water travels along rafters and decking before it drops. We inspect from both the roof and the attic, follow the water trail back to its source, and check the usual culprits: failed flashing at chimneys, valleys, skylights and vents, cracked or missing shingles, and worn sealant. Finding the true entry point is why our repairs actually hold instead of moving the leak a few feet over." },
+      { q: "Should I repair my roof or just replace it?", a: "It comes down to age, extent, and honesty. If your roof is under about 20 years old and the damage is localized — a few missing shingles, one bad flashing joint — a repair is the smart, cost-effective fix. If it's near end-of-life, leaking in multiple spots, or you're repairing it every season, replacement usually saves money over time. We give you the real answer, and we'll recommend a repair whenever a repair genuinely makes sense." },
+      { q: "Can you help with a storm-damage insurance claim?", a: "Yes. We document the damage thoroughly with photos, provide a detailed, itemized estimate your insurer can use, and work directly with your adjuster so the claim moves faster. Storm and hail damage is often covered, but insurers need clear evidence — that documentation is exactly what we provide, and we can meet the adjuster on-site when it helps." },
+      { q: "Is a roof repair covered by a warranty?", a: "Repairs are backed by our workmanship — if a repair we made fails, we stand behind it. Note that the 25-year GAF labor-and-materials warranty applies to a full GAF roof system installed by a certified contractor, not to isolated repairs, since a repair ties into your existing roof. We'll always tell you which situation you're in before any work starts." },
+      { q: "What are the most common causes of roof leaks in New Jersey homes?", a: "By far the most common is failed flashing — the metal that seals around chimneys, skylights, valleys, and vents — not the shingles themselves. After that comes storm-lifted or missing shingles, cracked sealant at penetrations, and ice-dam damage from our freeze-thaw winters, where snowmelt refreezes at the eave and forces water back up under the shingles. We check all of these during the inspection." },
+      { q: "Will a repair match the rest of my roof, or will I see a patch?", a: "We match your existing shingle profile and color as closely as the available stock allows, so a repair blends in rather than standing out as an obvious patch. On older roofs where the original shingles have faded or been discontinued, an exact match isn't always possible — if that's the case we'll tell you upfront and discuss the options rather than surprising you with a mismatch." },
+    ],
+    keywords: ["roof repair NJ", "roof leak repair New Jersey", "storm damage roof repair Bergen County"],
+  },
+  {
+    slug: "roof-replacement",
+    name: "Roof Replacement",
+    short: "Full tear-off & new GAF roof installs",
+    blurb:
+      "Complete tear-off and new roof installation with GAF architectural shingles, installed as a certified system — deck inspection, underlayment, and ridge cap included — and backed by a 25-year warranty on both labor and materials.",
+    intro:
+      "When a roof reaches the end of its life, patching it only buys time. A full roof replacement starts with a complete tear-off down to the deck, so nothing is hidden under a fresh layer — and as a GAF-certified contractor, Lita Construction installs every component, from ice-and-water shield to synthetic underlayment to ridge cap, as one matched system. That certified installation is what unlocks the 25-year warranty covering both labor and materials, the strongest protection on a New Jersey roof. Family-owned since 2004, we give homeowners across Northern & Central NJ an honest answer on whether it is truly time to replace — and a roof built to outlast the next quarter-century of freeze-thaw winters and summer storms.",
+    quickAnswer:
+      "A roof replacement is a full tear-off of your old roof down to the deck, followed by a new GAF architectural shingle system — deck inspection, underlayment, and ridge cap included — installed by GAF-certified Lita Construction across Northern & Central New Jersey and backed by a 25-year labor-and-materials warranty.",
+    features: [
+      "Full tear-off down to the deck",
+      "GAF architectural shingle system",
+      "Deck inspection & rot repair",
+      "Synthetic underlayment & ice-and-water shield",
+      "Ridge cap & attic ventilation",
+      "25-year labor-and-materials warranty",
+    ],
+    subServices: [
+      { name: "Complete Tear-Off & Replacement", description: "Every layer of the old roof is stripped to the wood deck, so damage is found and fixed instead of buried under new shingles." },
+      { name: "GAF Certified Shingle System", description: "Ice-and-water shield, synthetic underlayment, starter strip, architectural shingles, and ridge cap installed as one matched, warrantied system." },
+      { name: "Deck Repair & Ventilation", description: "Rotted or soft roof decking is replaced and attic intake-and-exhaust ventilation is corrected so the new roof breathes and lasts." },
+      { name: "Insurance & Storm Replacements", description: "Full documentation and adjuster coordination for storm- or hail-damaged roofs being replaced through a homeowners insurance claim." },
+    ],
+    process: [
+      { title: "Free inspection & honest recommendation", description: "We climb up, document every layer and problem area, and tell you straight whether a repair will hold or replacement is genuinely the smarter investment — with an itemized estimate either way." },
+      { title: "Shingle selection & scheduling", description: "Pick your GAF architectural shingle color and profile from samples on the spot, confirm square footage and price, and lock a start date, weather permitting." },
+      { title: "Complete tear-off & deck inspection", description: "All old roofing is torn off to the wood deck and the deck is inspected board by board — any rot, soft spots, or storm damage is repaired before a single new component goes down." },
+      { title: "Install the GAF certified system", description: "Ice-and-water shield at eaves and valleys, synthetic underlayment, starter strip, architectural shingles, and ridge cap go on as one certified system with corrected ventilation — the only way to qualify for the 25-year warranty." },
+      { title: "Magnet sweep, cleanup & walkthrough", description: "We magnet-sweep the entire yard for nails, haul away every scrap of debris, and walk the finished roof with you before the job is called done — and register your warranty." },
+    ],
+    materials: [
+      { name: "GAF Architectural Shingles", bestFor: "Most NJ replacements — best balance of cost, curb appeal & warranty eligibility", lifespan: "25–30 years", notes: "Our standard replacement shingle and the one required for the 25-year labor-and-materials warranty." },
+      { name: "GAF Designer / Premium Shingles", bestFor: "Homeowners wanting a slate or wood-shake look", lifespan: "30+ years", notes: "Heavier, dimensional profiles for high-end curb appeal, at a higher cost than standard architectural." },
+      { name: "Synthetic Underlayment", bestFor: "Every replacement — the layer beneath the shingles", lifespan: "Matches roof life", notes: "Lighter, tougher, and more water-resistant than old felt paper; part of the certified system on every job." },
+      { name: "3-Tab Asphalt Shingles", bestFor: "Tight-budget replacements & rental properties", lifespan: "15–20 years", notes: "Lower upfront cost and a flatter look, but a shorter lifespan and no 25-year warranty." },
+    ],
+    faqs: [
+      { q: "How do I know if I need a full roof replacement or just a repair?", a: "If your roof is over 20 years old, has widespread curling, cracked, or missing shingles, granules filling the gutters, multiple or recurring leaks, or any sagging, replacement is usually the smarter long-term call. A repair makes sense when the roof is younger and the damage is isolated to one area. We inspect for free and give you an honest recommendation — repair when that genuinely fixes it, replacement when patching would just keep costing you." },
+      { q: "What does a full tear-off involve, and why not just roof over the old shingles?", a: "A tear-off strips every existing layer down to the wood deck so we can inspect and repair what is underneath before the new roof goes on. Roofing over old shingles hides rot and leaks, adds weight, voids the manufacturer warranty, and never lasts as long. A full tear-off is the only way to install a GAF certified system — and the only way to qualify for the 25-year warranty." },
+      { q: "What is included in the GAF certified system?", a: "The full system is ice-and-water shield at the eaves and valleys, synthetic underlayment across the deck, starter strip along the edges, GAF architectural shingles, ridge-cap shingles, and corrected attic ventilation. Installing all of these GAF components together, by a certified contractor, is what makes your roof eligible for the 25-year labor-and-materials coverage — a partial or mixed install does not qualify." },
+      { q: "What does the 25-year warranty actually cover?", a: "It covers both labor and materials for 25 years when a full GAF shingle system is installed by a certified contractor like Lita Construction. That means if a covered defect or installation issue ever surfaces, it is corrected at no cost to you — not just a replacement part with a separate bill for the labor to install it. We register the warranty for you after the final walkthrough." },
+      { q: "What happens if you find rotted decking during the tear-off?", a: "We show it to you and replace it. Rot and soft decking are common on older NJ roofs where water has been getting past worn shingles, and they cannot be found until the old roof is off. We price deck replacement transparently — typically per sheet of plywood — so there are no surprise numbers, and no bad wood is ever left under your new roof." },
+      { q: "How long does a roof replacement take?", a: "Most residential replacements are completed in one to three days, depending on the size and pitch of the roof, how much decking needs repair, and the weather. We give you a firm timeline up front, protect your landscaping and siding during the tear-off, and keep the site clean throughout — most homeowners are back to normal by the end of the same week." },
+      { q: "Do I need a permit to replace my roof in New Jersey, and will you handle it?", a: "Most NJ municipalities require a construction permit for a full roof replacement, and many require a mid-job inspection once the deck is exposed. As a licensed NJ Home Improvement Contractor (#13VH11703800), we pull the permit and schedule every required township inspection for you, so there is nothing for you to file and the job is fully code-compliant when you sell." },
+    ],
+    keywords: ["roof replacement NJ", "GAF roof installation New Jersey", "full roof tear-off Bergen County"],
+  },
+  {
+    slug: "commercial-roofing",
+    name: "Commercial Roofing",
+    short: "Flat & low-slope roofing for NJ businesses",
+    blurb:
+      "Flat and low-slope commercial roofing for New Jersey businesses — TPO, EPDM, and modified bitumen systems installed, repaired, and maintained to keep your building dry and your operations running, with the work scheduled around your hours.",
+    intro:
+      "A commercial roof is a business asset, and every leak puts inventory, equipment, and operations at risk. Lita Construction installs, repairs, and maintains flat and low-slope roofing systems — TPO, EPDM, and modified bitumen — for warehouses, storefronts, offices, and multi-unit buildings across Northern & Central New Jersey. We inspect honestly, quote in plain terms, and schedule the work around your business so the roof gets fixed without shutting you down.",
+    quickAnswer:
+      "Lita Construction is a licensed, fully insured commercial roofing contractor installing and repairing flat and low-slope TPO, EPDM, and modified bitumen roof systems for New Jersey businesses, with maintenance plans and manufacturer-backed warranties.",
+    features: [
+      "Flat & low-slope re-roofs",
+      "TPO, EPDM & modified bitumen",
+      "Commercial leak detection & repair",
+      "Roof inspections & condition reports",
+      "Preventive maintenance plans",
+      "Manufacturer & workmanship warranties",
+    ],
+    subServices: [
+      { name: "Flat Roof Replacement", description: "Full tear-off and re-roof of flat and low-slope commercial buildings in TPO, EPDM, or modified bitumen, sized to your roof's drainage and traffic." },
+      { name: "Leak Detection & Repair", description: "We trace the actual source of a commercial leak — seams, flashing, penetrations, or ponding — and fix it, rather than patching where the water shows up inside." },
+      { name: "Roof Inspections & Reports", description: "Documented condition assessments with photos for budgeting, lease requirements, property sales, or insurance and storm claims." },
+      { name: "Maintenance Plans", description: "Scheduled inspections and minor repairs that catch small failures early, extend roof life, and keep manufacturer warranties valid." },
+    ],
+    process: [
+      { title: "On-site inspection & assessment", description: "We walk the roof, document seams, flashing, drains, and ponding areas with photos, and give you a straight read on whether a repair, section, or full re-roof is the smart call." },
+      { title: "System recommendation & written proposal", description: "You get an itemized proposal comparing the right membrane options for your building — TPO, EPDM, or modified bitumen — with the pros, costs, and warranty of each spelled out, not buried." },
+      { title: "Scheduling around your operations", description: "We plan phasing, staging, and work hours around your business — early mornings, weekends, or section-by-section — so daily operations and access stay open while we work." },
+      { title: "Tear-off or recover & installation", description: "Depending on the existing roof, we tear off or install a recover system, correct the deck and drainage, then install the membrane, flashing, and edge detailing to manufacturer spec so it qualifies for the warranty." },
+      { title: "Final inspection, cleanup & warranty", description: "We flood- or water-test critical areas, confirm every drain and penetration is sealed, clear the site, and hand over your documentation and warranty paperwork." },
+    ],
+    materials: [
+      { name: "TPO (Thermoplastic)", bestFor: "Most flat commercial roofs — best balance of cost, energy savings & durability", lifespan: "20–30 years", notes: "Heat-welded seams and a reflective white surface that cuts cooling costs in summer; our most-specified commercial system." },
+      { name: "EPDM (Rubber Membrane)", bestFor: "Large flat roofs where durability and simple repair matter most", lifespan: "25–30 years", notes: "A proven single-ply rubber membrane that handles NJ freeze-thaw well and is straightforward to repair and extend." },
+      { name: "Modified Bitumen", bestFor: "Roofs with heavy foot traffic or complex penetrations", lifespan: "15–25 years", notes: "Multi-ply asphalt-based system with strong puncture resistance; a durable choice for rooftop equipment and access." },
+      { name: "Roof Coatings / Restoration", bestFor: "Aging roofs still structurally sound — deferring a full re-roof", lifespan: "10–15 years (recoatable)", notes: "A reflective coating that seals minor issues and extends service life at a fraction of replacement cost when the deck is sound." },
+    ],
+    faqs: [
+      { q: "Which flat roofing system is best for my building — TPO, EPDM, or modified bitumen?", a: "It depends on your roof size, budget, rooftop traffic, and how much you value energy savings. TPO's reflective white surface lowers summer cooling costs and suits most flat commercial roofs; EPDM is extremely durable and easy to repair on large roofs; modified bitumen resists punctures well where there's heavy foot traffic or lots of equipment. During your inspection we recommend the right fit for your building and how you use it — not just the one we'd rather sell." },
+      { q: "Can you work without shutting down my business?", a: "Yes — that's the whole point of how we schedule. We phase the work section by section, stage materials to keep entrances and loading areas clear, and can run early mornings, evenings, or weekends when needed. We'll map out the plan with you before we start so you know exactly which areas are affected and when." },
+      { q: "Do I need a full replacement or can the roof be repaired?", a: "Isolated leaks at a seam, flashing, or penetration are usually repairable, and a sound roof that's simply aging may be a candidate for restoration coating. Widespread seam failure, saturated insulation, persistent ponding, or a membrane at end of life generally means a re-roof is the better long-term investment. We inspect it, show you the photos, and give you an honest recommendation either way." },
+      { q: "Can you help with a storm or insurance claim on our commercial roof?", a: "Yes. We document the damage with dated photos and a written condition report, provide a detailed estimate your insurer can work from, and meet with adjusters on-site when needed so the claim moves faster and reflects the real scope of the damage." },
+      { q: "What warranty comes with a commercial re-roof?", a: "You get two layers of protection: a manufacturer's material warranty on the membrane system (term depends on the product and installation spec) plus our workmanship warranty on the installation. We install to manufacturer specification precisely so those warranties stay valid — and we hand you the paperwork at closeout." },
+      { q: "What does a commercial roof maintenance plan include?", a: "Scheduled inspections (typically twice a year and after major storms), clearing of drains and debris, resealing of seams and penetrations as they age, and a photo-documented report each visit. It catches small failures before they become interior damage, extends the roof's service life, and keeps most manufacturer warranties in force — many of which require documented maintenance." },
+      { q: "Why does ponding water on a flat roof matter?", a: "Standing water that doesn't drain within about 48 hours accelerates membrane breakdown, adds significant dead load, and freezes and thaws through NJ winters — working seams and flashing loose. During a re-roof we correct drainage with tapered insulation and proper drain placement so water actually leaves the roof instead of sitting on it." },
+    ],
+    keywords: ["commercial roofing NJ", "flat roof contractor New Jersey", "TPO EPDM commercial roof Bergen County"],
+  },
+  {
+    slug: "residential-roofing",
+    name: "Residential Roofing NJ",
+    short: "Home roof installs, replacement & repair",
+    blurb:
+      "GAF-certified residential roofing for New Jersey homeowners — new installations, full replacements, leak and storm repairs, and skylights. Every qualifying roof is backed by a 25-year warranty on labor and materials.",
+    intro:
+      "Your roof is the one system standing between your family and every storm, snow load, and heat wave New Jersey throws at it. Lita Construction is a family-owned, GAF-certified roofing contractor that installs, replaces, and repairs residential roofs for homeowners across all eight counties we serve — Bergen, Passaic, Essex, Hudson, Morris, Union, Middlesex, and Sussex. We install complete GAF shingle systems engineered for our freeze-thaw climate, handle the township permit and inspections for you, and back every qualifying roof with a 25-year warranty on both labor and materials. No pressure, no fake urgency — just an honest inspection and a roof built to outlast the mortgage.",
+    quickAnswer:
+      "Lita Construction provides residential roofing for New Jersey homeowners — new roof installations, full replacements, leak and storm repairs, GAF shingle systems, and skylights — across Bergen, Passaic, Essex, Hudson, Morris, Union, Middlesex, and Sussex Counties, backed by a 25-year labor-and-materials warranty.",
+    features: [
+      "New roof installation & full replacement",
+      "Leak, storm & wind-damage repair",
+      "Complete GAF architectural shingle systems",
+      "Skylight installation & replacement",
+      "Insurance-claim documentation & adjuster support",
+      "Free roof inspections & itemized estimates",
+    ],
+    subServices: [
+      { name: "New Installation & Replacement", description: "Complete tear-off and new roof installation with GAF architectural shingles — deck inspection, full system components, and a 25-year warranty on every qualifying home." },
+      { name: "Roof Repair & Leak Fixes", description: "Fast, lasting repairs for leaks, missing or lifted shingles, and worn flashing around chimneys, valleys, and vents — before a small drip becomes a ceiling stain." },
+      { name: "Storm & Insurance Claims", description: "Wind and hail damage documented with photos and a detailed estimate your insurer can use, with direct adjuster coordination to move your claim faster." },
+      { name: "Skylights", description: "Professional skylight installation and replacement, flashed as part of your roof system so you get natural light without a single leak." },
+    ],
+    process: [
+      { title: "Free inspection & honest estimate", description: "We climb up, document every layer and problem area — decking, flashing, ventilation, shingles — and give you an itemized estimate with a straight repair-or-replace recommendation, whichever genuinely serves your home." },
+      { title: "Shingle & color selection", description: "Choose your GAF shingle profile and color from real samples at your home, with square footage, ventilation, and pricing all confirmed in writing before we order a thing." },
+      { title: "Permit & scheduling", description: "We pull the construction permit your NJ township requires and schedule the job around the weather, so your roof is installed to code and inspected — nothing for you to file." },
+      { title: "Tear-off, deck check & GAF system install", description: "Old roofing comes off completely, the deck is inspected for rot, and then ice-and-water shield, synthetic underlayment, starter strip, architectural shingles, ridge cap, and proper ventilation go on as one certified GAF system — the only way to earn the 25-year warranty." },
+      { title: "Cleanup & final walkthrough", description: "We magnet-sweep the entire yard and driveway for nails, haul away every scrap of debris, and walk the finished roof with you before we consider the job done." },
+    ],
+    materials: [
+      { name: "GAF Architectural Shingles", bestFor: "Most NJ homes — the best balance of cost, curb appeal & warranty eligibility", lifespan: "25–30 years", notes: "Our most-installed system and required for the 25-year workmanship warranty; dimensional look that suits colonials, capes, and ranches alike." },
+      { name: "GAF Designer / Luxury Shingles", bestFor: "Homeowners wanting a slate or wood-shake look", lifespan: "30+ years", notes: "Heavier, high-definition profiles for a premium curb-appeal upgrade at a higher material cost." },
+      { name: "3-Tab Asphalt Shingles", bestFor: "Budget-conscious replacements & rental properties", lifespan: "15–20 years", notes: "Lower upfront cost and a flatter profile, with a shorter lifespan than architectural shingles." },
+      { name: "Skylights", bestFor: "Adding natural light without a full re-roof", lifespan: "20+ years", notes: "Installed and flashed during a re-roof or as a standalone add-on, sealed to the roof system so it will not leak." },
+    ],
+    faqs: [
+      { q: "Do I need a new roof or just a repair?", a: "If your roof is over 20 years old, has widespread curling, cracked, or missing shingles, granules filling your gutters, or recurring leaks, a full replacement is usually the smarter long-term investment. Isolated damage — a few blown-off shingles or worn flashing around a chimney — we simply repair. Our free inspection gives you an honest recommendation, and we will tell you when a repair is genuinely all you need." },
+      { q: "How long does a residential roof replacement take?", a: "Most homes are torn off and re-roofed in 1–3 days, depending on the size, pitch, and complexity of your roof and the weather. We give you a firm timeline up front, seal the roof each day so your home is never left exposed, and keep the site clean throughout." },
+      { q: "What does the 25-year warranty actually cover?", a: "It covers both labor and materials for 25 years when a complete GAF shingle system is installed by a certified contractor like Lita Construction. That means if a defect or an installation issue ever surfaces, it is corrected at no cost to you — not just replacement parts with a separate bill for the labor. It only applies when the full system is installed together, which is exactly how we install every qualifying roof." },
+      { q: "Can you handle a storm-damage insurance claim?", a: "Yes. We inspect the roof, document wind or hail damage with photos, and provide a detailed estimate your insurer can work from. When needed, we coordinate directly with your adjuster and meet them on-site so the claims process moves faster and nothing legitimate gets overlooked." },
+      { q: "Do I need a permit to replace my roof in New Jersey?", a: "Almost always, yes — most NJ municipalities require a construction permit for a full roof replacement. As a licensed contractor (NJ Lic. #13VH11703800), we pull the permit and schedule the required township inspections as part of the job, so there is nothing for you to file and no problem waiting when you sell." },
+      { q: "Will you replace my roof in winter?", a: "We can, within reason. Asphalt shingles need temperatures around 40°F or above to seal properly, so we watch the forecast closely and avoid installing in freezing, snowy, or wet conditions that would compromise the seal. In New Jersey's freeze-thaw climate, proper timing and ice-and-water shield in the valleys and eaves are what prevent ice-dam leaks down the road." },
+      { q: "Which New Jersey towns do you serve?", a: "We serve homeowners across all of Northern and Central New Jersey — Bergen, Passaic, Essex, Hudson, Morris, Union, Middlesex, and Sussex Counties, and every township within them. Not sure if we cover your area? Call (201) 540-7772 and we will confirm coverage for your town." },
+    ],
+    keywords: ["residential roofing NJ", "roof replacement New Jersey", "GAF certified roofer Bergen County"],
+  },
+  {
+    slug: "siding-installation",
+    name: "Siding Installation",
+    short: "New vinyl, Hardie & insulated siding",
+    blurb:
+      "New siding installed the right way — house wrap and moisture barrier first, then premium vinyl, fiber-cement, or insulated panels, finished with matching soffit, fascia, and trim for a weather-tight, energy-efficient exterior.",
+    intro:
+      "New siding is one of the highest-return improvements a New Jersey homeowner can make — it seals the house against wind-driven rain and freeze-thaw, cuts drafts and energy bills, and completely resets your curb appeal. But siding only performs as well as what goes on behind it. Lita Construction installs vinyl, fiber-cement (James Hardie), and insulated siding over a proper house wrap and moisture barrier, repairs any hidden rot before it gets sealed in, and finishes the soffit, fascia, and trim so the whole exterior works as one weather-tight system. We also walk you through color and material selection on your actual house, in your actual light, before a single panel is ordered.",
+    quickAnswer:
+      "Lita Construction installs new vinyl, fiber-cement (James Hardie), and insulated siding over a proper house wrap and moisture barrier — including matching soffit, fascia, and trim — for a weather-tight, energy-efficient exterior across Northern & Central New Jersey.",
+    features: [
+      "New vinyl, fiber-cement & insulated siding",
+      "House wrap & moisture barrier",
+      "Soffit, fascia & trim wrapping",
+      "Rotted sheathing repair before install",
+      "Energy-efficient insulated backing",
+      "On-site color & material consultation",
+    ],
+    subServices: [
+      { name: "Vinyl Siding Installation", description: "Durable, virtually maintenance-free vinyl in a wide range of colors and profiles — the best value for most NJ homes, and never needs painting." },
+      { name: "Fiber-Cement (James Hardie) Siding", description: "Premium, fire-resistant fiber-cement that gives you a true wood-grain look, holds color for decades, and stands up to NJ moisture and freeze-thaw." },
+      { name: "Insulated Siding", description: "Foam-backed vinyl that adds a layer of continuous insulation, dampens noise, and boosts the R-value of your walls to trim heating and cooling costs." },
+      { name: "Soffit, Fascia & Trim", description: "New or wrapped soffit, fascia, and trim in matching or accent colors that finish the exterior, seal out water, and end the cycle of scraping and repainting." },
+    ],
+    process: [
+      { title: "Free estimate & color consultation", description: "We measure the full exterior, walk you through vinyl, fiber-cement, and insulated samples against your actual home and light, and give you an itemized price before anything is ordered — no guesswork, no pressure." },
+      { title: "Tear-off & sheathing inspection", description: "Old siding comes off and we inspect the sheathing underneath for rot, moisture, or pest damage. We fix any problems we find first — we never seal a hidden issue behind brand-new siding." },
+      { title: "House wrap & moisture barrier", description: "A continuous house wrap goes on and is taped and lapped correctly to stop air and water infiltration. This is the single biggest factor in how long your siding lasts, and the step budget installers rush." },
+      { title: "Siding, trim & flashing install", description: "Panels go up level and properly fastened to allow for expansion, with flashing at every window, door, and penetration and matching soffit, fascia, and trim so water is directed away at every seam." },
+      { title: "Final inspection & cleanup", description: "We check every corner, J-channel, and caulk line, magnet-sweep for nails and clips, haul away all debris, and walk the finished exterior with you before we call it done." },
+    ],
+    materials: [
+      { name: "Vinyl Siding", bestFor: "Most NJ homes — best value & lowest maintenance", lifespan: "20–40 years", notes: "Never needs painting; huge color and profile range. Choose fade-resistant grades for south- and west-facing walls." },
+      { name: "Insulated Vinyl Siding", bestFor: "Older homes with drafts or thin wall insulation", lifespan: "20–40 years", notes: "Foam backing adds continuous R-value and stiffness, dampens noise, and resists dents better than standard vinyl." },
+      { name: "Fiber-Cement (James Hardie)", bestFor: "A premium, true wood look with top durability", lifespan: "30–50 years", notes: "Fire-resistant and dimensionally stable through freeze-thaw; higher upfront cost, and comes factory-finished (ColorPlus) or paint-ready." },
+      { name: "House Wrap & Moisture Barrier", bestFor: "Every siding job — the layer that decides longevity", lifespan: "Matches the siding above it", notes: "Not optional and never an upgrade to skip — it's what keeps wind-driven rain out of your walls behind whatever siding you choose." },
+    ],
+    faqs: [
+      { q: "Which siding should I install — vinyl, insulated vinyl, or fiber-cement?", a: "Vinyl is the best all-around value for most NJ homes: durable, maintenance-free, and never needs painting. Insulated vinyl adds a foam backing that boosts wall R-value and dampens noise — worth it on drafty or older homes. Fiber-cement (James Hardie) is the premium choice for a true wood-grain look and the longest lifespan, at a higher upfront cost. During your free estimate we hold samples against your actual house and recommend the best fit for your home, exposure, and budget — no upselling." },
+      { q: "What is house wrap and why does it matter so much?", a: "House wrap is a continuous moisture barrier installed over the sheathing before siding goes on. It blocks wind-driven rain and air infiltration while letting the wall breathe, and it is the single biggest factor in how long your siding lasts and whether your walls stay dry. In New Jersey's freeze-thaw climate, water that gets behind poorly wrapped siding freezes, expands, and causes rot. We tape and lap the wrap correctly on every job — it is never a step we skip or treat as an add-on." },
+      { q: "Does new siding actually lower energy bills?", a: "Yes — especially insulated siding. Standard siding over a proper house wrap already cuts drafts, but foam-backed insulated vinyl adds a layer of continuous insulation across the whole wall, reducing the heat you lose in winter and gain in summer. Most homeowners with older or under-insulated walls notice more even room temperatures and lower heating and cooling costs after an insulated siding install." },
+      { q: "Will you check for rotted wood before installing new siding?", a: "Always — and we will not cover it up. We remove the old siding first specifically to inspect the sheathing and framing underneath. If we find rotted or water-damaged wood, we show you, explain it, and repair or replace it before the house wrap and new siding go on. Installing new siding over hidden rot just seals a growing problem inside your walls." },
+      { q: "Do you install James Hardie fiber-cement siding?", a: "Yes. We install fiber-cement including James Hardie products, which come either factory-finished (ColorPlus) with a baked-on color that resists fading, or primed and paint-ready. Fiber-cement is heavier and requires specific fastening, flashing, and cut handling to install correctly — done right, it delivers a true wood look with a 30–50 year lifespan and excellent fire and moisture resistance." },
+      { q: "Do you replace the soffit, fascia, and trim too?", a: "Yes — a proper siding job includes them. The fascia and soffit are usually where hidden rot starts, and mismatched or aging trim undercuts an otherwise great result. We install new or wrap existing soffit, fascia, and trim in matching or accent colors so everything seals out water, works as one weather-tight system, and ends the cycle of scraping and repainting wood trim." },
+      { q: "How do I choose a siding color, and do you handle HOA or township approval?", a: "We bring full-size samples and hold them against your home in its actual light, since a color reads very differently on a small chip than on a full wall in sun versus shade. We factor in your roof, trim, stone, and neighborhood so the result looks intentional, not dated. For HOA or township color approval, we provide the manufacturer spec sheets and color samples associations and building departments typically require, and can supply anything additional they request." },
+    ],
+    keywords: ["siding installation NJ", "fiber cement siding New Jersey", "vinyl siding contractor Bergen County"],
+  },
+  {
+    slug: "siding-repair",
+    name: "Siding Repair",
+    short: "Panel matching, storm & water-damage repair",
+    blurb:
+      "Cracked, warped, or storm-damaged siding repaired and matched to your existing panels — with any rotted sheathing or water damage underneath fixed first, so you restore what's sound instead of paying to replace the whole wall.",
+    intro:
+      "Not every siding problem needs a full replacement. A few cracked panels from a fallen branch, a warped run in the afternoon sun, or a water stain creeping up the wall is often a repair — if it's caught early and done right. Lita Construction repairs damaged vinyl and fiber-cement siding across Northern & Central New Jersey, sourcing panels to match your existing profile and color, and always checking the sheathing behind the damage for the hidden rot and water intrusion that a cover-up job leaves to spread. When a repair genuinely makes sense, we'll tell you — and when it doesn't, we'll tell you that too.",
+    quickAnswer:
+      "Lita Construction repairs cracked, warped, and storm-damaged vinyl and fiber-cement siding — matching replacement panels to your existing profile and repairing any rotted sheathing or water damage behind it — across Northern & Central New Jersey.",
+    features: [
+      "Cracked & warped panel replacement",
+      "Storm & wind damage repair",
+      "Panel color & profile matching",
+      "Water intrusion & leak repair",
+      "Rotted sheathing replacement",
+      "Free repair-vs-replace assessment",
+    ],
+    subServices: [
+      { name: "Panel Matching & Replacement", description: "We source vinyl and fiber-cement panels to match your existing profile and color, swapping out damaged sections so the repair blends into the wall instead of standing out." },
+      { name: "Storm & Wind Damage Repair", description: "Cracked, cracked-loose, or blown-off panels after a NJ storm, repaired and documented for insurance so your exterior is weather-tight again fast." },
+      { name: "Water Intrusion Repair", description: "We trace water getting behind the siding — bad flashing, failed caulk, a gap at a window or corner — fix the source, and dry out and rebuild what got wet." },
+      { name: "Rotted Sheathing Replacement", description: "When water has reached the plywood or framing behind the siding, we cut out the rot, replace the sheathing and house wrap, and re-side over solid, dry material." },
+    ],
+    process: [
+      { title: "Free inspection & repair-vs-replace assessment", description: "We look at the damaged area and the wall around it, check for moisture behind the siding, and give you an honest call — a targeted repair, or replacement if the damage is too widespread to patch cleanly." },
+      { title: "Panel matching", description: "We identify your siding's profile and color and source matching panels. Common vinyl profiles are usually a good match; if your color has faded or the line is discontinued, we tell you upfront and walk through the options rather than installing a visible mismatch." },
+      { title: "Remove damage & inspect the sheathing", description: "Damaged panels come off and we inspect the sheathing and house wrap underneath — the step that finds the rot and water damage a quick patch job would seal in and let spread." },
+      { title: "Repair the substrate & seal the source", description: "Any rotted sheathing is cut out and replaced, house wrap and flashing are restored, and we fix whatever was letting water in — bad caulk, a gap at a window, or failed flashing — so the problem doesn't come back behind the new panels." },
+      { title: "Install matched panels & final check", description: "New panels go in locked and sealed to shed water, we caulk and check every seam and corner, and clean up so the only sign we were there is that the damage is gone." },
+    ],
+    materials: [
+      { name: "Vinyl Panel Repair", bestFor: "Cracked, warped, or storm-damaged vinyl siding", lifespan: "Matches existing siding", notes: "Common profiles match well; exact color depends on age and fading, which we assess honestly before starting." },
+      { name: "Fiber-Cement Repair", bestFor: "Damaged or cracked fiber-cement (HardiePlank-style) siding", lifespan: "Matches existing siding", notes: "Repaired and repainted to blend; heavier and more involved than vinyl, so we scope it precisely." },
+      { name: "Sheathing & House Wrap", bestFor: "Walls with rot or water damage behind the siding", lifespan: "30+ years", notes: "New plywood/OSB sheathing and continuous house wrap — the dry, sound base that makes the siding repair last." },
+      { name: "Flashing & Sealant", bestFor: "Stopping the water intrusion at its source", lifespan: "10–20 years", notes: "Corrected flashing at windows, corners, and penetrations plus quality exterior caulk — the actual fix behind most 'siding leaks.'" },
+    ],
+    faqs: [
+      { q: "Can you match my existing siding for a repair?", a: "In most cases, yes — especially with common vinyl profiles, which we can usually source to match. The bigger variable is color: siding fades over years of NJ sun, so a brand-new panel in the 'same' color can read slightly brighter. We assess the match honestly before we start, and if an exact blend isn't possible we tell you and lay out the options rather than installing something that clearly doesn't match." },
+      { q: "Should I repair my siding or replace all of it?", a: "It depends on how widespread the damage is and the age of the siding. A few cracked or storm-damaged panels on an otherwise sound wall is a clear repair. But if damage is spread across multiple sides, the siding is old and brittle, or you can no longer match the panels, a repair can end up looking patchy and cost you twice. We inspect for free and give you a straight repair-vs-replace recommendation — we're glad to repair when repair is genuinely the right call." },
+      { q: "There's a water stain on my wall — is my siding leaking?", a: "Often the siding itself isn't the leak — water is getting behind it through failed caulk, a gap at a window or corner, or bad flashing, then running down and showing up as a stain. That's why we don't just swap the visible panel: we find where the water is actually entering, fix that source, and check the sheathing behind it for damage before closing the wall back up. Otherwise the stain comes right back." },
+      { q: "What happens if there's rotted wood behind the siding?", a: "We fix it — we don't cover it up. When we pull damaged panels and find rotted sheathing or framing, we cut out the rot, replace the plywood and house wrap, and correct whatever let the water in before new siding goes on. Siding installed over wet, rotted wood traps the moisture and the rot keeps spreading, so this step isn't optional if we find it." },
+      { q: "Can you repair storm damage for an insurance claim?", a: "Yes. After NJ wind and hail storms we repair cracked, loosened, and blown-off panels, and we photograph and document the damage in the detail your insurer needs. We can provide an itemized estimate for the claim and work with your adjuster so the process moves faster and the repair is covered properly." },
+      { q: "Why is my vinyl siding warping or buckling?", a: "Vinyl warps from heat — direct afternoon sun, or reflected heat off nearby windows or a grill too close to the wall — and it buckles when it was installed too tight, with no room to expand and contract. We replace the warped panels and, where the cause is installation, re-hang the run with the proper spacing so it doesn't warp again. If the warping is from a heat source, we'll point out what's causing it." },
+      { q: "How long does a siding repair take?", a: "Most targeted repairs — a handful of panels, matched and installed — are done in a single visit, often in a few hours. It takes longer when we find rotted sheathing to replace or a water source to trace and fix, but we'll tell you the scope before we start, and sealing the wall back up weather-tight the same day is always the priority." },
+    ],
+    keywords: ["siding repair NJ", "storm damage siding repair New Jersey", "vinyl siding panel replacement Bergen County"],
+  },
+  {
+    slug: "masonry-work",
+    name: "Masonry Work",
+    short: "Brick, block, stone & concrete work",
+    blurb:
+      "Old-world brick, block, and stone craftsmanship backed by modern engineering. We build and restore walls, steps, retaining walls, and foundations — and pour concrete and hardscaping — engineered for New Jersey's freeze-thaw seasons.",
+    intro:
+      "Solid masonry is the difference between work that looks good on day one and work that still stands straight in thirty winters. Lita Construction's masons build and restore brick, block, and stone — repointing tired mortar joints, laying new walls and steps, engineering retaining walls, waterproofing foundations, and pouring concrete and hardscaping. We pair old-world hand craftsmanship with modern structural detailing and drainage, so every wall, footing, and slab is built to shrug off New Jersey's freeze-thaw cycles for generations.",
+    quickAnswer:
+      "Lita Construction provides full masonry services across Northern & Central New Jersey — brick and stone repointing, walls, steps, retaining walls, foundation repair and waterproofing, and concrete and hardscaping — built with old-world craftsmanship and modern freeze-thaw engineering.",
+    features: [
+      "Brick & stone repointing / tuckpointing",
+      "Brick, block & natural stone walls",
+      "Steps, stoops & porches",
+      "Engineered retaining walls",
+      "Foundation repair & waterproofing",
+      "Concrete flatwork & hardscaping",
+    ],
+    subServices: [
+      { name: "Repointing & Tuckpointing", description: "We grind out failed mortar and repack the joints with a color- and strength-matched mix, restoring both the weather seal and the look without touching sound brick or stone." },
+      { name: "Brick, Block & Stone Walls", description: "New and rebuilt structural and decorative walls — brick veneer, CMU block, and natural stone — laid by hand and coursed true to your home's existing material where possible." },
+      { name: "Steps, Stoops & Retaining Walls", description: "Brick and stone steps, porches, and engineered segmental or natural-stone retaining walls, built on proper footings with drainage so they hold grade and stay put." },
+      { name: "Foundations & Waterproofing", description: "Foundation crack repair, parging, and exterior or interior waterproofing systems matched to where the water is actually coming from, to keep basements dry." },
+    ],
+    process: [
+      { title: "Free inspection & assessment", description: "We evaluate the brick, block, stone, or concrete in question and diagnose the root cause — failed mortar, a settling footing, poor drainage — rather than just the crack you can see." },
+      { title: "Honest repair-vs-rebuild plan", description: "You get a clear, itemized estimate for the most cost-effective lasting fix, whether that's repointing a few courses or rebuilding a wall and correcting its base — no upselling." },
+      { title: "Demo & base preparation", description: "Deteriorated masonry is removed and the foundation for the work is corrected: proper footings below the frost line, a compacted sub-base, and grading or drainage so the new work doesn't inherit the old failure." },
+      { title: "Brick, block & stone work", description: "Our masons lay every course by hand with a mortar mix matched to the material and exposure, tooled clean and engineered for New Jersey's freeze-thaw expansion and contraction." },
+      { title: "Waterproofing, sealing & cleanup", description: "Fresh masonry is sealed or waterproofed where needed, joints and surfaces are cleaned of haze and residue, the site is left tidy, and we walk the finished work with you." },
+    ],
+    materials: [
+      { name: "Repointing / Tuckpointing", bestFor: "Sound brick or stone with crumbling, receding, or cracked mortar joints", lifespan: "20–30 years", notes: "The cost-effective fix when the masonry units are still solid; mortar is matched in color and to a strength that won't damage older, softer brick." },
+      { name: "Natural Stone", bestFor: "Premium walls, steps, and veneers with a timeless, one-of-a-kind look", lifespan: "Lifetime", notes: "Bluestone, fieldstone, and granite; highest material cost but effectively permanent when properly set." },
+      { name: "Concrete Block (CMU)", bestFor: "Structural walls, foundations, and retaining walls", lifespan: "50+ years", notes: "Strong, economical structural backbone; typically faced with brick or stone veneer or parged where it's exposed." },
+      { name: "Poured Concrete & Hardscaping", bestFor: "Slabs, footings, steps, walkways, and driveways", lifespan: "30+ years", notes: "Air-entrained mixes and control joints sized for freeze-thaw so slabs resist cracking, scaling, and heaving." },
+    ],
+    faqs: [
+      { q: "What is repointing (tuckpointing) and when does brick need it?", a: "Repointing is grinding out deteriorated mortar joints and repacking them with fresh mortar, restoring both strength and the weather seal without replacing the brick or stone. You need it when the joints are cracked, crumbling, receding, or letting water in — but the masonry units themselves are still sound. Caught in time, it's far cheaper than the wall damage that follows if water keeps getting behind the brick." },
+      { q: "Why do brick and mortar deteriorate faster in New Jersey?", a: "New Jersey's freeze-thaw climate is hard on masonry. Water soaks into mortar joints and porous brick, then freezes and expands dozens of times each winter, prying joints apart and popping the faces off brick (spalling). We use mortar matched to the masonry's hardness and detail the work — proper joint tooling, flashing, and drainage — so water sheds off instead of soaking in and freezing." },
+      { q: "Can you fix a cracked or leaking foundation?", a: "Yes. We repair foundation cracks, parge and reface deteriorated block or poured walls, and install waterproofing and drainage systems matched to where the water is actually entering. Not every crack is structural — during a free inspection we tell you honestly whether you're looking at a simple seal, a waterproofing system, or a structural repair." },
+      { q: "Do I need a permit for a retaining wall in New Jersey?", a: "Often, yes. Most NJ municipalities require a permit once a retaining wall passes a certain height — commonly around four feet, though it varies by township and by whether the wall carries a surcharge like a driveway above it. As a licensed NJ contractor we check your town's rules and pull the permit and inspections as part of the job." },
+      { q: "Will you match my home's existing brick or stone?", a: "We do our best to. For repointing we match mortar color and joint profile; for new or rebuilt sections we source brick and stone as close as we can to your existing material. Exact matches on older brick aren't always possible — where they aren't, we tell you upfront and show you the closest options rather than installing an obvious mismatch." },
+      { q: "How is a properly poured concrete slab different from a cheap one?", a: "The difference is what you can't see. We prepare and compact a proper sub-base, use air-entrained concrete rated for freeze-thaw, place control joints so the slab cracks where you want it to instead of randomly, and cure it correctly. Skip those and a slab scales, heaves, and cracks within a couple of winters — exactly the failure we build to avoid." },
+      { q: "What time of year is best for masonry work in NJ?", a: "Spring through fall is ideal, since mortar and concrete cure best above freezing and won't reach full strength if they freeze while green. We schedule inspections and estimates year-round and, when needed, use cold-weather methods and enclosures to keep projects moving — but we won't rush concrete or masonry into conditions that would compromise it." },
+    ],
+    keywords: ["masonry contractor NJ", "brick repointing New Jersey", "retaining wall Bergen County"],
+  },
+  {
+    slug: "chimney-services",
+    name: "Chimney Services",
+    short: "Repair, repointing, rebuilds & leak repair",
+    blurb:
+      "Chimney repair, repointing, crown and flashing repair, leak sealing, and full rebuilds — plus honest inspection and a straight repair-vs-rebuild recommendation that keeps your family safe and your home dry.",
+    intro:
+      "A chimney takes more weather abuse than almost any part of your home — exposed on all sides, soaking up rain, and cycling through New Jersey's freeze-thaw winters that crack mortar and spall brick a little more every year. Lita Construction repairs, repoints, and rebuilds masonry chimneys, fixes the crown and flashing where most leaks actually start, and inspects the whole structure for free — then gives you an honest recommendation on whether a targeted repair will hold or a rebuild is the smarter long-term call.",
+    quickAnswer:
+      "Lita Construction repairs, repoints, and rebuilds masonry chimneys and fixes crown, flashing, and leak issues across Northern & Central New Jersey — starting with a free inspection and an honest repair-vs-rebuild recommendation.",
+    features: [
+      "Chimney repair & repointing",
+      "Crown repair & rebuilding",
+      "Flashing & leak repair",
+      "Full chimney rebuilds",
+      "Waterproofing & cap installation",
+      "Free safety inspection",
+    ],
+    subServices: [
+      { name: "Repair & Repointing", description: "Grinding out failed mortar joints and repacking them with fresh, color-matched mortar to restore strength and stop water before it reaches sound brick." },
+      { name: "Crown & Flashing Repair", description: "Rebuilding cracked crowns and re-sealing the roof-line flashing — the two spots where the vast majority of chimney leaks begin." },
+      { name: "Full Chimney Rebuilds", description: "Tearing down and rebuilding from the roofline (or the base) with new brick, crown, and flashing when spalling or structural cracks make repair a losing bet." },
+      { name: "Cleaning & Inspection", description: "A top-to-bottom look at the crown, mortar, flue, and flashing for safety and water issues — plus sweeping to clear creosote and blockages before you burn." },
+    ],
+    process: [
+      { title: "Free inspection & safety check", description: "We examine the crown, mortar joints, brick, flashing, and flue for cracks, spalling, and water intrusion — and photograph what we find so you can see the actual condition, not just take our word for it." },
+      { title: "Honest repair-vs-rebuild recommendation", description: "You get a clear, itemized estimate and a straight answer: repointing and a crown repair if the brick is still sound, or a rebuild if spalling and structural cracks mean patching would just be throwing money at it." },
+      { title: "Setup & protection", description: "We set up safe roof access and staging, and protect your roof, gutters, and landscaping before any demo or grinding begins." },
+      { title: "Repair or rebuild the masonry", description: "We repoint or rebuild by hand with new brick and mortar matched to your home and mixed for NJ's freeze-thaw cycles, then form a proper sloped, overhanging crown that sheds water away from the brick." },
+      { title: "Flashing, waterproofing & cleanup", description: "We re-seal or replace the flashing, install or reset the cap, apply a breathable water repellent where it helps, then clean the roof and ground and walk the finished chimney with you." },
+    ],
+    materials: [
+      { name: "Repointing (Tuckpointing)", bestFor: "Deteriorated mortar joints with sound, intact brick", lifespan: "15–25 years", notes: "The cost-effective fix when only the mortar has failed — we tell you honestly when this is genuinely enough." },
+      { name: "Crown Repair / Rebuild", bestFor: "Cracked or crumbling concrete crown at the top of the chimney", lifespan: "20+ years", notes: "A properly sloped, overhanging crown is the #1 defense against water getting into the masonry." },
+      { name: "Flashing Repair", bestFor: "Leaks where the chimney meets the roof", lifespan: "15–25 years", notes: "Step and counter-flashing re-sealed or replaced — the most common true source of a 'chimney leak.'" },
+      { name: "Full Rebuild", bestFor: "Spalling brick, structural cracks, or a leaning chimney", lifespan: "50+ years", notes: "Rebuilt with new brick, crown, and flashing — the lasting fix when repair would only buy a season or two." },
+    ],
+    faqs: [
+      { q: "How do I know if my chimney needs repair or a full rebuild?", a: "It comes down to whether the brick is still sound. If only the mortar joints have deteriorated, repointing plus a crown or flashing repair restores the chimney for far less. But when brick faces are flaking off (spalling), the crown is crumbling, or there are structural cracks or a visible lean, a partial or full rebuild is the honest, lasting fix — patching those just buys a season or two. Our free inspection tells you which one you are actually looking at, with photos so you can see it yourself." },
+      { q: "What causes chimney brick and mortar to deteriorate?", a: "Water, and New Jersey's freeze-thaw winters especially. Rain and snowmelt soak into porous brick and mortar, then freeze and expand, prying the masonry apart a little more with every cold snap. Add a cracked crown or failed flashing letting water in from the top, and the damage accelerates. That is why a sloped crown, sealed flashing, and a water repellent do more to extend a chimney's life than almost anything else." },
+      { q: "My chimney is leaking — where is the water actually coming from?", a: "More often than not it is the crown or the flashing, not the brick itself. The crown is the concrete slab at the very top; when it cracks, water pours straight down into the chimney. The flashing is the metal seal where the chimney meets your roof; when it fails, water runs down the outside of the chimney and shows up as a ceiling stain near it. We find the real source instead of guessing — chasing the wrong one is why so many 'fixed' chimney leaks come back." },
+      { q: "What is repointing (tuckpointing) and how long does it last?", a: "Repointing means grinding out the old, failed mortar between the bricks and packing in fresh mortar, restoring both strength and the weatherproof seal — without disturbing brick that is still good. Done right with the correct mortar mix, it lasts 15–25 years. It is the smart, economical choice when the brick is sound and only the joints have worn, which is common on chimneys 20 to 40 years old." },
+      { q: "Do you offer a free chimney inspection?", a: "Yes. We inspect the crown, mortar joints, brick, flashing, and visible flue for cracks, spalling, water damage, and safety concerns, and give you a straight assessment with photos and an itemized estimate. If a simple repair is all you need, that is what we will tell you — we do not recommend a rebuild to pad a bill." },
+      { q: "Why does a chimney need a cap and waterproofing?", a: "A cap keeps rain, snow, and animals out of the flue and stops downdrafts, while a breathable water repellent lets the masonry dry out but blocks new water from soaking in and freezing. Together they attack the root cause of almost all chimney damage — water — which is why we often recommend them right after a repair or rebuild to protect the work you just paid for." },
+      { q: "Do I need a permit for chimney work in New Jersey?", a: "A repointing or minor repair usually does not, but a structural rebuild typically requires a construction permit and inspection in most NJ municipalities. As a licensed NJ contractor (Lic. #13VH11703800) we know the local requirements, pull the permit when one is needed, and schedule the inspection — so the work is done to code and there is nothing for you to file." },
+    ],
+    keywords: ["chimney repair NJ", "chimney rebuild New Jersey", "chimney repointing Bergen County"],
+  },
+  {
     slug: 'roofing',
     name: 'Roofing',
     short: 'Roof replacement, repair & new installs',
@@ -437,6 +821,47 @@ export const services: Service[] = [
   },
 ]
 
+/** Look up a service by slug (used to resolve group members to full Service records). */
+export const serviceBySlug = (slug: string) => services.find((s) => s.slug === slug)
+
+/**
+ * The public service menu, organized into the four trade groups shown across
+ * the site (nav dropdown, /services hub, homepage grid, footer). Only these
+ * services appear in menus; older trades (roofing/siding/masonry landing pages,
+ * gutters, windows-doors, painting) still have live /services/:slug pages for
+ * SEO but are intentionally left out of the navigation.
+ *
+ * A slug may appear in more than one group (Commercial Roofing is listed under
+ * both Roofing and Exterior).
+ */
+export type ServiceGroup = {
+  name: string
+  /** Slugs of services in this group, in display order. */
+  slugs: string[]
+}
+
+export const serviceGroups: ServiceGroup[] = [
+  {
+    name: 'Roofing',
+    slugs: ['roof-repair', 'roof-replacement', 'commercial-roofing', 'residential-roofing'],
+  },
+  {
+    name: 'Siding',
+    slugs: ['siding-installation', 'siding-repair'],
+  },
+  {
+    name: 'Masonry',
+    slugs: ['masonry-work', 'chimney-services'],
+  },
+  {
+    name: 'Exterior',
+    slugs: ['decks-pavers', 'commercial-roofing'],
+  },
+]
+
+/** Flat, de-duplicated list of every service slug that appears in the menus. */
+export const menuServiceSlugs = Array.from(new Set(serviceGroups.flatMap((g) => g.slugs)))
+
 /**
  * Homepage services grid — the full range of work, shown as cards.
  * The three core trades (roofing/siding/masonry) deep-link to their rich
@@ -452,106 +877,23 @@ export type HomeService = {
   icon: string
 }
 
-export const homeServices: HomeService[] = [
-  {
-    key: 'roofing',
-    name: 'Roofing',
-    blurb: services[0].blurb,
-    features: services[0].features.slice(0, 4),
-    to: '/services/roofing',
-    icon: '/services/roofing-icon.png',
-  },
-  {
-    key: 'siding',
-    name: 'Siding',
-    blurb: services[1].blurb,
-    features: services[1].features.slice(0, 4),
-    to: '/services/siding',
-    icon: '/services/siding-icon.png',
-  },
-  {
-    key: 'masonry',
-    name: 'Masonry',
-    blurb: services[2].blurb,
-    features: services[2].features.slice(0, 4),
-    to: '/services/masonry',
-    icon: '/services/masonry-icon.png',
-  },
-  {
-    key: 'gutters',
-    name: 'Gutters',
-    blurb: services[3].blurb,
-    features: services[3].features.slice(0, 4),
-    to: '/services/gutters',
+/**
+ * Homepage services grid / footer / quote-form list — derived from the four
+ * trade groups so it always matches the nav and /services hub. A service in
+ * more than one group (Commercial Roofing) appears once. `icon` is left blank;
+ * ServiceGlyph resolves each slug to its project photo.
+ */
+export const homeServices: HomeService[] = menuServiceSlugs
+  .map((slug) => serviceBySlug(slug))
+  .filter((s): s is Service => Boolean(s))
+  .map((s) => ({
+    key: s.slug,
+    name: s.name,
+    blurb: s.blurb,
+    features: s.features.slice(0, 4),
+    to: `/services/${s.slug}`,
     icon: '',
-  },
-  {
-    key: 'windows-doors',
-    name: 'Windows & Doors',
-    blurb: services[4].blurb,
-    features: services[4].features.slice(0, 4),
-    to: '/services/windows-doors',
-    icon: '',
-  },
-  {
-    key: 'decks-pavers',
-    name: 'Decks & Pavers',
-    blurb: services[5].blurb,
-    features: services[5].features.slice(0, 4),
-    to: '/services/decks-pavers',
-    icon: '',
-  },
-  {
-    key: 'painting',
-    name: 'Exterior Painting',
-    blurb: services[6].blurb,
-    features: services[6].features.slice(0, 4),
-    to: '/services/painting',
-    icon: '',
-  },
-  {
-    key: 'renovation',
-    name: 'Renovation',
-    blurb:
-      'Full interior and exterior remodeling that transforms how your home lives and looks — from single rooms to whole-house renovations, finished with meticulous craftsmanship.',
-    features: [
-      'Whole-home & room remodels',
-      'Kitchens & living spaces',
-      'Interior & exterior upgrades',
-      'Permits handled for you',
-    ],
-    to: '/projects',
-    icon: '/services/renovation-icon.png',
-  },
-  {
-    key: 'bathroom',
-    name: 'Bathroom',
-    blurb:
-      'Modern, functional bathroom remodels done right — from tile and vanities to plumbing and waterproofing, built to look beautiful and last for years.',
-    features: [
-      'Full bathroom remodels',
-      'Tile, tubs & showers',
-      'Vanities & fixtures',
-      'Waterproofing done right',
-    ],
-    to: '/projects',
-    icon: '/services/bathroom-icon.png',
-  },
-  {
-    key: 'chimney',
-    name: 'Chimney',
-    blurb:
-      'Chimney repair, repointing, and full rebuilds that restore safety, function, and curb appeal — keeping your home protected from the top down.',
-    features: [
-      'Repointing & crown repair',
-      'Full chimney rebuilds',
-      'Flashing & leak repair',
-      'Free safety inspection',
-    ],
-    to: '/projects',
-    icon: '/services/chimney-icon.png',
-  },
-]
+  }))
 
 /** Headline trust stats reused across pages. */
 export const stats = [
