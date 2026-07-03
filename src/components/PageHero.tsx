@@ -8,26 +8,29 @@ export function PageHero({
   title,
   subtitle,
   crumbs = [],
+  image = '/hero-bg.jpg',
 }: {
   eyebrow: string
   title: React.ReactNode
   subtitle?: string
   crumbs?: Crumb[]
+  /** Background photo behind the hero. Defaults to the shared hero image. */
+  image?: string
 }) {
   return (
     <section className="relative overflow-hidden bg-navy-950 text-white">
       {/* Photo background */}
       <div
-        className="pointer-events-none absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/hero-bg.jpg)' }}
+        className="pointer-events-none absolute inset-0 scale-105 bg-cover bg-center"
+        style={{ backgroundImage: `url("${encodeURI(image)}")` }}
         aria-hidden="true"
       />
-      {/* Navy gradient overlay keeps text readable over the photo */}
+      {/* Navy gradient overlay keeps text readable while letting the photo show on the right */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/95 to-navy-900/70"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-950/50"
         aria-hidden="true"
       />
-      <div className="pointer-events-none absolute inset-0 bg-navy-950/40" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-0 bg-navy-950/25" aria-hidden="true" />
 
 
       <div className="container-x relative py-16 sm:py-20">

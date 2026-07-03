@@ -103,6 +103,7 @@ export function FaqPage() {
         }
         subtitle="Everything North Jersey homeowners want to know about working with Lita Construction — licensing, warranties, estimates, timelines, and every trade we do."
         crumbs={[{ label: 'FAQ' }]}
+        image="/showcase/house3.png"
       />
 
       <section className="bg-cloud-50 py-16 sm:py-20">
