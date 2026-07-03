@@ -19,7 +19,7 @@ export function ScrollToTop() {
         const scrollTop = window.scrollY
         const docHeight = document.documentElement.scrollHeight - window.innerHeight
         setProgress(docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0)
-        setVisible(scrollTop > 400)
+        setVisible(scrollTop > 250)
       })
     }
     onScroll()
@@ -46,7 +46,7 @@ export function ScrollToTop() {
       type="button"
       onClick={scrollUp}
       aria-label="Scroll back to top"
-      className={`group fixed right-4 bottom-24 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-navy-950 text-white shadow-lift ring-1 ring-white/10 transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 active:scale-95 sm:h-14 sm:w-14 xl:bottom-8 ${
+      className={`group fixed right-5 bottom-24 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-600 text-white shadow-lift ring-1 ring-white/10 transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-brand-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 active:scale-95 sm:h-16 sm:w-16 xl:bottom-8 ${
         visible
           ? 'pointer-events-auto translate-y-0 opacity-100'
           : 'pointer-events-none translate-y-4 opacity-0'
@@ -58,7 +58,7 @@ export function ScrollToTop() {
         viewBox="0 0 48 48"
         aria-hidden="true"
       >
-        <circle cx="24" cy="24" r={R} fill="none" stroke="currentColor" strokeWidth="2" className="text-white/15" />
+        <circle cx="24" cy="24" r={R} fill="none" stroke="currentColor" strokeWidth="2" className="text-white/20" />
         <circle
           cx="24"
           cy="24"
@@ -67,7 +67,7 @@ export function ScrollToTop() {
           stroke="currentColor"
           strokeWidth="2.5"
           strokeLinecap="round"
-          className="text-brand-400 transition-[stroke-dashoffset] duration-150 ease-out group-hover:text-white"
+          className="text-white transition-[stroke-dashoffset] duration-150 ease-out"
           strokeDasharray={CIRC}
           strokeDashoffset={CIRC * (1 - progress)}
         />
