@@ -72,7 +72,7 @@ export function Hero() {
         </div>
 
         {/* Right — license badge crowning the animated work showcase */}
-        <div className="lg:flex lg:flex-col lg:items-center lg:gap-7">
+        <div className="flex flex-col items-center gap-8 lg:gap-7">
           {/* Credential badges — GAF + NJ license, crowning the work showcase */}
           <div
             className="mt-4 flex flex-wrap items-center justify-center gap-3 animate-fade-up lg:mt-0"

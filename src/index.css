@@ -109,3 +109,24 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Hero service orbit — authored at 540px, scaled to fit small screens.
+   The scaler is a square box; the inner 540px stage is scaled to fill it. */
+.orbit-scaler {
+  aspect-ratio: 1 / 1;
+  overflow: visible;
+}
+.orbit-inner {
+  transform-origin: top left;
+  transform: scale(calc(340 / 540)); /* mobile default: 340px wrapper */
+}
+@media (min-width: 640px) {
+  .orbit-inner {
+    transform: scale(calc(440 / 540)); /* sm: 440px wrapper */
+  }
+}
+@media (min-width: 1024px) {
+  .orbit-inner {
+    transform: scale(1); /* lg: full 540px */
+  }
+}

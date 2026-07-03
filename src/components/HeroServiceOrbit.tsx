@@ -1,8 +1,10 @@
-import { business } from '../data/business'
+import { business, menuServiceSlugs, serviceBySlug } from '../data/business'
+import { servicePhoto } from './icons'
 
 /**
- * The best photo from each service folder, shown as circular "planets" that
- * slowly orbit a central "25+ Years" hub.
+ * Every service shown in the site's menu, rendered as circular "planets" that
+ * slowly orbit a central "25+ Years" hub. Stays in sync with the nav/hub because
+ * it's built from `menuServiceSlugs` + `servicePhoto`.
  *
  * How the animation stays clean:
  *  - The ring (`.animate-hero-orbit`) rotates the whole cluster clockwise.
@@ -11,26 +13,45 @@ import { business } from '../data/business'
  *    same speed, and a static `rotate(-angle)` cancels the spoke tilt — so every
  *    photo (and its label) stays perfectly upright while it travels the circle.
  *  - Hovering the cluster pauses the motion; `motion-reduce` disables it entirely.
- *
- * To swap an image, just change its `img` path below.
  */
-const SERVICES = [
-  { label: 'Roofing', img: '/roof/optimized/roof (14).webp' },
-  { label: 'Siding', img: '/Siding/optimized/siding (6).webp' },
-  { label: 'Masonry', img: '/Mansory/optimized/Mansory (22).webp' },
-  { label: 'Renovation', img: '/Renovation/optimized/Renovation (1).webp' },
-  { label: 'Bathroom', img: '/Bathroom/optimized/Bathroom (7).webp' },
-  { label: 'Chimney', img: '/Chimney/optimized/Chimney (1).webp' },
-] as const
+// Distinct photos so no two orbiting circles look identical.
+const ORBIT_PHOTO: Record<string, string> = {
+  ...servicePhoto,
+  'roof-replacement': '/roof/optimized/roof (14).webp',
+  'residential-roofing': '/roof/optimized/roof (22).webp',
+  'siding-installation': '/Siding/optimized/siding (6).webp',
+}
 
-const RADIUS = 144 // px from center to each photo
+/** Short label for the tight orbit caption (menu names can be long). */
+const ORBIT_LABEL: Record<string, string> = {
+  'roof-repair': 'Repair',
+  'roof-replacement': 'Replace',
+  'commercial-roofing': 'Commercial',
+  'residential-roofing': 'Residential',
+  'siding-installation': 'Siding',
+  'siding-repair': 'Repair',
+  'masonry-work': 'Masonry',
+  'chimney-services': 'Chimney',
+  'decks-pavers': 'Decks',
+}
+
+const SERVICES = menuServiceSlugs.map((slug) => ({
+  label: ORBIT_LABEL[slug] ?? serviceBySlug(slug)?.name ?? slug,
+  img: ORBIT_PHOTO[slug] ?? '/work/roof-roof30.webp',
+}))
+
+const RADIUS = 190 // px from center to each photo — wider ring = gap between circles
 
 export function HeroServiceOrbit() {
   return (
-    <div className="group relative mx-auto hidden aspect-square w-[400px] max-w-full lg:block">
-      {/* Dashed orbit track */}
+    // Responsive scaler: the orbit is authored at a fixed 540px, then scaled
+    // down to fit small screens (phones) via .orbit-inner in index.css, so it
+    // shows everywhere and never overflows.
+    <div className="orbit-scaler mx-auto w-[340px] max-w-full sm:w-[440px] lg:w-[540px]">
+      <div className="orbit-inner group relative aspect-square w-[540px]">
+        {/* Dashed orbit track */}
       <div
-        className="absolute left-1/2 top-1/2 h-[288px] w-[288px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-white/15"
+        className="absolute left-1/2 top-1/2 h-[380px] w-[380px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-white/15"
         aria-hidden="true"
       />
 
@@ -47,7 +68,7 @@ export function HeroServiceOrbit() {
               {/* Counter-rotate at the same speed so photos never tumble */}
               <div className="animate-hero-orbit-rev motion-reduce:animate-none group-hover:[animation-play-state:paused]">
                 <div style={{ transform: `rotate(${-angle}deg)` }}>
-                  <figure className="relative h-[104px] w-[104px] overflow-hidden rounded-full border-2 border-white/70 shadow-lift ring-4 ring-navy-950/40 transition-transform duration-300 hover:scale-110">
+                  <figure className="relative h-[116px] w-[116px] overflow-hidden rounded-full border-2 border-white/70 shadow-lift ring-4 ring-navy-950/40 transition-transform duration-300 hover:z-10 hover:scale-110">
                     <img
                       src={encodeURI(s.img)}
                       alt={`${s.label} project by Lita Construction`}
@@ -56,7 +77,7 @@ export function HeroServiceOrbit() {
                       decoding="async"
                       draggable={false}
                     />
-                    <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950/95 to-transparent px-1 pb-1.5 pt-4 text-center text-[10px] font-bold uppercase tracking-wide text-white">
+                    <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-center whitespace-nowrap bg-gradient-to-t from-navy-950/95 to-transparent px-1 pb-2 pt-5 text-center text-[10px] font-bold uppercase tracking-wide text-white">
                       {s.label}
                     </figcaption>
                   </figure>
@@ -72,8 +93,9 @@ export function HeroServiceOrbit() {
         <span className="font-display text-[2.75rem] font-black leading-none text-brand-400">
           25<span className="align-top text-xl">+</span>
         </span>
-        <span className="mt-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white">Years</span>
-        <span className="mt-0.5 text-[10px] font-medium text-white/60">Since {business.founded}</span>
+          <span className="mt-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white">Years</span>
+          <span className="mt-0.5 text-[10px] font-medium text-white/60">Since {business.founded}</span>
+        </div>
       </div>
     </div>
   )
