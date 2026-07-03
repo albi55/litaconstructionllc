@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { business, serviceGroups, serviceBySlug } from '../data/business'
 import { Seo } from '../components/Seo'
+import { CtaBand } from '../components/CtaBand'
 import { CheckIcon, ArrowIcon, PhoneIcon, ShieldIcon, StarIcon, ServiceGlyph, servicePhoto } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
@@ -121,87 +122,11 @@ export function ServicesHub() {
         </div>
       </section>
 
-      {/* ── Closing band ── */}
-      <section className="bg-white py-16 sm:py-20">
-        <div className="container-x">
-          <div className="relative overflow-hidden rounded-[2rem] bg-navy-950 p-8 text-white shadow-lift ring-1 ring-white/10 sm:p-12 lg:p-14">
-            {/* Layered depth — matches the site's designed-surface treatment */}
-            <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/[0.06] via-transparent to-black/30"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute -right-16 -top-20 h-72 w-72 rounded-full bg-brand-600/25 blur-3xl"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-brand-600/10 blur-3xl"
-              aria-hidden="true"
-            />
-            {/* Faint dot grid for texture */}
-            <div
-              className="pointer-events-none absolute inset-0 opacity-[0.05]"
-              style={{
-                backgroundImage: 'radial-gradient(currentColor 1px, transparent 1px)',
-                backgroundSize: '22px 22px',
-              }}
-              aria-hidden="true"
-            />
-
-            <div className="relative flex flex-col items-start gap-10 lg:flex-row lg:items-center lg:justify-between">
-              <div className="max-w-xl">
-                <span className="inline-flex items-center gap-2 rounded-full bg-white/[0.06] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-400 ring-1 ring-white/10">
-                  <ShieldIcon className="h-4 w-4" />
-                  {business.licenseLabel}
-                </span>
-                <h2 className="mt-5 font-display text-3xl font-extrabold leading-[1.1] sm:text-4xl">
-                  Not sure which service you need?
-                </h2>
-                <p className="mt-4 text-base leading-relaxed text-white/70 sm:text-lg">
-                  Tell us what&apos;s going on with your home and we&apos;ll point you in the right
-                  direction — with a free, no-obligation estimate. No pressure, ever.
-                </p>
-
-                {/* Trust row */}
-                <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2.5">
-                  {['GAF Certified', 'Fully Insured', 'Free Estimates'].map((t) => (
-                    <li key={t} className="flex items-center gap-2 text-sm font-medium text-white/80">
-                      <CheckIcon className="h-4 w-4 shrink-0 text-brand-400" />
-                      {t}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto sm:flex-row lg:flex-col xl:flex-row">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-white shadow-red transition-all duration-300 hover:bg-brand-500 active:scale-[0.98]"
-                >
-                  Get a Free Estimate
-                  <ArrowIcon className="h-4 w-4" />
-                </Link>
-                <a
-                  href={business.phoneHref}
-                  className="group inline-flex items-center justify-center gap-3 rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3.5 backdrop-blur-sm transition-colors hover:border-brand-400/50 hover:bg-white/[0.08]"
-                >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white transition-transform group-hover:scale-105">
-                    <PhoneIcon className="h-4 w-4" />
-                  </span>
-                  <span className="flex flex-col text-left leading-tight">
-                    <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">
-                      Call for a free estimate
-                    </span>
-                    <span className="font-display text-base font-bold text-white">
-                      {business.phone}
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ── Closing band — the site's standard red CTA ── */}
+      <CtaBand
+        title="Not sure which service you need?"
+        subtitle="Tell us what's going on with your home and we'll point you in the right direction — with a free, no-obligation estimate. No pressure, ever."
+      />
     </>
   )
 }
