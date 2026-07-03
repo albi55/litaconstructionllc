@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { business, serviceGroups, serviceBySlug } from '../data/business'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
-import { CheckIcon, ArrowIcon, PhoneIcon, ShieldIcon, StarIcon, ServiceGlyph, servicePhoto } from '../components/icons'
+import { CheckIcon, ArrowIcon, StarIcon, ServiceGlyph, servicePhoto } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
 
