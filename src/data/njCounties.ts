@@ -2,7 +2,7 @@
 // Used by the ServiceAreas map. `served` marks the counties Lita Construction covers.
 export type County = { name: string; d: string; served: boolean }
 
-const SERVED = new Set(["Bergen","Passaic","Essex","Hudson","Morris","Union","Middlesex","Sussex"])
+const SERVED = new Set(["Bergen","Passaic","Essex","Hudson","Morris","Union","Middlesex","Sussex","Monmouth","Somerset"])
 
 export const njViewBox = '0 0 15.8 33.45'
 

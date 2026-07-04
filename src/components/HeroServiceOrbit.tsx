@@ -1,4 +1,4 @@
-import { business, menuServiceSlugs, serviceBySlug } from '../data/business'
+import { menuServiceSlugs, serviceBySlug } from '../data/business'
 import { servicePhoto } from './icons'
 
 /**
@@ -91,10 +91,10 @@ export function HeroServiceOrbit() {
       {/* Center hub */}
       <div className="absolute left-1/2 top-1/2 flex h-[132px] w-[132px] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-white/15 bg-navy-900/85 text-center shadow-lift backdrop-blur-sm">
         <span className="font-display text-[2.75rem] font-black leading-none text-brand-400">
-          25<span className="align-top text-xl">+</span>
+          35<span className="align-top text-xl">+</span>
         </span>
           <span className="mt-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white">Years</span>
-          <span className="mt-0.5 text-[10px] font-medium text-white/60">Since {business.founded}</span>
+          <span className="mt-0.5 text-[10px] font-medium text-white/60">In the trade</span>
         </div>
       </div>
     </div>

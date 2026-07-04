@@ -11,6 +11,8 @@ import { ServicePage } from './pages/ServicePage'
 import { AboutPage } from './pages/AboutPage'
 import { ProjectsPage } from './pages/ProjectsPage'
 import { ServiceAreasPage } from './pages/ServiceAreasPage'
+import { TownPage } from './pages/TownPage'
+import { TownServicePage } from './pages/TownServicePage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { FinancingPage } from './pages/FinancingPage'
 import { FaqPage } from './pages/FaqPage'
@@ -53,6 +55,8 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/service-areas" element={<ServiceAreasPage />} />
+          <Route path="/service-areas/:slug" element={<TownPage />} />
+          <Route path="/service-areas/:slug/:service" element={<TownServicePage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/financing" element={<FinancingPage />} />
           <Route path="/faq" element={<FaqPage />} />

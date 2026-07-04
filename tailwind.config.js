@@ -54,6 +54,7 @@ export default {
           400: '#cba876',
           500: '#b7935f',
           600: '#9c7c4c',
+          700: '#7a5f3a', // AA-legible drafting-label ink on light backgrounds
         },
       },
       fontFamily: {

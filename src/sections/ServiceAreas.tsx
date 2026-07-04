@@ -6,7 +6,7 @@ import { useReveal } from '../lib/useReveal'
 import { NjMap } from '../components/NjMap'
 
 const ribbon = [
-  { n: '8', l: 'Counties' },
+  { n: `${serviceAreas.length}`, l: 'Counties' },
   { n: `${serviceCities.length}+`, l: 'Towns' },
   { n: business.yearsExperience, l: 'Years Local' },
 ]

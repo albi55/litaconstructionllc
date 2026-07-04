@@ -42,62 +42,64 @@ const servicephoto: Record<string, string> = {
 const aboutStats = [
   { n: business.yearsExperience, l: 'Years of Experience' },
   { n: '500+', l: 'Projects Completed' },
-  { n: '8', l: 'Counties Served' },
+  { n: `${serviceAreas.length}`, l: 'Counties Served' },
   { n: '25-Yr', l: 'Workmanship Warranty' },
 ]
 
 const values = [
   {
     icon: HandshakeIcon,
-    title: 'Integrity first',
-    body: 'Honest recommendations, transparent itemized pricing, and zero high-pressure sales. If a repair is the smarter call than a replacement, we tell you.',
+    title: 'The personal touch',
+    body: 'You call us, you talk to the family — never a call center. You’ll see the same faces from start to finish, because if our name is on the truck in your driveway, we make sure the job is done right.',
   },
   {
     icon: ShieldIcon,
-    title: 'Built to last',
-    body: 'Premium GAF-certified materials and proven techniques, backed by a written 25-year warranty on labor and materials — the strongest protection in the industry.',
+    title: 'No shortcuts',
+    body: 'We bring the toughness and technical skill learned in 1991 — from the hot-tar kettles of Old Brooklyn — to every local project we take on today. That old-school work ethic is the backbone of everything we do.',
   },
   {
     icon: StarIcon,
-    title: 'Craftsmanship',
-    body: 'Two decades of hands-on experience in every shingle, seam, and stone. We treat your home like our own and leave every job site spotless.',
+    title: 'Family pride',
+    body: 'Because we are fathers, sons, and brothers, we hold each other to a higher standard. We treat your roof and your home with the same care we give our own.',
   },
 ]
 
 const milestones = [
   {
+    year: '1991',
+    title: 'Built on grit',
+    text: 'John Lita first learns the trade on the blistering rooftops of Old Brooklyn, mastering the “hot tar” kettle alongside his Uncle Peter at Statewide Roofing.',
+  },
+  {
     year: '2004',
-    title: 'The beginning',
-    text: 'Johnny Lita founds Lita Construction on a simple promise: treat every homeowner’s project with the same care he’d want for his own family.',
+    title: 'Planting roots in NJ',
+    text: 'John brings two decades of hard-earned expertise across the river to New Jersey, founding Lita Construction as a local, family-focused operation.',
   },
   {
-    year: '2010',
-    title: 'Growing by word of mouth',
-    text: 'Reputation spreads across Bergen, Passaic, and Essex counties. Referrals — not advertising — become the backbone of the business.',
-  },
-  {
-    year: '2016',
-    title: 'GAF certified',
-    text: 'Earns GAF certification, unlocking the industry-leading 25-year warranty on labor and materials for qualifying roof installations.',
+    year: 'Two decades',
+    title: 'A neighborhood fixture',
+    text: 'Growing by word-of-mouth and the satisfaction of neighbors, the family stays focused on the craft — residential roofing, siding, and old-school Brooklyn masonry.',
   },
   {
     year: 'Today',
-    title: 'Trusted across NJ',
-    text: 'Chosen by 500+ New Jersey homeowners for roofing, siding, masonry, and full renovations — and still proudly family-run.',
+    title: 'A true family team',
+    text: 'Run by John alongside his brothers Gus and Max and his son John Jr., with his nephews carrying on the tradition — still proudly family-run.',
   },
 ]
 
 const proofPoints = [
-  `Founded ${business.founded} by ${business.founder}`,
+  `Learning the trade since 1991 · in NJ since ${business.founded}`,
   'GAF-certified roofing contractor',
   'Fully licensed & insured in New Jersey',
-  '25-year workmanship warranty',
+  'Our own dedicated, family-led crew',
 ]
 
 export function AboutPage() {
   const story = useReveal()
   const svc = useReveal()
   const why = useReveal()
+  const family = useReveal()
+  const commercial = useReveal()
   const timeline = useReveal()
   const areas = useReveal()
   const [activeCounty, setActiveCounty] = useState<string | null>(null)
@@ -106,7 +108,7 @@ export function AboutPage() {
     <>
       <Seo
         title="About Lita Construction LLC | Family-Owned NJ Contractor Since 2004"
-        description="Founded in 2004 by Johnny Lita, Lita Construction is a family-owned, GAF-certified roofing, siding & masonry contractor serving Northern & Central New Jersey. Learn our story."
+        description="Built on grit since 1991, family-owned since 2004. Lita Construction is a GAF-certified roofing, siding & masonry contractor run by John Lita and his family across Northern & Central New Jersey. Read our story."
         path="/about"
         schema={[
           localBusinessSchema,
@@ -141,11 +143,11 @@ export function AboutPage() {
             Our Story
           </span>
           <h1 className="mt-5 max-w-3xl font-display text-display-lg text-white">
-            Family-owned. <span className="text-brand-400">Built on trust.</span>
+            Built on Grit. <span className="text-brand-400">Bound by Family.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
-            Since {business.founded}, Lita Construction has protected New Jersey homes with honest
-            work, premium materials, and the accountability only a family business can offer.
+            From the hot-tar rooftops of 1991 Brooklyn to the homes we protect across New Jersey
+            today, the tools have changed — but our old-school work ethic and family values haven’t.
           </p>
         </div>
 
@@ -190,25 +192,28 @@ export function AboutPage() {
           </div>
 
           <div className="order-2">
-            <span className="eyebrow">Who We Are</span>
+            <span className="eyebrow">Our Story</span>
             <h2 className="mt-6 font-display text-display-md text-ink-900">
-              Two decades of building trust, one project at a time.
+              From Old Brooklyn rooftops to your New Jersey home.
             </h2>
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-cloud-600">
               <p>
-                When {business.founder} founded Lita Construction in {business.founded}, he set out
-                to do something simple but rare in this industry: treat every homeowner&apos;s
-                project with the same care, honesty, and craftsmanship he&apos;d want for his own
-                family&apos;s home.
+                Our story doesn&apos;t begin in a modern showroom. It begins in 1991, on the
+                blistering rooftops of &ldquo;Old Brooklyn.&rdquo; Our founder, {business.founder},
+                first learned the trade working alongside his Uncle Peter for Statewide Roofing —
+                mastering the &ldquo;hot tar&rdquo; kettle, a hands-on craft that demanded patience,
+                precision, and a toughness rarely seen in the industry today. That old-school work
+                ethic is the backbone of everything we do.
               </p>
               <p>
-                More than twenty years later, that promise still drives everything we do. We&apos;re
-                not a faceless franchise or a call center three states away — when you call{' '}
+                In {business.founded}, John brought those years of experience across the river to
+                New Jersey and established Lita Construction as a local, family-focused operation.
+                We didn&apos;t want to be a giant corporation with a fleet of strangers — we wanted
+                to be the local family you could trust. When you call{' '}
                 <a href={business.phoneHref} className="font-semibold text-brand-600 hover:underline">
                   {business.phone}
                 </a>
-                , you reach the people who actually do the work and stake their family name on every
-                job.
+                , you&apos;re not talking to a call center. You&apos;re talking to the family.
               </p>
             </div>
 
@@ -338,12 +343,108 @@ export function AboutPage() {
         </div>
       </section>
 
+      {/* ── 4b. A true family operation ── */}
+      <section className="bg-cloud-100 py-20 sm:py-28">
+        <div ref={family} className="reveal container-x">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow">A True Family Operation</span>
+            <h2 className="mt-6 font-display text-display-md text-ink-900">
+              When we say family business, we mean it.
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-cloud-600">
+              Today, Lita Construction is run by John alongside his brothers, Gus and Max, and his
+              son, John Jr. — with his nephews working within the business to carry on the tradition.
+              We employ our own dedicated crew so every project meets our standards, and because our
+              name is on the truck, there&apos;s a level of personal accountability you just
+              won&apos;t find with a big corporation.
+            </p>
+          </div>
+
+          {/* The people behind the name */}
+          <div className="mx-auto mt-12 grid max-w-4xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { name: 'John Lita', role: 'Founder & Owner' },
+              { name: 'Gus & Max', role: 'Brothers · Partners' },
+              { name: 'John Jr.', role: 'Next Generation' },
+              { name: 'The Nephews', role: 'Carrying the Tradition' },
+            ].map((person, i) => (
+              <Fade key={person.name} index={i}>
+                <div className="flex h-full flex-col items-center rounded-2xl border border-cloud-200 bg-white p-6 text-center shadow-soft">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600 text-white">
+                    <HandshakeIcon className="h-6 w-6" />
+                  </span>
+                  <p className="mt-4 font-display text-lg font-bold text-ink-900">{person.name}</p>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-cloud-500">
+                    {person.role}
+                  </p>
+                </div>
+              </Fade>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4c. Proven professional expertise (commercial credentials) ── */}
+      <section className="bg-white py-20 sm:py-28">
+        <div
+          ref={commercial}
+          className="reveal container-x grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16"
+        >
+          <div>
+            <span className="eyebrow">Proven Professional Expertise</span>
+            <h2 className="mt-6 font-display text-display-md text-ink-900">
+              Residential heart. Big-project precision.
+            </h2>
+            <div className="mt-6 space-y-4 text-lg leading-relaxed text-cloud-600">
+              <p>
+                While our heart is in residential work, our technical skill is trusted at the highest
+                levels. John&apos;s decades of experience include overseeing major commercial TPO
+                roofing projects for iconic buildings — bringing a superior level of technical
+                knowledge and &ldquo;big project&rdquo; precision to every local home we service.
+              </p>
+            </div>
+            <ul className="mt-8 space-y-3">
+              {[
+                'NY Times printing press — Whitestone, NY',
+                'The Alexander — Edgewater, NJ',
+                'Commercial TPO roofing at scale',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm font-medium text-ink-800">
+                  <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Marquee credential card */}
+          <div className="relative overflow-hidden rounded-3xl bg-navy-950 p-10 text-white shadow-lift">
+            <div
+              className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-brand-600/20 blur-3xl"
+              aria-hidden="true"
+            />
+            <span className="relative flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600 text-white">
+              <ShieldIcon className="h-6 w-6" />
+            </span>
+            <p className="relative mt-6 font-display text-2xl font-bold leading-snug text-white">
+              &ldquo;From the traditional tar roofs of the early 90s to the local projects of today,
+              the tools have changed — but our family values haven&apos;t.&rdquo;
+            </p>
+            <p className="relative mt-6 text-sm text-white/60">
+              {business.founder} · Founder, {business.shortName}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── 5. Journey timeline ── */}
       <section className="bg-cloud-100 py-20 sm:py-28">
         <div ref={timeline} className="reveal container-x">
           <div className="max-w-2xl">
             <span className="eyebrow">Our Journey</span>
-            <h2 className="mt-6 font-display text-display-md text-ink-900">Built over two decades.</h2>
+            <h2 className="mt-6 font-display text-display-md text-ink-900">
+              Two generations of grit.
+            </h2>
           </div>
 
           <ol className="mt-14 grid gap-y-10 md:grid-cols-4 md:gap-x-8">

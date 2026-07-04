@@ -18,7 +18,7 @@ const principles = [
     n: '02',
     icon: StarIcon,
     title: 'Our name is on it',
-    body: 'Founded by Johnny Lita in 2004. Not a franchise, not a call center — a family business that treats your home like its own.',
+    body: 'Founded by John Lita in 2004, in the trade since 1991. Not a franchise, not a call center — a family business that treats your home like its own.',
   },
   {
     n: '03',

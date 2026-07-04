@@ -1,7 +1,10 @@
 import { Link, useParams, Navigate } from 'react-router-dom'
-import { services, serviceAreas, serviceCities, business, menuServiceSlugs } from '../data/business'
+import { services, serviceAreas, business, menuServiceSlugs } from '../data/business'
+import { towns } from '../data/towns'
+import { roofingTowns } from '../data/roofingTowns'
 import { Seo } from '../components/Seo'
 import { QuoteForm } from '../components/QuoteForm'
+import { TownStamp } from '../components/TownStamp'
 import { CtaBand } from '../components/CtaBand'
 import { FaqAccordion } from '../components/FaqAccordion'
 import {
@@ -95,6 +98,48 @@ const galleryCategory: Record<string, string> = {
   'chimney-services': 'Masonry',
 }
 
+/** Drawing-set sheet code per trade — the document spine shared with the town pages. */
+const sheetCode: Record<string, string> = {
+  roofing: 'R-100',
+  'roof-repair': 'R-102',
+  'roof-replacement': 'R-101',
+  'commercial-roofing': 'R-103',
+  'residential-roofing': 'R-104',
+  'chimney-services': 'C-100',
+  siding: 'SD-100',
+  'siding-installation': 'SD-101',
+  'siding-repair': 'SD-102',
+  masonry: 'M-100',
+  'masonry-work': 'M-100',
+  gutters: 'GT-100',
+  'windows-doors': 'W-100',
+  'decks-pavers': 'P-100',
+  painting: 'PT-100',
+}
+
+/** Matrix service slug per trade, for deep links into /service-areas/<town>/<service>. */
+const matrixService: Record<string, string> = {
+  roofing: 'roofing',
+  'roof-repair': 'roofing',
+  'roof-replacement': 'roofing',
+  'commercial-roofing': 'roofing',
+  'residential-roofing': 'roofing',
+  'chimney-services': 'chimney-repair',
+  siding: 'siding',
+  'siding-installation': 'siding',
+  'siding-repair': 'siding',
+  masonry: 'masonry',
+  'masonry-work': 'masonry',
+  'decks-pavers': 'paver-driveways',
+}
+
+const heroTrust = [
+  'GAF Certified',
+  '25-Year Workmanship Warranty',
+  'Our Own Dedicated Crews',
+  'Licensed & Insured Since 2004',
+]
+
 export function ServicePage() {
   const { slug } = useParams<{ slug: string }>()
   const reveal = useReveal()
@@ -136,12 +181,17 @@ export function ServicePage() {
           style={{ backgroundImage: `url("${heroPhoto[service.slug]}")` }}
           aria-hidden="true"
         />
+        {/* Lighter scrim — strongest under the copy, letting the house photo breathe on the right */}
         <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/88 to-navy-950/55"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-950/65 to-navy-950/15"
           aria-hidden="true"
         />
-        <div className="container-x relative flex items-center justify-between gap-10 py-20 sm:py-28">
-          <div className="max-w-2xl flex-1">
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950/70 to-transparent"
+          aria-hidden="true"
+        />
+        <div className="container-x relative z-20 grid gap-12 py-20 sm:py-28 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
+          <div>
             <nav className="mb-6 flex flex-wrap items-center gap-2 text-sm text-white/60" aria-label="Breadcrumb">
               <Link to="/" className="hover:text-white">
                 Home
@@ -156,7 +206,7 @@ export function ServicePage() {
 
             <span className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-400">
               <span className="h-px w-9 bg-brand-400/70" />
-              {service.name} Services
+              Since 2004 · Sheet {sheetCode[service.slug] ?? 'A-100'}
             </span>
             <h1 className="mt-5 font-display text-display-lg text-white">
               {service.name} in <span className="whitespace-nowrap text-brand-400">New Jersey</span>
@@ -166,25 +216,32 @@ export function ServicePage() {
             <p className="mt-5 text-lg leading-relaxed text-white/80">{service.quickAnswer}</p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <a href="#service-quote" className="btn-primary">
-                Get a Free Estimate
-                <ArrowIcon className="h-4 w-4" />
-              </a>
-              <a href={business.phoneHref} className="btn-ghost-light">
+              <a href={business.phoneHref} className="btn-primary">
                 <PhoneIcon className="h-4 w-4" />
-                {business.phone}
+                Call Now: {business.phone}
               </a>
+            </div>
+
+            {/* Trust chip strip */}
+            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/15 pt-6">
+              {heroTrust.map((t) => (
+                <span key={t} className="inline-flex items-center gap-2 text-sm font-semibold text-white/85">
+                  <CheckIcon className="h-4 w-4 text-brand-400" />
+                  {t}
+                </span>
+              ))}
             </div>
           </div>
 
-          {/* White logo — reinforces the brand on the open right side of the hero */}
-          <img
-            src="/logo-white.png"
-            alt="Lita Construction LLC"
-            className="hidden h-40 w-auto shrink-0 opacity-90 lg:block xl:h-48"
-            loading="eager"
-            decoding="async"
-          />
+          {/* Free estimate form, stamped like approved paperwork */}
+          <div className="relative w-full lg:max-w-xl lg:justify-self-end">
+            <TownStamp
+              title={service.name}
+              subtitle="New Jersey · Since 2004"
+              className="stamp-in pointer-events-none absolute -right-4 -top-9 z-10 hidden h-28 w-28 text-brand-600 drop-shadow-lg sm:block lg:-right-7 lg:-top-11 lg:h-32 lg:w-32"
+            />
+            <QuoteForm />
+          </div>
         </div>
 
         {/* Triangle divider flowing into the section below */}
@@ -223,8 +280,11 @@ export function ServicePage() {
           </div>
 
           <div>
-            <span className="eyebrow">How It Works</span>
-            <h2 className="mt-5 font-display text-display-md text-ink-900">
+            {/* Drawing-set sheet tag — the site-protocol sheet, shared with the town pages */}
+            <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
+              Sheet G-002 · Site Protocol
+            </span>
+            <h2 className="mt-6 font-display text-display-md text-ink-900">
               What to expect, start to finish.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-cloud-600">
@@ -264,7 +324,7 @@ export function ServicePage() {
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {service.subServices.map((sub, i) => (
-              <SubCard key={sub.name} index={i} slug={service.slug}>
+              <SubCard key={sub.name} index={i}>
                 {sub.name}
                 {sub.description}
               </SubCard>
@@ -384,16 +444,20 @@ export function ServicePage() {
                 or call {business.phone}.
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
-                {serviceCities.slice(0, 8).map((c) => (
-                  <Link
-                    key={c}
-                    to="/service-areas"
-                    className="flex items-center gap-1.5 rounded-full border border-cloud-300 bg-cloud-50 px-3 py-1.5 text-xs font-medium text-ink-800 transition-colors hover:border-brand-600/40 hover:text-brand-600"
-                  >
-                    <PinIcon className="h-3 w-3 text-brand-600" />
-                    {service.name} in {c}, NJ
-                  </Link>
-                ))}
+                {/* Deep links into the dedicated service × city pages when this trade has them */}
+                {[...towns.slice(0, 4), ...roofingTowns.slice(0, 4)].map((t) => {
+                  const matrix = matrixService[service.slug]
+                  return (
+                    <Link
+                      key={t.slug}
+                      to={matrix ? `/service-areas/${t.slug}/${matrix}` : `/service-areas/${t.slug}`}
+                      className="flex items-center gap-1.5 rounded-full border border-cloud-300 bg-cloud-50 px-3 py-1.5 text-xs font-medium text-ink-800 transition-colors hover:border-brand-600/40 hover:text-brand-600"
+                    >
+                      <PinIcon className="h-3 w-3 text-brand-600" />
+                      {service.name} in {t.name}, NJ
+                    </Link>
+                  )
+                })}
               </div>
             </div>
           </div>
@@ -543,11 +607,9 @@ export function ServicePage() {
 function SubCard({
   children,
   index,
-  slug,
 }: {
   children: [string, string]
   index: number
-  slug: string
 }) {
   const ref = useReveal()
   return (
@@ -558,9 +620,9 @@ function SubCard({
           className="pointer-events-none absolute inset-y-0 left-0 w-1 origin-top scale-y-0 bg-brand-600 transition-transform duration-300 group-hover:scale-y-100"
           aria-hidden="true"
         />
-        {/* The trade's glyph in a rounded tile (same treatment as the Services hub) */}
-        <span className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[#f2f5f8] shadow-soft ring-1 ring-navy-950/5 transition-colors group-hover:bg-brand-50">
-          <ServiceGlyph slug={slug} />
+        {/* Detail-callout bubble, as on a drawing sheet */}
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-sand-400/70 font-display text-base font-black text-sand-700">
+          {String.fromCharCode(65 + index)}
         </span>
         <div className="min-w-0 flex-1">
           <div className="flex items-center justify-between gap-2">

@@ -82,6 +82,27 @@ body {
   }
 }
 
+/* Job-stamp press-in — the service-area signature mark landing on the estimate
+   "paperwork". Ends settled at the hand-pressed angle; reduced-motion users get
+   the final frame via the global rule + `both` fill. */
+@keyframes stampIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.3) rotate(-2deg);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(0.94) rotate(-9deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-8deg);
+  }
+}
+.stamp-in {
+  animation: stampIn 0.55s cubic-bezier(0.2, 1.4, 0.4, 1) 0.4s both;
+}
+
 /* Reveal-on-scroll utility (paired with IntersectionObserver hook) */
 .reveal {
   opacity: 0;
@@ -91,8 +112,10 @@ body {
     transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .reveal.is-visible {
+  /* `none` (not translateY(0)) so settled sections never act as containing
+     blocks — keeps position:sticky children (sheet-viewer frames) reliable. */
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

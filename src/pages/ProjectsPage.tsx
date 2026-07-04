@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { business, testimonials } from '../data/business'
+import { business, serviceAreas, testimonials } from '../data/business'
 import { Seo } from '../components/Seo'
 import { breadcrumbSchema } from '../lib/schema'
 import { gallery, galleryCategories, imagesByCategory, type GalleryImage } from '../data/gallery'
@@ -130,7 +130,7 @@ export function ProjectsPage() {
             {[
               { n: `${gallery.length}+`, l: 'Projects' },
               { n: '4', l: 'Specialties' },
-              { n: '8', l: 'Counties' },
+              { n: `${serviceAreas.length}`, l: 'Counties' },
               { n: business.yearsExperience, l: 'Years' },
             ].map((s) => (
               <div key={s.l}>

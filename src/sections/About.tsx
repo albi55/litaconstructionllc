@@ -4,7 +4,7 @@ import { useReveal } from '../lib/useReveal'
 import { CheckIcon } from '../components/icons'
 
 const points = [
-  'Founded in 2004 by Johnny Lita',
+  'In the trade since 1991 · NJ since 2004',
   'GAF-certified roofing contractor',
   'Fully licensed & insured in New Jersey',
   '25-year warranty on labor & materials',
@@ -44,15 +44,16 @@ export function About() {
           </h2>
           <div className="mt-6 space-y-4 text-lg leading-relaxed text-cloud-600">
             <p>
-              When Johnny Lita founded Lita Construction in {business.founded}, he set out to do
-              something simple but rare: treat every homeowner&apos;s project with the same care
-              and integrity he&apos;d want for his own family.
+              John Lita first learned the trade on the rooftops of Old Brooklyn back in 1991, and
+              in {business.founded} he brought that hard-earned expertise across the river to found
+              Lita Construction — a local, family-focused operation built on an old-school work
+              ethic.
             </p>
             <p>
-              More than twenty years later, that promise still drives everything we do. As a
-              GAF-certified, fully insured, family-owned contractor, we&apos;ve protected
-              hundreds of New Jersey homes with roofing, siding, and masonry built to outlast the
-              weather — and the warranty.
+              More than three decades of hands-on experience later, that grit still drives
+              everything we do. As a GAF-certified, fully insured, family-owned contractor, we&apos;ve
+              protected hundreds of New Jersey homes with roofing, siding, and masonry built to
+              outlast the weather — and the warranty.
             </p>
           </div>
 

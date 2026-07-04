@@ -8,8 +8,8 @@ export const business = {
   shortName: 'Lita Construction',
   tagline: 'Build Your Vision With Confidence',
   founded: 2004,
-  yearsExperience: '25+',
-  founder: 'Johnny Lita',
+  yearsExperience: '35+',
+  founder: 'John Lita',
   phone: '(201) 540-7772',
   phoneHref: 'tel:+12015407772',
   email: 'info@litaconstructionllc.com', // placeholder — update with real email
@@ -29,7 +29,7 @@ export const promoMessages = [
   '💲 Flexible financing available — ask about easy monthly payments',
   '🛡️ 25-Year Warranty on labor & materials — the strongest protection in the industry',
   '📞 Call (201) 540-7772 for a FREE, no-obligation estimate today',
-  '🏆 Serving Bergen, Passaic, Essex, Morris & 5 more NJ counties',
+  '🏆 Serving Bergen, Passaic, Essex, Morris, Monmouth, Somerset & 4 more NJ counties',
 ] as const
 
 export const serviceAreas = [
@@ -41,6 +41,8 @@ export const serviceAreas = [
   'Union County',
   'Middlesex County',
   'Sussex County',
+  'Monmouth County',
+  'Somerset County',
 ] as const
 
 // Representative cities for local-SEO copy and the service-area section.
@@ -897,9 +899,9 @@ export const homeServices: HomeService[] = menuServiceSlugs
 
 /** Headline trust stats reused across pages. */
 export const stats = [
-  { n: '25+', l: 'Years of Experience' },
+  { n: '35+', l: 'Years of Experience' },
   { n: '500+', l: 'NJ Projects Completed' },
-  { n: '8', l: 'Counties Served' },
+  { n: `${serviceAreas.length}`, l: 'Counties Served' },
   { n: '100%', l: 'Satisfaction Focused' },
 ] as const
 
@@ -995,7 +997,7 @@ export const faqs = [
   },
   {
     q: 'How long has Lita Construction been in business?',
-    a: 'Lita Construction was founded in 2004 by Johnny Lita and is a family-owned business with over 25 years of combined experience in roofing, siding, and masonry across New Jersey.',
+    a: 'Lita Construction was established in New Jersey in 2004 by John Lita, who first learned the trade back in 1991 on the rooftops of Old Brooklyn — bringing over 35 years of hands-on roofing, siding, and masonry experience to every project. Today it is run by John alongside his brothers Gus and Max and his son John Jr.',
   },
   {
     q: 'What roofing warranty do you provide?',
