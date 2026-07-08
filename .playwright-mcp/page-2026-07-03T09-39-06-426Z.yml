@@ -1,0 +1,755 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e5]:
+    - generic [ref=e6]: Limited Offer
+    - paragraph [ref=e8]: FREE roof inspection with every estimate this season·Family-owned & GAF certified since 2004
+    - link "Claim Offer" [ref=e9] [cursor=pointer]:
+      - /url: /contact
+      - text: Claim Offer
+      - img [ref=e10]
+    - button "Dismiss promotion" [ref=e12] [cursor=pointer]:
+      - img [ref=e13]
+  - banner [ref=e15]:
+    - generic [ref=e16]:
+      - link "Lita Construction LLC — home" [ref=e17] [cursor=pointer]:
+        - /url: /
+        - img "Lita Construction LLC logo" [ref=e18]
+      - navigation "Primary" [ref=e19]:
+        - link "Home" [ref=e20] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e22] [cursor=pointer]:
+          - /url: /services
+          - text: Services
+          - img [ref=e23]
+        - link "Portfolio" [ref=e25] [cursor=pointer]:
+          - /url: /projects
+        - link "Our Story" [ref=e26] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "More" [ref=e29] [cursor=pointer]:
+          - /url: /service-areas
+          - text: More
+          - img [ref=e30]
+      - generic [ref=e32]:
+        - link "Call Lita Construction LLC at (201) 540-7772" [ref=e33] [cursor=pointer]:
+          - /url: tel:+12015407772
+          - img [ref=e35]
+          - generic [ref=e37]:
+            - generic [ref=e38]: Free Estimate
+            - generic [ref=e39]: (201) 540-7772
+        - link "Get a Quote" [ref=e40] [cursor=pointer]:
+          - /url: /contact
+    - region "Services menu":
+      - generic:
+        - generic:
+          - img
+          - generic:
+            - generic: What We Do
+            - heading "Premium exterior services." [level=3]
+            - paragraph: GAF-certified roofing, siding, and masonry — backed by a written 25-year workmanship warranty and two decades of North Jersey craftsmanship.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: 25+
+                  - generic: Years experience
+              - generic:
+                - generic:
+                  - generic: GAF
+                  - generic: Certified
+            - link "View all services":
+              - /url: /services
+              - text: View all services
+              - img
+            - link "Call for a free estimate (201) 540-7772":
+              - /url: tel:+12015407772
+              - generic:
+                - img
+              - generic:
+                - generic: Call for a free estimate
+                - generic: (201) 540-7772
+        - generic:
+          - link "All Services Every trade we offer, in one place":
+            - /url: /services
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - text: All Services
+                - img
+              - generic: Every trade we offer, in one place
+          - link "Roofing Roof replacement, repair & new installs":
+            - /url: /services/roofing
+            - generic:
+              - img
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - text: Roofing
+                - img
+              - generic: Roof replacement, repair & new installs
+          - link "Siding Vinyl, fiber-cement & exterior siding":
+            - /url: /services/siding
+            - generic:
+              - img
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - text: Siding
+                - img
+              - generic: Vinyl, fiber-cement & exterior siding
+          - link "Masonry Chimneys, pavers, foundations & stone":
+            - /url: /services/masonry
+            - generic:
+              - img
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - text: Masonry
+                - img
+              - generic: Chimneys, pavers, foundations & stone
+          - link "Gutters Seamless gutters, guards & drainage":
+            - /url: /services/gutters
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - text: Gutters
+                - img
+              - generic: Seamless gutters, guards & drainage
+          - link "Windows & Doors Energy-efficient windows & entry doors":
+            - /url: /services/windows-doors
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - text: Windows & Doors
+                - img
+              - generic: Energy-efficient windows & entry doors
+          - link "Decks & Pavers Decks, paver patios & outdoor living":
+            - /url: /services/decks-pavers
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - text: Decks & Pavers
+                - img
+              - generic: Decks, paver patios & outdoor living
+          - link "Exterior Painting Exterior painting & surface prep":
+            - /url: /services/painting
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - text: Exterior Painting
+                - img
+              - generic: Exterior painting & surface prep
+          - link "Renovation Whole-home & room remodels":
+            - /url: /projects
+            - generic:
+              - img
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - text: Renovation
+                - img
+              - generic: Whole-home & room remodels
+          - link "Bathroom Full bathroom remodels & waterproofing":
+            - /url: /projects
+            - generic:
+              - img
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - text: Bathroom
+                - img
+              - generic: Full bathroom remodels & waterproofing
+          - link "Chimney Repointing, rebuilds & leak repair":
+            - /url: /projects
+            - generic:
+              - img
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - text: Chimney
+                - img
+              - generic: Repointing, rebuilds & leak repair
+    - region "More menu":
+      - generic:
+        - generic:
+          - img
+          - generic:
+            - generic: Explore
+            - heading "Get to know Lita Construction." [level=3]
+            - paragraph: Where we work, what our customers say, flexible financing, and answers to the questions homeowners ask most.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: 25+
+                  - generic: Years in NJ
+              - generic:
+                - generic:
+                  - generic: "5.0"
+                  - generic: Avg. rating
+            - link "See our service areas":
+              - /url: /service-areas
+              - text: See our service areas
+              - img
+            - link "Call for a free estimate (201) 540-7772":
+              - /url: tel:+12015407772
+              - generic:
+                - img
+              - generic:
+                - generic: Call for a free estimate
+                - generic: (201) 540-7772
+        - generic:
+          - link "Areas We Serve The NJ counties & towns we cover":
+            - /url: /service-areas
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - text: Areas We Serve
+                - img
+              - generic: The NJ counties & towns we cover
+          - link "Testimonials What North Jersey homeowners say":
+            - /url: /reviews
+            - generic:
+              - img
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - text: Testimonials
+                - img
+              - generic: What North Jersey homeowners say
+          - link "Financing Flexible options & free estimates":
+            - /url: /financing
+            - generic:
+              - img
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - text: Financing
+                - img
+              - generic: Flexible options & free estimates
+          - link "FAQ Answers to common questions":
+            - /url: /faq
+            - generic:
+              - img
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - text: FAQ
+                - img
+              - generic: Answers to common questions
+  - main [ref=e41]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - navigation "Breadcrumb" [ref=e45]:
+          - link "Home" [ref=e46] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e47]: /
+          - link "Services" [ref=e48] [cursor=pointer]:
+            - /url: /services
+          - generic [ref=e49]: /
+          - generic [ref=e50]: Gutters
+        - generic [ref=e51]: Gutters Services
+        - heading "Gutters in New Jersey" [level=1] [ref=e53]
+        - paragraph [ref=e54]: Lita Construction installs custom seamless aluminum gutters, leaf guards, and downspouts — formed on-site to your roofline and pitched to move water away from your foundation — across Northern & Central New Jersey.
+        - generic [ref=e55]:
+          - link "Get a Free Estimate" [ref=e56] [cursor=pointer]:
+            - /url: "#service-quote"
+            - text: Get a Free Estimate
+            - img [ref=e57]
+          - link "(201) 540-7772" [ref=e59] [cursor=pointer]:
+            - /url: tel:+12015407772
+            - img [ref=e60]
+            - text: (201) 540-7772
+      - img "Lita Construction LLC" [ref=e62]
+    - generic [ref=e64]:
+      - img "Gutters project in progress by Lita Construction in New Jersey" [ref=e67]
+      - generic [ref=e68]:
+        - generic [ref=e69]: How It Works
+        - heading "What to expect, start to finish." [level=2] [ref=e70]
+        - paragraph [ref=e71]: No surprises, no vague timelines. Here's exactly how a gutters project runs with Lita Construction.
+        - list [ref=e72]:
+          - listitem [ref=e74]:
+            - generic [ref=e76]:
+              - generic [ref=e77]: "1"
+              - generic [ref=e78]:
+                - heading "Free inspection & measurement" [level=3] [ref=e79]
+                - paragraph [ref=e80]: We check your existing gutters, fascia, and drainage, then measure the roofline exactly so your new gutters are formed to fit — not cut from stock lengths.
+          - listitem [ref=e82]:
+            - generic [ref=e84]:
+              - generic [ref=e85]: "2"
+              - generic [ref=e86]:
+                - heading "Material & color selection" [level=3] [ref=e87]
+                - paragraph [ref=e88]: Choose your gutter size, color, and whether to add leaf guards, matched to your roof and trim before anything is ordered.
+          - listitem [ref=e90]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: "3"
+              - generic [ref=e94]:
+                - heading "On-site seamless forming" [level=3] [ref=e95]
+                - paragraph [ref=e96]: We run your aluminum through a forming machine right at your home, producing each gutter run in one continuous, seam-free length.
+          - listitem [ref=e98]:
+            - generic [ref=e100]:
+              - generic [ref=e101]: "4"
+              - generic [ref=e102]:
+                - heading "Hanging, pitch & downspouts" [level=3] [ref=e103]
+                - paragraph [ref=e104]: Gutters are hung with hidden hangers, pitched precisely toward the downspouts, and tied into drainage that carries water away from the foundation.
+          - listitem [ref=e106]:
+            - generic [ref=e107]:
+              - generic [ref=e108]: "5"
+              - generic [ref=e109]:
+                - heading "Water test & cleanup" [level=3] [ref=e110]
+                - paragraph [ref=e111]: We flush the system to confirm it drains clean with no overflow or pooling, then clear the site of all debris.
+    - generic [ref=e113]:
+      - generic [ref=e114]:
+        - generic [ref=e115]: Our Gutters Services
+        - heading "Everything gutters, done right." [level=2] [ref=e116]
+      - generic [ref=e117]:
+        - generic [ref=e119]:
+          - img [ref=e121]
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - heading "Seamless Gutters" [level=3] [ref=e127]
+              - img [ref=e128]
+            - paragraph [ref=e130]: 5" and 6" K-style aluminum gutters formed on-site in one continuous piece, so there are no joints to leak or clog.
+        - generic [ref=e132]:
+          - img [ref=e134]
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - heading "Gutter Guards" [level=3] [ref=e140]
+              - img [ref=e141]
+            - paragraph [ref=e143]: Micro-mesh and screen leaf-protection systems that keep debris out and end the twice-a-year ladder routine.
+        - generic [ref=e145]:
+          - img [ref=e147]
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - heading "Downspouts & Drainage" [level=3] [ref=e153]
+              - img [ref=e154]
+            - paragraph [ref=e156]: Properly sized downspouts and extensions that carry water well clear of your foundation and landscaping.
+        - generic [ref=e158]:
+          - img [ref=e160]
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - heading "Soffit & Fascia" [level=3] [ref=e166]
+              - img [ref=e167]
+            - paragraph [ref=e169]: Repair and replacement of the fascia board and soffit gutters hang from — the wood that rot reaches first.
+    - generic [ref=e171]:
+      - generic [ref=e172]:
+        - generic [ref=e173]:
+          - generic [ref=e174]: Recent Work
+          - heading "Gutters projects across NJ." [level=2] [ref=e175]
+        - link "See Our Full Portfolio" [ref=e176] [cursor=pointer]:
+          - /url: /projects
+          - text: See Our Full Portfolio
+          - img [ref=e177]
+      - generic [ref=e179]:
+        - img "Gutters project by Lita Construction in New Jersey" [ref=e181]
+        - img "Gutters project by Lita Construction in New Jersey" [ref=e183]
+        - img "Gutters project by Lita Construction in New Jersey" [ref=e185]
+        - img "Gutters project by Lita Construction in New Jersey" [ref=e187]
+        - img "Gutters project by Lita Construction in New Jersey" [ref=e189]
+        - img "Gutters project by Lita Construction in New Jersey" [ref=e191]
+        - img "Gutters project by Lita Construction in New Jersey" [ref=e193]
+        - img "Gutters project by Lita Construction in New Jersey" [ref=e195]
+    - generic [ref=e197]:
+      - generic [ref=e198]: Materials & Options
+      - heading "Choosing the right gutters option." [level=2] [ref=e199]
+      - paragraph [ref=e200]: Every home and budget is different — here's an honest comparison of what we install most often, so you know what to ask for before your free estimate.
+      - table [ref=e202]:
+        - rowgroup [ref=e203]:
+          - row "Option Best For Typical Lifespan Notes" [ref=e204]:
+            - columnheader "Option" [ref=e205]
+            - columnheader "Best For" [ref=e206]
+            - columnheader "Typical Lifespan" [ref=e207]
+            - columnheader "Notes" [ref=e208]
+        - rowgroup [ref=e209]:
+          - row "Seamless Aluminum (5\") Most NJ homes — the standard for value & performance 20+ years Rust-proof, formed on-site with no seams; our most-installed system." [ref=e210]:
+            - cell "Seamless Aluminum (5\")" [ref=e211]
+            - cell "Most NJ homes — the standard for value & performance" [ref=e212]
+            - cell "20+ years" [ref=e213]
+            - cell "Rust-proof, formed on-site with no seams; our most-installed system." [ref=e214]
+          - row "Oversized Aluminum (6\") Large roofs, steep pitches & heavy-rain runoff 20+ years Handles more water and pairs with larger downspouts to prevent overflow." [ref=e215]:
+            - cell "Oversized Aluminum (6\")" [ref=e216]
+            - cell "Large roofs, steep pitches & heavy-rain runoff" [ref=e217]
+            - cell "20+ years" [ref=e218]
+            - cell "Handles more water and pairs with larger downspouts to prevent overflow." [ref=e219]
+          - row "Gutter Guards Homes under trees or with hard-to-reach rooflines Long-term add-on Micro-mesh keeps out leaves and pine needles so gutters stay flowing." [ref=e220]:
+            - cell "Gutter Guards" [ref=e221]
+            - cell "Homes under trees or with hard-to-reach rooflines" [ref=e222]
+            - cell "Long-term add-on" [ref=e223]
+            - cell "Micro-mesh keeps out leaves and pine needles so gutters stay flowing." [ref=e224]
+          - row "Copper / Half-Round Historic & high-end homes wanting a premium look 50+ years An architectural upgrade that patinas over time, at a higher upfront cost." [ref=e225]:
+            - cell "Copper / Half-Round" [ref=e226]
+            - cell "Historic & high-end homes wanting a premium look" [ref=e227]
+            - cell "50+ years" [ref=e228]
+            - cell "An architectural upgrade that patinas over time, at a higher upfront cost." [ref=e229]
+      - generic [ref=e230]:
+        - generic [ref=e231]:
+          - generic [ref=e232]: What's Included
+          - heading "Complete gutters services." [level=3] [ref=e233]
+          - list [ref=e234]:
+            - listitem [ref=e235]:
+              - img [ref=e236]
+              - text: Seamless aluminum gutters
+            - listitem [ref=e238]:
+              - img [ref=e239]
+              - text: Gutter guards & leaf protection
+            - listitem [ref=e241]:
+              - img [ref=e242]
+              - text: Downspouts & drainage
+            - listitem [ref=e244]:
+              - img [ref=e245]
+              - text: Soffit & fascia repair
+            - listitem [ref=e247]:
+              - img [ref=e248]
+              - text: Gutter cleaning & tune-ups
+            - listitem [ref=e250]:
+              - img [ref=e251]
+              - text: Copper & half-round upgrades
+        - generic [ref=e253]:
+          - generic [ref=e254]: Local Coverage
+          - heading "Gutters across North & Central NJ." [level=3] [ref=e255]
+          - paragraph [ref=e256]:
+            - text: We provide expert gutters services throughout Bergen County, Passaic County, Essex County, Hudson County, Morris County, Union County, Middlesex County and Sussex County — and the towns within them. Not sure if we cover your area?
+            - link "View our full service area map" [ref=e257] [cursor=pointer]:
+              - /url: /service-areas
+            - text: or call (201) 540-7772.
+          - generic [ref=e258]:
+            - link "Gutters in Bergenfield, NJ" [ref=e259] [cursor=pointer]:
+              - /url: /service-areas
+              - img [ref=e260]
+              - text: Gutters in Bergenfield, NJ
+            - link "Gutters in Paramus, NJ" [ref=e263] [cursor=pointer]:
+              - /url: /service-areas
+              - img [ref=e264]
+              - text: Gutters in Paramus, NJ
+            - link "Gutters in Hackensack, NJ" [ref=e267] [cursor=pointer]:
+              - /url: /service-areas
+              - img [ref=e268]
+              - text: Gutters in Hackensack, NJ
+            - link "Gutters in Englewood, NJ" [ref=e271] [cursor=pointer]:
+              - /url: /service-areas
+              - img [ref=e272]
+              - text: Gutters in Englewood, NJ
+            - link "Gutters in Fort Lee, NJ" [ref=e275] [cursor=pointer]:
+              - /url: /service-areas
+              - img [ref=e276]
+              - text: Gutters in Fort Lee, NJ
+            - link "Gutters in Clifton, NJ" [ref=e279] [cursor=pointer]:
+              - /url: /service-areas
+              - img [ref=e280]
+              - text: Gutters in Clifton, NJ
+            - link "Gutters in Paterson, NJ" [ref=e283] [cursor=pointer]:
+              - /url: /service-areas
+              - img [ref=e284]
+              - text: Gutters in Paterson, NJ
+            - link "Gutters in Montclair, NJ" [ref=e287] [cursor=pointer]:
+              - /url: /service-areas
+              - img [ref=e288]
+              - text: Gutters in Montclair, NJ
+    - generic [ref=e292]:
+      - generic [ref=e293]:
+        - generic [ref=e294]: Gutters FAQs
+        - heading "Good to know." [level=2] [ref=e295]
+        - paragraph [ref=e296]:
+          - text: Quick answers to the questions homeowners ask most about gutters. Have a different question?
+          - link "Browse our full FAQ" [ref=e297] [cursor=pointer]:
+            - /url: /faq
+          - text: or call (201) 540-7772.
+      - generic [ref=e298]:
+        - generic [ref=e300]:
+          - button "01 What are seamless gutters and why are they better?" [expanded] [ref=e301] [cursor=pointer]:
+            - generic [ref=e302]: "01"
+            - generic [ref=e303]: What are seamless gutters and why are they better?
+            - img [ref=e305]
+          - paragraph [ref=e309]: Seamless gutters are formed from one continuous piece of aluminum on-site to fit your roofline exactly. Because there are no joints along each run, there is nothing to separate, leak, or collect debris the way sectional gutters do — which is why they last longer and need far less maintenance.
+        - generic [ref=e311]:
+          - button "02 Do gutter guards actually work?" [ref=e312] [cursor=pointer]:
+            - generic [ref=e313]: "02"
+            - generic [ref=e314]: Do gutter guards actually work?
+            - img [ref=e316]
+          - paragraph [ref=e318]: Good ones do. We install micro-mesh and screen systems that block leaves, pine needles, and shingle grit while letting water through. They will not make gutters 100% maintenance-free, but they end the twice-a-year cleaning and dramatically cut clogs and overflow.
+        - generic [ref=e320]:
+          - button "03 Do I need new gutters or just a repair?" [ref=e321] [cursor=pointer]:
+            - generic [ref=e322]: "03"
+            - generic [ref=e323]: Do I need new gutters or just a repair?
+            - img [ref=e325]
+          - paragraph [ref=e327]: Sagging, separated seams, peeling paint or rust, water spilling over the front in rain, or gutters pulling away from the fascia usually mean replacement is the smarter fix. Isolated issues — a loose hanger or a clogged downspout — we simply repair. We tell you honestly which one you are looking at.
+        - generic [ref=e329]:
+          - button "04 Can bad gutters really damage my foundation?" [ref=e330] [cursor=pointer]:
+            - generic [ref=e331]: "04"
+            - generic [ref=e332]: Can bad gutters really damage my foundation?
+            - img [ref=e334]
+          - paragraph [ref=e336]: Yes. Gutters that overflow or dump water at the base of the house send thousands of gallons against your foundation, leading to basement leaks, cracks, and erosion. Correctly pitched gutters and extended downspouts are one of the cheapest ways to protect the most expensive part of your home.
+        - generic [ref=e338]:
+          - button "05 What size gutters do I need?" [ref=e339] [cursor=pointer]:
+            - generic [ref=e340]: "05"
+            - generic [ref=e341]: What size gutters do I need?
+            - img [ref=e343]
+          - paragraph [ref=e345]: Most homes are well served by 5-inch K-style gutters, but larger roofs, steep pitches, or homes that see heavy runoff often need 6-inch gutters with bigger downspouts. We size the system to your actual roof area and rainfall so it never overflows.
+        - generic [ref=e347]:
+          - button "06 Do you repair the soffit and fascia too?" [ref=e348] [cursor=pointer]:
+            - generic [ref=e349]: "06"
+            - generic [ref=e350]: Do you repair the soffit and fascia too?
+            - img [ref=e352]
+          - paragraph [ref=e354]: Yes. The fascia board gutters hang from and the soffit behind it are often where hidden rot starts. We inspect and replace any damaged wood before hanging new gutters, so they are mounted to something solid.
+        - generic [ref=e356]:
+          - button "07 How long does a gutter installation take?" [ref=e357] [cursor=pointer]:
+            - generic [ref=e358]: "07"
+            - generic [ref=e359]: How long does a gutter installation take?
+            - img [ref=e361]
+          - paragraph [ref=e363]: Most homes are completed in a single day. Because we form the gutters on-site, there is no waiting on custom orders — we measure, form, and hang in one visit.
+    - generic [ref=e365]:
+      - generic [ref=e366]:
+        - generic [ref=e367]: Free Estimate
+        - heading "Start your gutters project today." [level=2] [ref=e369]
+        - paragraph [ref=e370]:
+          - text: Get a free, no-obligation estimate from a trusted, licensed New Jersey contractor. Call (201) 540-7772 or send a request and we'll be in touch fast. Prefer to explore financing first?
+          - link "See our flexible payment options" [ref=e371] [cursor=pointer]:
+            - /url: /financing
+          - text: .
+      - generic [ref=e372]:
+        - heading "Request a Free Estimate" [level=3] [ref=e373]
+        - paragraph [ref=e374]: Fill out the form and we'll get back to you within one business day.
+        - generic [ref=e375]:
+          - generic [ref=e376]:
+            - generic [ref=e377]:
+              - generic [ref=e378]: Full Name *
+              - textbox "Full Name *" [ref=e379]:
+                - /placeholder: Jane Smith
+            - generic [ref=e380]:
+              - generic [ref=e381]: Phone *
+              - textbox "Phone *" [ref=e382]:
+                - /placeholder: (201) 555-0100
+          - generic [ref=e383]:
+            - generic [ref=e384]:
+              - generic [ref=e385]: Email
+              - textbox "Email" [ref=e386]:
+                - /placeholder: you@email.com
+            - generic [ref=e387]:
+              - generic [ref=e388]: ZIP Code
+              - textbox "ZIP Code" [ref=e389]:
+                - /placeholder: "07601"
+          - generic [ref=e390]:
+            - generic [ref=e391]: Service Needed *
+            - combobox "Service Needed *" [ref=e392]:
+              - option "Select a service…" [disabled] [selected]
+              - option "Roofing"
+              - option "Siding"
+              - option "Masonry"
+              - option "Gutters"
+              - option "Windows & Doors"
+              - option "Decks & Pavers"
+              - option "Exterior Painting"
+              - option "Renovation"
+              - option "Bathroom"
+              - option "Chimney"
+              - option "Multiple / Other"
+          - generic [ref=e393]:
+            - generic [ref=e394]: Project Details
+            - textbox "Project Details" [ref=e395]:
+              - /placeholder: Tell us about your project, timeline, or any questions…
+        - button "Get My Free Estimate" [ref=e396] [cursor=pointer]:
+          - text: Get My Free Estimate
+          - img [ref=e397]
+        - paragraph [ref=e399]: No spam. No obligation. Your information stays private.
+    - generic [ref=e401]:
+      - generic [ref=e402]: More from Lita Construction
+      - generic [ref=e403]:
+        - link "Roofing Roof replacement, repair & new installs" [ref=e404] [cursor=pointer]:
+          - /url: /services/roofing
+          - generic [ref=e405]:
+            - img [ref=e407]
+            - generic [ref=e411]:
+              - heading "Roofing" [level=3] [ref=e412]
+              - paragraph [ref=e413]: Roof replacement, repair & new installs
+          - img [ref=e414]
+        - link "Siding Vinyl, fiber-cement & exterior siding" [ref=e416] [cursor=pointer]:
+          - /url: /services/siding
+          - generic [ref=e417]:
+            - img [ref=e419]
+            - generic [ref=e423]:
+              - heading "Siding" [level=3] [ref=e424]
+              - paragraph [ref=e425]: Vinyl, fiber-cement & exterior siding
+          - img [ref=e426]
+        - link "Masonry Chimneys, pavers, foundations & stone" [ref=e428] [cursor=pointer]:
+          - /url: /services/masonry
+          - generic [ref=e429]:
+            - img [ref=e431]
+            - generic [ref=e434]:
+              - heading "Masonry" [level=3] [ref=e435]
+              - paragraph [ref=e436]: Chimneys, pavers, foundations & stone
+          - img [ref=e437]
+        - link "Windows & Doors Energy-efficient windows & entry doors" [ref=e439] [cursor=pointer]:
+          - /url: /services/windows-doors
+          - generic [ref=e440]:
+            - img [ref=e442]
+            - generic [ref=e446]:
+              - heading "Windows & Doors" [level=3] [ref=e447]
+              - paragraph [ref=e448]: Energy-efficient windows & entry doors
+          - img [ref=e449]
+        - link "Decks & Pavers Decks, paver patios & outdoor living" [ref=e451] [cursor=pointer]:
+          - /url: /services/decks-pavers
+          - generic [ref=e452]:
+            - img [ref=e454]
+            - generic [ref=e458]:
+              - heading "Decks & Pavers" [level=3] [ref=e459]
+              - paragraph [ref=e460]: Decks, paver patios & outdoor living
+          - img [ref=e461]
+        - link "Exterior Painting Exterior painting & surface prep" [ref=e463] [cursor=pointer]:
+          - /url: /services/painting
+          - generic [ref=e464]:
+            - img [ref=e466]
+            - generic [ref=e470]:
+              - heading "Exterior Painting" [level=3] [ref=e471]
+              - paragraph [ref=e472]: Exterior painting & surface prep
+          - img [ref=e473]
+    - generic [ref=e477]:
+      - generic [ref=e478]:
+        - heading "Ready for expert gutters?" [level=2] [ref=e479]
+        - paragraph [ref=e480]: Get a free, no-obligation estimate from a GAF-certified, family-owned NJ contractor. Call (201) 540-7772 or request a quote online.
+      - generic [ref=e481]:
+        - link "Get a Free Estimate" [ref=e482] [cursor=pointer]:
+          - /url: /contact
+          - text: Get a Free Estimate
+          - img [ref=e483]
+        - link "(201) 540-7772" [ref=e485] [cursor=pointer]:
+          - /url: tel:+12015407772
+          - img [ref=e486]
+          - text: (201) 540-7772
+  - contentinfo [ref=e488]:
+    - generic [ref=e490]:
+      - generic [ref=e491]:
+        - heading "Ready to start your project?" [level=2] [ref=e492]
+        - paragraph [ref=e493]: Free, no-obligation estimates across Northern & Central New Jersey.
+      - generic [ref=e494]:
+        - link "(201) 540-7772" [ref=e495] [cursor=pointer]:
+          - /url: tel:+12015407772
+          - img [ref=e496]
+          - text: (201) 540-7772
+        - link "Get a Free Estimate" [ref=e498] [cursor=pointer]:
+          - /url: /contact
+          - text: Get a Free Estimate
+          - img [ref=e499]
+    - generic [ref=e501]:
+      - generic [ref=e502]:
+        - link "Lita Construction LLC — home" [ref=e503] [cursor=pointer]:
+          - /url: /
+          - img "Lita Construction LLC logo" [ref=e504]
+        - paragraph [ref=e505]: Family-owned roofing, siding & masonry contractor serving Northern & Central New Jersey since 2004.
+        - generic [ref=e506]:
+          - img "GAF Certified Contractor" [ref=e507]
+          - generic [ref=e508]: GAF Certified
+          - generic [ref=e509]: Fully Insured
+          - generic [ref=e510]: 25-Year Workmanship Warranty
+      - generic [ref=e511]:
+        - heading "Services" [level=3] [ref=e512]
+        - list [ref=e513]:
+          - listitem [ref=e514]:
+            - link "Roofing" [ref=e515] [cursor=pointer]:
+              - /url: /services/roofing
+              - text: Roofing
+          - listitem [ref=e516]:
+            - link "Siding" [ref=e517] [cursor=pointer]:
+              - /url: /services/siding
+              - text: Siding
+          - listitem [ref=e518]:
+            - link "Masonry" [ref=e519] [cursor=pointer]:
+              - /url: /services/masonry
+              - text: Masonry
+          - listitem [ref=e520]:
+            - link "Gutters" [ref=e521] [cursor=pointer]:
+              - /url: /services/gutters
+              - text: Gutters
+          - listitem [ref=e522]:
+            - link "Windows & Doors" [ref=e523] [cursor=pointer]:
+              - /url: /services/windows-doors
+              - text: Windows & Doors
+          - listitem [ref=e524]:
+            - link "Decks & Pavers" [ref=e525] [cursor=pointer]:
+              - /url: /services/decks-pavers
+              - text: Decks & Pavers
+          - listitem [ref=e526]:
+            - link "Exterior Painting" [ref=e527] [cursor=pointer]:
+              - /url: /services/painting
+              - text: Exterior Painting
+          - listitem [ref=e528]:
+            - link "Renovation" [ref=e529] [cursor=pointer]:
+              - /url: /projects
+              - text: Renovation
+          - listitem [ref=e530]:
+            - link "Bathroom" [ref=e531] [cursor=pointer]:
+              - /url: /projects
+              - text: Bathroom
+          - listitem [ref=e532]:
+            - link "Chimney" [ref=e533] [cursor=pointer]:
+              - /url: /projects
+              - text: Chimney
+      - generic [ref=e534]:
+        - heading "Company" [level=3] [ref=e535]
+        - list [ref=e536]:
+          - listitem [ref=e537]:
+            - link "About Us" [ref=e538] [cursor=pointer]:
+              - /url: /about
+              - text: About Us
+          - listitem [ref=e539]:
+            - link "Our Projects" [ref=e540] [cursor=pointer]:
+              - /url: /projects
+              - text: Our Projects
+          - listitem [ref=e541]:
+            - link "Service Areas" [ref=e542] [cursor=pointer]:
+              - /url: /service-areas
+              - text: Service Areas
+          - listitem [ref=e543]:
+            - link "Reviews" [ref=e544] [cursor=pointer]:
+              - /url: /reviews
+              - text: Reviews
+          - listitem [ref=e545]:
+            - link "Financing" [ref=e546] [cursor=pointer]:
+              - /url: /financing
+              - text: Financing
+          - listitem [ref=e547]:
+            - link "FAQ" [ref=e548] [cursor=pointer]:
+              - /url: /faq
+              - text: FAQ
+      - generic [ref=e549]:
+        - heading "Get In Touch" [level=3] [ref=e550]
+        - list [ref=e551]:
+          - listitem [ref=e552]:
+            - link "(201) 540-7772" [ref=e553] [cursor=pointer]:
+              - /url: tel:+12015407772
+              - img [ref=e555]
+              - generic [ref=e557]: (201) 540-7772
+          - listitem [ref=e558]:
+            - link "info@litaconstructionllc.com" [ref=e559] [cursor=pointer]:
+              - /url: mailto:info@litaconstructionllc.com
+              - img [ref=e561]
+              - text: info@litaconstructionllc.com
+          - listitem [ref=e564]:
+            - img [ref=e566]
+            - text: Mon–Sat, 7:00 AM – 6:00 PM
+          - listitem [ref=e569]:
+            - img [ref=e571]
+            - text: Northern & Central New Jersey
+    - generic [ref=e575]:
+      - paragraph [ref=e576]: "© 2026 Lita Construction LLC. All rights reserved. · NJ Lic. #13VH11703800"
+      - paragraph [ref=e577]:
+        - generic [ref=e578]: Bergen ·
+        - generic [ref=e579]: Passaic ·
+        - generic [ref=e580]: Essex ·
+        - generic [ref=e581]: Hudson ·
+        - generic [ref=e582]: Morris ·
+        - generic [ref=e583]: "& more"

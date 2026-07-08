@@ -342,6 +342,54 @@ export const services: Service[] = [
     keywords: ["siding installation NJ", "fiber cement siding New Jersey", "vinyl siding contractor Bergen County"],
   },
   {
+    slug: "siding-replacement",
+    name: "Siding Replacement",
+    short: "Full tear-off — premium vinyl & James Hardie®",
+    blurb:
+      "Complete siding replacement done as a building-envelope system — a surgical tear-off to the sheathing, hidden-rot repair, high-performance house wrap and flashing, then premium vinyl or James Hardie® fiber cement installed to protect your home's structure, not just its curb appeal.",
+    intro:
+      "Siding is the primary skin of your home's structural envelope. In the climate of Northern & Central New Jersey — where exteriors take extreme thermal expansion, wind-driven rain, freeze-thaw, and heavy summer humidity — siding has to do far more than look good; it has to work as a moisture-management system that keeps water out of your framing. Lita Construction replaces siding the right way: we don't just hang new panels over failing materials, we strip the wall back to the sheathing, correct any hidden rot, build a proper secondary weather barrier, and reinstall in high-gauge premium vinyl or James Hardie® fiber cement engineered for the Northeast. As a family-owned contractor with over two decades across roofing, masonry, and siding, we bring true building-envelope expertise — including flashing details most siding-only crews can't execute — to protect the most expensive parts of your home.",
+    quickAnswer:
+      "Lita Construction replaces residential siding as a full building-envelope system across Northern & Central New Jersey — a complete tear-off to the sheathing, hidden-rot repair, high-performance house wrap and custom flashing, then premium vinyl or James Hardie® fiber-cement cladding engineered for the Northeast climate.",
+    features: [
+      "Full tear-off to the sheathing (no re-siding over old panels)",
+      "Premium high-gauge vinyl & CertainTeed® Cedar Impressions®",
+      "James Hardie® fiber cement (HardieZone® HZ5)",
+      "Structural substrate & hidden-rot audit",
+      "High-performance house wrap & seam-taped weather barrier",
+      "Custom-bent flashing at every window, door & transition",
+    ],
+    subServices: [
+      { name: "Premium Vinyl Siding", description: "Heavy-wall, high-gauge vinyl and polymer panels — including CertainTeed® Monogram and Cedar Impressions® — with reinforced nail hems and baked-in color that resists fading, chalking, and denting far better than contractor-grade vinyl." },
+      { name: "James Hardie® Fiber Cement", description: "Non-combustible HardiePlank® lap and HardieShingle® cladding in factory-applied ColorPlus® Technology, installed to the HardieZone® HZ5 spec engineered for New Jersey's freeze, snow, and ice so the material won't crack or delaminate." },
+      { name: "Total-Envelope Tear-Off", description: "A surgical strip-down to the original sheathing, a 100% substrate audit for dry rot, insect, and moisture damage, then a high-performance vapor-permeable house wrap and taped seams before a single panel goes back on." },
+      { name: "Artisan Flashing & Insulation", description: "Hand-bent PVC-coated or copper flashing at windows, doors, and water-kickout points, plus optional contoured foam or rigid-foam insulation backing that breaks the wall's thermal bridge and lowers heating and cooling costs." },
+    ],
+    process: [
+      { title: "Free exterior assessment & material selection", description: "We evaluate your current siding and where water is getting in, walk you through premium vinyl and James Hardie® samples against your actual home and light, and give you an itemized replacement estimate before anything is ordered." },
+      { title: "Surgical tear-off & substrate audit", description: "The old siding is fully removed and we perform a 100% audit of the sheathing and framing, identifying and correcting hidden dry rot, insect damage, or mold so the wall you re-side is sound, dry, and level." },
+      { title: "Moisture barrier & house wrap", description: "The most important step is the part you never see: a high-performance, vapor-permeable house wrap and specialized seam tapes create a secondary weather barrier that lets interior moisture escape while keeping bulk water off your framing." },
+      { title: "Artisan flashing & transition engineering", description: "We hand-bend and integrate custom flashing at every window, door, and vulnerable junction — the building-envelope detailing, drawn from our roofing and masonry background, that standard siding crews routinely skip." },
+      { title: "Cladding install, laser-leveling & triple-pass sweep", description: "Premium vinyl or James Hardie® panels go on laser-leveled and correctly fastened for expansion, we protect your windows, AC units, and landscaping throughout, then finish with an exhaustive magnetic sweep of the driveway and lawn." },
+    ],
+    materials: [
+      { name: "Premium Vinyl (CertainTeed® / Cedar Impressions®)", bestFor: "Most NJ replacements wanting durability, versatility & the best value", lifespan: "20–40 years", notes: "High-gauge, heavy-wall panels with reinforced nail hems and baked-in color; never needs painting and resists denting, fading, and chalking." },
+      { name: "James Hardie® Fiber Cement (HZ5)", bestFor: "Homeowners wanting the ultimate durability, a true cedar look & fire resistance", lifespan: "30–50 years", notes: "Non-combustible Portland-cement cladding with factory ColorPlus® finish, spec'd for the HardieZone® HZ5 climate so it resists cracking through freeze-thaw." },
+      { name: "House Wrap & Weather Barrier", bestFor: "Every replacement — the invisible layer that decides longevity", lifespan: "Matches the siding above it", notes: "Vapor-permeable wrap plus taped seams; not an upgrade to skip — it's what prevents catastrophic wall rot behind whatever siding you choose." },
+      { name: "Contoured / Rigid-Foam Insulation", bestFor: "Older or drafty homes upgrading the thermal envelope", lifespan: "Matches the siding", notes: "Adds continuous R-value beneath the panels, breaks the thermal bridge of the studs, and creates a quieter, more energy-efficient interior." },
+    ],
+    faqs: [
+      { q: "What's the difference between siding replacement and just re-siding?", a: "Re-siding contractors hang new panels over your existing, often-failing materials — which traps any hidden rot or moisture and never lets us verify the wall underneath is sound. A true replacement is a surgical tear-off down to the sheathing, so we can audit and repair the substrate, install a proper weather barrier and flashing, and reinstall on a dry, level, structurally sound wall. It costs a bit more up front and lasts dramatically longer." },
+      { q: "Should I choose premium vinyl or James Hardie® fiber cement?", a: "Premium high-gauge vinyl (like CertainTeed® Cedar Impressions®) is the best all-around value for most NJ homes — durable, low-maintenance, never needs painting, and available in a wood-grain look. James Hardie® fiber cement is the premium, non-combustible choice with the longest lifespan, a true deep-grain cedar look, and factory ColorPlus® finish, at a higher upfront cost. During your free estimate we hold real samples against your home and recommend the right fit for your exposure, style, and budget — no upselling." },
+      { q: "What is the HardieZone® HZ5 system and why does it matter in New Jersey?", a: "James Hardie engineers its products for specific climate zones. New Jersey falls in HZ5 — the zone built to withstand freezing temperatures, snow, and ice. Installing the HZ5-spec product matters because it's formulated so the fiber cement resists the cracking and delamination that generic cladding suffers through our freeze-thaw winters. We install to that spec so the material performs the way it's warrantied to." },
+      { q: "What happens if you find rotted wood or mold when you remove the old siding?", a: "We show you and fix it before re-siding — never cover it up. Once the old siding is off, we perform a 100% audit of the sheathing and framing for dry rot, insect damage, and mold. Any compromised material is cut out and replaced so the wall is sound and level before the house wrap and new panels go on. Re-siding over hidden rot just seals a growing, expensive problem inside your walls." },
+      { q: "Why do you emphasize house wrap and flashing so much?", a: "Because the part of a siding job that keeps your home dry is the part you never see. A vapor-permeable house wrap with taped seams is the secondary barrier that lets interior moisture escape while stopping wind-driven rain from reaching your framing — the difference between siding that lasts and catastrophic wall rot. Flashing at windows, doors, and transitions is where water sneaks past a poorly built envelope; our roofing and masonry background lets us hand-bend flashing details standard siding crews can't." },
+      { q: "Can a siding replacement lower my energy bills?", a: "Yes — a replacement is the ideal time to upgrade your home's thermal envelope. We can add contoured foam or rigid-foam insulation backing beneath the vinyl or James Hardie® panels, adding continuous R-value that breaks the thermal bridge of your wall studs. Most homeowners with older or under-insulated walls notice more even room temperatures, less outside noise, and lower heating and cooling costs afterward." },
+      { q: "How do you protect my property during a full siding replacement?", a: "Our reputation is built on property respect. We use a catch-all shielding system to protect your windows, AC units, and landscaping during tear-off and install, laser-level every course to account for the settling of older NJ homes, and finish with a triple-pass magnetic sweep of your driveway and lawn so the site is left free of nails and metallic debris." },
+    ],
+    keywords: ["siding replacement NJ", "James Hardie siding New Jersey", "vinyl siding replacement Bergen County", "fiber cement siding contractor Somerset County"],
+  },
+  {
     slug: "siding-repair",
     name: "Siding Repair",
     short: "Panel matching, storm & water-damage repair",
@@ -849,7 +897,7 @@ export const serviceGroups: ServiceGroup[] = [
   },
   {
     name: 'Siding',
-    slugs: ['siding-installation', 'siding-repair'],
+    slugs: ['siding-replacement', 'siding-installation', 'siding-repair'],
   },
   {
     name: 'Masonry',

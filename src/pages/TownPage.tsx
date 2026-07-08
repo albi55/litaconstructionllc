@@ -4,6 +4,8 @@ import { townBySlug, towns, type Town } from '../data/towns'
 import { imagesByCategory } from '../data/gallery'
 import { roofingTownBySlug } from '../data/roofingTowns'
 import { RoofingTownPage } from './RoofingTownPage'
+import { servicesForTown } from '../data/serviceTownContent'
+import { TownOverviewPage } from './TownOverviewPage'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
 import { QuoteForm } from '../components/QuoteForm'
@@ -53,6 +55,8 @@ export function TownPage() {
   if (masonry) return <MasonryTownPage town={masonry} />
   const roofing = slug ? roofingTownBySlug[slug] : undefined
   if (roofing) return <RoofingTownPage town={roofing} />
+  // Every other town in the source-document content gets the services-hub overview.
+  if (slug && servicesForTown(slug).length > 0) return <TownOverviewPage slug={slug} />
   return <NotFound />
 }
 

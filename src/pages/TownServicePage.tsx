@@ -13,6 +13,8 @@ import { FaqAccordion } from '../components/FaqAccordion'
 import { breadcrumbSchema, faqSchemaFrom } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
 import { NotFound } from './NotFound'
+import { findServiceTown } from '../data/serviceTownContent'
+import { TownServiceContentPage } from './TownServiceContentPage'
 
 /** Every town in the matrix — Bergen masonry towns + Monmouth/Somerset roofing towns. */
 const allTowns: { slug: string; name: string }[] = [
@@ -58,7 +60,15 @@ export function TownServicePage() {
 
   const town = slug ? (townBySlug[slug] ?? roofingTownBySlug[slug]) : undefined
   const svc = service ? townServiceBySlug[service] : undefined
-  if (!town || !svc || !slug) return <NotFound />
+
+  // Flagship towns (Bergen masonry + Monmouth/Somerset roofing) with a
+  // hand-crafted SEO pack render below. Every other town × service comes from
+  // the generated source-document content.
+  if (!town || !svc || !slug) {
+    const fromDoc = slug && service ? findServiceTown(slug, service) : undefined
+    if (fromDoc) return <TownServiceContentPage info={fromDoc.info} town={fromDoc.town} />
+    return <NotFound />
+  }
 
   const townName = town.name
   const index = allTowns.findIndex((t) => t.slug === slug)

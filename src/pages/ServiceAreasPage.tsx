@@ -1,32 +1,35 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { serviceAreas, serviceCities, services, business } from '../data/business'
+import { serviceAreas, services, business } from '../data/business'
 import { towns } from '../data/towns'
 import { roofingTowns } from '../data/roofingTowns'
+import { townsByCounty, indexedTownCount } from '../data/serviceTownContent'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
 import { NjMap } from '../components/NjMap'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
-import { PinIcon, ArrowIcon, PhoneIcon, ShieldIcon, ClockIcon, StarIcon } from '../components/icons'
+import { PinIcon, ArrowIcon, PhoneIcon, ShieldIcon, ClockIcon, StarIcon, servicePhoto as servicePhotoBase } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
 
-/** Real project photo + drawing-set sheet code per service, for the "Services near you" cards. */
+/**
+ * Real project photo per service for the "Services near you" cards. Reuses the
+ * shared slug→photo map from icons.tsx and fills in the three umbrella trades
+ * it doesn't cover, so every one of the 15 services shows a real photo.
+ */
 const servicePhoto: Record<string, string> = {
+  ...servicePhotoBase,
   roofing: '/work/roof-roof30.webp',
   siding: '/work/siding-siding6.webp',
   masonry: '/work/mansory-Mansory22.webp',
 }
-const serviceSheet: Record<string, string> = {
-  roofing: 'R-100',
-  siding: 'SD-100',
-  masonry: 'M-100',
-}
+/** Last-resort image so a card can never fall back to a blank navy tile. */
+const FALLBACK_PHOTO = '/work/roof-roof30.webp'
 
 const localStats = [
   { n: `${serviceAreas.length}`, l: 'Counties covered' },
-  { n: `${serviceCities.length}+`, l: 'Towns served' },
+  { n: `${indexedTownCount}+`, l: 'Towns served' },
   { n: business.yearsExperience, l: 'Years local' },
   { n: '500+', l: 'NJ projects done' },
 ]
@@ -271,25 +274,40 @@ export function ServiceAreasPage() {
             ))}
           </div>
 
-          {/* Other towns we cover weekly */}
+          {/* Full town directory — every town with dedicated service guides, by county */}
           <div className="mt-8 flex items-center gap-4">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-cloud-500">
-              And Communities Across North &amp; Central Jersey
+              Full Town Directory — North &amp; Central Jersey
             </p>
             <span className="h-px flex-1 bg-cloud-300" aria-hidden="true" />
+            <span className="shrink-0 text-xs font-bold uppercase tracking-wider text-sand-700">
+              {indexedTownCount} towns
+            </span>
           </div>
-          <div className="mt-4 flex flex-wrap gap-3">
-            {serviceCities
-              .filter((city) => !towns.some((t) => t.name === city))
-              .map((city) => (
-                <span
-                  key={city}
-                  className="inline-flex items-center gap-2 rounded-full border border-cloud-300 bg-cloud-100 px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-600/40 hover:bg-brand-50 hover:text-brand-600"
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-brand-600" aria-hidden="true" />
-                  {city}, NJ
-                </span>
-              ))}
+          <div className="mt-6 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+            {townsByCounty.map((group) => (
+              <div key={group.county}>
+                <p className="flex items-center gap-2 border-b border-cloud-300 pb-2 text-sm font-bold text-ink-900">
+                  <PinIcon className="h-4 w-4 text-brand-600" />
+                  {group.county}
+                  <span className="ml-auto text-xs font-semibold text-cloud-500">
+                    {group.towns.length}
+                  </span>
+                </p>
+                <ul className="mt-3 space-y-1.5">
+                  {group.towns.map((t) => (
+                    <li key={t.slug}>
+                      <Link
+                        to={`/service-areas/${t.slug}`}
+                        className="text-sm font-medium text-ink-800 transition-colors hover:text-brand-600 hover:underline"
+                      >
+                        {t.name}, NJ
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -347,7 +365,7 @@ export function ServiceAreasPage() {
                 className="group relative block h-64 overflow-hidden rounded-2xl bg-navy-950 shadow-soft transition-shadow duration-300 hover:shadow-card"
               >
                 <img
-                  src={servicePhoto[s.slug]}
+                  src={encodeURI(servicePhoto[s.slug] ?? FALLBACK_PHOTO)}
                   alt={`${s.name} project by Lita Construction`}
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   loading="lazy"
@@ -357,15 +375,6 @@ export function ServiceAreasPage() {
                   className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/25 to-transparent"
                   aria-hidden="true"
                 />
-                {/* Drawing title block — top edge, so the card copy keeps the bottom */}
-                <div className="absolute inset-x-0 top-0 flex items-center justify-between gap-3 bg-navy-950/70 px-5 py-2.5 backdrop-blur-sm">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-sand-400">
-                    Sheet {serviceSheet[s.slug] ?? 'A-100'} — {s.name}
-                  </span>
-                  <span className="hidden text-[10px] font-semibold uppercase tracking-[0.18em] text-white/60 sm:block">
-                    Lita · Est. 2004
-                  </span>
-                </div>
                 <div className="absolute inset-x-0 bottom-0 p-6">
                   <h3 className="font-display text-2xl font-bold text-white">{s.name}</h3>
                   <p className="mt-1 text-sm text-white/75">{s.short}</p>
