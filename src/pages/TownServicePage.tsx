@@ -7,6 +7,7 @@ import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
+import { GafBadge } from '../components/GafBadge'
 import { TownServiceLinks } from '../components/TownServiceLinks'
 import { PhoneIcon, ArrowIcon, CheckIcon, PinIcon, ShieldIcon } from '../components/icons'
 import { FaqAccordion } from '../components/FaqAccordion'
@@ -171,13 +172,16 @@ export function TownServicePage() {
               </a>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/15 pt-6">
-              {heroTrust.map((t) => (
-                <span key={t} className="inline-flex items-center gap-2 text-sm font-semibold text-white/85">
-                  <CheckIcon className="h-4 w-4 text-brand-400" />
-                  {t}
-                </span>
-              ))}
+            <div className="mt-10 flex flex-col gap-6 border-t border-white/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-wrap gap-x-8 gap-y-3">
+                {heroTrust.map((t) => (
+                  <span key={t} className="inline-flex items-center gap-2 text-sm font-semibold text-white/85">
+                    <CheckIcon className="h-4 w-4 text-brand-400" />
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <GafBadge tone="onDark" size="sm" className="shrink-0" />
             </div>
           </div>
 

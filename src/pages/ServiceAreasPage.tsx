@@ -4,6 +4,7 @@ import { serviceAreas, services, business } from '../data/business'
 import { towns } from '../data/towns'
 import { roofingTowns } from '../data/roofingTowns'
 import { townsByCounty, indexedTownCount } from '../data/serviceTownContent'
+import { GafBadge } from '../components/GafBadge'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
 import { NjMap } from '../components/NjMap'
@@ -116,6 +117,15 @@ export function ServiceAreasPage() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* GAF Master Elite credential */}
+            <div className="mt-9 flex items-center gap-4 border-t border-white/15 pt-6">
+              <GafBadge tone="onDark" size="sm" />
+              <p className="text-sm font-medium text-white/70">
+                Verified <span className="font-bold text-white">GAF Master Elite®</span> Contractor —
+                the top 2% of roofers in North America.
+              </p>
             </div>
           </div>
 

@@ -5,6 +5,7 @@ import { roofingTowns } from '../data/roofingTowns'
 import { Seo } from '../components/Seo'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
+import { GafBadge } from '../components/GafBadge'
 import { CtaBand } from '../components/CtaBand'
 import { FaqAccordion } from '../components/FaqAccordion'
 import {
@@ -149,6 +150,7 @@ const heroTrust = [
 export function ServicePage() {
   const { slug } = useParams<{ slug: string }>()
   const reveal = useReveal()
+  const overviewRef = useReveal()
   const processRef = useReveal()
   const galleryRef = useReveal()
   const reviewsRef = useReveal()
@@ -228,14 +230,17 @@ export function ServicePage() {
               </a>
             </div>
 
-            {/* Trust chip strip */}
-            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/15 pt-6">
-              {heroTrust.map((t) => (
-                <span key={t} className="inline-flex items-center gap-2 text-sm font-semibold text-white/85">
-                  <CheckIcon className="h-4 w-4 text-brand-400" />
-                  {t}
-                </span>
-              ))}
+            {/* Trust chip strip + GAF Master Elite badge */}
+            <div className="mt-10 flex flex-col gap-6 border-t border-white/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-wrap gap-x-8 gap-y-3">
+                {heroTrust.map((t) => (
+                  <span key={t} className="inline-flex items-center gap-2 text-sm font-semibold text-white/85">
+                    <CheckIcon className="h-4 w-4 text-brand-400" />
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <GafBadge tone="onDark" size="sm" className="shrink-0" />
             </div>
           </div>
 
@@ -256,6 +261,66 @@ export function ServicePage() {
           style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }}
           aria-hidden="true"
         />
+      </section>
+
+      {/* ── Overview — the full intro prose beside a "what's included" checklist ── */}
+      <section className="bg-cloud-50 py-20 sm:py-24">
+        <div
+          ref={overviewRef}
+          className="reveal container-x grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16"
+        >
+          <div>
+            <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
+              Sheet A-001 · Overview
+            </span>
+            <h2 className="mt-6 font-display text-display-md text-ink-900">
+              {service.name}, the Lita Construction way.
+            </h2>
+            <div className="mt-6 space-y-5 text-lg leading-relaxed text-cloud-600">
+              {service.intro
+                .split(/\n+/)
+                .map((p) => p.trim())
+                .filter(Boolean)
+                .map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+            </div>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a href="#service-quote" className="btn-primary">
+                Get a Free Estimate
+                <ArrowIcon className="h-4 w-4" />
+              </a>
+              <a
+                href={business.phoneHref}
+                className="group inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-ink-900 transition-colors hover:text-brand-600"
+              >
+                <PhoneIcon className="h-4 w-4 text-brand-600" />
+                {business.phone}
+              </a>
+            </div>
+          </div>
+
+          {/* What's included — the feature checklist, lifted out of the Materials block */}
+          <div className="lg:sticky lg:top-28 lg:self-start">
+            <div className="rounded-3xl border border-cloud-300 bg-white p-8 shadow-soft">
+              <span className="eyebrow">What&apos;s Included</span>
+              <h3 className="mt-4 font-display text-2xl font-bold text-ink-900">
+                Complete {service.name.toLowerCase()} scope.
+              </h3>
+              <ul className="mt-7 grid gap-3">
+                {service.features.map((f) => (
+                  <li
+                    key={f}
+                    className="flex items-start gap-3 text-sm font-medium text-ink-800"
+                  >
+                    <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* ── How it works — process steps beside a real project photo ── */}
@@ -416,55 +481,35 @@ export function ServicePage() {
             </table>
           </div>
 
-          <div className="mt-14 grid gap-14 lg:grid-cols-2">
-            <div>
-              <span className="eyebrow">What&apos;s Included</span>
-              <h3 className="mt-5 font-display text-2xl font-bold text-ink-900">
-                Complete {service.name.toLowerCase()} services.
-              </h3>
-              <ul className="mt-7 grid gap-3 sm:grid-cols-2">
-                {service.features.map((f) => (
-                  <li
-                    key={f}
-                    className="flex items-start gap-3 rounded-xl border border-cloud-300 bg-cloud-50 p-4 text-sm font-medium text-ink-800"
+          <div className="mt-14">
+            <span className="eyebrow">Local Coverage</span>
+            <h3 className="mt-5 font-display text-2xl font-bold text-ink-900">
+              {service.name} across North &amp; Central NJ.
+            </h3>
+            <p className="mt-5 max-w-3xl leading-relaxed text-ink-800">
+              We provide expert {service.name.toLowerCase()} services throughout{' '}
+              {serviceAreas.join(', ').replace(/,([^,]*)$/, ' and$1')} — and the towns within
+              them. Not sure if we cover your area?{' '}
+              <Link to="/service-areas" className="font-semibold text-brand-600 hover:underline">
+                View our full service area map
+              </Link>{' '}
+              or call {business.phone}.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {/* Deep links into the dedicated service × city pages when this trade has them */}
+              {[...towns.slice(0, 4), ...roofingTowns.slice(0, 4)].map((t) => {
+                const matrix = matrixService[service.slug]
+                return (
+                  <Link
+                    key={t.slug}
+                    to={matrix ? `/service-areas/${t.slug}/${matrix}` : `/service-areas/${t.slug}`}
+                    className="flex items-center gap-1.5 rounded-full border border-cloud-300 bg-cloud-50 px-3 py-1.5 text-xs font-medium text-ink-800 transition-colors hover:border-brand-600/40 hover:text-brand-600"
                   >
-                    <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <span className="eyebrow">Local Coverage</span>
-              <h3 className="mt-5 font-display text-2xl font-bold text-ink-900">
-                {service.name} across North &amp; Central NJ.
-              </h3>
-              <p className="mt-5 leading-relaxed text-ink-800">
-                We provide expert {service.name.toLowerCase()} services throughout{' '}
-                {serviceAreas.join(', ').replace(/,([^,]*)$/, ' and$1')} — and the towns within
-                them. Not sure if we cover your area?{' '}
-                <Link to="/service-areas" className="font-semibold text-brand-600 hover:underline">
-                  View our full service area map
-                </Link>{' '}
-                or call {business.phone}.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                {/* Deep links into the dedicated service × city pages when this trade has them */}
-                {[...towns.slice(0, 4), ...roofingTowns.slice(0, 4)].map((t) => {
-                  const matrix = matrixService[service.slug]
-                  return (
-                    <Link
-                      key={t.slug}
-                      to={matrix ? `/service-areas/${t.slug}/${matrix}` : `/service-areas/${t.slug}`}
-                      className="flex items-center gap-1.5 rounded-full border border-cloud-300 bg-cloud-50 px-3 py-1.5 text-xs font-medium text-ink-800 transition-colors hover:border-brand-600/40 hover:text-brand-600"
-                    >
-                      <PinIcon className="h-3 w-3 text-brand-600" />
-                      {service.name} in {t.name}, NJ
-                    </Link>
-                  )
-                })}
-              </div>
+                    <PinIcon className="h-3 w-3 text-brand-600" />
+                    {service.name} in {t.name}, NJ
+                  </Link>
+                )
+              })}
             </div>
           </div>
         </div>

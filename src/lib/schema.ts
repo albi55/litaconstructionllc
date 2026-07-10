@@ -12,6 +12,7 @@ export const localBusinessSchema = {
     'Family-owned roofing, siding, and masonry contractor serving Northern and Central New Jersey since 2004. GAF certified and fully insured.',
   url: business.url,
   telephone: '+1-201-540-7772',
+  sameAs: [business.google.maps],
   foundingDate: String(business.founded),
   founder: { '@type': 'Person', name: business.founder },
   slogan: business.tagline,

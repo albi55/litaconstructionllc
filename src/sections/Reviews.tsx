@@ -1,5 +1,5 @@
-import { testimonials } from '../data/business'
-import { StarIcon, QuoteMarkIcon } from '../components/icons'
+import { testimonials, business } from '../data/business'
+import { StarIcon, QuoteMarkIcon, GoogleIcon, ArrowIcon } from '../components/icons'
 import { useReveal } from '../lib/useReveal'
 
 export function ReviewCardGrid({ limit }: { limit?: number }) {
@@ -47,13 +47,27 @@ export function Reviews() {
             <span className="eyebrow">Homeowner Reviews</span>
             <h2 className="mt-5 font-display text-display-md text-ink-900">Built on word of mouth.</h2>
           </div>
-          <div className="flex items-center gap-3">
-            <span className="flex text-brand-600">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <StarIcon key={i} className="h-6 w-6" />
-              ))}
-            </span>
-            <span className="text-sm text-cloud-600">Rated 5 stars by North Jersey homeowners</span>
+          <div className="flex flex-col items-start gap-3 md:items-end">
+            <div className="flex items-center gap-3">
+              <span className="flex text-brand-600">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <StarIcon key={i} className="h-6 w-6" />
+                ))}
+              </span>
+              <span className="text-sm text-cloud-600">
+                Rated 5 stars by North Jersey homeowners
+              </span>
+            </div>
+            <a
+              href={business.google.reviews}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 text-sm font-bold text-ink-900 transition-colors hover:text-brand-600"
+            >
+              <GoogleIcon className="h-4 w-4" />
+              Read our Google reviews
+              <ArrowIcon className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+            </a>
           </div>
         </div>
 

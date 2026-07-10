@@ -19,6 +19,33 @@ export const business = {
   url: 'https://litaconstructionllc.com',
   hours: 'Mon–Sat, 7:00 AM – 6:00 PM',
   certifications: ['GAF Certified', 'Fully Insured', '25-Year Workmanship Warranty'],
+  /**
+   * Google Business Profile — single source of truth for all review links.
+   * NOTE: the search.google.com/local/reviews & /writereview endpoints return
+   * HTTP 400 for this listing, so every link routes through the reliable
+   * google.com/maps?cid=… domain (verified 200), which opens the listing where
+   * the Reviews tab and the "Write a review" button live.
+   */
+  google: {
+    /** Google Business Profile CID used in the review/listing URLs. */
+    cid: '6028760307221828677',
+    /** Public listing on Google Maps. */
+    maps: 'https://www.google.com/maps?cid=6028760307221828677',
+    /** Read all Google reviews — opens the listing with the reviews panel. */
+    reviews: 'https://www.google.com/maps?cid=6028760307221828677&reviews=1',
+    /** Opens the listing where customers tap "Write a review". */
+    writeReview: 'https://www.google.com/maps?cid=6028760307221828677&reviews=1',
+  },
+  /** GAF Master Elite® contractor profile — single source of truth for the badge. */
+  gaf: {
+    /** GAF Master Elite contractor ID. */
+    id: '1106756',
+    /** Public GAF contractor listing this badge links to. */
+    profileUrl:
+      'https://www.gaf.com/en-us/roofing-contractors/commercial/lita-brothers-construction-llc-bergenfield-nj-1106756',
+    /** The Master Elite badge image in /public. */
+    badgeImage: '/gaf-master-elite-badge.webp',
+  },
 } as const
 
 /** Scrolling promo / announcement bar messages (edit freely). */

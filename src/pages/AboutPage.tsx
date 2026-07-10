@@ -15,6 +15,9 @@ import { localBusinessSchema, breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
 import { NjMap } from '../components/NjMap'
 
+/** Shown when a service slug has no photo mapped, so the card never renders a broken image. */
+const FALLBACK_PHOTO = '/work/roof-roof30.webp'
+
 /** Real project photo per service, for the "What We Do" cards. */
 const servicephoto: Record<string, string> = {
   // Legacy trades (kept for any direct references)
@@ -24,7 +27,7 @@ const servicephoto: Record<string, string> = {
   renovation: '/work/renovation-Renovation1.webp',
   bathroom: '/work/bathroom-Bathroom7.webp',
   chimney: '/work/chimney-Chimney1.webp',
-  gutters: '/Siding/optimized/siding (13).webp',
+  gutters: '/work/siding-siding6.webp',
   'windows-doors': '/work/siding-siding6.webp',
   painting: '/work/siding-siding1.webp',
   // Grouped services shown across the site
@@ -33,6 +36,7 @@ const servicephoto: Record<string, string> = {
   'commercial-roofing': '/work/roof-roof45.webp',
   'residential-roofing': '/work/roof-roof30.webp',
   'siding-installation': '/work/siding-siding6.webp',
+  'siding-replacement': '/work/siding-siding10.webp',
   'siding-repair': '/work/siding-siding10.webp',
   'masonry-work': '/work/mansory-Mansory22.webp',
   'chimney-services': '/work/chimney-Chimney1.webp',
@@ -266,7 +270,7 @@ export function AboutPage() {
                   className="group relative block h-64 overflow-hidden rounded-2xl bg-navy-950 shadow-soft transition-shadow duration-300 hover:shadow-card"
                 >
                   <img
-                    src={encodeURI(servicephoto[s.key])}
+                    src={encodeURI(servicephoto[s.key] ?? FALLBACK_PHOTO)}
                     alt={`${s.name} project by Lita Construction`}
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     loading="lazy"

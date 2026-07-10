@@ -59,7 +59,7 @@ const serviceThumb: Record<string, string> = {
   roofing: '/work/roof-roof30.webp',
   siding: '/work/siding-siding6.webp',
   masonry: '/work/mansory-Mansory10.webp',
-  gutters: '/Siding/optimized/siding (13).webp',
+  gutters: '/work/siding-siding6.webp',
   'windows-doors': '/work/siding-siding6.webp',
   'decks-pavers': '/Pavec/lita-outdoor-living-space-05-nj.webp',
   painting: '/work/siding-siding1.webp',

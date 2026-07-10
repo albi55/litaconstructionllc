@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { business, homeServices, serviceAreas } from '../data/business'
 import { Logo } from './Logo'
-import { PhoneIcon, ClockIcon, PinIcon, MailIcon, ArrowIcon } from './icons'
+import { PhoneIcon, ClockIcon, PinIcon, MailIcon, ArrowIcon, GoogleIcon, StarIcon } from './icons'
 
 const company = [
   { label: 'About Us', to: '/about' },
@@ -148,7 +148,31 @@ export function Footer() {
               </span>
               Northern &amp; Central New Jersey
             </li>
+            <li>
+              <a
+                href={business.google.reviews}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-sm text-white transition-colors hover:text-brand-400"
+              >
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10">
+                  <GoogleIcon className="h-4 w-4" />
+                </span>
+                Read our Google reviews
+              </a>
+            </li>
           </ul>
+
+          {/* Leave-a-review nudge */}
+          <a
+            href={business.google.writeReview}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:border-brand-400/50 hover:bg-brand-600"
+          >
+            <StarIcon className="h-4 w-4 text-brand-400" />
+            Leave us a review
+          </a>
         </div>
       </div>
 

@@ -10,6 +10,7 @@ import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
+import { GafBadge } from '../components/GafBadge'
 import { TownServiceLinks } from '../components/TownServiceLinks'
 import {
   PhoneIcon,
@@ -260,14 +261,17 @@ function MasonryTownPage({ town }: { town: Town }) {
               {servingLine[servingLine.length - 1]}
             </p>
 
-            {/* Trust chip strip */}
-            <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/15 pt-6">
-              {heroTrust.map((t) => (
-                <span key={t} className="inline-flex items-center gap-2 text-sm font-semibold text-white/85">
-                  <CheckIcon className="h-4 w-4 text-brand-400" />
-                  {t}
-                </span>
-              ))}
+            {/* Trust chip strip + GAF Master Elite badge */}
+            <div className="mt-8 flex flex-col gap-6 border-t border-white/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-wrap gap-x-8 gap-y-3">
+                {heroTrust.map((t) => (
+                  <span key={t} className="inline-flex items-center gap-2 text-sm font-semibold text-white/85">
+                    <CheckIcon className="h-4 w-4 text-brand-400" />
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <GafBadge tone="onDark" size="sm" className="shrink-0" />
             </div>
           </div>
 

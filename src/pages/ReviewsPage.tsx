@@ -3,7 +3,7 @@ import { Seo } from '../components/Seo'
 import { PageHero } from '../components/PageHero'
 import { CtaBand } from '../components/CtaBand'
 import { ReviewCardGrid } from '../sections/Reviews'
-import { StarIcon } from '../components/icons'
+import { StarIcon, GoogleIcon, ArrowIcon } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
 
 export function ReviewsPage() {
@@ -30,9 +30,9 @@ export function ReviewsPage() {
         crumbs={[{ label: 'Reviews' }]}
       />
 
-      {/* Rating summary */}
-      <section className="border-b border-cloud-200 bg-white py-10">
-        <div className="container-x flex flex-col items-center justify-center gap-3 text-center">
+      {/* Rating summary + Google reviews CTA */}
+      <section className="border-b border-cloud-200 bg-white py-12">
+        <div className="container-x flex flex-col items-center justify-center gap-4 text-center">
           <span className="flex text-brand-600">
             {Array.from({ length: 5 }).map((_, i) => (
               <StarIcon key={i} className="h-7 w-7" />
@@ -44,6 +44,32 @@ export function ReviewsPage() {
           <p className="max-w-xl text-cloud-600">
             From roofing to masonry, families across Bergen, Passaic, Essex and beyond trust Lita
             Construction for honest pricing and exceptional craftsmanship.
+          </p>
+
+          {/* Google review actions */}
+          <div className="mt-4 flex flex-col items-center gap-4 sm:flex-row">
+            <a
+              href={business.google.reviews}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost"
+            >
+              <GoogleIcon className="h-5 w-5" />
+              Read our Google reviews
+              <ArrowIcon className="h-4 w-4" />
+            </a>
+            <a
+              href={business.google.writeReview}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              <StarIcon className="h-4 w-4" />
+              Leave us a review
+            </a>
+          </div>
+          <p className="text-xs text-cloud-500">
+            Worked with us? A quick Google review means the world to a family-owned business.
           </p>
         </div>
       </section>

@@ -11,6 +11,7 @@ import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
+import { GafBadge } from '../components/GafBadge'
 import { PhoneIcon, ArrowIcon, CheckIcon, PinIcon } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
@@ -36,7 +37,9 @@ const heroTrust = [
  */
 export function TownOverviewPage({ slug }: { slug: string }) {
   const heroRef = useReveal()
+  const overviewRef = useReveal()
   const svcRef = useReveal()
+  const trustRef = useReveal()
   const nearbyRef = useReveal()
 
   const services = servicesForTown(slug)
@@ -48,12 +51,21 @@ export function TownOverviewPage({ slug }: { slug: string }) {
   const idx = Math.max(0, townsByService[firstKey].findIndex((t) => t.slug === slug))
   const heroImage = heroImages[idx % heroImages.length]
 
-  // A short intro line: the richest intro paragraph across this town's services.
-  const introLine = SERVICE_KEYS.map((k) => townBySlugByService[k][slug])
-    .filter(Boolean)
-    .flatMap((t) => t.intro)
-    .filter((p) => /[.!?]\s/.test(p) && p.length > 90)
-    .sort((a, b) => b.length - a.length)[0]
+  // All substantial intro paragraphs across this town's services (deduped),
+  // richest first — used for the Overview section below the hero.
+  const overviewParagraphs = [
+    ...new Set(
+      SERVICE_KEYS.map((k) => townBySlugByService[k][slug])
+        .filter(Boolean)
+        .flatMap((t) => t.intro)
+        .filter((p) => /[.!?]\s/.test(p) && p.length > 90),
+    ),
+  ]
+    .sort((a, b) => b.length - a.length)
+    .slice(0, 3)
+
+  // Hero keeps a short, punchy tagline — the full prose lives in the Overview.
+  const heroTagline = `From roofing and siding to masonry, decks, chimneys, and commercial roofing, Lita Construction brings two decades of craftsmanship to ${rep.name} homeowners. When you call us, you speak with a pro — not a salesman.`
 
   // Nearby towns: neighbors in the representative service list.
   const list = townsByService[firstKey]
@@ -129,8 +141,7 @@ export function TownOverviewPage({ slug }: { slug: string }) {
               <span className="text-brand-400">{rep.name}, NJ.</span>
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80">
-              {introLine ??
-                `From roofing and siding to masonry, decks, and chimneys, Lita Construction brings two decades of craftsmanship to ${rep.name} homeowners. When you call us, you speak with a pro — not a salesman.`}
+              {heroTagline}
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -140,16 +151,19 @@ export function TownOverviewPage({ slug }: { slug: string }) {
               </a>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/15 pt-6">
-              {heroTrust.map((t) => (
-                <span
-                  key={t}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-white/85"
-                >
-                  <CheckIcon className="h-4 w-4 text-brand-400" />
-                  {t}
-                </span>
-              ))}
+            <div className="mt-8 flex flex-col gap-6 border-t border-white/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-wrap gap-x-8 gap-y-3">
+                {heroTrust.map((t) => (
+                  <span
+                    key={t}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-white/85"
+                  >
+                    <CheckIcon className="h-4 w-4 text-brand-400" />
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <GafBadge tone="onDark" size="sm" className="shrink-0" />
             </div>
           </div>
 
@@ -169,6 +183,68 @@ export function TownOverviewPage({ slug }: { slug: string }) {
           aria-hidden="true"
         />
       </section>
+
+      {/* ── 1b. Overview — the town's intro prose beside a "why us here" checklist ── */}
+      {overviewParagraphs.length > 0 && (
+        <section className="bg-white py-20 sm:py-24">
+          <div
+            ref={overviewRef}
+            className="reveal container-x grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16"
+          >
+            <div>
+              <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
+                Sheet G-001 · {rep.name} Overview
+              </span>
+              <h2 className="mt-6 font-display text-display-md text-ink-900">
+                Serving {rep.name} since 2004.
+              </h2>
+              <div className="mt-6 space-y-5 text-lg leading-relaxed text-cloud-600">
+                {overviewParagraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+                <a href={business.phoneHref} className="btn-primary">
+                  <PhoneIcon className="h-4 w-4" />
+                  Call {business.phone}
+                </a>
+                <Link
+                  to="/service-areas"
+                  className="group inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-ink-900 transition-colors hover:text-brand-600"
+                >
+                  All service areas
+                  <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Why homeowners here choose us */}
+            <div className="lg:sticky lg:top-28 lg:self-start">
+              <div className="rounded-3xl border border-cloud-300 bg-cloud-50 p-8 shadow-soft">
+                <span className="eyebrow">Why {rep.name} Chooses Lita</span>
+                <h3 className="mt-4 font-display text-2xl font-bold text-ink-900">
+                  Local, licensed &amp; accountable.
+                </h3>
+                <ul className="mt-7 grid gap-3">
+                  {[
+                    `Serving ${county} & all of North/Central NJ`,
+                    'Family-run since 2004 — you deal with the principal',
+                    'Our own dedicated crews, never subcontractors',
+                    'Permits & zoning paperwork handled for you',
+                    '10-year craftsmanship warranty',
+                    business.licenseLabel,
+                  ].map((f) => (
+                    <li key={f} className="flex items-start gap-3 text-sm font-medium text-ink-800">
+                      <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── 2. Services available in this town ── */}
       <section className="bg-cloud-100 py-20 sm:py-28">
@@ -220,6 +296,57 @@ export function TownOverviewPage({ slug }: { slug: string }) {
         </div>
       </section>
 
+      {/* ── 2b. Local trust band — navy anchor with stats + reassurance ── */}
+      <section className="relative overflow-hidden bg-navy-950 py-20 text-white sm:py-24">
+        <div
+          className="pointer-events-none absolute -right-40 top-0 h-[36rem] w-[36rem] rounded-full bg-brand-600/12 blur-3xl"
+          aria-hidden="true"
+        />
+        <div ref={trustRef} className="reveal container-x relative">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16">
+            <div>
+              <span className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-400">
+                <span className="h-px w-9 bg-brand-400/70" />
+                Local, Not Franchised
+              </span>
+              <h2 className="mt-6 font-display text-display-md text-white">
+                A {rep.name} name you can knock on.
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-white/70">
+                We&apos;re not dispatched from three counties away. Every {rep.name} job is run by
+                our own crews and backed by a family name that&apos;s been on the line in {county}{' '}
+                since 2004 — so the work gets done right, and we&apos;re still here if you ever need
+                us again.
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <GafBadge tone="onDark" size="sm" />
+                <a href={business.phoneHref} className="btn-ghost-light">
+                  <PhoneIcon className="h-4 w-4" />
+                  {business.phone}
+                </a>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { n: business.yearsExperience, l: 'Years in the trade' },
+                { n: '2004', l: `Serving ${county}` },
+                { n: '6', l: 'Trades under one roof' },
+                { n: '10-Yr', l: 'Craftsmanship warranty' },
+              ].map((s) => (
+                <div
+                  key={s.l}
+                  className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors duration-300 hover:border-sand-400/40 hover:bg-white/[0.07]"
+                >
+                  <div className="font-display text-3xl font-black text-brand-400">{s.n}</div>
+                  <div className="mt-1.5 text-sm font-medium text-white/70">{s.l}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── 3. Nearby towns ── */}
       {nearby.length > 0 && (
         <section className="bg-white py-20 sm:py-28">
@@ -229,6 +356,9 @@ export function TownOverviewPage({ slug }: { slug: string }) {
                 Also serving nearby {county} towns
               </p>
               <span className="h-px flex-1 bg-cloud-300" aria-hidden="true" />
+              <span className="shrink-0 text-xs font-bold uppercase tracking-wider text-sand-700">
+                {nearby.length} towns
+              </span>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
               {nearby.map((n) => (

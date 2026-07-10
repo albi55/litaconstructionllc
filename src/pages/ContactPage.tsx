@@ -11,7 +11,7 @@ const details = [
     icon: PinIcon,
     label: 'Address',
     value: '378 S Washington Ave, Bergenfield, NJ 07621',
-    href: 'https://maps.google.com/maps?q=378+S+Washington+Ave,+Bergenfield,+NJ+07621',
+    href: business.google.maps,
   },
   { icon: MailIcon, label: 'Email', value: business.email, href: business.emailHref },
   { icon: ClockIcon, label: 'Hours', value: business.hours },
