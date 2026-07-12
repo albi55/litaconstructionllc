@@ -1,15 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { serviceAreas, serviceCities, business } from '../data/business'
+import { serviceAreas, business } from '../data/business'
 import { ArrowIcon, CheckIcon } from '../components/icons'
 import { useReveal } from '../lib/useReveal'
 import { NjMap } from '../components/NjMap'
-
-const ribbon = [
-  { n: `${serviceAreas.length}`, l: 'Counties' },
-  { n: `${serviceCities.length}+`, l: 'Towns' },
-  { n: business.yearsExperience, l: 'Years Local' },
-]
+import { ServingTagline } from '../components/ServingTagline'
 
 export function ServiceAreas() {
   const ref = useReveal()
@@ -32,18 +27,9 @@ export function ServiceAreas() {
             siding, and masonry to homeowners across Northern &amp; Central New Jersey.
           </p>
 
-          {/* Stat ribbon */}
-          <div className="mt-10 flex flex-wrap gap-x-12 gap-y-5 border-y border-cloud-300 py-6">
-            {ribbon.map((s) => (
-              <div key={s.l}>
-                <div className="font-display text-4xl font-extrabold leading-none text-ink-900">
-                  {s.n}
-                </div>
-                <div className="mt-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-cloud-500">
-                  {s.l}
-                </div>
-              </div>
-            ))}
+          {/* Serving-since trust line */}
+          <div className="mt-10 border-y border-cloud-300 py-6">
+            <ServingTagline tone="light" />
           </div>
 
           {/* County checklist — hovering highlights the county on the map */}

@@ -6,6 +6,7 @@ import { Seo } from '../components/Seo'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
 import { GafBadge } from '../components/GafBadge'
+import { GafCredential } from '../components/GafCredential'
 import { CtaBand } from '../components/CtaBand'
 import { FaqAccordion } from '../components/FaqAccordion'
 import {
@@ -240,7 +241,10 @@ export function ServicePage() {
                   </span>
                 ))}
               </div>
-              <GafBadge tone="onDark" size="sm" className="shrink-0" />
+              <div className="flex shrink-0 items-center gap-4">
+                <GafCredential />
+                <GafBadge tone="onDark" size="sm" className="shrink-0" />
+              </div>
             </div>
           </div>
 

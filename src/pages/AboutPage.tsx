@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { business, homeServices, serviceAreas, serviceCities } from '../data/business'
 import { Seo } from '../components/Seo'
+import { ServingTagline } from '../components/ServingTagline'
 import {
   ShieldIcon,
   StarIcon,
@@ -43,12 +44,6 @@ const servicephoto: Record<string, string> = {
   'decks-pavers': '/Pavec/lita-outdoor-living-space-05-nj.webp',
 }
 
-const aboutStats = [
-  { n: business.yearsExperience, l: 'Years of Experience' },
-  { n: '500+', l: 'Projects Completed' },
-  { n: `${serviceAreas.length}`, l: 'Counties Served' },
-  { n: '25-Yr', l: 'Workmanship Warranty' },
-]
 
 const values = [
   {
@@ -331,18 +326,9 @@ export function AboutPage() {
             ))}
           </div>
 
-          {/* Stats strip */}
-          <div className="mt-12 grid grid-cols-2 gap-6 border-t border-white/10 pt-12 sm:grid-cols-4">
-            {aboutStats.map((s) => (
-              <div key={s.l} className="text-center">
-                <div className="font-display text-4xl font-extrabold text-brand-400 sm:text-5xl">
-                  {s.n}
-                </div>
-                <div className="mt-2 text-[11px] font-semibold uppercase tracking-wider text-white/60">
-                  {s.l}
-                </div>
-              </div>
-            ))}
+          {/* Serving-since trust line */}
+          <div className="mt-12 flex justify-center border-t border-white/10 pt-12">
+            <ServingTagline tone="dark" />
           </div>
         </div>
       </section>

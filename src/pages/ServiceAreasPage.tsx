@@ -5,6 +5,7 @@ import { towns } from '../data/towns'
 import { roofingTowns } from '../data/roofingTowns'
 import { townsByCounty, indexedTownCount } from '../data/serviceTownContent'
 import { GafBadge } from '../components/GafBadge'
+import { ServingTagline } from '../components/ServingTagline'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
 import { NjMap } from '../components/NjMap'
@@ -28,12 +29,6 @@ const servicePhoto: Record<string, string> = {
 /** Last-resort image so a card can never fall back to a blank navy tile. */
 const FALLBACK_PHOTO = '/work/roof-roof30.webp'
 
-const localStats = [
-  { n: `${serviceAreas.length}`, l: 'Counties covered' },
-  { n: `${indexedTownCount}+`, l: 'Towns served' },
-  { n: business.yearsExperience, l: 'Years local' },
-  { n: '500+', l: 'NJ projects done' },
-]
 
 const whyLocal = [
   {
@@ -107,16 +102,9 @@ export function ServiceAreasPage() {
               {business.phone} — chances are we already cover it.
             </p>
 
-            {/* Stat strip */}
-            <div className="mt-9 flex flex-wrap gap-x-10 gap-y-4">
-              {localStats.map((s) => (
-                <div key={s.l}>
-                  <div className="font-display text-3xl font-extrabold text-white">{s.n}</div>
-                  <div className="mt-1 max-w-[9rem] text-[11px] font-semibold uppercase tracking-[0.16em] text-white/60">
-                    {s.l}
-                  </div>
-                </div>
-              ))}
+            {/* Serving-since trust line */}
+            <div className="mt-9">
+              <ServingTagline tone="dark" />
             </div>
 
             {/* GAF Master Elite credential */}

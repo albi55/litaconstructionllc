@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { business } from '../data/business'
 import { navItems, type NavItem, type NavChild } from '../data/nav'
 import { Logo } from './Logo'
+import { ServingTagline } from './ServingTagline'
 import {
   PhoneIcon,
   MenuIcon,
@@ -20,7 +21,7 @@ import {
 /** Extra copy shown in the left promo column of each mega menu. */
 const groupMeta: Record<
   string,
-  { eyebrow: string; title: string; blurb: string; cta: string; image: string; stats: [string, string][] }
+  { eyebrow: string; title: string; blurb: string; cta: string; image: string }
 > = {
   Services: {
     eyebrow: 'What We Do',
@@ -29,10 +30,6 @@ const groupMeta: Record<
       'GAF-certified roofing, siding, and masonry — backed by a written 25-year workmanship warranty and two decades of North Jersey craftsmanship.',
     cta: 'View all services',
     image: '/work/roof-roof30.webp',
-    stats: [
-      [business.yearsExperience, 'Years experience'],
-      ['GAF', 'Certified'],
-    ],
   },
   More: {
     eyebrow: 'Explore',
@@ -41,10 +38,6 @@ const groupMeta: Record<
       'Where we work, what our customers say, flexible financing, and answers to the questions homeowners ask most.',
     cta: 'See our service areas',
     image: '/work/renovation-Renovation1.webp',
-    stats: [
-      [business.yearsExperience, 'Years in NJ'],
-      ['5.0', 'Avg. rating'],
-    ],
   },
 }
 
@@ -392,21 +385,9 @@ export function Header() {
                   </h3>
                   <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/70">{meta?.blurb}</p>
 
-                  {/* Quick stats */}
-                  <div className="mt-6 flex items-center gap-5">
-                    {meta?.stats.map(([n, l], i) => (
-                      <div key={l} className="flex items-center gap-5">
-                        {i > 0 && <span className="h-8 w-px bg-white/15" aria-hidden="true" />}
-                        <div>
-                          <div className="font-display text-xl font-extrabold leading-none text-white">
-                            {n}
-                          </div>
-                          <div className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-white/55">
-                            {l}
-                          </div>
-                        </div>
-                      </div>
-                    ))}
+                  {/* Serving-since trust line */}
+                  <div className="mt-6">
+                    <ServingTagline tone="dark" />
                   </div>
 
                   <Link to={item.to} className="btn-primary mt-7 w-fit">

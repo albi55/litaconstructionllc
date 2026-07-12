@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { business, serviceAreas, testimonials } from '../data/business'
+import { business, testimonials } from '../data/business'
 import { Seo } from '../components/Seo'
+import { ServingTagline } from '../components/ServingTagline'
 import { breadcrumbSchema } from '../lib/schema'
 import { gallery, galleryCategories, imagesByCategory, type GalleryImage } from '../data/gallery'
 import { useReveal } from '../lib/useReveal'
@@ -125,21 +126,9 @@ export function ProjectsPage() {
             homeowners across New Jersey. Your project could be next.
           </p>
 
-          {/* Stat strip */}
-          <div className="mt-9 flex flex-wrap gap-x-10 gap-y-4">
-            {[
-              { n: `${gallery.length}+`, l: 'Projects' },
-              { n: '4', l: 'Specialties' },
-              { n: `${serviceAreas.length}`, l: 'Counties' },
-              { n: business.yearsExperience, l: 'Years' },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="font-display text-3xl font-extrabold text-white">{s.n}</div>
-                <div className="mt-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/60">
-                  {s.l}
-                </div>
-              </div>
-            ))}
+          {/* Serving-since trust line */}
+          <div className="mt-9">
+            <ServingTagline tone="dark" />
           </div>
         </div>
 

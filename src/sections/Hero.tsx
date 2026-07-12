@@ -78,8 +78,15 @@ export function Hero() {
             className="mt-4 flex flex-wrap items-center justify-center gap-3 animate-fade-up lg:mt-0"
             style={{ animationDelay: '320ms' }}
           >
-            {/* GAF certified — official logo */}
-            <div className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.07] py-2 pl-2 pr-4 shadow-soft backdrop-blur-sm transition-colors hover:border-white/30">
+            {/* GAF certified — official logo + verifiable GAF Master Elite ID */}
+            <a
+              href={business.gaf.profileUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Verified GAF Master Elite® Contractor — view our GAF profile"
+              aria-label={`GAF Master Elite Certified Contractor, ID ${business.gaf.id} — view our verified GAF profile (opens in a new tab)`}
+              className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.07] py-2 pl-2 pr-4 shadow-soft backdrop-blur-sm transition-colors hover:border-white/30"
+            >
               <img
                 src="/gaf-logo.svg"
                 alt="GAF Certified Contractor"
@@ -87,11 +94,13 @@ export function Hero() {
               />
               <span className="flex flex-col leading-tight">
                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-400">
-                  Factory Certified
+                  GAF Master Elite®
                 </span>
-                <span className="text-[15px] font-bold tracking-wide text-white">GAF Contractor</span>
+                <span className="text-[15px] font-bold tracking-wide text-white">
+                  ID #{business.gaf.id}
+                </span>
               </span>
-            </div>
+            </a>
 
             {/* NJ License */}
             <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] py-2 pl-2 pr-5 shadow-soft backdrop-blur-sm transition-colors hover:border-white/30">

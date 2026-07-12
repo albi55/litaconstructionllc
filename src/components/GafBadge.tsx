@@ -29,7 +29,7 @@ export function GafBadge({
     >
       <img
         src={business.gaf.badgeImage}
-        alt="GAF Master Elite® Certified Contractor — Lita Construction, ID 1106756"
+        alt={`GAF Master Elite® Certified Contractor — Lita Construction, ID ${business.gaf.id}`}
         width={width}
         height={Math.round((width * 342) / 456)}
         loading="lazy"

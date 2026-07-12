@@ -5,6 +5,8 @@ import { CtaBand } from '../components/CtaBand'
 import { CheckIcon, ArrowIcon, StarIcon, ServiceGlyph, servicePhoto } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
+import { GafCredential } from '../components/GafCredential'
+import { ServingTagline } from '../components/ServingTagline'
 
 /**
  * The /services hub lists every service in the four trade groups as a rich,
@@ -43,12 +45,6 @@ const CARDS: ServiceCard[] = serviceGroups
     }
   })
 
-const HERO_STATS = [
-  { n: String(CARDS.length), l: 'Services under one roof' },
-  { n: business.yearsExperience, l: 'Years in business' },
-  { n: 'GAF', l: 'Certified contractor' },
-  { n: '100%', l: 'Licensed & insured' },
-]
 
 export function ServicesHub() {
   return (
@@ -99,16 +95,10 @@ export function ServicesHub() {
             subcontractor runaround, no finger-pointing.
           </p>
 
-          {/* Stat strip */}
-          <div className="mt-9 flex flex-wrap gap-x-10 gap-y-4">
-            {HERO_STATS.map((s) => (
-              <div key={s.l}>
-                <div className="font-display text-3xl font-extrabold text-white">{s.n}</div>
-                <div className="mt-1 max-w-[9rem] text-[11px] font-semibold uppercase tracking-[0.16em] text-white/60">
-                  {s.l}
-                </div>
-              </div>
-            ))}
+          {/* Serving-since trust line + GAF Master Elite credential */}
+          <div className="mt-9 flex flex-wrap items-center gap-4">
+            <ServingTagline tone="dark" />
+            <GafCredential />
           </div>
         </div>
 

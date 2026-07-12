@@ -12,6 +12,7 @@ import { CtaBand } from '../components/CtaBand'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
 import { GafBadge } from '../components/GafBadge'
+import { ServingTagline } from '../components/ServingTagline'
 import { PhoneIcon, ArrowIcon, CheckIcon, PinIcon } from '../components/icons'
 import { breadcrumbSchema } from '../lib/schema'
 import { useReveal } from '../lib/useReveal'
@@ -327,21 +328,8 @@ export function TownOverviewPage({ slug }: { slug: string }) {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { n: business.yearsExperience, l: 'Years in the trade' },
-                { n: '2004', l: `Serving ${county}` },
-                { n: '6', l: 'Trades under one roof' },
-                { n: '10-Yr', l: 'Craftsmanship warranty' },
-              ].map((s) => (
-                <div
-                  key={s.l}
-                  className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors duration-300 hover:border-sand-400/40 hover:bg-white/[0.07]"
-                >
-                  <div className="font-display text-3xl font-black text-brand-400">{s.n}</div>
-                  <div className="mt-1.5 text-sm font-medium text-white/70">{s.l}</div>
-                </div>
-              ))}
+            <div className="flex justify-center lg:justify-end">
+              <ServingTagline tone="dark" />
             </div>
           </div>
         </div>
