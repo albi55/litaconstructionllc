@@ -35,6 +35,28 @@ function ScrollManager() {
   return null
 }
 
+/**
+ * Sends a GA4 page_view on every route change. The gtag snippet in index.html
+ * sets send_page_view: false, so this is the single source of pageviews —
+ * including the very first load.
+ */
+function Analytics() {
+  const { pathname, search } = useLocation()
+  useEffect(() => {
+    // Defer a frame so react-helmet-async has committed the new <title>;
+    // otherwise GA4 would record the previous page's title.
+    const frame = requestAnimationFrame(() => {
+      window.gtag?.('event', 'page_view', {
+        page_path: pathname + search,
+        page_location: window.location.href,
+        page_title: document.title,
+      })
+    })
+    return () => cancelAnimationFrame(frame)
+  }, [pathname, search])
+  return null
+}
+
 export default function App() {
   return (
     <div className="relative min-h-screen bg-cloud-50">
@@ -45,6 +67,7 @@ export default function App() {
         Skip to content
       </a>
       <ScrollManager />
+      <Analytics />
       <PromoBar />
       <Header />
       <main id="main" className="pb-16 lg:pb-0">
