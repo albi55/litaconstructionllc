@@ -123,6 +123,46 @@ export const flagshipRoofingNotes: Record<string, TownRoofingNotes> = {
     algaeNotes: 'Palisades cliffside moisture and dense private estate woodlands create lingering morning fog. We specify GAF Timberline® UHDZ shingles featuring 30-year StainGuard Plus™ copper micro-bead protection to preserve authentic wood-shake and slate shadow profiles without discoloration.',
     substrateNotes: 'Palatial estate rooflines require absolute structural rigidity to support heavy architectural profiles against 130-MPH wind uplift. We install exterior-grade 5/8-inch CDX plywood secured with ring-shank nails to current NJ structural shear schedules.',
   },
+  'rumson': {
+    landmarks: ['River Road', 'Rumson Road', 'the Navesink Riverfront', 'the Shrewsbury River Corridor'],
+    housingStock: 'Gilded Age Waterfront Mansions, Historic Shingle-Style Estates, Custom Center-Hall Colonials, and French Country Châteaux',
+    localStresses: 'Severe coastal salt-air corrosion, high-velocity Atlantic gale and riverfront wind shear, intricate multi-turret dormer junctions, and heavy nor’easter driving rain.',
+    valleyNotes: 'Peninsula estates feature expansive compound valleys and copper-accented dormers subjected to horizontal ocean winds. We install custom 20-ounce copper or heavy-gauge non-corrosive metal valley troughs bedded over continuous GAF StormGuard® high-temperature leak barriers to eliminate hydrostatic back-wash.',
+    algaeNotes: 'Maritime fog and persistent river humidity off the Navesink promote aggressive Gloeocapsa magma and moss retention on shaded north exposures. We specify GAF Timberline® UHDZ shingles with 30-year StainGuard Plus™ copper micro-bead algae defense to preserve authentic cedar-shake shadow lines.',
+    substrateNotes: 'Historic estate rooflines frequently reveal original spaced planking or settling tongue-and-groove decking from slate conversions. We inspect all structural framing, installing exterior-grade 5/8-inch CDX plywood fastened with corrosion-resistant ring-shank nails to comply with NJ UCC 130-MPH wind schedules.',
+  },
+  'little-silver': {
+    landmarks: ['Oceanport Avenue', 'Prospect Avenue', 'the Shrewsbury River creek branches', 'the Little Silver Train Station'],
+    housingStock: 'Waterfront Colonial Revivals, Custom Modern Farmhouses, Mid-Century Ranches, and Split-Levels',
+    localStresses: 'Creek and river basin moisture, coastal wind buffeting, shallow-pitch addition transitions, and unconditioned attic heat traps.',
+    valleyNotes: 'Expanded split-level and ranch configurations feature dead valleys where additions intersect vertical two-story walls. We install continuous self-adhering GAF WeatherWatch® barriers extending 36 inches up flanking sidewalls beneath step flashing to stop trapped-water intrusion.',
+    algaeNotes: 'Elevated humidity sweeping from the Shrewsbury River branches fosters rapid lichen colonization and dark algae streaks. We specify GAF Timberline® HDZ shingles with StainGuard Plus™ protection for lasting aesthetic clarity.',
+    substrateNotes: 'Tear-offs frequently expose heat-delaminated 1/2-inch plywood or aging board decking. We excise weakened panels and install rigid 5/8-inch CDX plywood sheathing to re-establish structural integrity.',
+  },
+  'colts-neck': {
+    landmarks: ['the Route 34 corridor', 'County Road 537', 'Hominy Hill Golf Course', 'Bucks Mill Park'],
+    housingStock: 'Multi-Acre Equestrian Estates, Custom French Châteaux, Sprawling Executive Colonials, and Gated Mansions',
+    localStresses: 'Unsheltered open-pasture wind shear, massive multi-tier compound valleys, fieldstone chimney leaks, and failing builder-grade skylights.',
+    valleyNotes: 'Estate roofs often exceed 8,000 square feet with compound valleys handling enormous storm volume. We install commercial-grade GAF StormGuard® membranes beneath heavy-gauge open metal valley pans to stop hydrostatic backup during severe summer thunderstorms.',
+    algaeNotes: 'Surrounding agricultural parcels and private woodlands keep morning dew trapped on northern roof slopes, fostering heavy algae growth. We install GAF Timberline® UHDZ shingles with 30-year copper micro-bead protection to ensure authentic slate and shake aesthetics.',
+    substrateNotes: 'Custom acreage mansions frequently feature expansive rafter spans that experience decking sag under heavy architectural loads. We audit framing during tear-off, installing rigid 5/8-inch CDX plywood to eliminate deflection.',
+  },
+  'holmdel': {
+    landmarks: ['Bell Works', 'Holmdel Park', 'Longstreet Farm', 'Crawfords Corner Road'],
+    housingStock: 'High-Equity Custom Mansions, Sprawling Hillside Colonials, Contemporary Estates, and Executive Subdivisions',
+    localStresses: 'Hilltop elevation wind gusts, expansive multi-plane roof areas, builder-grade shingle failure, and unconditioned attic heat-soak.',
+    valleyNotes: 'Hillside custom estates converge in deep central valleys handling severe stormwater runoff. We reinforce all valley channels with high-temperature GAF StormGuard® membranes wrapped 36 inches up flanking decks beneath pre-bent valley metal.',
+    algaeNotes: 'Wooded residential buffers generate airborne fungal spores that anchor on damp asphalt surfaces. GAF Timberline® UHDZ shingles provide deep shadow definition and 30-year StainGuard Plus™ copper-bead algae defense.',
+    substrateNotes: 'Tear-offs in established custom subdivisions frequently reveal thin 1/2-inch CDX or OSB panels that sag between rafters. We replace compromised sheathing with rigid 5/8-inch CDX exterior plywood to guarantee manufacturer wind-uplift compliance.',
+  },
+  'shrewsbury': {
+    landmarks: ['the Broad Street Historic District', 'the Historic Four Corners', 'the Allen House', 'the Sycamore Avenue corridor'],
+    housingStock: '18th- and 19th-Century Historic Colonials, Federal Frame Homes, Post-War Capes, and Custom Executive Infill',
+    localStresses: 'Historic district preservation guidelines, soft lime-mortar brick chimney deterioration, steep historic pitches, and mature maple tree shade.',
+    valleyNotes: 'Historic rooflines feature sharp pitches that concentrate heavy stormwater runoff into narrow dormer valleys. We install custom open copper or aluminum valley pans lined with GAF StormGuard® membranes to prevent hydrostatic back-ups while preserving historic character.',
+    algaeNotes: 'Historic village shade trees trap morning dampness across roof planes, fostering dark algae streaks. We specify GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper protection to maintain clean curb appeal.',
+    substrateNotes: 'Tear-offs on older borough residences routinely expose historic 1x8 tongue-and-groove pine with wide shrinkage gaps. We lay an unyielding overlay of 5/8-inch CDX structural plywood across all rafter bays to guarantee maximum fastener pullout resistance.',
+  },
 }
 
 /**
