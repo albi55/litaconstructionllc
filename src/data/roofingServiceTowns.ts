@@ -2507,14 +2507,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07801', '07802'],
     intro: [
-      'High-Performance Roofing Systems near Blackwell Street Historic Commercial District and Rockaway River Corridor. Dover homes — Turn-of-the-Century Victorian Multi-Families, Pre-War Brick Colonials, Craftsman Bungalows, and Frame Two-Families — face a specific set of local stresses: rockaway River basin dampness, steep Victorian dormer cheeks (10/12 to 12/12), soft lime-mortar brick chimney decay, and narrow downtown lot setbacks. Lita Construction serves the Dover 07801 and 07802 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Hurd Park or Dover Train Station, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Blackwell Street and Rockaway River Basin. Dover homes — Pre-War Victorians, Multi-Family Frame Dwellings, Craftsman Bungalows, and Brick Colonials — face a specific set of local stresses: rockaway River basin dampness, steep dormer cheek flashings, aging soft-mortar brick chimneys, and high-density attic heat-soak. Lita Construction serves the Dover 07801 and 07802 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near JFK Memorial Park or Prospect Street, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Dover rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Historic multi-family and Victorian rooflines feature steep cross-gables that concentrate heavy stormwater into narrow dormer valleys. We install open metal valley troughs lined with high-temperature GAF StormGuard® membranes to ensure continuous water evacuation without splashover into tight side yards.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic multi-family homes feature steep roof pitches that concentrate heavy storm runoff into narrow valleys. We install heavy-gauge open metal valleys lined with GAF StormGuard® membranes to prevent hydrostatic back-ups under shingle tabs.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Dover roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -2524,8 +2524,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Dover\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'River-corridor dampness combined with mature street trees accelerates dark Gloeocapsa magma streaks on shaded northern exposures. We specify GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old borough residences routinely expose aged 1x8 tongue-and-groove pine with nail splits and shrinkage gaps. We lay an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to satisfy current NJ UCC shear schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'River-corridor humidity combined with street tree shade accelerates dark algae streaks on damp roof exposures. We specify GAF Timberline® HDZ shingles with StainGuard Plus™ copper protection.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on older town residences routinely expose aged 1x6 tongue-and-groove pine with wide expansion gaps. We install structural 5/8-inch CDX plywood across all planes to provide a continuous, code-compliant nailing base.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Dover\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -2549,7 +2549,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Dover, Rockaway Borough, Wharton, Mine Hill, and Randolph',
+    serving: 'Dover, Rockaway Borough, Mine Hill, Wharton, and Randolph',
     meta: 'Lita Construction provides elite roofing in Dover, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -5716,14 +5716,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07438', '07849'],
     intro: [
-      'High-Performance Roofing Systems near Lake Hopatcong Northeastern Shoreline and Mahlon Dickerson Reservation. Jefferson homes — Rustic Lake Hopatcong Waterfront Cabins, Converted Year-Round Chalets, Contemporary Mountain Ranches, and Timber-Frame Builds — face a specific set of local stresses: High-mountain elevation wind gusts, heavy winter snowdrift accumulation, severe ice damming along uninsulated eaves, and lakefront fog dampness. Lita Construction serves the Jefferson 07438 and 07849 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Bowling Green Mountain or Weldon Brook Basin, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Lake Hopatcong Shoreline and Berkshire Valley Road. Jefferson homes — Lake Hopatcong Shoreline Homes, Converted Summer Cottages, Raised Ranches, and Custom Mountain Builds — face a specific set of local stresses: lake Hopatcong open-water wind buffering, high atmospheric moisture, low-slope rear addition tie-ins, and heavy winter ice dams. Lita Construction serves the Jefferson 07438 and 07849 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Mahlon Dickerson Reservation or Route 15 Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Jefferson rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Mountain-slope chalets and lakefront cabins feature steep gables converging in narrow dormer valleys. Snowmelt backups and torrential mountain squalls push water under conventional shingles; we line all valleys with continuous commercial-grade GAF StormGuard® high-temperature membranes beneath heavy-gauge open metal valleys.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Converted cottages along Lake Hopatcong feature shallow additions joining steeper main gables at low slopes. These transitions produce slow-draining channels prone to water backup during driving rainstorms. We line all transition valleys with self-adhering GAF WeatherWatch® mineral-surfaced barriers under full-width metal flashing.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Jefferson roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -5733,8 +5733,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Jefferson\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Dense hemlock, pine, and hardwood forests trap moisture along roof slopes, encouraging heavy moss colonies and lichen growth. We install GAF Timberline® UHDZ shingles featuring Dual Shadow Lines and 30-year StainGuard Plus™ copper defense.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs across custom timbered homes and older lake cabins frequently uncover thin 1/2-inch plywood or spaced pine boards that have deflected under heavy snow loads. We replace compromised wood with structural 5/8-inch CDX exterior plywood fastened to current NJ UCC framing schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Constant ambient dampness from the lake basin combined with steep mountain terrain accelerates fungal discoloration and lichen growth. We install GAF Timberline® HDZ shingles with LayerLock® technology to secure 130-MPH wind defense and long-term algae resistance.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on older lakefront properties often uncover mismatched decking, rotted tongue-and-groove boards, or sagging 1/2-inch plywood. We remove compromised materials and install exterior-grade 5/8-inch CDX plywood to ensure a uniform, structural nailing surface.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Jefferson\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -5758,7 +5758,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Jefferson, Mount Arlington, Roxbury, Rockaway Township, and West Milford',
+    serving: 'Jefferson, Rockaway Township, Mount Arlington, Roxbury, and Kinnelon',
     meta: 'Lita Construction provides elite roofing in Jefferson, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -8162,14 +8162,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07856'],
     intro: [
-      'High-Performance Roofing Systems near Lake Hopatcong Shoreline & Marinas and Bertrand Island Historic Grounds. Mount Arlington homes — Lakefront Contemporary Mansions, Converted Lake Hopatcong Cottages, Mid-Century Ranches, and Waterfront Townhomes — face a specific set of local stresses: lake Hopatcong open-water wind buffeting, heavy winter snowdrift accumulation, dead-valley leaf accumulation, and severe ice damming along wide overhangs. Lita Construction serves the Mount Arlington 07856 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Memorial Park or Howard Boulevard Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Howard Boulevard and Lake Hopatcong Shoreline. Mount Arlington homes — Lakefront Custom Estates, Contemporary Lakeside Townhomes, Converted Victorian Cottages, and Capes — face a specific set of local stresses: direct open-water wind gusts off Lake Hopatcong, extreme freeze-thaw damming along low eaves, heavy snowpack, and pipe boot dry rot. Lita Construction serves the Mount Arlington 07856 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Bertrand Island or Memorial Park, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Mount Arlington rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Lakefront residences face driving winds that force moisture beneath conventional valley shingles. We install heavy-gauge open metal valley pans bedded over double-layer GAF StormGuard® membranes to eliminate hydrostatic back-wash during severe lake squalls.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Steep lakeside roof slopes channel rapid runoff against lower sunrooms and decks. We install custom-bent open metal valleys backed by continuous GAF StormGuard® membranes to evacuate high-capacity drainage without splashover.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Mount Arlington roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -8179,8 +8179,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Mount Arlington\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Lakefront fog and wooded shoreline buffers foster blue-green algae blooms and lichen patches across shaded roof planes. We specify GAF Timberline® UHDZ shingles featuring StainGuard Plus™ copper protection to preserve architectural shadow lines.' },
-          { title: 'Structural Decking Audit', body: 'Custom lakefront homes with wide rafter spans often display deck deflection under heavy winter snow loads. We audit framing during tear-off, replacing thin sheathing with exterior-grade 5/8-inch CDX plywood secured with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Elevated lake humidity keeps morning moisture trapped across shaded roof planes, accelerating moss and blue-green algae blooms. We install GAF Timberline® UHDZ shingles with Dual Shadow Lines and 30-year StainGuard Plus™ protection.' },
+          { title: 'Structural Decking Audit', body: 'We perform structural load assessments across all framing during tear-off, replacing moisture-softened plywood with 5/8-inch CDX decking to ensure firm nail retention against 130-MPH wind uplift.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Mount Arlington\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -8204,7 +8204,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Mount Arlington, Roxbury, Jefferson, Hopatcong, and Netcong',
+    serving: 'Mount Arlington, Roxbury, Jefferson, Netcong, and Mount Olive',
     meta: 'Lita Construction provides elite roofing in Mount Arlington, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -8213,14 +8213,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07828', '07836'],
     intro: [
-      'High-Performance Roofing Systems near Budd Lake Shoreline and Turkey Brook Park. Mount Olive homes — Budd Lake Waterfront Cottages, Flanders Historic Colonials, 1980s–2000s Planned Master Subdivisions, and Raised Ranches — face a specific set of local stresses: budd Lake atmospheric humidity, high-elevation plateau winds, sprawling low-pitch valley runs, builder-grade shingle blow-offs, and severe winter ice damming. Lita Construction serves the Mount Olive 07828 and 07836 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near International Trade Center or Historic Flanders Village, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Turkey Brook Park and Budd Lake. Mount Olive homes — Budd Lake Waterfront Homes, 1980s–2000s Planned Subdivisions, Contemporary Colonials, and Ranches — face a specific set of local stresses: budd Lake open-water wind shear, severe ridgetop temperature swings, failing builder-grade shingles, and winter freeze-thaw damming. Lita Construction serves the Mount Olive 07828 and 07836 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Route 206 Corridor or Flanders-Bartley Road, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Mount Olive rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Budd Lake properties and large master-planned subdivisions feature sprawling roof footprints with long, low-pitch valley runs. Storm runoff moves slowly along these channels; we install heavy-gauge open metal valley pans bedded over double-layer GAF StormGuard® membranes to eliminate hydrostatic penetration.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Unobstructed winds across Budd Lake drive rain horizontally into valley cuts. Standard woven valleys back up under high wind pressures; we install reinforced open metal valley pans bedded over continuous GAF StormGuard® leak barriers to eliminate water penetration.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Mount Olive roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -8230,8 +8230,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Mount Olive\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Lakefront moisture and surrounding agricultural borders create optimal conditions for rapid Gloeocapsa magma blooms. We specify GAF Timberline® HDZ shingles equipped with StainGuard Plus™ copper protection to maintain clean exterior profiles.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs in 1980s and 1990s subdivisions frequently reveal early-generation OSB that has softened along eave lines. We replace compromised sheathing with rigid 5/8-inch CDX exterior plywood fastened with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Lakeside humidity combined with mature residential tree canopies fosters persistent black algae streaking. We install GAF Timberline® UHDZ shingles equipped with StainGuard Plus™ copper micro-bead chemistry to ensure color vibrancy.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs in 1980s subdivisions frequently uncover thin 1/2-inch CDX or OSB panels that sag between rafters. We audit rafter spans, replacing compromised sheathing with rigid 5/8-inch CDX exterior plywood to guarantee full manufacturer wind-uplift compliance.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Mount Olive\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -8255,7 +8255,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Mount Olive, Roxbury, Netcong, Washington Township, and Chester Township',
+    serving: 'Mount Olive, Roxbury, Chester Township, Netcong, and Washington Township',
     meta: 'Lita Construction provides elite roofing in Mount Olive, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -10967,14 +10967,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07866'],
     intro: [
-      'High-Performance Roofing Systems near Splitrock Reservoir and Wildcat Ridge Wildlife Management Area. Rockaway Township homes — Green Pond Private Lakefront Cottages & Mansions, Wooded Split-Levels, Contemporary Mountain Colonials, and Raised Ranches — face a specific set of local stresses: High-elevation mountain wind gusts, Splitrock and Green Pond humidity, complex multi-tier compound valleys, and severe winter snowdrift and ice damming. Lita Construction serves the Rockaway Township 07866 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Green Pond Private Lake or Picatinny Arsenal Border, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Green Pond and White Meadow Lake. Rockaway Township homes — Lakefront Chalets, Mid-Century Split-Levels, Ranches, and Sprawling Wooded Colonials — face a specific set of local stresses: High-elevation mountain wind gusts, elevated humidity from Green Pond and White Meadow Lake, heavy winter snowdrift loads, and severe ice damming along unheated soffits. Lita Construction serves the Rockaway Township 07866 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Mount Hope Historical Park or Hibernia Road, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Rockaway Township rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Mountain-slope and lakefront properties feature complex compound valleys where snowmelt and cloudbursts gather heavy velocity. We line all valley troughs with continuous commercial-grade GAF StormGuard® membranes beneath heavy-gauge open metal valleys to prevent hydrostatic back-wash during severe highland storms.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Lakefront communities feature compound multi-tier gables that direct torrential rainwater and winter slush directly into lower addition valleys. We install heavy-gauge open metal valleys bedded over continuous double-layer GAF StormGuard® high-temperature membranes to withstand severe hydraulic wash and freeze-thaw expansion.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Rockaway Township roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -10984,8 +10984,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Rockaway Township\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Dense hemlock and hardwood forests combined with lake humidity keep roof decks cool and damp throughout the morning, encouraging lichen and dark fungal growth. We specify GAF Timberline® UHDZ shingles featuring Dual Shadow Lines and 30-year StainGuard Plus™ copper-bead algae defense.' },
-          { title: 'Structural Decking Audit', body: 'Extended rafter spans on custom mountain homes frequently show sagging under heavy snowdrifts. We audit all framing during tear-off, replacing thin sheathing with structural 5/8-inch CDX exterior plywood fastened with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Dense mature oak and hemlock canopies surrounding lake basins block direct sunlight, creating damp microclimates where Gloeocapsa magma and moss thrive. We specify GAF Timberline® UHDZ shingles with 30-year StainGuard Plus™ copper micro-bead protection to preserve authentic wood-shake aesthetics.' },
+          { title: 'Structural Decking Audit', body: 'Winter snowdrifts exert substantial downward pressure across extended rafter spans on converted lake cabins and split-levels. We audit all framing during tear-off, excising softened plywood and installing structural 5/8-inch CDX exterior plywood secured with ring-shank nails to NJ UCC shear schedules.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Rockaway Township\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -11009,7 +11009,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Rockaway Township, Rockaway Borough, Jefferson, Denville, and Boonton Township',
+    serving: 'Rockaway Township, Rockaway Borough, Denville, Jefferson, and Boonton Township',
     meta: 'Lita Construction provides elite roofing in Rockaway Township, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -11271,16 +11271,16 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     slug: 'roxbury',
     name: 'Roxbury',
     county: 'Morris',
-    zips: ['07876', '07852'],
+    zips: ['07876', '07852', '07850'],
     intro: [
-      'High-Performance Roofing Systems near Lake Hopatcong Southern Shoreline (Landing) and Horseshoe Lake Recreation Complex. Roxbury homes — Converted Lake Hopatcong Cottages, Mid-Century Ranches, Sprawling Bi-Levels, and 1980s Planned Subdivisions — face a specific set of local stresses: lake Hopatcong open-water wind buffeting, heavy winter snowdrift accumulation, dead valleys on bi-levels, shallow addition pitches, and unconditioned attic heat traps. Lita Construction serves the Roxbury 07876 and 07852 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Route 10 Commercial Corridor or Morris Canal Historic Incline Plane, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Route 10 / Route 46 Confluence and Horseshoe Lake. Roxbury homes — 1970s–1990s Suburban Colonials, Sprawling Split-Levels, Ranches, and Historic Ledgewood Farmsteads — face a specific set of local stresses: highway corridor wind drafts, delaminating 1/2-inch builder-grade plywood, dead-valley junctions on split-levels, and unconditioned attic heat traps. Lita Construction serves the Roxbury 07876 and 07852 and 07850 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Ledgewood Historic District or Lake Hopatcong South Basin, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Roxbury rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Lakefront cottages and expanded bi-levels feature shallow addition slopes intersecting primary roofs at low angles. We install heavy-gauge open metal valleys bedded over continuous GAF WeatherWatch® mineral-surfaced barriers to prevent wind-driven rain from backing under shingles during valley turbulence.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Split-level and bi-level designs create dead valleys where addition roofs intersect vertical two-story sidewalls. Debris accumulation routinely causes localized ponding. We construct seamless step-flashing assemblies bedded in self-adhering GAF WeatherWatch® membranes to divert runoff cleanly away from wall sheathing.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Roxbury roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -11290,8 +11290,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Roxbury\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Lakefront fog and wooded residential buffers foster blue-green algae blooms and lichen patches across shaded roof planes. We install GAF Timberline® HDZ shingles featuring LayerLock® technology and copper micro-bead algae defense.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs routinely expose aged 1/2-inch plywood sheathing with loose fastener holds and delaminating veneers along eave lines. We excise damaged panels and install exterior-grade 5/8-inch CDX plywood secured with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Open solar exposure alternating with heavy summer rainfall causes rapid surface oxidation and dark algae streaks on shaded northern slopes. We specify GAF Timberline® HDZ shingles featuring time-release StainGuard Plus™ protection for lasting aesthetic clarity.' },
+          { title: 'Structural Decking Audit', body: 'Suburban framing often reveals dried 1/2-inch plywood or early OSB sheathing that has softened over uninsulated soffit overhangs. We excise damaged panels and install structural 5/8-inch CDX plywood fastened with ring-shank nails to eliminate deflection.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Roxbury\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -11315,7 +11315,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Roxbury, Mount Arlington, Mount Olive, Randolph, and Netcong',
+    serving: 'Roxbury, Mount Olive, Mount Arlington, Randolph, and Chester Township',
     meta: 'Lita Construction provides elite roofing in Roxbury, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -13411,14 +13411,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07853', '07870', '07830'],
     intro: [
-      'High-Performance Roofing Systems near Historic Long Valley Village and Schooley\'s Mountain County Park. Washington Township homes — Historic German Valley Stone & Timber Houses, Schooley\'s Mountain Custom Estates, Multi-Acre Equestrian Ranches, and Sprawling Colonials — face a specific set of local stresses: schooley\'s Mountain ridge wind shear, heavy winter snowdrift accumulation, South Branch river valley dampness, massive fieldstone chimney flashing decay, and severe ice damming. Lita Construction serves the Washington Township 07853 and 07870 and 07830 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near South Branch Raritan River Corridor or Ort Farms, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Schooley\'s Mountain Road and Long Valley Historic Village. Washington Township homes — Schooley\'s Mountain Ridge Mansions, Historic Long Valley Stone Farmhouses, and Custom Contemporary Colonials — face a specific set of local stresses: severe mountain elevation wind shear, steep 10/12 to 14/12 historic pitches, fieldstone chimney mortar deterioration, and deep winter snowpack. Lita Construction serves the Washington Township 07853 and 07870 and 07830 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near South Branch Raritan River or Schooley\'s Mountain County Park, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Washington Township rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Mountain-ridge custom estates feature sprawling, multi-tier rooflines converging in compound valleys. Severe highland squalls drive torrential runoff down these intersections; we construct custom heavy-gauge open metal valleys bedded over continuous GAF StormGuard® high-temperature leak barriers to eliminate hydrostatic water backup.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Steep hillside estates descending into Long Valley feature compound gables that funnel torrential rainwater into narrow dormer returns. We line all valleys with commercial-grade GAF StormGuard® membranes beneath heavy-gauge open metal valleys to stop hydraulic overflow.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Washington Township roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -13428,8 +13428,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Washington Township\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Forested mountain slopes and valley mist keep roof decks shaded and damp well past midday, accelerating moss and lichen colonies. We specify GAF Timberline® UHDZ shingles featuring Dual Shadow Lines and 30-year StainGuard Plus™ copper protection to preserve rustic wood-shake character.' },
-          { title: 'Structural Decking Audit', body: 'Custom estate roofs with wide rafter spans frequently exhibit deck deflection under heavy highland snowdrifts. We audit framing during tear-offs, replacing thin 1/2-inch panels with rigid 5/8-inch CDX exterior plywood fastened with ring-shank nails to NJ UCC standards.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Heavy forest canopies along Schooley\'s Mountain keep roof surfaces shaded and damp, promoting aggressive moss and lichen colonies. We install GAF Timberline® UHDZ shingles featuring 30-year copper micro-bead defense to preserve authentic wood-shake shadow lines.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on older farmsteads frequently expose original 1x8 tongue-and-groove pine or spaced board decking with wide expansion seams. We secure a continuous structural layer of 5/8-inch CDX plywood across all rafter bays to ensure maximum fastener pullout resistance.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Washington Township\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -13453,7 +13453,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Washington Township, Chester Township, Mount Olive, Chester Borough, and Hackettstown',
+    serving: 'Washington Township, Chester Township, Mount Olive, Mendham Township, and Hackettstown',
     meta: 'Lita Construction provides elite roofing in Washington Township, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
