@@ -2757,6 +2757,57 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     meta: 'Lita Construction provides elite roofing in Edison, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
+    slug: 'elizabeth',
+    name: 'Elizabeth',
+    county: 'Union',
+    zips: ['07201', '07202', '07206', '07207', '07208'],
+    intro: [
+      'High-Performance Roofing Systems near Broad Street Historic District and Elizabeth River Confluence. Elizabeth homes — High-Density Multi-Family Three-Deckers, Historic Queen Anne Victorians, Brick Rowhouses, and Pre-War Colonials — face a specific set of local stresses: high urban wind drafts, Newark Bay and Arthur Kill atmospheric moisture, dense party-wall roofline transitions, and severe attic heat-soak. Lita Construction serves the Elizabeth 07201 and 07202 and 07206 and 07207 and 07208 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Warinanco Park or Midtown Historic Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+    ],
+    sections: [
+      {
+        heading: 'Roof Repair',
+        lead: 'Precision repairs engineered for Elizabeth rooflines — we find the failure, not just the symptom:',
+        bullets: [
+          { title: 'Valley & Dead-Valley Engineering', body: 'Dense multi-story structures feature steep dormer valleys that funnel torrential runoff directly toward shared party walls and narrow lot lines. We install heavy-gauge open metal valleys bedded over continuous GAF StormGuard® membranes to stop hydrostatic penetration behind exterior siding.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Elizabeth roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
+        ],
+      },
+      {
+        heading: 'Roof Replacement',
+        lead: 'We deliver full-system replacements engineered for Elizabeth\'s specific climate and architecture:',
+        bullets: [
+          { title: 'Shingle Specification & Algae Defense', body: 'Coastal bay air currents combined with urban heat islands accelerate asphalt shingle oxidation and dark fungal streaks. We install GAF Timberline® HDZ shingles with StainGuard Plus™ copper protection to maintain sharp curb appeal across historic facades.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old multi-family structures frequently reveal original dimensional 1x8 pine planks with wide expansion gaps and localized rot. We lay structural 5/8-inch CDX exterior plywood across all framing bays to satisfy current NJ UCC shear schedules.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Elizabeth\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
+        ],
+      },
+      {
+        heading: 'Specialized Services',
+        bullets: [
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
+        ],
+      },
+      {
+        heading: 'Our Guarantee',
+        bullets: [
+          { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
+        ],
+      }
+    ],
+    serving: 'Elizabeth, Hillside, Roselle, Linden, and Union Township',
+    meta: 'Lita Construction provides elite roofing in Elizabeth, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
+  },
+  {
     slug: 'elmwood-park',
     name: 'Elmwood Park',
     county: 'Bergen',
@@ -4848,6 +4899,57 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     meta: 'Lita Construction provides elite roofing in Hillsdale, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
+    slug: 'hillside',
+    name: 'Hillside',
+    county: 'Union',
+    zips: ['07205'],
+    intro: [
+      'High-Performance Roofing Systems near Liberty Avenue and North Broad Street Corridor. Hillside homes — Pre-War Brick Colonials, English Tudor Revivals, Multi-Family Frame Dwellings, and Post-War Capes — face a specific set of local stresses: steep Tudor valley cheek junctions, Elizabeth River basin dampness, aging soft-mortar brick chimney decay, and narrow lot clearances. Lita Construction serves the Hillside 07205 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Conant Park or Elizabeth River Parkway Border, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+    ],
+    sections: [
+      {
+        heading: 'Roof Repair',
+        lead: 'Precision repairs engineered for Hillside rooflines — we find the failure, not just the symptom:',
+        bullets: [
+          { title: 'Valley & Dead-Valley Engineering', body: 'Tudor roof geometries feature sharp valley pitches that channel fast-moving runoff into masonry returns. We fabricate custom-bent open copper or aluminum valley pans lined with GAF StormGuard® membranes to shed water smoothly away from vulnerable brick flashings.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Hillside roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
+        ],
+      },
+      {
+        heading: 'Roof Replacement',
+        lead: 'We deliver full-system replacements engineered for Hillside\'s specific climate and architecture:',
+        bullets: [
+          { title: 'Shingle Specification & Algae Defense', body: 'Parkway tree shade and morning river dampness foster heavy lichen and blue-green algae growth on asphalt surfaces. We specify GAF Timberline® HDZ shingles with LayerLock® technology and StainGuard Plus™ copper chemistry.' },
+          { title: 'Structural Decking Audit', body: 'Older brick colonials and Tudors frequently feature 1x6 tongue-and-groove pine with dry splits and edge rot. We install an unyielding overlay of 5/8-inch CDX structural plywood across all rafter bays to guarantee maximum fastener holding power.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Hillside\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
+        ],
+      },
+      {
+        heading: 'Specialized Services',
+        bullets: [
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
+        ],
+      },
+      {
+        heading: 'Our Guarantee',
+        bullets: [
+          { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
+        ],
+      }
+    ],
+    serving: 'Hillside, Union Township, Elizabeth, Newark, and Irvington',
+    meta: 'Lita Construction provides elite roofing in Hillside, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
+  },
+  {
     slug: 'ho-ho-kus',
     name: 'Ho-Ho-Kus',
     county: 'Bergen',
@@ -5658,6 +5760,57 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     ],
     serving: 'Lincoln Park, Pequannock, Montville, Wayne, and Fairfield',
     meta: 'Lita Construction provides elite roofing in Lincoln Park, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
+  },
+  {
+    slug: 'linden',
+    name: 'Linden',
+    county: 'Union',
+    zips: ['07036'],
+    intro: [
+      'High-Performance Roofing Systems near Wood Avenue Corridor and Route 1 & 9 Industrial Corridor. Linden homes — Mid-Century Brick Capes, Single-Story Ranches, Two-Family Dwellings, and Split-Levels — face a specific set of local stresses: arthur Kill tidal marine moisture, industrial exhaust particulate buildup, low-slope rear addition drainage failure, and builder-grade plywood delamination. Lita Construction serves the Linden 07036 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Tremley Point Rim or Wheeler Park, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+    ],
+    sections: [
+      {
+        heading: 'Roof Repair',
+        lead: 'Precision repairs engineered for Linden rooflines — we find the failure, not just the symptom:',
+        bullets: [
+          { title: 'Valley & Dead-Valley Engineering', body: 'Dead valleys between split-level additions and garage returns frequently trap particulate grime and damp leaf matter. We line all low-slope valley pockets with self-adhering GAF WeatherWatch® mineral barriers beneath heavy step flashing to stop trapped-water leaks.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Linden roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
+        ],
+      },
+      {
+        heading: 'Roof Replacement',
+        lead: 'We deliver full-system replacements engineered for Linden\'s specific climate and architecture:',
+        bullets: [
+          { title: 'Shingle Specification & Algae Defense', body: 'Tidal basin humidity combined with highway particulate deposition causes rapid surface grime and algae staining. We install GAF Timberline® HDZ shingles featuring StrikeZone™ nailing channels and time-release copper micro-beads for reliable algae defense.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs in post-war tract housing frequently uncover thin 1/2-inch plywood with delaminating veneers along eave lines. We replace compromised sheathing with rigid 5/8-inch CDX exterior plywood fastened with ring-shank nails.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Linden\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
+        ],
+      },
+      {
+        heading: 'Specialized Services',
+        bullets: [
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
+        ],
+      },
+      {
+        heading: 'Our Guarantee',
+        bullets: [
+          { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
+        ],
+      }
+    ],
+    serving: 'Linden, Rahway, Roselle, Elizabeth, and Clark',
+    meta: 'Lita Construction provides elite roofing in Linden, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'little-falls',
@@ -9534,6 +9687,57 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     meta: 'Lita Construction provides roofing services in Prospect Park, NJ. GAF Master Elite Gold Contractor — honest estimates, no pressure. Roof repair, replacement, skylights, and flat roofing since 2004.',
   },
   {
+    slug: 'rahway',
+    name: 'Rahway',
+    county: 'Union',
+    zips: ['07065'],
+    intro: [
+      'High-Performance Roofing Systems near Rahway River Parkway and Milton Lake Park. Rahway homes — Victorian Colonials, Waterfront Craftsman Homes, Post-War Capes, and Modern Mixed-Use Additions — face a specific set of local stresses: rahway River corridor atmospheric dampness, Milton Lake fog, steep Victorian pitches (10/12 to 12/12), and unconditioned attic heat traps. Lita Construction serves the Rahway 07065 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near St. Georges Avenue Corridor or Downtown Arts District, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+    ],
+    sections: [
+      {
+        heading: 'Roof Repair',
+        lead: 'Precision repairs engineered for Rahway rooflines — we find the failure, not just the symptom:',
+        bullets: [
+          { title: 'Valley & Dead-Valley Engineering', body: 'Waterfront properties and historic multi-dormer homes funnel high-velocity runoff into complex valley junctions. We construct custom heavy-gauge open metal valleys bedded over continuous GAF StormGuard® high-temperature membranes to eliminate hydrostatic back-wash during severe riverfront cloudbursts.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Rahway roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
+        ],
+      },
+      {
+        heading: 'Roof Replacement',
+        lead: 'We deliver full-system replacements engineered for Rahway\'s specific climate and architecture:',
+        bullets: [
+          { title: 'Shingle Specification & Algae Defense', body: 'Elevated moisture rising from the river and lake basins accelerates moss colonization and black algae streaking. We install GAF Timberline® UHDZ shingles featuring 30-year StainGuard Plus™ copper protection to preserve authentic wood-shake shadow lines.' },
+          { title: 'Structural Decking Audit', body: 'Historic riverfront homes routinely exhibit hand-sawn rafters and original 1x8 spruce or pine boards with wide shrinkage gaps. We lay an unyielding overlay of structural 5/8-inch CDX exterior plywood across all rafter bays to ensure manufacturer wind-uplift compliance.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Rahway\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
+        ],
+      },
+      {
+        heading: 'Specialized Services',
+        bullets: [
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
+        ],
+      },
+      {
+        heading: 'Our Guarantee',
+        bullets: [
+          { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
+        ],
+      }
+    ],
+    serving: 'Rahway, Clark, Linden, Woodbridge, and Cranford',
+    meta: 'Lita Construction provides elite roofing in Rahway, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
+  },
+  {
     slug: 'ramsey',
     name: 'Ramsey',
     county: 'Bergen',
@@ -10297,6 +10501,108 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     ],
     serving: 'Roseland, Livingston, West Caldwell, Essex Fells, and Florham Park',
     meta: 'Lita Construction provides elite roofing in Roseland, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
+  },
+  {
+    slug: 'roselle',
+    name: 'Roselle',
+    county: 'Union',
+    zips: ['07203'],
+    intro: [
+      'High-Performance Roofing Systems near St. Georges Avenue (Route 27) and Chestnut Street. Roselle homes — Turn-of-the-Century Colonials, Dutch Gambrels, Mid-Century Ranches, and Two-Family Frame Homes — face a specific set of local stresses: warinanco Park humidity, Morses Creek basin atmospheric moisture, aging chimney counter-flashing, and shallow rear dormer leaks. Lita Construction serves the Roselle 07203 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Warinanco Park Border or Morses Creek Basin, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+    ],
+    sections: [
+      {
+        heading: 'Roof Repair',
+        lead: 'Precision repairs engineered for Roselle rooflines — we find the failure, not just the symptom:',
+        bullets: [
+          { title: 'Valley & Dead-Valley Engineering', body: 'Dutch Gambrel breaks and expanded two-family rooflines feature shallow transition angles where water slows during downpours. We apply double-layer self-adhering GAF WeatherWatch® barriers beneath pre-bent transition flashing to prevent capillary moisture creep into attic framing.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Roselle roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
+        ],
+      },
+      {
+        heading: 'Roof Replacement',
+        lead: 'We deliver full-system replacements engineered for Roselle\'s specific climate and architecture:',
+        bullets: [
+          { title: 'Shingle Specification & Algae Defense', body: 'Park-edge humidity and dense shade canopies cause persistent dampness on north- and east-facing planes. We install GAF Timberline® HDZ shingles with LayerLock® mechanical fasteners and copper micro-bead algae defense.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs frequently reveal aged 1/2-inch plywood or deteriorated tongue-and-groove decking with multiple historic nail penetrations. We excise weakened panels and lay 5/8-inch CDX structural plywood secured with ring-shank nails to create a code-compliant nailing surface.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Roselle\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
+        ],
+      },
+      {
+        heading: 'Specialized Services',
+        bullets: [
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
+        ],
+      },
+      {
+        heading: 'Our Guarantee',
+        bullets: [
+          { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
+        ],
+      }
+    ],
+    serving: 'Roselle, Roselle Park, Linden, Elizabeth, and Cranford',
+    meta: 'Lita Construction provides elite roofing in Roselle, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
+  },
+  {
+    slug: 'roselle-park',
+    name: 'Roselle Park',
+    county: 'Union',
+    zips: ['07204'],
+    intro: [
+      'High-Performance Roofing Systems near Chestnut Street Corridor and Westfield Avenue (Route 28). Roselle Park homes — Pre-War Craftsman Bungalows, American Foursquares, Post-War Capes, and Two-Family Residences — face a specific set of local stresses: narrow lot line setbacks, aging soft lime-mortar brick chimneys, shallow rear addition transitions, and intense urban attic heat-soak. Lita Construction serves the Roselle Park 07204 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Acker Park or Roselle Park Athletic Complex, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+    ],
+    sections: [
+      {
+        heading: 'Roof Repair',
+        lead: 'Precision repairs engineered for Roselle Park rooflines — we find the failure, not just the symptom:',
+        bullets: [
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic bungalow and multi-family roof profiles feature tight dormer intersections that funnel stormwater directly against vertical sidewall flashings. We install open metal valley troughs bedded over self-adhering GAF WeatherWatch® mineral-surfaced membranes to guarantee rapid runoff evacuation without gutter splashover.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Roselle Park roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
+        ],
+      },
+      {
+        heading: 'Roof Replacement',
+        lead: 'We deliver full-system replacements engineered for Roselle Park\'s specific climate and architecture:',
+        bullets: [
+          { title: 'Shingle Specification & Algae Defense', body: 'Closely spaced tree-lined residential avenues trap humidity along northern roof slopes, accelerating dark Gloeocapsa magma staining. We specify GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry to maintain long-term color integrity.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on older borough residences routinely expose original 1x6 tongue-and-groove pine with nail splits and shrinkage gaps. We install structural 5/8-inch CDX exterior plywood across all rafter bays to guarantee maximum fastener pullout resistance under NJ UCC shear schedules.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Roselle Park\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
+        ],
+      },
+      {
+        heading: 'Specialized Services',
+        bullets: [
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
+        ],
+      },
+      {
+        heading: 'Our Guarantee',
+        bullets: [
+          { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
+        ],
+      }
+    ],
+    serving: 'Roselle Park, Kenilworth, Roselle, Cranford, and Union Township',
+    meta: 'Lita Construction provides elite roofing in Roselle Park, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'roxbury',
