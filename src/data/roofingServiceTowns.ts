@@ -6836,50 +6836,50 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Somerset',
     zips: ['08835'],
     intro: [
-      'From the residential streets of the Lost Valley to the homes near Main Street, we have been the community\'s trusted roofing authority for over 20 years. When you call us, you speak with a pro, not a salesman who understands the specific environmental challenges and building codes of the 08835 zip code. We provide the highest level of non-prorated material and workmanship coverage available as an elite GAF Master Elite Gold Contractor.'
+      'High-Performance Roofing Systems near Main Street and Raritan and Millstone River Confluence. Manville homes — Post-War Capes, Mid-Century Ranches, Compact Frame Colonials, and Raised Infill Additions — face a specific set of local stresses: river confluence atmospheric dampness, low-slope rear addition drainage failure, pipe collar degradation, and unconditioned attic heat traps. Lita Construction serves the Manville 08835 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Lost Valley or Cooper Street, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
-        lead: 'Don’t let a minor drip turn into a major structural problem. We specialize in precision repairs for Manville homeowners:',
+        lead: 'Precision repairs engineered for Manville rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Leak Detection', body: 'Advanced technology to find hidden moisture entry points in aging roof systems.' },
-          { title: 'Pipe Boots & Flashing', body: 'Immediate replacement of rotted rubber boots to stop leaks at the source.' },
-          { title: 'Flashing & Valleys', body: 'Expert masonry counter-flashing and step-flashing for total weatherproofing.' },
-          { title: 'Ridge Vents & Ventilation', body: 'Installation of ridge ventilation to extend your roof\'s lifespan and lower energy costs.' }
+          { title: 'Valley & Dead-Valley Engineering', body: 'Intersecting rooflines on expanded Capes create low-pitch dead valleys that collect leaf debris and slow storm runoff. We install heavy-gauge open metal valleys bedded over continuous GAF WeatherWatch® membranes to prevent ponding water leaks.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Manville roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
         ],
       },
       {
         heading: 'Roof Replacement',
-        lead: 'We build roofing systems engineered for durability and maximum curb appeal:',
+        lead: 'We deliver full-system replacements engineered for Manville\'s specific climate and architecture:',
         bullets: [
-          { title: 'GAF Timberline HDZ', body: 'High-definition shingles with LayerLock technology for maximum wind protection.' },
-          { title: 'Owens Corning Duration', body: 'Featuring SureNail technology for industry-leading durability.' },
-          { title: 'Ice & Water Shield', body: 'Maximum-grade protection in all valleys and eaves to prevent water backup.' },
-          { title: 'Synthetic Underlayment', body: 'Advanced moisture barriers that offer superior protection compared to traditional felt.' }
+          { title: 'Shingle Specification & Algae Defense', body: 'Constant ambient dampness from the surrounding river basins accelerates blue-green algae blooms. We install GAF Timberline® HDZ shingles with time-release copper micro-beads to ensure long-term color retention.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs in post-war subdivisions frequently uncover thin, brittle 1/2-inch plywood that deflects under foot traffic. We replace softened sheathing with structural 5/8-inch CDX exterior plywood to eliminate deck bounce.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Manville\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
       },
       {
         heading: 'Specialized Services',
         bullets: [
-          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Professional torch-applied flat roof membranes for residential extensions and garages.' },
-          { title: 'Velux Skylight Specialists', body: 'Precision repair and installation of high-efficiency "No Leak" skylights and custom roof windows.' },
-          { title: 'Siliconized Roof Coatings', body: 'Advanced liquid-applied membranes that offer a seamless, 100% watertight barrier for aging flat sections.' },
-          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade flat roofing solutions for local storefronts and business properties.' }
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
         ],
       },
       {
         heading: 'Our Guarantee',
         bullets: [
           { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
-          { title: 'The "Catch-All" System', body: 'Full protection of your property, including siding and landscaping, with specialized netting.' },
-          { title: 'Spotless Cleanup', body: 'Meticulous nail sweeps with high-powered magnetic rollers across your entire driveway and yard.' },
-          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a trusted contractor serving the area since 2004.' }
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
         ],
       }
     ],
-    serving: 'Manville, Raritan, and Bound Brook',
-    meta: 'Lita Construction provides roofing services in Manville, NJ. GAF Master Elite Gold Contractor — honest estimates, no pressure. Roof repair, replacement, skylights, and flat roofing since 2004.',
+    serving: 'Manville, Somerville, Hillsborough, Bound Brook, and South Bound Brook',
+    meta: 'Lita Construction provides elite roofing in Manville, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'maplewood',
@@ -10406,50 +10406,50 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Somerset',
     zips: ['08869'],
     intro: [
-      'From the residential neighborhoods near the Raritan Train Station to the homes bordering Bridgewater, we have been the borough\'s trusted roofing authority for over 20 years. When you call us, you speak with a pro, not a salesman who knows the specific building codes and architectural styles of the 08869 zip code. We provide the highest level of non-prorated material and workmanship coverage available as an elite GAF Master Elite Gold Contractor.'
+      'High-Performance Roofing Systems near Somerset Street and Raritan Riverfront. Raritan homes — Turn-of-the-Century Two-Family Homes, Brick Colonials, Craftsman Bungalows, and Post-War Capes — face a specific set of local stresses: raritan River floodplain atmospheric moisture, aging chimney counter-flashing, low-slope rear addition drainage failure, and unconditioned attic heat traps. Lita Construction serves the Raritan 08869 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near John Basilone Memorial or Nevius Street Bridge, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
-        lead: 'Don’t let a minor drip turn into a major structural problem. We specialize in precision repairs for Raritan homeowners:',
+        lead: 'Precision repairs engineered for Raritan rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Leak Detection', body: 'Advanced technology to find hidden moisture entry points in aging roof systems.' },
-          { title: 'Pipe Boots', body: 'Immediate replacement of rotted or cracked rubber pipe boots to stop leaks at the source.' },
-          { title: 'Flashing & Valleys', body: 'Expert masonry counter-flashing and step-flashing for chimneys and roof-to-wall intersections.' },
-          { title: 'Ridge Vents & Ventilation', body: 'Installation of high-flow ridge ventilation to extend your roof\'s lifespan and improve home cooling.' }
+          { title: 'Valley & Dead-Valley Engineering', body: 'Low-slope rear additions frequently intersect main gable roofs at shallow angles. We apply double-layer self-adhering GAF WeatherWatch® mineral-surfaced barriers under full-width metal transition flashing to prevent capillary backflow during prolonged rainstorms.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Raritan roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
         ],
       },
       {
         heading: 'Roof Replacement',
-        lead: 'We build roofing systems engineered for durability and maximum curb appeal:',
+        lead: 'We deliver full-system replacements engineered for Raritan\'s specific climate and architecture:',
         bullets: [
-          { title: 'GAF Timberline HDZ', body: 'The gold standard in architectural shingles with advanced LayerLock technology.' },
-          { title: 'Owens Corning Duration', body: 'Featuring SureNail technology for industry-leading grip on high-slope roofs.' },
-          { title: 'Ice & Water Shield', body: 'Critical double-layer protection to prevent ice dams and water infiltration during heavy storms.' },
-          { title: 'Synthetic Underlayment', body: 'Premium, non-porous underlayment for a second layer of defense against the elements.' }
+          { title: 'Shingle Specification & Algae Defense', body: 'Elevated moisture from the river corridor accelerates blue-green algae colonization and lichen growth on damp roof surfaces. We install GAF Timberline® HDZ shingles with LayerLock® technology and copper micro-bead protection for long-term curb appeal.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs frequently expose aged 1x6 tongue-and-groove pine with wide expansion gaps. We install structural 5/8-inch CDX plywood across all planes to provide a continuous, code-compliant nailing base.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Raritan\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
       },
       {
         heading: 'Specialized Services',
         bullets: [
-          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions and garages.' },
-          { title: 'Velux Skylight Specialists', body: 'Precision repair and installation of high-efficiency "No Leak" skylights and roof windows.' },
-          { title: 'Siliconized Roof Coatings', body: 'Cost-effective, seamless solutions for aging flat roofs that stop leaks without a full tear-off.' },
-          { title: 'EPDM & TPO Membranes', body: 'Industrial-grade flat roofing solutions for local storefronts and business properties near Somerset Street.' }
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
         ],
       },
       {
         heading: 'Our Guarantee',
         bullets: [
           { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
-          { title: 'The "Catch-All" System', body: 'Comprehensive protection of your property and landscaping with heavy-duty netting.' },
-          { title: 'Spotless Cleanup', body: 'High-powered magnetic nail sweeps ensure your driveway and yard are 100% nail-free.' },
-          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a trusted company serving the area since 2004.' }
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
         ],
       }
     ],
-    serving: 'Raritan, Somerville, and Bridgewater',
-    meta: 'Lita Construction provides roofing services in Raritan, NJ. GAF Master Elite Gold Contractor — honest estimates, no pressure. Roof repair, replacement, skylights, and flat roofing since 2004.',
+    serving: 'Raritan, Somerville, Bridgewater, Hillsborough, and Branchburg',
+    meta: 'Lita Construction provides elite roofing in Raritan, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'red-bank',
@@ -11728,50 +11728,50 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Somerset',
     zips: ['08876'],
     intro: [
-      'As the county seat of Somerset, Somerville features a diverse collection of historic Victorian, Colonial, and modern properties. From the homes in the Somerville Historic District to the residential neighborhoods bordering Bridgewater, we have been the community\'s trusted roofing authority for over 20 years. When you call us, you speak with a pro, not a salesman who understands the high-end architectural standards and specific building codes of the 08876 zip code. We protect your investment as an elite GAF Master Elite Gold Contractor.'
+      'High-Performance Roofing Systems near Main Street Downtown and Somerset County Courthouse. Somerville homes — Late 19th-Century Victorians, Queen Anne Painted Ladies, Craftsman Bungalows, and Pre-War Colonials — face a specific set of local stresses: steep Victorian pitches (10/12 to 14/12), aging soft lime-mortar brick chimneys, narrow lot clearances, and complex dormer flashing interfaces. Lita Construction serves the Somerville 08876 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Wallace House Historic Site or Peter\'s Brook Greenway, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
-        lead: 'We specialize in repairs designed for Somerville’s dense residential and commercial landscape:',
+        lead: 'Precision repairs engineered for Somerville rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Historic Preservation Repairs', body: 'Expert care for traditional rooflines and older masonry intersections.' },
-          { title: 'Leak Detection', body: 'Advanced diagnostic tools to find hidden water entry points in complex custom rooflines.' },
-          { title: 'Pipe Boots & Flashing', body: 'Immediate replacement of rotted or cracked rubber boots to stop leaks at the source.' },
-          { title: 'Ridge Vents & Ventilation', body: 'Installation of high-flow ridge ventilation to extend your roof\'s lifespan and improve energy efficiency.' }
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic rooflines feature sharp pitches that concentrate high water volume into narrow dormer valleys. Standard shingles strip their granules under this friction; we install open copper or heavy-gauge aluminum valley pans backed by GAF StormGuard® membranes to ensure continuous water evacuation.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Somerville roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
         ],
       },
       {
         heading: 'Roof Replacement',
-        lead: 'We build roofing systems engineered for durability and maximum curb appeal:',
+        lead: 'We deliver full-system replacements engineered for Somerville\'s specific climate and architecture:',
         bullets: [
-          { title: 'GAF Timberline HDZ', body: 'High-definition shingles with LayerLock technology for maximum wind and weather protection.' },
-          { title: 'Owens Corning Duration', body: 'Featuring SureNail technology for industry-leading durability on high-slope roofs.' },
-          { title: 'Ice & Water Shield', body: 'Maximum-grade protection in all valleys and eaves to prevent ice dams during NJ winters.' },
-          { title: 'Synthetic Underlayment', body: 'Advanced moisture barriers that offer superior protection compared to traditional felt.' }
+          { title: 'Shingle Specification & Algae Defense', body: 'Mature downtown street canopies keep roof surfaces damp into the afternoon. We specify GAF Timberline® UHDZ shingles featuring Dual Shadow Line depth and 30-year StainGuard Plus™ algae defense to preserve authentic architectural character.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old homes routinely uncover true-dimensional 1x8 tongue-and-groove pine planking with wide shrinkage gaps. We lay a continuous structural overlay of 5/8-inch CDX plywood across all rafter bays to guarantee code-compliant fastener pullout resistance.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Somerville\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
       },
       {
         heading: 'Specialized Services',
         bullets: [
-          { title: 'Modified Bitumen & Torch Down', body: 'Professional torch-applied flat roof membranes for modern residential extensions and high-end balconies.' },
-          { title: 'Velux Skylight Specialists', body: 'Precision repair and installation of high-efficiency "No Leak" skylights and custom roof windows.' },
-          { title: 'Siliconized Roof Coatings', body: 'Advanced liquid-applied membranes that offer a seamless, 100% watertight barrier for aging sections.' },
-          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade flat roofing solutions for local storefronts and business properties near Main Street.' }
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
         ],
       },
       {
         heading: 'Our Guarantee',
         bullets: [
           { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
-          { title: 'The "Catch-All" System', body: 'Comprehensive property protection using heavy-duty netting to safeguard your landscaping.' },
-          { title: 'Spotless Cleanup', body: 'Extreme-duty magnetic rollers ensure your property is entirely free of construction debris.' },
-          { title: 'Structural Warranty', body: 'A dedicated craftsmanship guarantee from a team that has served Somerville since 2004.' }
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
         ],
       }
     ],
-    serving: 'Somerville, Raritan, and Bridgewater',
-    meta: 'Lita Construction provides roofing services in Somerville, NJ. GAF Master Elite Gold Contractor — honest estimates, no pressure. Roof repair, replacement, skylights, and flat roofing since 2004.',
+    serving: 'Somerville, Bridgewater, Raritan, Manville, and Bound Brook',
+    meta: 'Lita Construction provides elite roofing in Somerville, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'south-amboy',

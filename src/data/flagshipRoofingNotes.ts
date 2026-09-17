@@ -227,6 +227,38 @@ export const flagshipRoofingNotes: Record<string, TownRoofingNotes> = {
     algaeNotes: 'Dense forest canopies surrounding Washington Rock State Park keep roof surfaces damp well into the afternoon. We install GAF Timberline® UHDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry to ensure lasting color vibrancy.',
     substrateNotes: 'We assess structural framing across all rafter intersections during tear-off, replacing thin or compromised sheathing with 5/8-inch CDX decking to ensure firm nail retention against 130-MPH wind uplift.',
   },
+  'bridgewater': {
+    landmarks: ['the Route 202/206 corridor', 'Commons Way', 'Washington Valley Park', 'Chimney Rock'],
+    housingStock: '1970s–1990s Center-Hall Colonials, Sprawling Split-Levels, Ranches, and Martinsville Ridge Mansions',
+    localStresses: 'First Watchung Mountain ridgeline wind shear, failing builder-grade 1/2-inch sub-plywood, dead-valley junctions on split-levels, and unconditioned attic heat-soak.',
+    valleyNotes: 'Subdivision rooflines feature complex multi-level transitions where lower additions terminate into two-story walls. We construct seamless step-flashing assemblies bedded in self-adhering GAF WeatherWatch® membranes and install heavy-gauge open metal valleys to divert high-velocity runoff cleanly away from wall framing.',
+    algaeNotes: 'Open suburban solar exposure alternating with heavy summer rainfall causes rapid asphalt shingle oxidation and Gloeocapsa magma staining on north-facing slopes. We install GAF Timberline® HDZ shingles featuring time-release StainGuard Plus™ copper micro-bead chemistry.',
+    substrateNotes: 'Tear-offs in established subdivisions frequently reveal original thin 1/2-inch plywood or early OSB sheathing that sags under modern architectural shingles. We re-nail framing bays and replace deteriorated panels with exterior-grade 5/8-inch CDX plywood secured with ring-shank nails.',
+  },
+  'hillsborough': {
+    landmarks: ['the Route 206 corridor', 'the Sourland Mountain Preserve', 'Duke Farms', 'Amwell Road'],
+    housingStock: '1980s–2000s Planned Subdivisions, Contemporary Center-Hall Colonials, Ranches, and Sourland Foothills Custom Builds',
+    localStresses: 'Sourland Mountain wind drafts, expansive multi-tier valley runoff, builder-grade shingle delamination, and winter freeze-thaw damming.',
+    valleyNotes: 'Sprawling subdivision rooflines channel large rainwater volumes into long central valleys. We line all valley troughs with commercial-grade GAF StormGuard® membranes beneath heavy-gauge metal flashing to stop hydrostatic backup during heavy summer downpours.',
+    algaeNotes: 'Properties bordering the Sourland Mountain Preserve endure elevated forest moisture and partial shade that promotes fungal streaking. We install GAF Timberline® UHDZ shingles with 30-year StainGuard Plus™ copper protection.',
+    substrateNotes: '1980s subdivisions frequently feature 1/2-inch OSB or CDX sheathing that has softened over soffits. During tear-off, we replace compromised panels with rigid 5/8-inch CDX plywood secured to NJ structural shear schedules.',
+  },
+  'branchburg': {
+    landmarks: ['the Route 22 corridor', 'Raritan Valley Community College', 'the North Branch Raritan River', 'Burnt Mills Road'],
+    housingStock: 'Custom Single-Family Colonials, Sprawling Ranches, Multi-Level Split-Levels, and Equestrian Acreage Builds',
+    localStresses: 'Open-field wind gusts along Route 22, river confluence dampness, failing skylight curb flashings, and uninsulated attic heat-soak.',
+    valleyNotes: 'Broad multi-gable roof configurations funnel high water volumes into long central valleys. We line all valleys with commercial-grade GAF StormGuard® self-adhering membranes under heavy-gauge metal valley pans to stop hydrostatic backup.',
+    algaeNotes: 'River-corridor humidity paired with open-field sun cycles accelerates surface oxidation and biological growth. GAF Timberline® HDZ shingles provide mechanical LayerLock® fastening and 25-year StainGuard Plus™ algae defense.',
+    substrateNotes: 'We audit decking during tear-off for humidity-induced delamination, replacing softened sheathing with exterior-grade 5/8-inch CDX plywood secured with ring-shank nails.',
+  },
+  'bound-brook': {
+    landmarks: ['the Main Street Historic District', 'the Middlebrook Trail', 'Billian Legion Park', 'the Raritan River basin'],
+    housingStock: 'Historic Victorians, Turn-of-the-Century Colonials, American Foursquares, and Two-Family Frame Dwellings',
+    localStresses: 'Raritan River moisture, steep Victorian gables (10/12 to 12/12), soft lime-mortar brick chimney decay, and narrow lot setbacks.',
+    valleyNotes: 'Historic rooflines feature sharp pitches that concentrate heavy rainwater into compound dormer valleys. We install custom open metal valley pans backed by GAF StormGuard® membranes to shed water and debris without splashing adjacent walls.',
+    algaeNotes: 'Riverfront humidity combined with street-side shade trees promotes dark algae streaks on shaded exposures. We specify GAF Timberline® HDZ shingles with StainGuard Plus™ copper protection.',
+    substrateNotes: 'Tear-offs on older properties frequently uncover aged 1x8 tongue-and-groove pine with wide expansion gaps. We install structural 5/8-inch CDX plywood across all planes to provide a continuous, code-compliant nailing base.',
+  },
 }
 
 /**
