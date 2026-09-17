@@ -3,6 +3,7 @@ import { business } from '../data/business'
 import { towns, townBySlug } from '../data/towns'
 import { roofingTowns, roofingTownBySlug } from '../data/roofingTowns'
 import { townServices, townServiceBySlug, townServiceSeoBySlug } from '../data/townServices'
+import { flagshipRoofingBody } from '../data/flagshipRoofingNotes'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
 import { QuoteForm } from '../components/QuoteForm'
@@ -82,7 +83,12 @@ export function TownServicePage() {
   const county = countyFor(slug)
   const seoPack = townServiceSeoBySlug[svc.slug]
   const quickAnswer = seoPack?.quickAnswer(townName, county)
-  const localBody = seoPack?.localBody(townName, county) ?? []
+  // Roofing on a flagship town uses that town's own building-science notes when
+  // we have them; every other town keeps the shared copy from the SEO pack.
+  const localBody =
+    (svc.slug === 'roofing' ? flagshipRoofingBody(slug, townName) : undefined) ??
+    seoPack?.localBody(townName, county) ??
+    []
   const faqs = seoPack?.faqs(townName, county) ?? []
 
   return (

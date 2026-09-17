@@ -337,7 +337,7 @@ export const townServiceSeoBySlug: Record<string, TownServiceSeo> = {
       `${county} roofs live a hard life: nor'easters, wind-driven rain, summer heat that bakes shingles, and freeze-thaw winters that pry at every seam. Many ${town} homes are now hitting the 20-to-25-year window where original builder-grade roofs begin to fail — curling shingles, granules in the gutters, and the first ceiling stains. That's exactly the roof we replace every week.`,
       `As a GAF-certified contractor, we install the complete system — ice-and-water shield at eaves and valleys, synthetic underlayment, starter strip, GAF Timberline® HDZ architectural shingles, ridge cap, and corrected attic ventilation. Installing every component together is what qualifies your ${town} roof for the 25-year warranty covering both labor and materials, and it's the only way we install.`,
     ],
-    faqs: (town, county) => [
+    faqs: (town, _county) => [
       {
         q: `How much does a new roof cost in ${town}, NJ?`,
         a: `Most New Jersey homeowners invest between $8,000 and $25,000 depending on roof size, pitch, layers to tear off, decking condition, and shingle choice. We inspect your ${town} roof free, document everything, and give you an itemized estimate with a straight repair-or-replace recommendation — call ${business.phone}.`,
@@ -360,7 +360,7 @@ export const townServiceSeoBySlug: Record<string, TownServiceSeo> = {
       },
       {
         q: `Do I need a permit to replace my roof in ${town}?`,
-        a: `Almost always — most ${county} municipalities require a construction permit for full replacement, often with a mid-job deck inspection. As a licensed NJ contractor (${business.licenseLabel}) we pull the permit and schedule every required inspection for you.`,
+        a: `No — a permit is not required to replace a roof in New Jersey. Because water entering your home is treated as emergency work, roof replacement is exempt from the permit process, so there is nothing for you to file. As a licensed NJ contractor (${business.licenseLabel}) we handle your ${town} roof to code from start to finish.`,
       },
     ],
   },
