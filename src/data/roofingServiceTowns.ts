@@ -7601,14 +7601,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07803'],
     intro: [
-      'High-Performance Roofing Systems near Bridget Smith House Historic Site and Mine Hill Beach at Sunset Lake. Mine Hill homes — Historic Iron Mining Cottages, Mid-Century Ranches, Post-War Capes, and Split-Levels — face a specific set of local stresses: ridge elevation wind gusts along Route 46, Sunset Lake atmospheric dampness, dead-valley transitions on split-levels, and unconditioned attic heat traps. Lita Construction serves the Mine Hill 07803 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Route 46 Ridge Corridor or Iron Mountain Historic Sector, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Route 46 Corridor and Canfield Avenue. Mine Hill homes — Mid-Century Ranches, Expanded Capes, Split-Levels, and Historic Mining-Era Cottages — face a specific set of local stresses: highway corridor wind buffeting, shallow addition pitch transitions, builder-grade plywood delamination, and winter freeze-thaw damming. Lita Construction serves the Mine Hill 07803 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Bridget Smith House Historic Site or Baker Mine Basin, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Mine Hill rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Dead valleys between split-level additions and historic cottage gables collect pine needles and leaf debris. We line these low-pitch intersections with continuous self-adhering GAF WeatherWatch® mineral-surfaced barriers extending under heavy-gauge metal transition flashing to prevent capillary backflow.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Low-slope rear additions common on expanded Capes meet steeper primary roofs at shallow angles. We apply double-layer self-adhering GAF WeatherWatch® mineral-surfaced barriers under pre-bent metal transition flashing to stop capillary backflow.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Mine Hill roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -7618,8 +7618,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Mine Hill\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Sunset Lake moisture and surrounding wooded hillsides foster blue-green algae blooms and lichen patches across shaded roof planes. We specify GAF Timberline® HDZ shingles featuring StrikeZone™ nailing channels and time-release copper micro-beads.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs frequently expose dried 1/2-inch plywood or spaced pine boards that have softened along eave edges. We excise damaged panels and install structural 5/8-inch CDX exterior plywood fastened with ring-shank nails to eliminate deck bounce.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Open solar exposure alternating with heavy summer rainfall causes rapid surface oxidation. We install GAF Timberline® HDZ shingles featuring LayerLock® technology for maximum 130-MPH wind defense and long-term algae resistance.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs routinely expose dried 1/2-inch plywood sheathing with loose fastener retention. We excise damaged panels and install exterior-grade 5/8-inch CDX plywood fastened with ring-shank nails to eliminate deck bounce.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Mine Hill\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -8417,14 +8417,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07857'],
     intro: [
-      'High-Performance Roofing Systems near Lake Musconetcong Shoreline and Main Street Historic Commercial Strip. Netcong homes — Historic Victorian Cottages, Turn-of-the-Century Frame Multi-Families, Craftsman Bungalows, and Post-War Capes — face a specific set of local stresses: lake Musconetcong basin humidity, steep Victorian roof pitches (10/12 to 12/12), soft lime-mortar brick chimney decay, and narrow lot setbacks. Lita Construction serves the Netcong 07857 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Morris Canal Bed or Netcong Train Station, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Main Street Downtown and Lake Musconetcong Shoreline. Netcong homes — Turn-of-the-Century Railroad Victorians, Frame Two-Families, Post-War Capes, and Lakeside Cottages — face a specific set of local stresses: lake Musconetcong dampness, steep hillside gables (10/12 to 12/12), aging masonry chimney joints, and heavy winter ice loads. Lita Construction serves the Netcong 07857 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Route 46 / 183 Junction or DiRenzo Park, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Netcong rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Historic cottage rooflines feature steep dormers that funnel heavy storm runoff directly against vertical siding and lower porch eaves. We install open metal valley troughs bedded over self-adhering GAF WeatherWatch® mineral-surfaced membranes to guarantee rapid runoff evacuation without splashover.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic rooflines feature sharp pitches that concentrate heavy stormwater runoff into narrow dormer valleys. We install custom open metal valley pans lined with GAF StormGuard® membranes to prevent hydrostatic back-ups under shingle tabs.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Netcong roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -8434,8 +8434,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Netcong\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Lake-edge humidity and neighborhood shade trees trap morning dew, promoting dark Gloeocapsa magma streaks on north-facing slopes. We install GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old homes routinely reveal original 1x6 tongue-and-groove pine with nail splits and shrinkage gaps. We lay structural 5/8-inch CDX exterior plywood across all rafter bays to ensure certified nail pullout resistance.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Lakefront fog and mature neighborhood trees cause persistent dampness on north-facing slopes. We install GAF Timberline® HDZ shingles featuring time-release StainGuard Plus™ copper technology to protect exterior curb appeal.' },
+          { title: 'Structural Decking Audit', body: 'Older Netcong homes frequently feature original 1x8 tongue-and-groove pine with wide expansion gaps. We install structural 5/8-inch CDX plywood across all planes to provide a solid, code-compliant nailing base.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Netcong\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -8459,7 +8459,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Netcong, Stanhope, Mount Olive, Roxbury, and Mount Arlington',
+    serving: 'Netcong, Mount Olive, Mount Arlington, Roxbury, and Stanhope',
     meta: 'Lita Construction provides elite roofing in Netcong, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -12901,14 +12901,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07801'],
     intro: [
-      'High-Performance Roofing Systems near Historic WWII Defense Housing Enclave and South Salem Street Corridor. Victory Gardens homes — 1940s WWII Federal Defense Frame Cottages, Compact Single-Family Bungalows, and Post-War Infill Homes — face a specific set of local stresses: compact property setbacks, low-slope roof pitches (3/12 to 5/12), aging builder-grade plywood, and summer attic heat retention. Lita Construction serves the Victory Gardens 07801 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Washington Avenue Grounds or Victory Gardens Community Center, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near South Salem Street and Washington Avenue. Victory Gardens homes — WWII-Era Compact Frame Cottages, Converted Single-Story Ranches, and Modern Infill Additions — face a specific set of local stresses: compact lot footprints, aging shallow-pitch framing, pipe collar degradation, and unconditioned attic heat traps. Lita Construction serves the Victory Gardens 07801 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Victory Gardens Community Park or Dover Border, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Victory Gardens rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Low-pitch cottage rooflines require continuous water-shedding protection along shallow valley and eave seams. We install double-layer self-adhering GAF WeatherWatch® mineral-surfaced barriers beneath pre-bent transition flashing to stop capillary moisture creep during wind-driven storms.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Compact roof geometries feature short, low-pitch intersections where storm runoff can linger. We apply continuous self-adhering GAF WeatherWatch® leak barriers under aluminum flashing to stop wind-driven rain penetration.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Victory Gardens roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -12918,8 +12918,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Victory Gardens\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Mature neighborhood maple trees shade compact roof planes, encouraging dark Gloeocapsa magma streaks. We install GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on 1940s defense housing frequently expose original 1/2-inch plywood or sub-standard planking with nail splits. We lay an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to guarantee certified nail pullout resistance.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Summer humidity and localized tree shade promote moss and dark algae patches on aged asphalt. We specify GAF Timberline® HDZ shingles with StainGuard Plus™ algae defense to preserve roof appearance.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs frequently expose lightweight original framing and thin decking boards that have warped over time. We replace compromised sub-roofing with structural 5/8-inch CDX plywood to guarantee a flat nailing surface.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Victory Gardens\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -13870,14 +13870,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07885'],
     intro: [
-      'High-Performance Roofing Systems near Hugh Force Canal Park and Historic Morris Canal Lock 2 East. Wharton homes — Turn-of-the-Century Iron Miner Cottages, Victorian Frame Homes, Mid-Century Capes, and Compact Colonials — face a specific set of local stresses: rockaway River floodplain dampness, steep hillside cottage pitches (10/12 to 12/12), soft lime-mortar brick chimney decay, and freeze-thaw thermal cycling along canal lowlands. Lita Construction serves the Wharton 07885 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Main Street Historic Corridor or Rockaway River Basin, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Main Street and Morris Canal Lock 2 East. Wharton homes — Late 19th-Century Victorians, Multi-Family Frame Dwellings, Craftsman Bungalows, and Mid-Century Capes — face a specific set of local stresses: rockaway River corridor humidity, steep multi-dormer valley intersections, aged soft lime-mortar chimneys, and unconditioned attic heat traps. Lita Construction serves the Wharton 07885 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Hugh Force Canal Park or Rockaway River Basin, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Wharton rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Steep historic miner cottages feature tight cross-gables directing concentrated storm runoff toward lower porch roofs and wall transitions. We fabricate open metal valley troughs bedded over self-adhering GAF WeatherWatch® mineral-surfaced membranes to ensure rapid runoff evacuation without gutter splashover.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic multi-dormer configurations channel heavy runoff directly toward lower eave gutters. We install open metal valley troughs backed by self-adhering GAF WeatherWatch® membranes to evacuate sudden storm downpours and prevent leaf-debris dams.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Wharton roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -13887,8 +13887,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Wharton\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Canal and river basin humidity combined with dense neighborhood maple canopies traps moisture against roof slopes, accelerating dark Gloeocapsa magma streaks. We install GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old borough residences routinely expose original 1x6 tongue-and-groove pine with dry splits and shrinkage gaps. We lay an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to guarantee maximum fastener holding power under NJ UCC shear schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Canal corridor fog and neighborhood shade trees trap moisture on northern and eastern exposures. We specify GAF Timberline® HDZ shingles with StainGuard Plus™ copper micro-bead algae defense to eliminate dark streaks.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on older Wharton residences frequently reveal historic 1x6 tongue-and-groove pine with nail splits and shrinkage gaps. We lay structural 5/8-inch CDX exterior plywood across all rafter bays to meet current NJ UCC framing schedules.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Wharton\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -13912,7 +13912,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Wharton, Dover, Rockaway Borough, Mine Hill, and Roxbury',
+    serving: 'Wharton, Dover, Mine Hill, Rockaway Borough, and Roxbury',
     meta: 'Lita Construction provides elite roofing in Wharton, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
