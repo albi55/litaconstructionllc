@@ -3882,52 +3882,52 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     slug: 'frelinghuysen',
     name: 'Frelinghuysen',
     county: 'Warren',
-    zips: ['07825'],
+    zips: ['07825', '07844'],
     intro: [
-      'Known for its rolling hills and preserved farmland, Frelinghuysen features a beautiful landscape of historic colonial homes and modern custom estates. From the properties near Johnsonburg to the homes bordering Allamuchy, we provide the expert care this community demands. When you call us, you speak with a pro, not a salesman who knows the building codes of the 07825 and 07860 zip codes. We provide the strongest non-prorated protection as an elite GAF Master Elite Gold Contractor.'
+      'High-Performance Roofing Systems near Route 94 Corridor and Johnsonburg Historic District. Frelinghuysen homes — 18th- and 19th-Century Stone Farmhouses, Custom Mountain Colonials, and Secluded Wooded Estates — face a specific set of local stresses: exposed elevation wind buffeting, severe winter freeze-thaw cycles, fieldstone masonry chimney leaks, and heavy canopy dampness. Lita Construction serves the Frelinghuysen 07825 and 07844 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Silver Lake or Paulins Kill Valley, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
-        lead: 'We specialize in precision repairs that protect the historic and residential character of Frelinghuysen:',
+        lead: 'Precision repairs engineered for Frelinghuysen rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Leak Detection', body: 'Advanced diagnostic tools to find hidden moisture entry points in aging shingles and complex valleys.' },
-          { title: 'Pipe Boots & Flashing', body: 'Immediate replacement of rotted rubber boots to stop leaks at the source.' },
-          { title: 'Masonry Counter-Flashing', body: 'Expert flashing for older chimneys to ensure a watertight seal on aging brickwork.' },
-          { title: 'Ridge Vents & Ventilation', body: 'Installation of high-flow ridge ventilation to lower energy costs while preserving the roof silhouette.' }
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic rural roof profiles feature sharp pitch intersections that concentrate high water velocity against dormer cheek walls. We line all valleys with double-layer self-adhering GAF WeatherWatch® barriers under pre-formed open valley metal to ensure rapid drainage.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Frelinghuysen roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
         ],
       },
       {
         heading: 'Roof Replacement',
-        lead: 'We install complete roofing systems engineered for maximum durability:',
+        lead: 'We deliver full-system replacements engineered for Frelinghuysen\'s specific climate and architecture:',
         bullets: [
-          { title: 'GAF Timberline HDZ', body: 'The gold standard in architectural shingles with advanced LayerLock technology.' },
-          { title: 'Owens Corning Duration', body: 'Featuring SureNail technology for industry-leading grip on high-slope roofs.' },
-          { title: 'Ice & Water Shield', body: 'Critical double-layer protection to prevent ice dams during heavy NJ storms.' },
-          { title: 'Synthetic Underlayment', body: 'High-performance moisture barriers that far outperform standard organic felt.' }
+          { title: 'Shingle Specification & Algae Defense', body: 'Surrounding woodland preserves shelter roof surfaces from sunlight, accelerating moss and lichen colonies. We install GAF Timberline® UHDZ shingles featuring Dual Shadow Lines and 30-year copper micro-bead protection to preserve cedar-shake curb appeal.' },
+          { title: 'Structural Decking Audit', body: 'Historic farmsteads routinely exhibit hand-hewn rafters and original 1x8 pine decking with wide expansion seams. We secure an unyielding layer of structural 5/8-inch CDX plywood across all planes to provide a certified nailing base.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Frelinghuysen\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
       },
       {
         heading: 'Specialized Services',
         bullets: [
           { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
-          { title: 'Velux Skylight Specialists', body: 'Precision repair and installation of high-efficiency "No Leak" skylights and roof windows.' },
-          { title: 'Siliconized Roof Coatings', body: 'Cost-effective, seamless solutions for aging flat roofs that stop leaks without a full tear-off.' },
-          { title: 'EPDM & TPO Membranes', body: 'Industrial-grade flat roofing solutions for local commercial properties and storefronts.' }
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
         ],
       },
       {
         heading: 'Our Guarantee',
         bullets: [
           { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
-          { title: 'The "Catch-All" System', body: 'Comprehensive protection of your property and landscaping with heavy-duty netting.' },
-          { title: 'Spotless Cleanup', body: 'High-powered magnetic nail sweeps ensure your driveway and yard are 100% nail-free.' },
-          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a trusted company serving the area since 2004.' }
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
         ],
       }
     ],
-    serving: 'Frelinghuysen, Johnsonburg, and Blairstown',
-    meta: 'Lita Construction provides roofing services in Frelinghuysen, NJ. GAF Master Elite Gold Contractor — honest estimates, no pressure. Roof repair, replacement, skylights, and flat roofing since 2004.',
+    serving: 'Frelinghuysen, Blairstown, Hope, Allamuchy, and Hardwick',
+    meta: 'Lita Construction provides elite roofing in Frelinghuysen, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'garfield',
@@ -4241,50 +4241,50 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Warren',
     zips: ['08886'],
     intro: [
-
+      'High-Performance Roofing Systems near Route 78 Corridor and Stewartsville Historic Village. Greenwich homes — 1990s–2000s Executive Master-Planned Subdivisions, Classic Center-Hall Colonials, and Historic Brick Farmsteads — face a specific set of local stresses: open valley wind gusts along Route 78, builder-grade shingle blow-offs, dead-valley transitions on multi-tier roofs, and summer attic heat-soak. Lita Construction serves the Greenwich 08886 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Pohatcong Creek or Thomas Stewart Historic Site, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
-        lead: 'We specialize in precision repairs that protect the structural integrity of Greenwich’s diverse housing:',
+        lead: 'Precision repairs engineered for Greenwich rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Wind Damage Assessment', body: 'Expert repair for shingles displaced by high-valley winds common in Stewartsville.' },
-          { title: 'Leak Detection', body: 'Advanced diagnostic tools to find hidden moisture entry points in aging roof systems.' },
-          { title: 'Pipe Boots & Flashing', body: 'Immediate replacement of rotted or cracked rubber boots to stop leaks at the source.' },
-          { title: 'Ridge Vents & Ventilation', body: 'Installation of high-flow ridge ventilation to lower cooling costs and extend roof life.' }
+          { title: 'Valley & Dead-Valley Engineering', body: 'Sprawling executive rooflines in developments around Stewartsville feature complex compound valleys directing runoff from multiple gables. We install heavy-gauge metal valley troughs backed by GAF StormGuard® membranes to eliminate standing water and prevent gutter blowouts.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Greenwich roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
         ],
       },
       {
         heading: 'Roof Replacement',
-        lead: 'We build roofing systems engineered for durability and maximum curb appeal:',
+        lead: 'We deliver full-system replacements engineered for Greenwich\'s specific climate and architecture:',
         bullets: [
-          { title: 'GAF Timberline HDZ', body: 'The gold standard in architectural shingles with advanced LayerLock technology.' },
-          { title: 'Owens Corning Duration', body: 'Featuring SureNail technology for industry-leading grip on high-slope roofs.' },
-          { title: 'Ice & Water Shield', body: 'Critical double-layer protection to prevent ice dams during heavy Warren County snow.' },
-          { title: 'Synthetic Underlayment', body: 'High-performance moisture barriers that far outperform standard organic felt.' }
+          { title: 'Shingle Specification & Algae Defense', body: 'Open solar exposure alternating with valley humidity causes rapid surface oxidation and Gloeocapsa magma staining. We install GAF Timberline® HDZ shingles with StrikeZone™ nailing channels and StainGuard Plus™ copper protection.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs in 1990s tract communities frequently expose thin 1/2-inch OSB sheathing with moisture softening over soffits. We replace damaged panels with exterior-grade 5/8-inch CDX plywood to eliminate structural deflection.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Greenwich\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
       },
       {
         heading: 'Specialized Services',
         bullets: [
           { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
-          { title: 'Velux Skylight Specialists', body: 'Precision repair and installation of high-efficiency "No Leak" skylights and roof windows.' },
-          { title: 'Siliconized Roof Coatings', body: 'Cost-effective, seamless solutions for aging flat roofs that stop leaks without a full tear-off.' },
-          { title: 'EPDM & TPO Membranes', body: 'Industrial-grade flat roofing solutions for local commercial properties and storefronts.' }
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
         ],
       },
       {
         heading: 'Our Guarantee',
         bullets: [
           { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
-          { title: 'The "Catch-All" System', body: 'Comprehensive protection of your property and landscaping with heavy-duty netting.' },
-          { title: 'Spotless Cleanup', body: 'High-powered magnetic nail sweeps ensure your driveway and yard are 100% nail-free.' },
-          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a trusted company serving the area since 2004.' }
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
         ],
       }
     ],
-    serving: 'Stewartsville and the residential neighborhoods near Greenwich Township School, we have been the community\'s trusted roofing authority for over 20 years. From the newer luxury developments to the historic properties bordering the Musconetcong River, we understand the specific environmental challenges and building codes of the 08886 zip code. When you call us, you speak with a pro, not a salesman who knows how to protect your home from the high-wind conditions of the 08886 valley. We provide the strongest non-prorated protection as an elite GAF Master Elite Gold Contractor.',
-    meta: 'Lita Construction provides roofing services in Greenwich, NJ. GAF Master Elite Gold Contractor — honest estimates, no pressure. Roof repair, replacement, skylights, and flat roofing since 2004.',
+    serving: 'Greenwich, Lopatcong, Franklin, Pohatcong, and Phillipsburg',
+    meta: 'Lita Construction provides elite roofing in Greenwich, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'hackensack',
@@ -4649,50 +4649,50 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Warren',
     zips: ['07825'],
     intro: [
-      'Perched in the Kittatinny Mountains near the Delaware Water Gap, Hardwick homes face some of the most intense weather in Warren County. From the properties near Shuster Pond to the historic colonial homes of the 07825 zip code, we provide the elite roofing services this rural community demands. When you call us, you speak with a pro, not a salesman who knows the high-wind challenges and specific building codes of this rugged terrain. We protect your investment as an elite GAF Master Elite Gold Contractor.'
+      'High-Performance Roofing Systems near Kittatinny Ridge and Delaware Water Gap National Recreation Area. Hardwick homes — High-Elevation Custom Mountain Lodges, Log-Framed Cabins, Contemporary Estates, and Historic Farmsteads — face a specific set of local stresses: severe Kittatinny Ridge mountain wind gusts, heavy winter snowdrift accumulation, extreme ice damming, and dense forest canopy shade. Lita Construction serves the Hardwick 07825 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Millbrook Historic Village or Fairview Lake Border, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
-        lead: 'We specialize in repairs designed for Hardwick’s high-elevation and woodland environment:',
+        lead: 'Precision repairs engineered for Hardwick rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Storm Damage Diagnostics', body: 'Specialized care for homes exposed to intense ridge-line winds and falling debris.' },
-          { title: 'Leak Detection', body: 'Advanced diagnostic tools to find hidden moisture entry points in aging roof systems.' },
-          { title: 'Pipe Boots & Flashing', body: 'Immediate replacement of rotted rubber boots to prevent interior water damage.' },
-          { title: 'Ridge Vents & Ventilation', body: 'Engineered attic ventilation to prevent moisture buildup and ice damming during harsh mountain winters.' }
+          { title: 'Valley & Dead-Valley Engineering', body: 'Mountain rooflines feature steep, complex pitch intersections where snowpack accumulation leads to chronic ice back-ups. We install commercial-grade GAF StormGuard® membranes extending 48 inches up flanking decks beneath heavy-gauge pre-bent metal valley flashing.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Hardwick roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
         ],
       },
       {
         heading: 'Roof Replacement',
-        lead: 'We build roofing systems engineered for maximum protection against the elements:',
+        lead: 'We deliver full-system replacements engineered for Hardwick\'s specific climate and architecture:',
         bullets: [
-          { title: 'GAF Timberline HDZ', body: 'The gold standard in architectural shingles with advanced LayerLock technology for high-wind resistance.' },
-          { title: 'Owens Corning Duration', body: 'Featuring SureNail technology for industry-leading durability on steep slopes.' },
-          { title: 'Ice & Water Shield', body: 'Maximum-grade protection in all valleys and eaves—critical for Hardwick’s heavy snowfall.' },
-          { title: 'Synthetic Underlayment', body: 'Advanced moisture barriers that far outperform standard organic felt.' }
+          { title: 'Shingle Specification & Algae Defense', body: 'Dense forest perimeters and prolonged morning fog promote rapid moss and lichen growth. We install GAF Timberline® UHDZ shingles with 30-year StainGuard Plus™ copper protection to prevent surface degradation without regular chemical washes.' },
+          { title: 'Structural Decking Audit', body: 'Extended rafter spans across custom timbered lodges frequently exhibit sagging from heavy winter loads. We audit framing bays during tear-off, replacing compromised wood with exterior-grade 5/8-inch CDX plywood fastened to 130-MPH wind uplift schedules.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Hardwick\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
       },
       {
         heading: 'Specialized Services',
         bullets: [
           { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
-          { title: 'Velux Skylight Specialists', body: 'Precision repair and installation of high-efficiency "No Leak" skylights and roof windows.' },
-          { title: 'Siliconized Roof Coatings', body: 'Cost-effective, seamless solutions for aging flat roofs that stop leaks without a full tear-off.' },
-          { title: 'EPDM & TPO Membranes', body: 'Industrial-grade flat roofing solutions for local commercial properties and storefronts.' }
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
         ],
       },
       {
         heading: 'Our Guarantee',
         bullets: [
           { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
-          { title: 'The "Catch-All" System', body: 'Comprehensive property protection using heavy-duty netting to safeguard your landscaping and decks.' },
-          { title: 'Spotless Cleanup', body: 'High-powered magnetic nail sweeps ensure your property is entirely free of construction debris.' },
-          { title: 'Structural Warranty', body: 'A dedicated craftsmanship guarantee from a team that has served the area since 2004.' }
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
         ],
       }
     ],
-    serving: 'Hardwick, Blairstown, and Fredon',
-    meta: 'Lita Construction provides roofing services in Hardwick, NJ. GAF Master Elite Gold Contractor — honest estimates, no pressure. Roof repair, replacement, skylights, and flat roofing since 2004.',
+    serving: 'Hardwick, Blairstown, Frelinghuysen, Knowlton, and Hope',
+    meta: 'Lita Construction provides elite roofing in Hardwick, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'hardyston',
@@ -5561,52 +5561,52 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     slug: 'independence',
     name: 'Independence',
     county: 'Warren',
-    zips: ['07838'],
+    zips: ['07838', '07840'],
     intro: [
-
+      'High-Performance Roofing Systems near Great Meadows and Route 46 Corridor. Independence homes — Rural Single-Family Ranches, Custom Acreage Colonials, Historic Farmhouses, and Wooded Hillside Retreats — face a specific set of local stresses: High-velocity wind drafts off Jenny Jump mountain, Pequest muck-basin humidity, builder-grade shingle failure, and winter ice damming along wide overhangs. Lita Construction serves the Independence 07838 and 07840 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Pequest River Basin or Jenny Jump State Forest Border, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
-        lead: 'Don’t let a minor leak compromise your home\'s integrity. We specialize in precision repairs for Independence homeowners:',
+        lead: 'Precision repairs engineered for Independence rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Leak Detection', body: 'Advanced diagnostic tools to find hidden water entry points in valleys and around chimneys.' },
-          { title: 'Pipe Boots', body: 'Immediate replacement of rotted or cracked rubber pipe boots to stop leaks at the source.' },
-          { title: 'High-Wind Assessment', body: 'Specialized care for homes in open valley areas exposed to intense weather.' },
-          { title: 'Ridge Vents & Ventilation', body: 'Installation of ridge ventilation to extend your roof\'s lifespan and improve home cooling.' }
+          { title: 'Valley & Dead-Valley Engineering', body: 'Sloping mountain-foot rooflines funnel heavy storm volumes into wide valley junctions. We install heavy-gauge open metal valleys bedded over continuous GAF StormGuard® membranes to prevent hydrostatic wash and granular erosion during severe mountain storms.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Independence roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
         ],
       },
       {
         heading: 'Roof Replacement',
-        lead: 'We build roofing systems engineered for durability and maximum protection:',
+        lead: 'We deliver full-system replacements engineered for Independence\'s specific climate and architecture:',
         bullets: [
-          { title: 'GAF Timberline HDZ', body: 'The gold standard in architectural shingles with advanced LayerLock technology.' },
-          { title: 'Owens Corning Duration', body: 'Featuring SureNail technology for industry-leading grip on high-slope roofs.' },
-          { title: 'Ice & Water Shield', body: 'Maximum-grade protection in all valleys and eaves to prevent ice dams during heavy storms.' },
-          { title: 'Synthetic Underlayment', body: 'Advanced moisture barriers that far outperform standard organic felt.' }
+          { title: 'Shingle Specification & Algae Defense', body: 'Elevated moisture from the Pequest River basin and morning valley mists create persistent dampness across northern roof exposures. We specify GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper micro-bead technology to eliminate dark algae streaks.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on older agricultural and rural homes frequently uncover spaced planking or moisture-softened 1/2-inch plywood. We inspect structural rafter spacing and install solid 5/8-inch CDX exterior plywood secured with ring-shank nails to comply with NJ UCC standards.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Independence\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
       },
       {
         heading: 'Specialized Services',
         bullets: [
           { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
-          { title: 'Velux Skylight Specialists', body: 'Precision repair and installation of high-efficiency "No Leak" skylights and roof windows.' },
-          { title: 'Siliconized Roof Coatings', body: 'Cost-effective, seamless solutions for aging flat roofs that stop leaks without a full tear-off.' },
-          { title: 'EPDM & TPO Membranes', body: 'Industrial-grade flat roofing solutions for local commercial properties and storefronts.' }
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
         ],
       },
       {
         heading: 'Our Guarantee',
         bullets: [
           { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
-          { title: 'The "Catch-All" System', body: 'Comprehensive property protection using heavy-duty netting to safeguard your landscaping.' },
-          { title: 'Spotless Cleanup', body: 'High-powered magnetic nail sweeps ensure your driveway and yard are 100% nail-free.' },
-          { title: 'Structural Warranty', body: 'A dedicated craftsmanship guarantee from a team that has served Warren County since 2004.' }
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
         ],
       }
     ],
-    serving: 'Great Meadows and the residential neighborhoods near Independence Township Elementary, we have been the community\'s trusted roofing authority for over 20 years. From the homes of Vienna to the properties bordering Hackettstown, we understand the specific environmental challenges and building codes of the 07838 and 07840 zip codes. We protect your investment with a GAF-verified factory inspection as an elite GAF Master Elite Gold Contractor.',
-    meta: 'Lita Construction provides roofing services in Independence, NJ. GAF Master Elite Gold Contractor — honest estimates, no pressure. Roof repair, replacement, skylights, and flat roofing since 2004.',
+    serving: 'Independence, Hackettstown, Allamuchy, Mansfield, and Liberty',
+    meta: 'Lita Construction provides elite roofing in Independence, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'irvington',
@@ -6523,6 +6523,57 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     ],
     serving: 'Long Hill, Chatham Township, Harding, Berkeley Heights, and Bernards Township',
     meta: 'Lita Construction provides elite roofing in Long Hill, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
+  },
+  {
+    slug: 'lopatcong',
+    name: 'Lopatcong',
+    county: 'Warren',
+    zips: ['08865'],
+    intro: [
+      'High-Performance Roofing Systems near Belvidere Road (Route 519) and Marble Hill. Lopatcong homes — 1980s–2000s Suburban Colonials, Mid-Century Split-Levels, Raised Ranches, and Modern Infill Estates — face a specific set of local stresses: marble Hill ridge updrafts, Delaware River basin moisture, shallow addition drainage angles, and plumbing boot degradation. Lita Construction serves the Lopatcong 08865 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Delaware River Overlook or Strykers Road Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+    ],
+    sections: [
+      {
+        heading: 'Roof Repair',
+        lead: 'Precision repairs engineered for Lopatcong rooflines — we find the failure, not just the symptom:',
+        bullets: [
+          { title: 'Valley & Dead-Valley Engineering', body: 'Intersecting rooflines on split-levels create low-pitch dead valleys that collect leaf debris and slow storm drainage. We apply double-layer self-adhering GAF WeatherWatch® mineral barriers under full-width metal transition flashing to stop capillary backflow.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Lopatcong roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
+        ],
+      },
+      {
+        heading: 'Roof Replacement',
+        lead: 'We deliver full-system replacements engineered for Lopatcong\'s specific climate and architecture:',
+        bullets: [
+          { title: 'Shingle Specification & Algae Defense', body: 'Elevated moisture from the river corridor encourages lichen colonization and dark algae streaks on damp roof exposures. We specify GAF Timberline® HDZ shingles with LayerLock® mechanical fasteners and copper micro-bead algae resistance.' },
+          { title: 'Structural Decking Audit', body: 'We audit all decking during tear-offs to locate heat-delaminated or sagging 1/2-inch plywood, replacing compromised wood with exterior-grade 5/8-inch CDX plywood secured to NJ building code standards.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Lopatcong\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
+        ],
+      },
+      {
+        heading: 'Specialized Services',
+        bullets: [
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
+        ],
+      },
+      {
+        heading: 'Our Guarantee',
+        bullets: [
+          { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
+        ],
+      }
+    ],
+    serving: 'Lopatcong, Greenwich, Phillipsburg, Harmony, and Pohatcong',
+    meta: 'Lita Construction provides elite roofing in Lopatcong, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'lyndhurst',
@@ -9386,50 +9437,50 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Warren',
     zips: ['07863'],
     intro: [
-      'Known for its deep industrial roots and the historic Oxford Furnace, this community features a mix of classic worker cottages and modern residential estates. From the properties near Oxford Lake to the homes bordering Belvidere, we provide the expert care this township demands. When you call us, you speak with a pro, not a salesman who knows the building codes of the 07863 zip code. We provide the strongest non-prorated protection as an elite GAF Master Elite Gold Contractor.'
+      'High-Performance Roofing Systems near Oxford Furnace Historic Site and Furnace Lake. Oxford homes — 19th-Century Historic Ironworks Cottages, Victorian Frame Homes, Post-War Capes, and Rural Colonials — face a specific set of local stresses: steep hillside gables (10/12 to 12/12), soft lime-mortar brick chimney decay, unconditioned attic heat traps, and lake-effect dampness. Lita Construction serves the Oxford 07863 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Shippen Manor or Route 31 Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
-        lead: 'We specialize in precision repairs that protect the historic and residential character of Oxford:',
+        lead: 'Precision repairs engineered for Oxford rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Leak Detection', body: 'Advanced diagnostic tools to find hidden moisture entry points in aging shingles and complex valleys.' },
-          { title: 'Pipe Boots & Flashing', body: 'Immediate replacement of rotted rubber boots to stop leaks at the source.' },
-          { title: 'Masonry Counter-Flashing', body: 'Expert flashing for older chimneys to ensure a watertight seal on aging brickwork.' },
-          { title: 'Ridge Vents & Ventilation', body: 'Installation of high-flow ridge ventilation to lower energy costs while preserving the roof silhouette.' }
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic rooflines feature steep dormer pitches that concentrate heavy runoff against vertical sidewall flashings. We install custom open metal valley pans lined with GAF WeatherWatch® membranes to evacuate high-capacity drainage cleanly.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Oxford roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
         ],
       },
       {
         heading: 'Roof Replacement',
-        lead: 'We install complete roofing systems engineered for maximum durability:',
+        lead: 'We deliver full-system replacements engineered for Oxford\'s specific climate and architecture:',
         bullets: [
-          { title: 'GAF Timberline HDZ', body: 'The gold standard in architectural shingles with advanced LayerLock technology.' },
-          { title: 'Owens Corning Duration', body: 'Featuring SureNail technology for industry-leading grip on high-slope roofs.' },
-          { title: 'Ice & Water Shield', body: 'Critical double-layer protection to prevent ice dams during heavy NJ storms.' },
-          { title: 'Synthetic Underlayment', body: 'High-performance moisture barriers that far outperform standard organic felt.' }
+          { title: 'Shingle Specification & Algae Defense', body: 'Morning dampness off Furnace Lake combined with street tree shade accelerates dark algae streaking. We specify GAF Timberline® HDZ shingles with LayerLock® technology and copper micro-bead algae defense.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old homes routinely reveal original true-dimensional 1x8 tongue-and-groove pine with wide expansion gaps. We install structural 5/8-inch CDX plywood across all planes to provide a continuous, code-compliant nailing base.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Oxford\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
       },
       {
         heading: 'Specialized Services',
         bullets: [
           { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
-          { title: 'Velux Skylight Specialists', body: 'Precision repair and installation of high-efficiency "No Leak" skylights and roof windows.' },
-          { title: 'Siliconized Roof Coatings', body: 'Cost-effective, seamless solutions for aging flat roofs that stop leaks without a full tear-off.' },
-          { title: 'EPDM & TPO Membranes', body: 'Industrial-grade flat roofing solutions for local commercial properties and storefronts.' }
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
         ],
       },
       {
         heading: 'Our Guarantee',
         bullets: [
           { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
-          { title: 'The "Catch-All" System', body: 'Comprehensive protection of your property and landscaping with heavy-duty netting.' },
-          { title: 'Spotless Cleanup', body: 'High-powered magnetic nail sweeps ensure your driveway and yard are 100% nail-free.' },
-          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a trusted company serving the area since 2004.' }
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
         ],
       }
     ],
-    serving: 'Oxford, Belvidere, and Washington',
-    meta: 'Lita Construction provides roofing services in Oxford, NJ. GAF Master Elite Gold Contractor — honest estimates, no pressure. Roof repair, replacement, skylights, and flat roofing since 2004.',
+    serving: 'Oxford, Washington Borough, White Township, Belvidere, and Mansfield',
+    meta: 'Lita Construction provides elite roofing in Oxford, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'palisades-park',
@@ -13863,6 +13914,57 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     ],
     serving: 'Wharton, Dover, Rockaway Borough, Mine Hill, and Roxbury',
     meta: 'Lita Construction provides elite roofing in Wharton, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
+  },
+  {
+    slug: 'white-township',
+    name: 'White Township',
+    county: 'Warren',
+    zips: ['07823', '07863'],
+    intro: [
+      'High-Performance Roofing Systems near Route 46 Corridor and Delaware River Basin. White Township homes — Delaware Riverfront Single-Family Homes, Contemporary Acreage Colonials, Mid-Century Ranches, and Historic Farmsteads — face a specific set of local stresses: delaware River valley wind shear, river-fog humidity, low-slope addition drainage bottlenecks, and winter freeze-thaw damming. Lita Construction serves the White Township 07823 and 07863 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Foul Rift Rapids or Pequest Wildlife Management Area, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+    ],
+    sections: [
+      {
+        heading: 'Roof Repair',
+        lead: 'Precision repairs engineered for White Township rooflines — we find the failure, not just the symptom:',
+        bullets: [
+          { title: 'Valley & Dead-Valley Engineering', body: 'Sprawling multi-level rooflines channel massive water volume into long lower valleys. We construct open metal valleys bedded over continuous GAF StormGuard® high-temperature membranes to withstand heavy river-valley cloudbursts.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your White Township roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
+        ],
+      },
+      {
+        heading: 'Roof Replacement',
+        lead: 'We deliver full-system replacements engineered for White Township\'s specific climate and architecture:',
+        bullets: [
+          { title: 'Shingle Specification & Algae Defense', body: 'Atmospheric humidity rising from Foul Rift and the Delaware River promotes blue-green algae streaks on northern roof slopes. We install GAF Timberline® HDZ shingles featuring time-release StainGuard Plus™ copper chemistry for lasting color retention.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs in established acreage parcels frequently expose thin 1/2-inch CDX or OSB decking that deflects under modern architectural shingles. We replace compromised lumber with 5/8-inch CDX exterior plywood fastened with ring-shank nails.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given White Township\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
+        ],
+      },
+      {
+        heading: 'Specialized Services',
+        bullets: [
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
+        ],
+      },
+      {
+        heading: 'Our Guarantee',
+        bullets: [
+          { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
+        ],
+      }
+    ],
+    serving: 'White Township, Belvidere, Oxford, Hope, and Harmony',
+    meta: 'Lita Construction provides elite roofing in White Township, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
     slug: 'winfield',
