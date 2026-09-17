@@ -1081,14 +1081,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07005'],
     intro: [
-      'High-Performance Roofing Systems near Main Street Historic District and Rockaway River Gorge. Boonton homes — Hillside Victorian Painted Ladies, Historic Ironworker Cottages, Pre-War Colonials, and Multi-Family Frame Dwellings — face a specific set of local stresses: steep hillside wind turbulence over the Rockaway River gorge, 10/12 to 14/12 historic roof slopes, soft lime-mortar brick chimney decay, and narrow hillside lot setbacks. Lita Construction serves the Boonton 07005 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Grace Lord Park & Waterfall or Boonton Iron Works Site, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Main Street and Boonton Falls. Boonton homes — Hillside Victorian Painted Ladies, American Foursquares, Pre-War Colonials, and Historic Multi-Families — face a specific set of local stresses: extreme hillside wind updrafts from the Rockaway River gorge, 12/12+ steep Victorian gables, soft lime-mortar brick chimney degradation, and narrow lot clearances. Lita Construction serves the Boonton 07005 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Grace Lord Park or Rockaway River Gorge, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Boonton rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Hillside gables funnel stormwater rapidly into tight dormer valleys. Standard closed-cut shingles scour quickly under this hydraulic velocity; we fabricate open metal valley pans lined with continuous GAF StormGuard® high-temperature membranes to eliminate water penetration along tight lot lines.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Steep hillside roof planes accelerate stormwater velocities directly into compound dormer junctions. We install heavy-gauge open metal valleys lined with high-temperature GAF StormGuard® barriers to stop hydraulic overflow and prevent water from scouring shingle mineral granules.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Boonton roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -1098,8 +1098,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Boonton\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Ambient mist rising from the Rockaway River gorge combined with dense hillside shade trees keeps roof surfaces damp well into the afternoon, encouraging moss and lichen growth. We install GAF Timberline® UHDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry to preserve authentic Victorian shadow profiles.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old hillside residences routinely reveal original 1x8 tongue-and-groove pine or rough-sawn hemlock planking with wide gaps and nail splits. We lay an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to meet current NJ UCC shear schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Deep river gorge humidity combined with dense historic street trees promotes heavy moss and lichen growth. We install GAF Timberline® HDZ shingles with StainGuard Plus™ algae protection to maintain sharp, clean rooflines across historic facades.' },
+          { title: 'Structural Decking Audit', body: 'Substrates on older Boonton hillside homes frequently exhibit aged pine planks with split seams from multiple historical re-roofs. We excise softened boards and install 5/8-inch CDX plywood sheathing to re-establish structural shear strength.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Boonton\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -1123,7 +1123,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Boonton, Mountain Lakes, Boonton Township, Montville, and Denville',
+    serving: 'Boonton, Boonton Township, Mountain Lakes, Parsippany-Troy Hills, and Montville',
     meta: 'Lita Construction provides elite roofing in Boonton, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -1132,14 +1132,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07005'],
     intro: [
-      'High-Performance Roofing Systems near Rockaway Valley Historic District and Tourne County Park Border. Boonton Township homes — Multi-Acre Custom Wooded Estates, Center-Hall Colonials, Contemporary Hillside Homes, and Historic Farmhouses — face a specific set of local stresses: High-elevation ridgetop wind shear, mature hardwood forest canopy dampness, sprawling multi-pitch compound valley runs, and winter ice damming along extended overhangs. Lita Construction serves the Boonton Township 07005 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Dixon Pond or Powerville Road Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Powerville Road and Rockaway Valley. Boonton Township homes — Custom Acreage Executive Estates, Modern Farmhouses, and Sprawling Multi-Level Colonials — face a specific set of local stresses: foothill wind shear across open valleys, compound multi-tier rooflines, heavy mature woodland shade, and winter ice-dam formation. Lita Construction serves the Boonton Township 07005 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Dixon Pond or Tourne County Park Border, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Boonton Township rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Expansive custom rooflines feature compound valleys where multiple steep gables meet lower master wings. We engineer heavy-gauge open metal valleys lined with double layers of GAF StormGuard® membranes to ensure torrential mountain runoff never backs up beneath shingles.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Sprawling multi-level rooflines channel massive water volumes into long central valleys. We line all valley troughs with commercial-grade GAF StormGuard® self-adhering membranes under heavy-gauge metal flashing to stop hydrostatic backup during heavy mountain squalls.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Boonton Township roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -1149,8 +1149,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Boonton Township\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Dense forest canopies and Dixon Pond humidity keep roof decks shaded from direct sunlight, accelerating Gloeocapsa magma staining and lichen growth. We specify GAF Timberline® UHDZ shingles with 30-year StainGuard Plus™ copper protection to maintain heavy wood-shake depth without organic degradation.' },
-          { title: 'Structural Decking Audit', body: 'Custom estate roofs with wide rafter spans frequently exhibit deck deflection under heavy winter snowdrifts. We audit framing during tear-offs, replacing thin sheathing with rigid 5/8-inch CDX exterior plywood secured with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Heavily wooded acreage perimeters shelter roof planes from direct UV exposure, creating high-risk environments for algae and lichen colonies. We install GAF Timberline® UHDZ shingles with 30-year copper micro-bead algae defense.' },
+          { title: 'Structural Decking Audit', body: 'Custom estate roofs with extended rafter spans often display localized deck deflection under heavy winter snow loads. We audit all framing during tear-off, replacing thin sheathing with structural 5/8-inch CDX plywood.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Boonton Township\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -1174,7 +1174,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Boonton Township, Boonton Borough, Mountain Lakes, Montville, and Kinnelon',
+    serving: 'Boonton Township, Boonton, Montville, Mountain Lakes, and Kinnelon',
     meta: 'Lita Construction provides elite roofing in Boonton Township, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -2456,14 +2456,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07834'],
     intro: [
-      'High-Performance Roofing Systems near Downtown Broadway Historic District and Indian Lake Shoreline. Denville homes — Converted Lakefront Bungalows, Mid-Century Split-Levels, Custom Colonials, and Contemporary Waterfront Homes — face a specific set of local stresses: Multi-lake atmospheric dampness, seasonal floodplain fog, dead valleys on expanded lake cottages, shallow roof pitches on rear additions, and severe freeze-thaw ice damming. Lita Construction serves the Denville 07834 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Rock Ridge Lake or Cedar Lake Community Grounds, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Broadway Downtown and Indian Lake. Denville homes — Lakefront Log Cabins and Conversions, Mid-Century Split-Levels, Expanded Capes, and Modern Custom Colonials — face a specific set of local stresses: high atmospheric dampness from 11 local lake communities, shallow addition pitch breaks, heavy lake-effect freeze-thaw damming, and pipe boot dry rot. Lita Construction serves the Denville 07834 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Rock Ridge Lake or Cedar Lake, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Denville rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Converted lakeside cottages frequently feature low-pitch addition slopes intersecting steeper original gable roofs. These transitions collect damp pine needles and slow storm drainage. We apply double-layer self-adhering GAF WeatherWatch® mineral-surfaced barriers under pre-bent metal transition flashing to prevent capillary backflow.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Converted lake cottages and expanded Capes frequently feature low-slope additions intersecting main roofs at shallow angles. We apply double-layer self-adhering GAF WeatherWatch® leak barriers under full-width metal transition flashing to prevent capillary backup.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Denville roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -2473,8 +2473,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Denville\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Persistent lake surface moisture and dense residential hemlock and oak canopies foster heavy moss and blue-green algae growth on shaded roof exposures. We specify GAF Timberline® UHDZ shingles featuring StainGuard Plus™ copper protection to preserve architectural shadow lines.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on older lakeside properties routinely uncover irregular tongue-and-groove pine or thin 1/2-inch plywood with delaminating veneers from trapped moisture. We lay an unyielding structural layer of 5/8-inch CDX exterior plywood secured with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Constant ambient moisture rising from Indian Lake and Cedar Lake accelerates fungal discoloration and moss anchor points. We install GAF Timberline® HDZ shingles featuring LayerLock® technology and StainGuard Plus™ copper protection.' },
+          { title: 'Structural Decking Audit', body: 'Cottage-to-year-round home conversions often conceal mismatched roof decking or dry-rotted tongue-and-groove planks. We remove compromised sub-roofing and install exterior-grade 5/8-inch CDX plywood fastened to current NJ UCC framing schedules.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Denville\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -2498,7 +2498,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Denville, Mountain Lakes, Rockaway Borough, Boonton Borough, and Randolph',
+    serving: 'Denville, Mountain Lakes, Rockaway Borough, Parsippany-Troy Hills, and Randolph',
     meta: 'Lita Construction provides elite roofing in Denville, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -2711,14 +2711,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07936'],
     intro: [
-      'High-Performance Roofing Systems near Passaic & Whippany River Confluence and Route 10 Commercial Corridor. East Hanover homes — 1960s–1980s Sprawling Split-Levels, Center-Hall Colonials, Custom Brick-Front Ranches, and Modern Infill Builds — face a specific set of local stresses: river confluence atmospheric dampness, dead-valley transitions on split-levels, aging builder-grade 1/2-inch plywood delamination, and summer attic heat traps. Lita Construction serves the East Hanover 07936 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Lurker Park or Hanover Neck Historic Area, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Ridgedale Avenue and Route 10 Corridor. East Hanover homes — 1960s–1980s Split-Levels, Ranches, Center-Hall Colonials, and Custom Rebuilds — face a specific set of local stresses: passaic and Whippany River basin humidity, shallow-pitch addition transitions, aging chimney counter-flashing, and summer attic heat traps. Lita Construction serves the East Hanover 07936 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Passaic River Basin or Lurker Park, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for East Hanover rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Dead valleys between split-level garage wings and two-story living spaces collect wet leaves and impede drainage. We install self-adhering GAF WeatherWatch® mineral-surfaced membranes extending 36 inches up vertical sidewalls beneath heavy step flashing to stop trapped-water leaks.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Low-slope rear kitchen extensions frequently intersect steep main roofs at shallow angles. We apply double-layer self-adhering GAF WeatherWatch® mineral barriers under full-width metal transition flashing to prevent capillary backflow.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your East Hanover roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -2728,8 +2728,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for East Hanover\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Confluence wetland moisture alternating with open highway exposure causes rapid shingle oxidation and black algae staining. We install GAF Timberline® HDZ shingles featuring StrikeZone™ nailing channels and copper micro-bead algae defense.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs in post-war subdivisions frequently uncover thin 1/2-inch plywood with delaminating plies from uninsulated attics. We replace compromised decking with structural 5/8-inch CDX exterior plywood fastened with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'River-basin dampness keeps morning dew trapped across lower roof planes, causing dark algae streaks. We specify GAF Timberline® HDZ shingles featuring time-release StainGuard Plus™ copper protection.' },
+          { title: 'Structural Decking Audit', body: 'Suburban framing often reveals dried 1/2-inch plywood that has delaminated from trapped heat and moisture. We excise weakened panels and install rigid 5/8-inch CDX plywood sheathing to establish an unyielding structural surface.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given East Hanover\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -7958,14 +7958,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07045', '07082'],
     intro: [
-      'High-Performance Roofing Systems near Pyramid Mountain Natural Historic Area and Lake Valhalla Shoreline & Club. Montville homes — Multi-Acre Custom Mansions, Lake Valhalla Adirondack & Rustic Stone Builds, Sprawling Executive Colonials, and Hillside Split-Levels — face a specific set of local stresses: pyramid Mountain ridgetop wind shear, Lake Valhalla atmospheric humidity, compound multi-tier valley drainage volume, and winter freeze-thaw damming along extended overhangs. Lita Construction serves the Montville 07045 and 07082 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Towaco Historic Railroad Sector or Route 287 Ridgeline, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Main Road (Route 202) and Taylortown Reservoir. Montville homes — Custom Luxury Hillside Mansions, Contemporary Ranches, and Sprawling Executive Colonials — face a specific set of local stresses: mountain ridgeline wind buffeting off Waughaw Mountain, expansive compound valleys, multi-skylight curb leaks, and winter ice-dam formation. Lita Construction serves the Montville 07045 and 07082 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Waughaw Mountain or Pyramid Mountain Natural Historic Area, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Montville rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Mountain-elevation estates feature steep compound gables and multi-dormer configurations where snowmelt and cloudbursts gather heavy velocity. We line all valley troughs with continuous commercial-grade GAF StormGuard® membranes beneath heavy-gauge open metal valleys to stop hydrostatic backup during severe highland storms.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Steep hillside custom estates converge in deep central valleys handling thousands of gallons of stormwater. We reinforce all valley channels with high-temperature GAF StormGuard® membranes wrapped 36 inches up flanking decks beneath pre-bent valley metal.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Montville roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -7975,8 +7975,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Montville\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Forested mountain acreage keeps roof decks cool and damp throughout the morning, encouraging lichen and dark fungal growth. We specify GAF Timberline® UHDZ shingles featuring Dual Shadow Lines and 30-year StainGuard Plus™ copper-bead algae defense.' },
-          { title: 'Structural Decking Audit', body: 'Custom hillside homes with extended rafter spans frequently exhibit deck deflection under heavy winter snowdrifts. We audit framing during tear-offs, replacing compromised decking with rigid 5/8-inch CDX exterior plywood secured with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Elevated mountain moisture and dense woodland buffers foster aggressive lichen and moss growth. GAF Timberline® UHDZ shingles provide deep wood-shake aesthetics and 30-year StainGuard Plus™ copper protection.' },
+          { title: 'Structural Decking Audit', body: 'Custom contemporary designs often incorporate long rafter spans over cathedral ceilings that trap heat. We inspect for heat-baked plywood, replacing deteriorated sheathing with 5/8-inch CDX plywood and installing balanced intake and exhaust ventilation.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Montville\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -8000,7 +8000,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Montville, Boonton Township, Parsippany-Troy Hills, Kinnelon, and Lincoln Park',
+    serving: 'Montville, Boonton, Parsippany-Troy Hills, Kinnelon, and Lincoln Park',
     meta: 'Lita Construction provides elite roofing in Montville, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -8264,14 +8264,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07046'],
     intro: [
-      'High-Performance Roofing Systems near Historic Hapgood & Belhall Lakeside Homes and Mountain Lake Shoreline. Mountain Lakes homes — Signature Craftsman \'Hapgood\' Brown-Shingle Homes, Fieldstone Cottages, Colonial Revivals, and Waterfront Custom Estates — face a specific set of local stresses: multiple lake surface humidity, strict historic preservation requirements, massive fieldstone chimney flashings, steep Craftsman gables (10/12 to 14/12), and dense hardwood canopy dampness. Lita Construction serves the Mountain Lakes 07046 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near The Mountain Lakes Club or Boulevard Historic Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near The Boulevard and Mountain Lake. Mountain Lakes homes — Original Hapgood Craftsman Homes, Historic Fieldstone Estates, and Custom Lakeside Residences — face a specific set of local stresses: strict historic district architectural preservation, 10/12 to 14/12 steep pitches, lake basin humidity, massive fieldstone chimney flashings, and mature oak canopy dampness. Lita Construction serves the Mountain Lakes 07046 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Island Beach or Hapgoods Historic District, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Mountain Lakes rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Historic Craftsman Hapgood homes feature steep multi-dormer configurations where runoff gathers massive velocity toward lower eaves. Standard shingles scrub mineral granules quickly; we engineer custom heavy-gauge open copper or metal valleys bedded over continuous GAF StormGuard® membranes to ensure leak-free drainage while respecting historic aesthetics.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic Hapgood homes feature steep gables intersecting wide cedar and stone porches, producing high-velocity runoff directly into narrow dormer returns. We fabricate custom-bent open metal valleys bedded over continuous self-adhering GAF StormGuard® membranes to ensure rapid water evacuation while respecting historic profile lines.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Mountain Lakes roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -8281,8 +8281,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Mountain Lakes\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Perpetual shade cast by lakeside beech and hemlock trees keeps roof decks damp into the afternoon, fostering aggressive moss and lichen colonies. We install GAF Timberline® UHDZ shingles featuring Dual Shadow Lines and 30-year StainGuard Plus™ copper protection to preserve authentic wood-shake character.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old Hapgood homes routinely uncover true-dimensional 1x8 tongue-and-groove pine with wide expansion gaps. We install an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to guarantee maximum fastener pullout resistance.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Surrounding lakes and dense, preserved hardwood canopies keep morning dew trapped on northern roof planes well past midday. We specify GAF Timberline® UHDZ shingles featuring Dual Shadow Line depth and 30-year StainGuard Plus™ copper micro-bead chemistry to prevent black algae staining and honor the historic wood-shake aesthetic.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old Craftsman homes routinely uncover true-dimensional 1x8 tongue-and-groove decking with wide seam gaps and shrinkage splits. We lay a continuous structural layer of 5/8-inch CDX exterior plywood across all rafter bays to guarantee code-compliant fastener pullout resistance.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Mountain Lakes\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -8306,7 +8306,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Mountain Lakes, Boonton, Boonton Township, Denville, and Parsippany-Troy Hills',
+    serving: 'Mountain Lakes, Boonton, Parsippany-Troy Hills, Denville, and Morris Plains',
     meta: 'Lita Construction provides elite roofing in Mountain Lakes, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -9641,14 +9641,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07054', '07034'],
     intro: [
-      'High-Performance Roofing Systems near The Stickley Museum at Craftsman Farms and Lake Parsippany. Parsippany-Troy Hills homes — 1960s–1980s Suburban Split-Levels, Ranches, Lake Hiawatha Craftsman Bungalows, Center-Hall Colonials, and Master-Planned Townhome Enclaves — face a specific set of local stresses: High-velocity interstate corridor wind turbulence, Lake Parsippany basin dampness, dead-valley transitions on split-levels, aging builder-grade 1/2-inch plywood delamination, and severe attic heat-soak. Lita Construction serves the Parsippany-Troy Hills 07054 and 07034 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Lake Hiawatha Commercial Strip or I-80 & I-287 Commercial Interchange, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Route 46 Corridor and Route 80 / 287 Interchange. Parsippany-Troy Hills homes — 1960s–1980s Suburban Colonials, Sprawling Split-Levels, Lake Parsippany Capes, and Modern Infill Builds — face a specific set of local stresses: interstate highway wind shear, delaminating 1/2-inch builder-grade plywood, dead-valley transitions on split-levels, and unconditioned attic heat-soak. Lita Construction serves the Parsippany-Troy Hills 07054 and 07034 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Lake Parsippany or Craftsman Farms, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Parsippany-Troy Hills rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Suburban split-level and expanded ranch designs feature dead valleys where lower garage wings intersect two-story vertical siding. Leaves and debris collect in these corners, impeding runoff; we install self-adhering GAF WeatherWatch® mineral-surfaced membranes extending 36 inches up vertical sidewalls beneath heavy step flashing to eliminate trapped-water leaks.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Suburban split-levels and expanded lakefront Capes feature dead valleys where lower roofs meet two-story vertical walls. We line these vulnerable junctures with self-adhering GAF WeatherWatch® barriers beneath heavy-duty step flashing to stop trapped-water intrusion.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Parsippany-Troy Hills roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -9658,8 +9658,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Parsippany-Troy Hills\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Open solar exposure alternating with lake-basin humidity promotes rapid asphalt shingle oxidation and dark Gloeocapsa magma streaks on north-facing slopes. We install GAF Timberline® HDZ shingles featuring StrikeZone™ nailing channels and time-release copper micro-beads for reliable algae defense.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs in established subdivisions frequently reveal dried 1/2-inch plywood or early OSB sheathing that sags over soffit vents. We excise compromised decking and install structural 5/8-inch CDX exterior plywood fastened with ring-shank nails to current NJ UCC framing schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Lake Parsippany moisture combined with hot summer asphalt temperatures accelerates fungal growth. We install GAF Timberline® HDZ shingles featuring StrikeZone™ nailing channels and time-release copper micro-beads for algae resistance.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs in established Parsippany subdivisions frequently expose thin, sagging 1/2-inch plywood or early-generation OSB. We replace softened sheathing with structural 5/8-inch CDX exterior plywood secured with ring-shank nails.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Parsippany-Troy Hills\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -9683,7 +9683,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Parsippany-Troy Hills, Morris Plains, Mountain Lakes, Hanover, and Denville',
+    serving: 'Parsippany-Troy Hills, Morris Plains, Hanover, Mountain Lakes, and Denville',
     meta: 'Lita Construction provides elite roofing in Parsippany-Troy Hills, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
