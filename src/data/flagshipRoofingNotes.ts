@@ -28,12 +28,12 @@ export type TownRoofingNotes = {
 
 export const flagshipRoofingNotes: Record<string, TownRoofingNotes> = {
   'fort-lee': {
-    landmarks: ['George Washington Bridge Plaza', 'Palisades Interstate Park Bluff', 'Main Street Historic Corridor', 'Monument Park'],
-    housingStock: 'Cliffside Multi-Level Mansions, Pre-War Multi-Family Frame Dwellings, Luxury Modern Duplexes, and Brick-Front Colonials',
-    localStresses: 'Intense Palisades cliff-edge wind shear, Hudson River marine atmospheric drafts, vehicle exhaust particulate deposition from bridge corridors, and steep multi-tier roof drops.',
-    valleyNotes: 'Cliffside mansions and high-density luxury duplexes feature steep, multi-tier rooflines that funnel high-velocity wind-driven rain directly into lower balcony and parapet transitions. We fabricate custom heavy-gauge open metal valleys bedded over continuous GAF StormGuard® high-temperature membranes to eliminate hydrostatic back-wash during severe Hudson Valley gales.',
-    algaeNotes: 'Marine dampness and riverfront fog rising over the Palisades cliffs accelerate dark fungal streaking and surface oxidation on shaded northern exposures. We specify GAF Timberline® HDZ shingles with StainGuard Plus™ copper micro-bead chemistry and LayerLock® technology rated for 130-MPH wind uplift.',
-    substrateNotes: 'Tear-offs on older borough residences and pre-war multi-family properties frequently uncover true-dimensional 1x8 tongue-and-groove pine with wide shrinkage gaps and localized nail splits. We install an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter spans to meet current NJ UCC shear schedules.',
+    landmarks: ['Main Street', 'Lemoine Avenue', 'Palisades Interstate Park', 'the George Washington Bridge corridor'],
+    housingStock: 'Palisades Ridge Single-Family Homes, Historic Brick Colonials, Modern Luxury Infill Rebuilds, and Duplexes',
+    localStresses: 'Direct cliffside wind shear from the Hudson River, driving wind-blown rain, highway corridor exhaust oxidation, and flat-to-pitch transition stresses.',
+    valleyNotes: 'Ridge-top wind currents drive horizontal rain into valleys and dormer flashings. We line all valley troughs with heavy-duty GAF StormGuard® membranes wrapped 36 inches up flanking slopes beneath custom-bent metal flashings to eliminate back-draft leaks.',
+    algaeNotes: 'Marine air currents paired with intense summer heat accelerate surface aging and biological growth. GAF Timberline® HDZ shingles provide LayerLock® mechanical bonding rated for 130-MPH wind gusts and 25-year algae protection.',
+    substrateNotes: 'Contemporary infill homes and older colonials often feature varying deck materials. We inspect all structural spans during tear-off, replacing thin or compromised sheathing with 5/8-inch CDX plywood to eliminate structural deflection.',
   },
   'edgewater': {
     landmarks: ['River Road', 'Undercliff Avenue', 'the Edgewater Marina', 'Old Borough Hall'],
@@ -108,12 +108,12 @@ export const flagshipRoofingNotes: Record<string, TownRoofingNotes> = {
     substrateNotes: 'Tear-offs across older homes and 1970s split-levels frequently uncover thin 1/2-inch plywood that deflects under modern architectural shingles. We excise softened decking and install structural 5/8-inch CDX exterior plywood secured with ring-shank nails.',
   },
   'englewood': {
-    landmarks: ['Downtown Palisade Avenue Historic Corridor', 'Bergen Performing Arts Center (bergenPAC)', 'East Hill Historic Mansions', 'Flat Rock Brook Nature Center'],
-    housingStock: 'Grand East Hill Gilded Age Estates, Victorian Painted Ladies, English Tudors, and Pre-War Colonials',
-    localStresses: 'East Hill elevation drafts, steep historic gables (10/12 to 14/12), soft lime-mortar brick chimney decay, and nature center canopy dampness.',
-    valleyNotes: 'Historic East Hill estates feature steep compound gables and copper-accented dormers subjected to intense wind-driven rain. We fabricate custom 20-ounce copper or heavy-gauge aluminum open valleys bedded over continuous GAF StormGuard® leak barriers to ensure leak-free, high-capacity drainage.',
-    algaeNotes: 'Dense forest canopies bordering Flat Rock Brook Nature Center shelter roof surfaces from direct sunlight, accelerating moss and lichen colonization. We install GAF Timberline® UHDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry.',
-    substrateNotes: 'Tear-offs on century-old historic homes routinely expose original true-dimensional 1x8 tongue-and-groove pine with wide expansion gaps. We install a continuous structural overlay of 5/8-inch CDX exterior plywood across all rafter spans to guarantee code-compliant fastener pullout resistance.',
+    landmarks: ['Palisade Avenue', 'Engle Street', 'Mackay Park', 'the East Hill historic mansions'],
+    housingStock: 'East Hill Gilded Age Mansions, Grand Victorian Estates, Pre-War Colonials, and Craftsman Homes',
+    localStresses: 'Steep East Hill elevations, multi-flue masonry chimney stacks, complex architectural dormer flashings, and extensive oak tree canopies.',
+    valleyNotes: 'High-profile historic rooflines on the East Hill feature steep 12/12+ pitches that concentrate high water volume into narrow valleys. We install open copper or commercial-grade metal valley pans lined with GAF StormGuard® membranes to evacuate storm runoff cleanly.',
+    algaeNotes: 'Dense forest foliage keeps morning dew trapped across north-facing slopes for extended periods. We install GAF Timberline® UHDZ shingles featuring Dual Shadow Lines and copper micro-bead chemistry to preserve authentic architectural depth without fungal staining.',
+    substrateNotes: 'Historic estates frequently feature original spaced-board decking. We install a solid structural overlay of 5/8-inch CDX plywood across all planes to provide an unyielding, code-compliant nailing surface for manufacturer wind warranties.',
   },
   'alpine': {
     landmarks: ['The Palisades Cliffs Overlook', 'Rio Vista Historic Estate Grounds', 'Palisades Interstate Park', 'Closter Dock Road'],
