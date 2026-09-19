@@ -5210,14 +5210,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Bergen',
     zips: ['07642'],
     intro: [
-      'High-Performance Roofing Systems near Hillsdale Railroad Station and Beechwood Park. Hillsdale homes — Pre-War Queen Annes, Colonial Revivals, Mid-Century Split-Levels, and Expanded Capes — face a specific set of local stresses: pascack Brook valley dampness, dead-valley junctions on split-levels, aging brick chimney counter-flashing, and summer attic heat traps. Lita Construction serves the Hillsdale 07642 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Pascack Brook or Hillsdale Manor Historic Sector, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Hillsdale Avenue and Broadway. Hillsdale homes — 1950s–1970s Split-Levels, Expanded Capes, Classic Colonials, and Town Center Victorians — face a specific set of local stresses: pascack Brook atmospheric dampness, heavy mature shade canopy, winter ice damming on shallow addition pitches, and unconditioned attic condensation. Lita Construction serves the Hillsdale 07642 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Beechwood Park or Pascack Brook Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Hillsdale rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Dead valleys between split-level garage wings and two-story living spaces routinely collect wet leaves and slow stormwater drainage. We line these low-pitch corners with self-adhering GAF WeatherWatch® mineral barriers beneath custom step flashing to stop trapped-water leaks.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Split-level configurations throughout Hillsdale feature dead valleys where lower single-story additions meet two-story vertical walls. We install continuous self-adhering GAF WeatherWatch® mineral barriers running 36 inches up both surfaces beneath custom heavy-gauge step flashing to eliminate dead-corner water pooling.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Hillsdale roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -5227,8 +5227,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Hillsdale\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Ambient moisture from local brook corridors accelerates dark algae streaks on damp roof exposures. We specify GAF Timberline® HDZ shingles featuring time-release StainGuard Plus™ copper protection to maintain clean curb appeal.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs in established subdivisions frequently uncover thin 1/2-inch CDX or OSB sheathing that sags between rafters. We replace compromised decking with structural 5/8-inch CDX exterior plywood fastened with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Heavy canopy shade along residential avenues combined with humidity from the Pascack Brook basin causes severe black fungal streaking. We install GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry to ensure 25-year color retention.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs routinely expose dried 1/2-inch plywood sheathing with loose fastener holds and localized edge rot. We excise all compromised panels, inspect rafter spacing, and install structural 5/8-inch CDX exterior plywood fastened with ring-shank nails.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Hillsdale\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -5252,7 +5252,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Hillsdale, Westwood, Park Ridge, Woodcliff Lake, and River Vale',
+    serving: 'Hillsdale, Woodcliff Lake, Westwood, Park Ridge, and Washington Township',
     meta: 'Lita Construction provides elite roofing in Hillsdale, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -7397,14 +7397,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Bergen',
     zips: ['07432'],
     intro: [
-      'High-Performance Roofing Systems near Godwin Avenue Corridor and Wortendyke Historic District. Midland Park homes — Pre-War Craftsman Bungalows, Victorian Cottages, Mid-Century Split-Levels, and Dutch Gambrels — face a specific set of local stresses: goffle Brook basin dampness, steep gambrel pitch transitions, soft lime-mortar brick chimney decay, and mature street tree canopies. Lita Construction serves the Midland Park 07432 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Midland Park High School Grounds or Goffle Brook Basin, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Godwin Avenue and Prospect Street. Midland Park homes — Historic Victorians, Dutch Colonial Gambrels, American Foursquares, and Mid-Century Infill Homes — face a specific set of local stresses: steep historic pitches (10/12 to 12/12), soft lime-mortar brick chimney deterioration, narrow dormer cheek walls, and mature hardwood shade. Lita Construction serves the Midland Park 07432 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Wortendyke Historic District or Midland Park High School, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Midland Park rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Dutch gambrel profiles and Craftsman dormers create sharp pitch transitions where runoff accelerates quickly toward lower eaves. We apply full-width self-adhering GAF WeatherWatch® mineral-surfaced membranes across all pitch breaks beneath pre-bent transition flashing to eliminate water wicking under shingle butts.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic rooflines in the Wortendyke section feature tight dormer returns that direct heavy water volume against vertical wall flashings. We install custom-bent step flashing bedded in high-temperature membrane backings, paired with open copper or heavy-gauge metal valleys to prevent water curling behind exterior siding.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Midland Park roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -7414,8 +7414,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Midland Park\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Brook-side dampness combined with mature maple tree canopies promotes persistent Gloeocapsa magma streaking on north-facing slopes. We install GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on older borough homes frequently reveal original 1x6 tongue-and-groove pine with dry splits and shrinkage gaps. We lay structural 5/8-inch CDX exterior plywood across all rafter bays to guarantee code-compliant fastener pullout resistance.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Shaded properties throughout the borough suffer from moss and blue-green algae buildup along lower roof slopes. We install GAF Timberline® UHDZ shingles featuring time-release copper micro-beads to maintain clean architectural profiles without surface degradation.' },
+          { title: 'Structural Decking Audit', body: 'Older homes almost universally feature 1x6 or 1x8 tongue-and-groove pine sub-roofs with wide gaps from shrinkage. We secure continuous 5/8-inch CDX plywood across the existing planking to guarantee manufacturer nail holding values.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Midland Park\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -7439,7 +7439,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Midland Park, Ridgewood, Wyckoff, Waldwick, and Ho-Ho-Kus',
+    serving: 'Midland Park, Ridgewood, Wyckoff, Waldwick, and Glen Rock',
     meta: 'Lita Construction provides elite roofing in Midland Park, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -9233,14 +9233,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Bergen',
     zips: ['07436'],
     intro: [
-      'High-Performance Roofing Systems near Ramapo River Corridor and Crystal Lake. Oakland homes — Ramapo Riverfront Homes, Converted Mountain Cottages, 1970s Split-Levels, and Sprawling Ranches — face a specific set of local stresses: ramapo Mountain wind gusts, river basin humidity, steep mountain slope runoff, and severe ice damming along wide overhangs. Lita Construction serves the Oakland 07436 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Ramapo Mountain Foothills or Skyline Drive Gateway, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Ramapo Valley Road and Skyline Drive. Oakland homes — Ramapo Foothills Custom Homes, Contemporary Lakefront Conversions, Sprawling Ranches, and Split-Levels — face a specific set of local stresses: high wind drafts off Skyline Drive and Ramapo Mountain, elevated humidity from Crystal Lake and the Ramapo River, heavy snowpack, and severe ice damming. Lita Construction serves the Oakland 07436 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Crystal Lake or Ramapo River Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Oakland rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Mountain-slope rooflines channel torrential stormwater runoff directly into lower dormer returns and porch junctions. We line all valley channels with continuous commercial-grade GAF StormGuard® membranes beneath heavy-gauge open metal valleys to eliminate hydrostatic back-wash during severe highland squalls.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Mountain elevation and lake proximity subject Oakland rooflines to intense freeze-thaw cycles that drive ice beneath shingle edges. We line all valleys with double-layer GAF StormGuard® membranes extending 36 inches up flanking slopes under heavy-gauge pre-bent metal valley pans.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Oakland roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -9250,8 +9250,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Oakland\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Elevated humidity from the Ramapo River basin and Crystal Lake promotes rapid lichen and dark fungal growth on shaded roof slopes. We install GAF Timberline® UHDZ shingles featuring Dual Shadow Lines and 30-year StainGuard Plus™ copper protection.' },
-          { title: 'Structural Decking Audit', body: 'Extended rafter spans on custom hillside and contemporary mountain homes frequently show sagging under heavy snowdrifts. We audit all framing during tear-off, replacing thin sheathing with structural 5/8-inch CDX exterior plywood fastened with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Dense forest surroundings and damp riverfront microclimates foster heavy moss, lichen, and blue-green algae colonization. We install GAF Timberline® UHDZ shingles with Dual Shadow Lines and 30-year StainGuard Plus™ copper micro-bead protection.' },
+          { title: 'Structural Decking Audit', body: 'Heavy winter snowdrifts stress rafter bays on extended ranch and contemporary rooflines. We inspect framing during tear-off, replacing water-softened sheathing with exterior-grade 5/8-inch CDX plywood secured with ring-shank nails to eliminate deflection.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Oakland\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -9275,7 +9275,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Oakland, Franklin Lakes, Wayne, Pompton Lakes, and Mahwah',
+    serving: 'Oakland, Franklin Lakes, Mahwah, Wyckoff, and Ramsey',
     meta: 'Lita Construction provides elite roofing in Oakland, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -10865,14 +10865,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Bergen',
     zips: ['07661'],
     intro: [
-      'High-Performance Roofing Systems near Historic New Bridge Landing and Steuben House Historic Site. River Edge homes — 18th-Century Dutch Sandstone Colonials, Post-War Capes, Mid-Century Ranches, and Expanded Split-Levels — face a specific set of local stresses: hackensack River tidal moisture, seasonal floodplain fog, dead-valley transitions on expanded Capes, and soft lime-mortar brick chimney decay. Lita Construction serves the River Edge 07661 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Hackensack Riverfront or Kinderkamack Road, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Kinderkamack Road and Continental Avenue. River Edge homes — Pre-War Dutch Colonials, Brick-Front Capes, Mid-Century Split-Levels, and Expanded Single-Family Homes — face a specific set of local stresses: hackensack River basin atmospheric moisture, low-slope rear addition drainage failure, aging chimney counter-flashing, and mature tree shading. Lita Construction serves the River Edge 07661 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Hackensack River Basin or Memorial Park, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for River Edge rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Expanded Capes and Dutch Colonials feature sharp pitch transitions and dormer returns where runoff accelerates quickly toward lower eaves. We install open metal valley troughs bedded over self-adhering GAF WeatherWatch® mineral-surfaced membranes to guarantee rapid runoff evacuation without gutter splashover.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Dutch Colonial gambrel breaks and split-level additions produce complex water transition points where high-velocity runoff meets lower slopes. We apply full-width self-adhering GAF WeatherWatch® leak barriers under pre-bent metal flashing to stop capillary water creep at slope breaks.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your River Edge roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -10882,8 +10882,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for River Edge\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Riverfront moisture trapped by neighborhood maple canopies promotes dark Gloeocapsa magma streaks on north-facing slopes. We specify GAF Timberline® HDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry to safeguard curb appeal.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on older borough residences routinely reveal original 1x6 tongue-and-groove pine with nail splits and shrinkage gaps. We fasten an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to meet current NJ UCC framing schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Elevated moisture from the Hackensack River basin promotes dark algae streaks on shaded northern planes. We install GAF Timberline® HDZ shingles with LayerLock® mechanical bonding and StainGuard Plus™ protection for lasting aesthetic clarity.' },
+          { title: 'Structural Decking Audit', body: 'Older Capes and Colonials frequently retain original 1/2-inch plywood or spaced pine boards that have delaminated near eave edges. We remove all compromised decking and install structural 5/8-inch CDX plywood nailed to NJ UCC framing schedules.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given River Edge\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -10907,7 +10907,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'River Edge, Oradell, Paramus, Hackensack, and New Milford',
+    serving: 'River Edge, Oradell, Paramus, Hackensack, and Fair Lawn',
     meta: 'Lita Construction provides elite roofing in River Edge, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -13207,14 +13207,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Bergen',
     zips: ['07463'],
     intro: [
-      'High-Performance Roofing Systems near Historic Waldwick Railroad Station and Ho-Ho-Kus Brook. Waldwick homes — Post-War Capes, Mid-Century Split-Levels, Colonial Revivals, and Modern Infill Additions — face a specific set of local stresses: Brook-corridor humidity, dead valleys on split-levels, aging chimney counter-flashing, and builder-grade plywood delamination. Lita Construction serves the Waldwick 07463 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Borough Park or Prospect Street Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Franklin Turnpike and Prospect Street. Waldwick homes — Mid-Century Ranches, Expanded Capes, Pre-War Craftsman Bungalows, and Suburban Colonials — face a specific set of local stresses: route 17 wind buffeting, delaminating 1/2-inch sub-plywood, aging chimney step flashing, and attic heat-soak from inadequate ridge exhaust. Lita Construction serves the Waldwick 07463 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Waldwick Covered Bridge or Borough Park, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Waldwick rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Split-level configurations feature dead valleys where garage and lower additions meet two-story vertical sidewalls. We install self-adhering GAF WeatherWatch® barriers running 36 inches up vertical walls beneath heavy step flashing to stop trapped-water leaks.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Expanded Capes and ranches feature steep-to-low pitch slope intersections that collect wind-driven rain and autumn leaves. We seal all valleys with full courses of self-adhering GAF WeatherWatch® membranes under pre-formed aluminum valley pans for rapid runoff evacuation.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Waldwick roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -13224,8 +13224,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Waldwick\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Ho-Ho-Kus Brook humidity and neighborhood tree shade foster dark algae streaks on shaded roof exposures. We specify GAF Timberline® HDZ shingles featuring LayerLock® technology and copper micro-bead algae defense.' },
-          { title: 'Structural Decking Audit', body: 'Mid-century roof decking often features dried 1/2-inch plywood that has delaminated from trapped heat and vapor. We excise weakened panels and install rigid 5/8-inch CDX plywood sheathing to establish a stable structural surface.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Suburban street foliage blocks morning sun, leaving northern roof exposures damp for extended periods. We install GAF Timberline® HDZ shingles with LayerLock® technology to secure a 130-MPH wind rating and long-term algae resistance.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs in post-war subdivisions frequently uncover thin, brittle 1/2-inch plywood that deflects under foot traffic. We reinforce framing spans with rigid 5/8-inch CDX plywood sheathing to provide a solid foundation for the GAF Lifetime Roofing System.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Waldwick\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -13249,7 +13249,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Waldwick, Allendale, Ho-Ho-Kus, Midland Park, and Wyckoff',
+    serving: 'Waldwick, Allendale, Wyckoff, Midland Park, and Ho-Ho-Kus',
     meta: 'Lita Construction provides elite roofing in Waldwick, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -13615,14 +13615,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Bergen',
     zips: ['07676'],
     intro: [
-      'High-Performance Roofing Systems near Schlegel Lake and Pascack Brook Basin. Washington Township homes — 1960s–1980s Center-Hall Colonials, Sprawling Bi-Levels, Split-Levels, and Lakeside Contemporary Homes — face a specific set of local stresses: schlegel Lake and Pascack Brook moisture, dead-valley leaf dams on multi-tier roofs, builder-grade shingle blow-offs, and winter ice damming along wide overhangs. Lita Construction serves the Washington Township 07676 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Washington Lake or Pascack Road Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Pascack Road and Washington Avenue. Washington Township homes — 1960s–1980s Center-Hall Colonials, Sprawling Bi-Levels, Split-Levels, and Modern Custom Infill Homes — face a specific set of local stresses: wooded lot moisture retention, Schlegel Lake microclimate dampness, failing builder-grade plywood, and high runoff volume in compound valley cuts. Lita Construction serves the Washington Township 07676 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Memorial Field or Schlegel Lake, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Washington Township rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Multi-level rooflines channel significant storm volume toward lower gutter sections and addition corners. We line all valley troughs with commercial-grade GAF StormGuard® membranes beneath heavy-gauge metal flashing to stop hydrostatic penetration during heavy summer squalls.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Sprawling multi-level rooflines common in the township converge into deep central valleys handling heavy storm runoff. We install heavy-gauge open metal valleys bedded over high-temperature GAF StormGuard® leak barriers to handle intense hydraulic water flow without washing over shingle seams.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Washington Township roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -13632,8 +13632,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Washington Township\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Lake-edge humidity and neighborhood oak and maple canopies foster heavy moss and lichen growth. We specify GAF Timberline® HDZ shingles with LayerLock® mechanical fasteners and copper micro-bead algae defense.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs in established residential tracts frequently uncover thin 1/2-inch plywood with delaminating plies from trapped attic heat. We replace compromised sheathing with structural 5/8-inch CDX exterior plywood secured with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Dense mature oak canopies surrounding Schlegel Lake shelter roof planes from direct UV rays, creating an ideal environment for moss and lichen growth. GAF Timberline® UHDZ shingles provide deep shadow lines and 30-year StainGuard Plus™ algae protection.' },
+          { title: 'Structural Decking Audit', body: 'Bi-level and split-level framing often features early-generation OSB or 1/2-inch CDX sheathing that has softened over uninsulated soffit overhangs. We strip down to bare rafters, replace deteriorated decking with 5/8-inch CDX plywood, and verify structural nailing to NJ UCC standards.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Washington Township\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -13657,7 +13657,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Washington Township, Westwood, Hillsdale, Paramus, and Ho-Ho-Kus',
+    serving: 'Washington Township, Westwood, Hillsdale, Paramus, and River Vale',
     meta: 'Lita Construction provides elite roofing in Washington Township, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
