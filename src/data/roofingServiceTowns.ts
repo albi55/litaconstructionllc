@@ -1846,14 +1846,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07928'],
     intro: [
-      'High-Performance Roofing Systems near Main Street Historic District and Passaic River Waterfront Rim. Chatham Borough homes — Victorian Painted Ladies, Colonial Revivals, Craftsman Cottages, and Expanded Dutch Gambrels — face a specific set of local stresses: passaic River basin moisture, steep dormer cheek flashings (10/12 to 12/12), soft brick chimney mortar decay, and narrow suburban lot clearances. Lita Construction serves the Chatham Borough 07928 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Reason Memorial Park or Chatham Railroad Station, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Main Street and Fairmount Avenue. Chatham Borough homes — Pre-War Center-Hall Colonials, Queen Anne Victorians, Dutch Gambrels, and Craftsman Homes — face a specific set of local stresses: passaic River basin dampness, steep gambrel pitch breaks, aging brick chimney counter-flashing, and dense tree-lined avenue shade. Lita Construction serves the Chatham Borough 07928 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Stanley Park or Passaic Riverfront, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Chatham Borough rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Dutch gambrel profiles and expanded Victorian dormers create sharp pitch transitions where stormwater gathers rapid velocity. We apply full-width self-adhering GAF WeatherWatch® mineral-surfaced membranes across all pitch breaks beneath pre-bent transition flashing to eliminate capillary water creep.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Dutch Colonial gambrel profiles create sharp pitch transitions where upper slopes drop steeply into lower pitches. We apply full-width self-adhering GAF WeatherWatch® membranes across transition breaks beneath pre-bent transition flashing to stop driving rain from pushing beneath shingle courses.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Chatham Borough roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -1863,8 +1863,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Chatham Borough\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Riverfront dampness combined with mature neighborhood oak and beech canopies keeps northern roof slopes persistently moist into the afternoon. We install GAF Timberline® HDZ shingles featuring LayerLock® technology and time-release copper micro-beads for reliable algae defense.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on older borough homes frequently reveal original 1x6 tongue-and-groove pine with nail splits. We fasten an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to meet current NJ UCC framing schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Humid river-corridor air and continuous tree cover encourage rapid lichen and moss colonies. We install GAF Timberline® HDZ shingles featuring LayerLock® mechanical fasteners and copper micro-bead algae defense.' },
+          { title: 'Structural Decking Audit', body: 'Substrates on older Chatham residences often feature original 1x8 pine planks with wide expansion gaps. We install structural 5/8-inch CDX plywood across all rafter bays to ensure maximum nail holding values and eliminate deck bounce.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Chatham Borough\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -1888,7 +1888,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Chatham Borough, Chatham Township, Madison, Summit, and Millburn',
+    serving: 'Chatham Borough, Chatham Township, Madison, Florham Park, and Summit',
     meta: 'Lita Construction provides elite roofing in Chatham Borough, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -1897,14 +1897,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07928'],
     intro: [
-      'High-Performance Roofing Systems near Great Swamp National Wildlife Refuge Rim and Green Village Historic Sector. Chatham Township homes — Executive Center-Hall Colonials, Sprawling Split-Levels, Custom Acreage Mansions, and High-End Infill Builds — face a specific set of local stresses: great Swamp wetland atmospheric humidity, multi-pitch compound valley volume, dead-valley junctions on split-levels, and unconditioned attic heat traps. Lita Construction serves the Chatham Township 07928 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Colony Pool Club or Shunpike Road Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Shunpike Road and Southern Boulevard. Chatham Township homes — Custom Center-Hall Colonials, Contemporary Estates, and Sprawling Ranches — face a specific set of local stresses: great Swamp basin atmospheric humidity, high water runoff across multi-tier valleys, builder-grade shingle failure, and winter ice damming. Lita Construction serves the Chatham Township 07928 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Great Swamp National Wildlife Refuge or Green Village Road, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Chatham Township rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Suburban split-level additions and custom acreage estates feature dead valleys where lower roofs meet two-story vertical walls. Wet swamp foliage collects in these corners, trapping runoff; we install self-adhering GAF WeatherWatch® mineral-surfaced membranes extending 36 inches up vertical sidewalls beneath custom step flashing to stop trapped-water leaks.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Large-footprint homes in the rolling sections channel heavy storm volume into long central valleys. We line all valley troughs with commercial-grade GAF StormGuard® membranes beneath heavy-gauge metal flashing to stop hydrostatic backup during torrential cloudbursts.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Chatham Township roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -1914,8 +1914,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Chatham Township\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Great Swamp basin moisture creates persistent morning fog that fosters rapid Gloeocapsa magma streaks on north-facing slopes. We specify GAF Timberline® UHDZ shingles featuring StainGuard Plus™ copper protection to maintain clean curb appeal across high-equity properties.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs in established 1970s–1980s subdivisions frequently uncover thin 1/2-inch plywood or early OSB that sags between rafters. We excise softened decking and install structural 5/8-inch CDX exterior plywood secured with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Wetland microclimates sweeping off the Great Swamp keep morning humidity locked on roof surfaces, fostering heavy moss and blue-green algae. We install GAF Timberline® UHDZ shingles with 30-year StainGuard Plus™ algae protection.' },
+          { title: 'Structural Decking Audit', body: 'Subdivisions from the 1970s and 1980s often retain 1/2-inch plywood or early OSB sheathing that has softened over soffit vents. We replace weakened panels with exterior-grade 5/8-inch CDX plywood fastened with ring-shank nails.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Chatham Township\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -1939,7 +1939,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Chatham Township, Chatham Borough, Harding, Long Hill, and Summit',
+    serving: 'Chatham Township, Chatham Borough, Harding, Madison, and Long Hill',
     meta: 'Lita Construction provides elite roofing in Chatham Township, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -4649,14 +4649,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07976', '07960'],
     intro: [
-      'High-Performance Roofing Systems near New Vernon Historic District and Great Swamp National Wildlife Refuge. Harding homes — Ultra-Luxury Multi-Acre Gated Mansions, New Vernon Historic Farmsteads, Slate & Cedar Country Manors, and Stately Georgian Colonials — face a specific set of local stresses: strict New Vernon historic architectural guidelines, massive multi-pitch compound valleys, Great Swamp wetland humidity, fieldstone chimney flashing decay, and severe winter ice damming. Lita Construction serves the Harding 07976 and 07960 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Jockey Hollow Morristown Park Border or Tempe Wick Road Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Van Beuren Road and Lee\'s Hill Road. Harding homes — Multi-Acre Secluded Country Mansions, Equestrian Farm Estates, and Custom Slate and Shake Conversions — face a specific set of local stresses: dense mature woodland shade, compound multi-tier valley geometries, massive stone chimney counter-flashing degradation, and extreme winter freeze-thaw damming. Lita Construction serves the Harding 07976 and 07960 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Blue Mill Road or Great Swamp Wildlife Sanctuary, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Harding rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Sprawling custom roof footprints exceeding 8,000 square feet converge in compound valleys handling heavy volume from steep pitches. We fabricate custom 20-ounce copper or heavy-gauge valley troughs bedded over continuous GAF StormGuard® high-temperature membranes to eliminate overflow into soffit and ceiling cavities.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Secluded acreage estates feature sprawling rooflines where multiple high-pitch gables meet lower master suites. We engineer heavy-gauge open copper or commercial-grade metal valleys lined with double layers of GAF StormGuard® membranes to ensure massive drainage volume never backs up beneath shingles.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Harding roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -4666,8 +4666,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Harding\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Old-growth hardwood forest canopies and wetland humidity foster persistent lichen and Gloeocapsa magma colonies on shaded roof planes. We specify GAF Timberline® UHDZ shingles with Dual Shadow Lines and 30-year StainGuard Plus™ copper defense to replicate heavy wood shakes without maintenance vulnerabilities.' },
-          { title: 'Structural Decking Audit', body: 'Historic conversions and luxury builds require absolute structural integrity. We inspect rafter framing and install an unyielding overlay of 5/8-inch CDX structural plywood fastened with ring-shank nails to satisfy current NJ structural shear schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Heavy forest canopies keep roof planes shaded from sunrise to sunset, creating high-risk environments for wood-rotting moss and lichen. We install heavy-profile GAF Timberline® UHDZ shingles with time-release copper micro-beads to protect authentic wood-shake aesthetics.' },
+          { title: 'Structural Decking Audit', body: 'Large rafter spans across custom estate roofs often reveal sagging or uneven decking under old heavy materials. During tear-off, we inspect all framing, replacing deteriorated lumber with 5/8-inch CDX plywood to guarantee full manufacturer wind-uplift compliance.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Harding\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -4691,7 +4691,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Harding, Morris Township, Chatham Township, Long Hill, and Bernardsville',
+    serving: 'Harding, Morris Township, Mendham Borough, Chatham Township, and Bernardsville',
     meta: 'Lita Construction provides elite roofing in Harding, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -6683,14 +6683,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07940'],
     intro: [
-      'High-Performance Roofing Systems near The Rose City Historic Downtown and Drew University Campus Grounds. Madison homes — Turn-of-the-Century Queen Anne Victorians, Arts & Crafts Bungalows, Pre-War Brick Colonials, and Shingle-Style Revivals — face a specific set of local stresses: strict historic preservation standards, steep turret and dormer cheek interfaces, aging lime-mortar brick chimneys, mature hardwood canopy shade, and narrow commuter lot setbacks. Lita Construction serves the Madison 07940 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Hartley Dodge Memorial Building or Museum of Early American Trades & Crafts, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Main Street Corridor and Waverly Place. Madison homes — Victorian Gingerbread Homes, Colonial Revivals, Craftsman Bungalows, and Pre-War Brick Estates — face a specific set of local stresses: steep Victorian pitches, intricate turret and dormer flashing junctions, soft lime-mortar chimney stacks, and close-canopy shade. Lita Construction serves the Madison 07940 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Drew University Campus or The Dodge Estate, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Madison rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Historic Victorian dormers and cross-gables funnel heavy runoff directly toward lower porch roofs and sidewall transitions. We install open copper or heavy-gauge metal valleys bedded over self-adhering GAF WeatherWatch® mineral-surfaced membranes to guarantee rapid runoff evacuation without gutter splashover.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic rooflines feature sharp dormer returns that direct runoff against vertical siding walls. Standard closed valleys trap pine needles and autumn leaves, creating capillary back-ups. We install open metal valleys lined with GAF WeatherWatch® barriers to keep runoff moving smoothly.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Madison roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -6700,8 +6700,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Madison\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Dense residential street canopies throughout the \'Rose City\' trap morning moisture against asphalt shingles, accelerating dark blue-green algae blooms. We specify GAF Timberline® UHDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry to preserve authentic architectural character.' },
-          { title: 'Structural Decking Audit', body: 'Century-old residential tear-offs routinely reveal original 1x8 pine planking with wide expansion gaps and multiple historic nail holes. We install an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to ensure certified nail pullout resistance.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Mature street canopies across the \'Rose City\' harbor ambient moisture that causes black algae streaking. We specify GAF Timberline® HDZ shingles with StainGuard Plus™ technology to maintain vibrant curb appeal across shaded roof planes.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs frequently expose aged 1x6 tongue-and-groove pine with extensive splitting along historical nail lines. We fasten structural 5/8-inch CDX plywood directly across the planking to restore complete diaphragm shear strength.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Madison\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -7142,14 +7142,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07945'],
     intro: [
-      'High-Performance Roofing Systems near Historic Phoenix House and Main Street Historic District. Mendham Borough homes — Historic Federal & Greek Revival Farmsteads, Victorian Colonials, Mid-Century Ranches, and Custom Infill Mansions — face a specific set of local stresses: High-elevation winter wind gusts, steep historic pitches (10/12 to 14/12), soft lime-mortar brick chimney decay, mature oak tree canopy dampness, and severe freeze-thaw cycles. Lita Construction serves the Mendham Borough 07945 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Mendham Borough Park or Black River Headwaters, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Main Street (Route 24) and Mountain Avenue. Mendham Borough homes — Historic Federal & Colonial Revivals, Custom Hillside Estates, and English Tudors — face a specific set of local stresses: High-elevation foothill winds, steep roof slopes (10/12 to 14/12), aging fieldstone chimney mortar joints, and winter ice dams along extended overhangs. Lita Construction serves the Mendham Borough 07945 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Mendham Borough Park or Cold Hill Road, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Mendham Borough rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Historic borough gables and multi-tier dormers concentrate heavy storm runoff into steep valley channels. Standard closed valleys experience rapid granule loss under heavy volume; we install custom 20-ounce copper or heavy-gauge aluminum open valley pans bedded over continuous GAF StormGuard® high-temperature membranes to eliminate hydrostatic backup.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Steep hillside pitches accelerate rainwater velocity into valley intersections. Standard closed cut shingles scrub their granules under this friction. We install custom-bent open metal valleys bedded in high-temperature GAF StormGuard® membranes to handle rapid runoff without wall splashback.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Mendham Borough roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -7159,8 +7159,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Mendham Borough\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Dense, towering residential hardwood canopies shade roof slopes throughout the day, accelerating Gloeocapsa magma and moss growth. We specify GAF Timberline® UHDZ shingles featuring StainGuard Plus™ copper micro-bead chemistry and Dual Shadow Line depth to preserve historic period curb appeal.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old borough residences routinely expose original 1x8 tongue-and-groove pine or rough-sawn planking with wide gaps from shrinkage. We lay an unyielding structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to ensure maximum fastener holding power under NJ UCC shear schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Elevated forest shade from mature hardwood groves traps morning dew on northern slopes. We specify GAF Timberline® UHDZ shingles featuring StainGuard Plus™ technology to prevent dark algae streaking while delivering deep shadow lines.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on older borough residences routinely expose historic 1x8 tongue-and-groove decking with wide seam gaps. We lay an unyielding overlay of 5/8-inch CDX structural plywood across all framing to provide a solid nailing base.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Mendham Borough\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -7184,7 +7184,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Mendham Borough, Mendham Township, Chester Borough, Bernardsville, and Morris Township',
+    serving: 'Mendham Borough, Mendham Township, Chester Borough, Morristown, and Harding',
     meta: 'Lita Construction provides elite roofing in Mendham Borough, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -8111,14 +8111,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07960'],
     intro: [
-      'High-Performance Roofing Systems near Frelinghuysen Arboretum and Fosterfields Living Historical Farm. Morris Township homes — Normandy Heights Historic Estates, Sprawling Executive Colonials, Mid-Century Split-Levels, and Wooded Acreage Ranches — face a specific set of local stresses: expansive wooded canopy dampness, complex multi-dormer valley runoff, builder-grade skylight curb leaks, and severe winter ice damming along wide overhangs. Lita Construction serves the Morris Township 07960 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Lewis Morris County Park or Normandy Heights Historic District, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near Normandy Heights Road and Convent Road. Morris Township homes — Multi-Acre Country Estates, Custom Stone Mansions, and Expansive Executive Colonials — face a specific set of local stresses: sprawling compound roof geometries, high water volumes across multi-tier valleys, deep unconditioned attic heat traps, and multi-stack stone chimney flashing interfaces. Lita Construction serves the Morris Township 07960 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Frelinghuysen Arboretum or Mendham Road Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Morris Township rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Normandy Heights estates and multi-tier Colonials feature deep central valleys handling heavy stormwater volumes. We reinforce all valley channels with high-temperature GAF StormGuard® membranes wrapped 36 inches up flanking decks beneath pre-bent valley metal to prevent hydraulic back-wash.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Extensive estate rooflines feature compound valleys that handle thousands of gallons of rainwater during severe weather. We line every valley with commercial-grade GAF StormGuard® self-adhering membranes extending 36 inches up flanking decks beneath custom-bent open metal valleys for unobstructed hydraulic flow.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Morris Township roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -8128,8 +8128,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Morris Township\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Preserved mature forest canopies bordering Lewis Morris Park shelter roof decks from sun exposure, encouraging moss and lichen growth. We specify GAF Timberline® UHDZ shingles featuring 30-year StainGuard Plus™ copper-bead algae defense.' },
-          { title: 'Structural Decking Audit', body: 'Custom estate roofs with extended rafter spans often display localized deck deflection under heavy winter snow loads. We audit all framing during tear-off, replacing thin sheathing with exterior-grade 5/8-inch CDX plywood secured with ring-shank nails.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Expansive private woodland buffers keep residential roof planes shaded throughout morning hours, promoting heavy moss and lichen growth. GAF Timberline® UHDZ shingles provide deep wood-shake dimension and 30-year copper micro-bead algae defense.' },
+          { title: 'Structural Decking Audit', body: 'Custom estate roofs with multiple additions often conceal uneven sub-roofing or moisture-softened decking near transition crickets. We strip down to raw framing, excise deteriorated sheathing, and install 5/8-inch CDX plywood to eliminate structural deflection.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Morris Township\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -8153,7 +8153,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Morris Township, Morristown, Madison, Harding, and Mendham Township',
+    serving: 'Morris Township, Morristown, Harding, Madison, and Florham Park',
     meta: 'Lita Construction provides elite roofing in Morris Township, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
@@ -8213,14 +8213,14 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     county: 'Morris',
     zips: ['07960', '07963'],
     intro: [
-      'High-Performance Roofing Systems near The Morristown Green and Morristown National Historical Park (Jockey Hollow). Morristown homes — Gilded Age Victorians, Federal & Colonial Revivals, Pre-War Brick Colonials, and Urban Luxury Brownstones — face a specific set of local stresses: strict historic district preservation covenants, steep 10/12 to 14/12 historic pitches, multi-flue soft lime-mortar brick chimney decay, heavy street canopy dampness, and high-velocity valley runoff. Lita Construction serves the Morristown 07960 and 07963 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Historic Speedwell or South Street Historic Corridor, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+      'High-Performance Roofing Systems near The Morristown Green and South Street. Morristown homes — Gilded Age Historic Mansions, Victorian Colonials, American Foursquares, and Federal Revival Residences — face a specific set of local stresses: 12/12+ steep roof pitches, municipal historic district guidelines, multi-flue soft lime-mortar brick chimneys, and mature hardwood canopy dampness. Lita Construction serves the Morristown 07960 and 07963 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Macculloch Avenue Historic District or Washington\'s Headquarters, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
     ],
     sections: [
       {
         heading: 'Roof Repair',
         lead: 'Precision repairs engineered for Morristown rooflines — we find the failure, not just the symptom:',
         bullets: [
-          { title: 'Valley & Dead-Valley Engineering', body: 'Historic downtown estates and multi-story Colonials feature steep compound gables directing severe storm runoff toward narrow dormer valleys. Standard shingles scour quickly under this hydraulic friction; we fabricate custom 20-ounce copper or heavy-gauge aluminum open valley pans lined with continuous GAF StormGuard® high-temperature leak barriers to eliminate interior ceiling leaks.' },
+          { title: 'Valley & Dead-Valley Engineering', body: 'Historic rooflines in the Macculloch Avenue district feature intricate dormers and steep intersecting gables that funnel torrential rainwater. Standard valley cut lines quickly scour shingle granules. We fabricate custom 20-ounce copper or heavy-gauge aluminum open valleys lined with high-temperature GAF StormGuard® membranes to prevent interior ceiling leaks.' },
           { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
           { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Morristown roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
           { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
@@ -8230,8 +8230,8 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         heading: 'Roof Replacement',
         lead: 'We deliver full-system replacements engineered for Morristown\'s specific climate and architecture:',
         bullets: [
-          { title: 'Shingle Specification & Algae Defense', body: 'Towering mature oak and maple street canopies keep northern roof exposures shaded throughout the day, accelerating Gloeocapsa magma staining and moss colonization. We install GAF Timberline® UHDZ shingles featuring Dual Shadow Line depth and 30-year StainGuard Plus™ copper protection to safeguard historic curb appeal.' },
-          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old borough residences routinely expose original true-dimensional 1x8 tongue-and-groove pine with wide shrinkage gaps and historic nail splits. We lay a continuous structural overlay of 5/8-inch CDX exterior plywood across all rafter bays to guarantee maximum fastener pullout resistance under NJ UCC shear schedules.' },
+          { title: 'Shingle Specification & Algae Defense', body: 'Dense historic oak and maple canopies block direct sunlight, leaving northern roof slopes persistently damp. We install GAF Timberline® UHDZ shingles featuring Dual Shadow Line depth and 30-year StainGuard Plus™ copper micro-bead protection to prevent Gloeocapsa magma staining.' },
+          { title: 'Structural Decking Audit', body: 'Tear-offs on century-old homes routinely reveal original spaced-board or 1x8 tongue-and-groove pine planking with wide shrinkage gaps. We install a continuous structural overlay of 5/8-inch CDX exterior plywood secured with ring-shank nails to satisfy current NJ UCC shear schedules.' },
           { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
           { title: 'Advanced Ice & Water Protection', body: 'Given Morristown\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
         ],
@@ -8255,7 +8255,7 @@ export const roofingServiceTowns: ServiceTownContent[] = [
         ],
       }
     ],
-    serving: 'Morristown, Morris Township, Morris Plains, Madison, and Florham Park',
+    serving: 'Morristown, Morris Township, Madison, Mendham Borough, and Morris Plains',
     meta: 'Lita Construction provides elite roofing in Morristown, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
