@@ -11878,6 +11878,57 @@ export const roofingServiceTowns: ServiceTownContent[] = [
     meta: 'Lita Construction provides elite roofing in Sea Girt, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
   },
   {
+    slug: 'short-hills',
+    name: 'Short Hills',
+    county: 'Essex',
+    zips: ['07078'],
+    intro: [
+      'High-Performance Roofing Systems near Hobart Gap Road and White Oak Ridge Road. Short Hills homes — Custom English Tudors, Georgian Stone Mansions, and Multi-Gable Estate Colonials — face a specific set of local stresses: high water volume across compound valleys, dense mature hardwood shade, multi-flue stone chimney interfaces, and freeze-thaw ice dams along unheated soffits. Lita Construction serves the Short Hills 07078 community with elite-tier roof replacements and technical leak repairs. Whether your home sits near Parsonage Hill Road or Greenwood Gardens, we deliver the structural precision of a GAF Master Elite® contractor — and when you call, you speak with a pro, not a salesman.'
+    ],
+    sections: [
+      {
+        heading: 'Roof Repair',
+        lead: 'Precision repairs engineered for Short Hills rooflines — we find the failure, not just the symptom:',
+        bullets: [
+          { title: 'Valley & Dead-Valley Engineering', body: 'Expansive multi-tier rooflines in the Knollwood and Hartshorn sections channel enormous water volumes into complex dormer intersections. Standard valley cuts scour shingle granules within years. We install commercial-grade GAF StormGuard® membranes wrapped 36 inches up each valley deck beneath heavy-gauge custom open valley metal for rapid hydraulic discharge.' },
+          { title: 'Precision Chimney Counter-Flashing', body: 'We don\'t rely on roofing cement. We perform deep-grind masonry "tucking" to integrate lead or copper flashing directly into your chimney\'s brickwork, stopping leaks at the source.' },
+          { title: 'Forensic Leak Detection', body: 'Our repair teams identify the hidden failures in your Short Hills roofing system — compromised drip edges, failed plumbing vent boots, and open nail penetrations — before they reach your interior finishes.' },
+          { title: 'Velux® Skylight Restoration', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems properly integrated into the surrounding roof plane.' }
+        ],
+      },
+      {
+        heading: 'Roof Replacement',
+        lead: 'We deliver full-system replacements engineered for Short Hills\'s specific climate and architecture:',
+        bullets: [
+          { title: 'Shingle Specification & Algae Defense', body: 'Extensive canopies of century-old oaks and maples keep northern roof slopes perpetually shielded from ultraviolet sunlight. We specify GAF Timberline® UHDZ shingles with 30-year StainGuard Plus™ algae defense, using time-release copper micro-beads to stop Gloeocapsa magma staining permanently.' },
+          { title: 'Structural Decking Audit', body: 'Multiple remodeling cycles on historic estates frequently leave uneven deck substrates or hidden water intrusion around rafter transitions. We rip down to raw timber, excising softened boards and laying 5/8-inch exterior-grade CDX plywood secured with ring-shank nails to current NJ structural shear schedules.' },
+          { title: 'The Golden Pledge® Advantage', body: 'Our GAF Master Elite® status lets us provide a 25-year workmanship warranty backed by GAF, covering both labor and materials on the complete installed system.' },
+          { title: 'Advanced Ice & Water Protection', body: 'Given Short Hills\'s freeze-thaw cycles, we install double-layer GAF StormGuard® leak barriers at all critical eaves, valleys, and transition points to prevent ice-damming intrusion.' }
+        ],
+      },
+      {
+        heading: 'Specialized Services',
+        bullets: [
+          { title: 'Modified Bitumen, Torch Down Roofing', body: 'Expert installation of durable, heat-welded flat roofing membranes for extensions, porches, and balconies.' },
+          { title: 'Velux Skylight Specialists', body: 'We repair and replace foggy or leaking skylights with modern, solar-powered "No Leak" systems.' },
+          { title: 'Siliconized Roof Coatings', body: 'High-performance, liquid-applied membranes that save you 50% vs. a full flat roof tear-off.' },
+          { title: 'EPDM & TPO Membranes', body: 'Commercial-grade roofing for local storefronts and business properties.' }
+        ],
+      },
+      {
+        heading: 'Our Guarantee',
+        bullets: [
+          { title: 'No Permit Required', body: 'A permit is not required to replace a roof in New Jersey — because water entering your home is treated as emergency work, roof replacement is exempt, so there is nothing for you to file.' },
+          { title: 'The "Catch-All" System', body: 'We protect your siding and expensive landscaping with heavy-duty netting during construction.' },
+          { title: 'Spotless Cleanup', body: 'High-powered magnetic rollers ensure your driveway and lawn are 100% nail-free.' },
+          { title: 'Structural Warranty', body: 'A local craftsmanship guarantee from a company trusted by your neighbors since 2004.' }
+        ],
+      }
+    ],
+    serving: 'Short Hills, Millburn, Livingston, Maplewood, and Summit',
+    meta: 'Lita Construction provides elite roofing in Short Hills, NJ. GAF Master Elite Contractor — roof replacement, flashing, skylights and leak repair since 2004.',
+  },
+  {
     slug: 'shrewsbury',
     name: 'Shrewsbury',
     county: 'Monmouth',
