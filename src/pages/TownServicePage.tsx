@@ -6,6 +6,7 @@ import { townServices, townServiceBySlug, townServiceSeoBySlug } from '../data/t
 import { flagshipRoofingBody } from '../data/flagshipRoofingNotes'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
+import { TownMap } from '../components/TownMap'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
 import { GafBadge } from '../components/GafBadge'
@@ -489,6 +490,8 @@ export function TownServicePage() {
         title={`Ready for ${svc.name.toLowerCase()} in ${townName}?`}
         subtitle={`Free, no-obligation estimates across ${townName} and neighboring towns — licensed, insured, and family-run since 2004.`}
       />
+
+      <TownMap town={townName} county={county} />
     </>
   )
 }

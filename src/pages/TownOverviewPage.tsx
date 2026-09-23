@@ -9,6 +9,7 @@ import {
 } from '../data/serviceTownContent'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
+import { TownMap } from '../components/TownMap'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
 import { GafBadge } from '../components/GafBadge'
@@ -375,6 +376,8 @@ export function TownOverviewPage({ slug }: { slug: string }) {
         title={`Get a free estimate in ${rep.name} today.`}
         subtitle={`Serving ${rep.name} and the surrounding ${county} area — Lita Construction: licensed, insured, and trusted since 2004.`}
       />
+
+      <TownMap town={rep.name} county={county} />
     </>
   )
 }

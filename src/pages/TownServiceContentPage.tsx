@@ -9,6 +9,7 @@ import {
 } from '../data/serviceTownContent'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
+import { TownMap } from '../components/TownMap'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
 import { GafBadge } from '../components/GafBadge'
@@ -459,6 +460,8 @@ export function TownServiceContentPage({
         title={`Ready for ${info.label.toLowerCase()} in ${town.name}?`}
         subtitle={`Free, no-obligation estimates across ${town.name} and neighboring ${county} towns — licensed, insured, and family-run since 2004.`}
       />
+
+      <TownMap town={town.name} county={town.county} />
     </>
   )
 }

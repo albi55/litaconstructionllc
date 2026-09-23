@@ -8,6 +8,7 @@ import { servicesForTown } from '../data/serviceTownContent'
 import { TownOverviewPage } from './TownOverviewPage'
 import { Seo } from '../components/Seo'
 import { CtaBand } from '../components/CtaBand'
+import { TownMap } from '../components/TownMap'
 import { QuoteForm } from '../components/QuoteForm'
 import { TownStamp } from '../components/TownStamp'
 import { GafBadge } from '../components/GafBadge'
@@ -548,6 +549,8 @@ function MasonryTownPage({ town }: { town: Town }) {
         title="Get a free masonry, chimney, or paving quote today."
         subtitle={`Serving ${servingLine.join(', ')} — Lita Construction: licensed, insured, and trusted since 2004.`}
       />
+
+      <TownMap town={town.name} county="Bergen" />
     </>
   )
 }
