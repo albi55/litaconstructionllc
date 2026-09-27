@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 
 /**
- * Brand logo. Uses the dark logo on light backgrounds (navbar) and the
- * original light logo on dark backgrounds (footer). The image already
- * contains the "Lita Construction" wordmark, so no extra text is needed.
+ * Brand logo — the circular Lita badge. The badge is self-contained on a
+ * transparent background and carries its own navy field, so it reads on both
+ * the light navbar and the dark footer; the `light` prop is kept for callers
+ * but no longer needs a separate asset.
  */
 export function Logo({ onClick, light = false }: { onClick?: () => void; light?: boolean }) {
   return (
@@ -14,11 +15,11 @@ export function Logo({ onClick, light = false }: { onClick?: () => void; light?:
       aria-label="Lita Construction LLC — home"
     >
       <img
-        src={light ? '/logo.png' : '/logo-dark.png'}
+        src="/logo.png"
         alt="Lita Construction LLC logo"
-        width={165}
-        height={66}
-        className="h-16 w-auto"
+        width={64}
+        height={64}
+        className={`h-16 w-16 shrink-0${light ? ' drop-shadow-sm' : ''}`}
         loading="eager"
         decoding="async"
       />
