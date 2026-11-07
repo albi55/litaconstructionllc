@@ -25,7 +25,7 @@ const empty: FormState = {
  * works with Formspree / Netlify Forms / any backend by changing FORM_ENDPOINT.
  * Falls back to a graceful success state for the demo build.
  */
-const FORM_ENDPOINT = '' // e.g. 'https://formspree.io/f/yourid' — leave empty for demo mode
+export const FORM_ENDPOINT = '' // e.g. 'https://formspree.io/f/yourid' — leave empty for demo mode
 
 export function QuoteForm() {
   const [form, setForm] = useState<FormState>(empty)

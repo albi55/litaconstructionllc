@@ -8,6 +8,7 @@ import { TownStamp } from '../components/TownStamp'
 import { GafBadge } from '../components/GafBadge'
 import { GafCredential } from '../components/GafCredential'
 import { CtaBand } from '../components/CtaBand'
+import { ServiceTownHeading } from '../components/ServiceTownHeading'
 import { FaqAccordion } from '../components/FaqAccordion'
 import {
   ServiceGlyph,
@@ -217,9 +218,7 @@ export function ServicePage() {
               <span className="h-px w-9 bg-brand-400/70" />
               Since 2004 · Sheet {sheetCode[service.slug] ?? 'A-100'}
             </span>
-            <h1 className="mt-5 font-display text-display-lg text-white">
-              {service.name} in <span className="whitespace-nowrap text-brand-400">New Jersey</span>
-            </h1>
+            <ServiceTownHeading serviceSlug={service.slug} serviceName={service.name} />
 
             {/* Quick-answer line — directly answers "what is this service" for readers skimming and for AI answer engines */}
             <p className="mt-5 text-lg leading-relaxed text-white/80">{service.quickAnswer}</p>

@@ -18,6 +18,8 @@ import { FinancingPage } from './pages/FinancingPage'
 import { FaqPage } from './pages/FaqPage'
 import { ContactPage } from './pages/ContactPage'
 import { NotFound } from './pages/NotFound'
+import { AdLandingPage } from './pages/lp/AdLandingPage'
+import { LandingDirectory } from './pages/lp/LandingDirectory'
 
 /** Scrolls to top on route change, or to the hash target when present. */
 function ScrollManager() {
@@ -58,6 +60,24 @@ function Analytics() {
 }
 
 export default function App() {
+  const { pathname } = useLocation()
+
+  // Google Ads landing pages (/lp/...) render bare: no site menu, promo bar or
+  // footer, so paid clicks stay focused on the call / form.
+  if (pathname === '/lp' || pathname.startsWith('/lp/')) {
+    return (
+      <div className="relative min-h-screen bg-cloud-50">
+        <ScrollManager />
+        <Analytics />
+        <Routes>
+          <Route path="/lp" element={<LandingDirectory />} />
+          <Route path="/lp/:service/:town" element={<AdLandingPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+    )
+  }
+
   return (
     <div className="relative min-h-screen bg-cloud-50">
       <a
