@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { Header } from './components/Header'
 import { PromoBar } from './components/PromoBar'
@@ -20,6 +20,13 @@ import { ContactPage } from './pages/ContactPage'
 import { NotFound } from './pages/NotFound'
 import { AdLandingPage } from './pages/lp/AdLandingPage'
 import { LandingDirectory } from './pages/lp/LandingDirectory'
+
+// Chimney repair town pages (/chimney-repair/...) carry ~900 KB of copy, so
+// they load as their own chunk instead of weighing down every other page.
+const chimneyPages = () => import('./pages/ChimneyRepairPages')
+const ChimneyRepairIndexPage = lazy(() => chimneyPages().then((m) => ({ default: m.ChimneyRepairIndexPage })))
+const ChimneyRepairCountyPage = lazy(() => chimneyPages().then((m) => ({ default: m.ChimneyRepairCountyPage })))
+const ChimneyRepairTownPage = lazy(() => chimneyPages().then((m) => ({ default: m.ChimneyRepairTownPage })))
 
 /** Scrolls to top on route change, or to the hash target when present. */
 function ScrollManager() {
@@ -91,6 +98,7 @@ export default function App() {
       <PromoBar />
       <Header />
       <main id="main" className="pb-16 lg:pb-0">
+        <Suspense fallback={<div className="min-h-screen" />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<ServicesHub />} />
@@ -104,8 +112,12 @@ export default function App() {
           <Route path="/financing" element={<FinancingPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/chimney-repair" element={<ChimneyRepairIndexPage />} />
+          <Route path="/chimney-repair/:county" element={<ChimneyRepairCountyPage />} />
+          <Route path="/chimney-repair/:county/:town" element={<ChimneyRepairTownPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </main>
       <Footer />
       <MobileCallBar />
