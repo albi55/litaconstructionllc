@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { serviceAreas, services, business } from '../data/business'
-import { towns } from '../data/towns'
-import { roofingTowns } from '../data/roofingTowns'
 import { townsByCounty, indexedTownCount } from '../data/serviceTownContent'
 import { GafBadge } from '../components/GafBadge'
 import { ServingTagline } from '../components/ServingTagline'
@@ -226,54 +224,8 @@ export function ServiceAreasPage() {
             </a>
           </div>
 
-          {/* Masonry & chimney town guides — Bergen County */}
+          {/* Full town directory — every town with its own page, by county */}
           <div className="mt-10 flex items-center gap-4">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-cloud-500">
-              Masonry, Chimney &amp; Stucco Guides — Bergen County
-            </p>
-            <span className="h-px flex-1 bg-cloud-300" aria-hidden="true" />
-            <span className="shrink-0 text-xs font-bold uppercase tracking-wider text-sand-700">
-              {towns.length} towns
-            </span>
-          </div>
-          <div className="mt-4 flex flex-wrap gap-3">
-            {towns.map((t) => (
-              <Link
-                key={t.slug}
-                to={`/service-areas/${t.slug}`}
-                className="inline-flex items-center gap-2 rounded-full border border-brand-600/30 bg-brand-50 px-4 py-2.5 text-sm font-semibold text-brand-600 transition-colors hover:bg-brand-600 hover:text-white"
-              >
-                <PinIcon className="h-4 w-4" />
-                {t.name}, NJ
-              </Link>
-            ))}
-          </div>
-
-          {/* Roofing town guides — Monmouth & Somerset Counties */}
-          <div className="mt-8 flex items-center gap-4">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-cloud-500">
-              Elite Roofing Guides — Monmouth &amp; Somerset Counties
-            </p>
-            <span className="h-px flex-1 bg-cloud-300" aria-hidden="true" />
-            <span className="shrink-0 text-xs font-bold uppercase tracking-wider text-sand-700">
-              {roofingTowns.length} towns
-            </span>
-          </div>
-          <div className="mt-4 flex flex-wrap gap-3">
-            {roofingTowns.map((t) => (
-              <Link
-                key={t.slug}
-                to={`/service-areas/${t.slug}`}
-                className="inline-flex items-center gap-2 rounded-full border border-navy-950/15 bg-navy-950/[0.04] px-4 py-2.5 text-sm font-semibold text-ink-800 transition-colors hover:border-brand-600/40 hover:bg-brand-50 hover:text-brand-600"
-              >
-                <PinIcon className="h-4 w-4 text-brand-600" />
-                {t.name}, NJ
-              </Link>
-            ))}
-          </div>
-
-          {/* Full town directory — every town with dedicated service guides, by county */}
-          <div className="mt-8 flex items-center gap-4">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-cloud-500">
               Full Town Directory — North &amp; Central Jersey
             </p>
