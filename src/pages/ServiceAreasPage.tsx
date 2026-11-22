@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { serviceAreas, services, business } from '../data/business'
-import { townsByCounty, indexedTownCount } from '../data/serviceTownContent'
+import { serviceDirectory } from '../data/serviceDirectory'
 import { GafBadge } from '../components/GafBadge'
 import { ServingTagline } from '../components/ServingTagline'
 import { Seo } from '../components/Seo'
@@ -48,6 +48,11 @@ const whyLocal = [
 
 export function ServiceAreasPage() {
   const [active, setActive] = useState<string | null>(null)
+  // The chosen service lives in the URL (?service=roofing) so a filtered list can be shared.
+  const [params, setParams] = useSearchParams()
+  const directory = serviceDirectory.find((s) => s.id === params.get('service')) ?? serviceDirectory[0]
+  const pickService = (id: string) =>
+    setParams(id === 'all' ? {} : { service: id }, { replace: true })
   const mapRef = useReveal()
   const townsRef = useReveal()
   const whyRef = useReveal()
@@ -214,8 +219,8 @@ export function ServiceAreasPage() {
               </span>
               <h2 className="mt-6 font-display text-display-md text-ink-900">Find your town.</h2>
               <p className="mt-5 text-lg leading-relaxed text-cloud-600">
-                Every highlighted town opens its own local guide — don&apos;t see yours? Call us;
-                we very likely cover it too.
+                Pick a service, then your town, to open that service&apos;s page for your town —
+                don&apos;t see yours? Call us; we very likely cover it too.
               </p>
             </div>
             <a href={business.phoneHref} className="btn-ghost shrink-0">
@@ -224,18 +229,41 @@ export function ServiceAreasPage() {
             </a>
           </div>
 
-          {/* Full town directory — every town with its own page, by county */}
-          <div className="mt-10 flex items-center gap-4">
+          {/* Service buttons — filter the town directory below */}
+          <div className="mt-10 flex flex-wrap gap-2.5" role="group" aria-label="Filter towns by service">
+            {serviceDirectory.map((s) => {
+              const on = s.id === directory.id
+              return (
+                <button
+                  key={s.id}
+                  type="button"
+                  aria-pressed={on}
+                  onClick={() => pickService(s.id)}
+                  className={`inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold transition-colors ${
+                    on
+                      ? 'border-brand-600 bg-brand-600 text-white'
+                      : 'border-cloud-300 bg-white text-ink-800 hover:border-brand-600/40 hover:bg-brand-50 hover:text-brand-600'
+                  }`}
+                >
+                  {s.label}
+                  <span className={`text-xs font-bold ${on ? 'text-white/80' : 'text-cloud-500'}`}>{s.count}</span>
+                </button>
+              )
+            })}
+          </div>
+
+          {/* Town directory — every town with a page for the chosen service, by county */}
+          <div className="mt-8 flex items-center gap-4">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-cloud-500">
-              Full Town Directory — North &amp; Central Jersey
+              {directory.id === 'all' ? 'Full Town Directory' : directory.label} — North &amp; Central Jersey
             </p>
             <span className="h-px flex-1 bg-cloud-300" aria-hidden="true" />
             <span className="shrink-0 text-xs font-bold uppercase tracking-wider text-sand-700">
-              {indexedTownCount} towns
+              {directory.count} towns
             </span>
           </div>
           <div className="mt-6 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-            {townsByCounty.map((group) => (
+            {directory.groups.map((group) => (
               <div key={group.county}>
                 <p className="flex items-center gap-2 border-b border-cloud-300 pb-2 text-sm font-bold text-ink-900">
                   <PinIcon className="h-4 w-4 text-brand-600" />
@@ -246,12 +274,12 @@ export function ServiceAreasPage() {
                 </p>
                 <ul className="mt-3 space-y-1.5">
                   {group.towns.map((t) => (
-                    <li key={t.slug}>
+                    <li key={t.to}>
                       <Link
-                        to={`/service-areas/${t.slug}`}
+                        to={t.to}
                         className="text-sm font-medium text-ink-800 transition-colors hover:text-brand-600 hover:underline"
                       >
-                        {t.name}, NJ
+                        {directory.id === 'all' ? `${t.name}, NJ` : `${directory.label} in ${t.name}, NJ`}
                       </Link>
                     </li>
                   ))}
