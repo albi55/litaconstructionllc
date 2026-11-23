@@ -326,8 +326,14 @@ export function LayoutCentered() {
           </p>
           <H1 tone="light" className="mx-auto mt-6 max-w-4xl" />
           <p className="mx-auto mt-5 max-w-2xl text-lg text-cloud-600">
-            Family-owned New Jersey contractor serving {page.town.name}
-            {page.zip ? ` (${page.zip})` : ''} and {page.town.county} County since {business.founded}.
+            {page.county ? (
+              `Family-owned New Jersey contractor serving every town in ${page.county.name} since ${business.founded}.`
+            ) : (
+              <>
+                Family-owned New Jersey contractor serving {page.town.name}
+                {page.zip ? ` (${page.zip})` : ''} and {page.town.county} County since {business.founded}.
+              </>
+            )}
           </p>
           <div className="mt-8 flex justify-center">
             <CtaButtons tone="light" />
@@ -422,7 +428,7 @@ export function LayoutSidebar() {
         <div className="flex flex-col justify-center px-5 py-12 sm:px-10 lg:px-14 lg:py-16">
           <p className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-600">
             <span className="h-px w-8 bg-brand-600/50" />
-            Serving {page.town.name} · {page.town.county} County
+            {page.county ? `Serving all of ${page.county.name}` : `Serving ${page.town.name} · ${page.town.county} County`}
           </p>
           <H1 tone="light" className="mt-5" />
           <p className="mt-5 text-lg leading-relaxed text-cloud-600">{page.base?.blurb ?? page.service.offer}</p>

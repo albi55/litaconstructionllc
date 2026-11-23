@@ -404,6 +404,12 @@ export type LandingPage = {
   ctaLabel: string
   zip: string
   neighbors: string[]
+  /**
+   * Set only on a county page (/lp/<service>/bergen-county): the county and
+   * every town in it, each linking to its own landing page. `town` then holds
+   * the county itself ({ name: 'Bergen County', county: 'Bergen' }).
+   */
+  county?: { name: string; towns: { name: string; path: string }[] }
 }
 
 const CTA_LABELS = ['Get My Free Estimate', 'Request a Free Quote', 'Schedule My Free Visit']
@@ -526,9 +532,39 @@ export function landingPath(serviceSlug: string, townSlug: string) {
   return `/lp/${serviceSlug}/${townSlug}`
 }
 
+/* ───────────────────────────── county pages ───────────────────────────── */
+
+/** "Bergen" → "bergen-county" — the URL segment of a county landing page. */
+export function countySlug(county: string): string {
+  return `${county.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-county`
+}
+
+/** /lp/roof-repair/bergen-county — one landing page for a service across a whole county. */
+export function countyLandingPath(serviceSlug: string, county: string): string {
+  return landingPath(serviceSlug, countySlug(county))
+}
+
+/** Services that have county landing pages (the rest are town-only). */
+export const countyLandingServices = new Set(['roof-repair', 'roof-replacement'])
+
+/**
+ * Treats a county as the page's "town" so every layout and block renders it
+ * unchanged ("Roof Repair in Bergen County, NJ"); it has no ZIP or neighbours,
+ * so the copy falls back to the service's generic text.
+ */
+function countyAsTown(slug: string): { town: AdTown; towns: AdTown[] } | undefined {
+  const group = adTownsByCounty.find((g) => countySlug(g.county) === slug)
+  if (!group) return undefined
+  return {
+    town: { slug, name: `${group.county} County`, county: group.county, zips: [] },
+    towns: group.towns,
+  }
+}
+
 export function buildLandingPage(serviceSlug: string, townSlug: string): LandingPage | undefined {
   const service = adServiceBySlug[serviceSlug]
-  const town = adTownBySlug[townSlug]
+  const countyHit = countyLandingServices.has(serviceSlug) ? countyAsTown(townSlug) : undefined
+  const town = adTownBySlug[townSlug] ?? countyHit?.town
   if (!service || !town) return undefined
 
   const seed = hash(`${service.slug}/${town.slug}`)
@@ -544,7 +580,11 @@ export function buildLandingPage(serviceSlug: string, townSlug: string): Landing
 
   let intro = localCopy && content ? cleanIntro(content.intro) : []
   if (intro.length === 0) {
-    const lead = `Lita Construction provides ${service.keyword} for ${customer} in ${town.name}${zip ? ` (${zip})` : ''} and across ${town.county} County.`
+    const names = [...new Set(countyHit?.towns.map((t) => t.name) ?? [])]
+    const sample = names.slice(0, 4)
+    const lead = countyHit
+      ? `Lita Construction provides ${service.keyword} for ${customer} in every town across ${town.name} — ${sample.join(', ')}${names.length > sample.length ? ` and ${names.length - sample.length} more` : ''}.`
+      : `Lita Construction provides ${service.keyword} for ${customer} in ${town.name}${zip ? ` (${zip})` : ''} and across ${town.county} County.`
     const body = base?.intro.split(/\n+/)[0] ?? base?.blurb ?? ''
     intro = [`${lead} ${body}`.trim()]
   }
@@ -626,6 +666,13 @@ export function buildLandingPage(serviceSlug: string, townSlug: string): Landing
     ctaLabel: CTA_LABELS[(seed >>> 11) % CTA_LABELS.length],
     zip,
     neighbors: neighborsFrom(town),
+    county: countyHit && {
+      name: town.name,
+      // One entry per town: a few towns are stored under two slugs (washington-township / -bergen).
+      towns: countyHit.towns
+        .filter((t, i, all) => all.findIndex((o) => o.name === t.name) === i)
+        .map((t) => ({ name: t.name, path: landingPath(service.slug, t.slug) })),
+    },
   }
 }
 

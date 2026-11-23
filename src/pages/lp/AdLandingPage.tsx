@@ -5,10 +5,10 @@ import { business } from '../../data/business'
 import { buildLandingPage, LAYOUTS, type LayoutKey } from '../../data/adLandingPages'
 import { captureAdParams } from '../../lib/adTracking'
 import { NotFound } from '../NotFound'
-import { PageProvider } from './blocks'
+import { CountyTowns, PageProvider } from './blocks'
 import { layoutComponents, LpFooter, MobileActions } from './layouts'
 
-/** Google Ads landing page: /lp/:service/:town */
+/** Google Ads landing page: /lp/:service/:town — or a whole county, /lp/roof-repair/bergen-county */
 export function AdLandingPage() {
   const { service = '', town = '' } = useParams<{ service: string; town: string }>()
   const { search, pathname } = useLocation()
@@ -33,7 +33,7 @@ export function AdLandingPage() {
     '@type': 'Service',
     name: page.title,
     serviceType: page.service.name,
-    areaServed: { '@type': 'City', name: `${page.town.name}, NJ` },
+    areaServed: { '@type': page.county ? 'AdministrativeArea' : 'City', name: `${page.town.name}, NJ` },
     provider: {
       '@type': 'GeneralContractor',
       name: business.name,
@@ -54,6 +54,7 @@ export function AdLandingPage() {
       />
       <div data-layout={page.layout}>
         <Layout />
+        <CountyTowns />
         <LpFooter />
         <MobileActions />
       </div>

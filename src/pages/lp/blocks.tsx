@@ -4,6 +4,7 @@
  * one cloned template.
  */
 import { createContext, useContext, useState, type ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 import { business } from '../../data/business'
 import type { LandingPage } from '../../data/adLandingPages'
 import { FORM_ENDPOINT } from '../../components/QuoteForm'
@@ -436,10 +437,49 @@ export function AreaNote({ tone = 'light', className = '' }: { tone?: 'light' | 
     <p className={`flex items-start gap-2 text-sm ${dark ? 'text-white/70' : 'text-cloud-600'} ${className}`}>
       <PinIcon className={`mt-0.5 h-4 w-4 shrink-0 ${dark ? 'text-white/70' : 'text-brand-600'}`} />
       <span>
-        Serving {page.town.name}
-        {page.zip ? ` (${page.zip})` : ''} and all of {page.town.county} County{near}
+        {page.county ? (
+          `Serving every town in ${page.county.name}`
+        ) : (
+          <>
+            Serving {page.town.name}
+            {page.zip ? ` (${page.zip})` : ''} and all of {page.town.county} County{near}
+          </>
+        )}
       </span>
     </p>
+  )
+}
+
+/* ─────────────────────────── county towns ─────────────────────────── */
+
+/** County pages only: every town in the county, each linking to its own landing page. */
+export function CountyTowns() {
+  const page = usePage()
+  if (!page.county) return null
+  const { name, towns } = page.county
+  return (
+    <section className="border-t border-cloud-200 bg-cloud-100 py-14 sm:py-20">
+      <div className="container-x">
+        <SectionHead
+          eyebrow={`${towns.length} towns · ${name}`}
+          title={`${page.service.name} in every ${name} town`}
+          sub={`Pick your town for local ${page.service.keyword} details — or call ${business.phone} for a free estimate anywhere in ${name}.`}
+        />
+        <ul className="mt-8 grid gap-x-8 gap-y-2.5 sm:grid-cols-2 lg:grid-cols-4">
+          {towns.map((t) => (
+            <li key={t.path}>
+              <Link
+                to={t.path}
+                className="inline-flex items-center gap-2 text-sm font-semibold text-ink-800 transition-colors hover:text-brand-600 hover:underline"
+              >
+                <PinIcon className="h-4 w-4 shrink-0 text-brand-600" />
+                {page.service.name} in {t.name}, NJ
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   )
 }
 
@@ -487,7 +527,8 @@ export function LpFooter() {
         </div>
       </div>
       <p className="container-x mt-6 border-t border-white/10 pt-6 text-xs text-white/40">
-        © {new Date().getFullYear()} {business.name}. {page.service.name} for {page.town.name}, {page.town.county} County, New Jersey.
+        © {new Date().getFullYear()} {business.name}. {page.service.name} for{' '}
+        {page.county ? `every town in ${page.county.name}` : `${page.town.name}, ${page.town.county} County`}, New Jersey.
       </p>
     </footer>
   )

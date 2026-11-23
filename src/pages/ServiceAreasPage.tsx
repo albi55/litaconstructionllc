@@ -259,7 +259,19 @@ export function ServiceAreasPage() {
               <div key={group.county}>
                 <p className="flex items-center gap-2 border-b border-cloud-300 pb-2 text-sm font-bold text-ink-900">
                   <PinIcon className="h-4 w-4 text-brand-600" />
-                  {group.county}
+                  {group.countyLink ? (
+                    // The county itself has a page for this service — e.g. Roof Repair in Bergen County.
+                    <Link
+                      to={group.countyLink}
+                      className="group inline-flex items-center gap-1.5 text-brand-600 hover:underline"
+                      title={`${directory.label} in ${group.county}, NJ`}
+                    >
+                      {group.county}
+                      <ArrowIcon className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                    </Link>
+                  ) : (
+                    group.county
+                  )}
                   <span className="ml-auto text-xs font-semibold text-cloud-500">
                     {group.towns.length}
                   </span>

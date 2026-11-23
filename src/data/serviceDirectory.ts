@@ -11,16 +11,19 @@
  *   2. the hand-built town pages (13 Bergen + 24 Monmouth/Somerset towns)
  *   3. the generated town × service pages
  * Roof Repair and Roof Replacement link to the Google Ads landing pages
- * (/lp/roof-repair/<town>, /lp/roof-replacement/<town>).
+ * (/lp/roof-repair/<town>, /lp/roof-replacement/<town>), and their county
+ * headings to the county landing page (/lp/roof-repair/bergen-county).
+ * Chimney Repair county headings open the chimney county pages.
  */
 import { towns } from './towns'
 import { roofingTowns } from './roofingTowns'
 import { townsByService, townsByCounty, SERVICE_INFO, type ServiceKey } from './serviceTownContent'
 import { chimneyRepairIndex } from './chimneyRepairIndex'
-import { adTownsByCounty, landingPath } from './adLandingPages'
+import { adTownsByCounty, landingPath, countyLandingPath } from './adLandingPages'
 
 export type DirectoryTown = { name: string; county: string; to: string }
-export type DirectoryGroup = { county: string; towns: DirectoryTown[] }
+/** `countyLink` is set when the county itself has a page for this service. */
+export type DirectoryGroup = { county: string; towns: DirectoryTown[]; countyLink?: string }
 export type DirectoryService = { id: string; label: string; groups: DirectoryGroup[]; count: number }
 
 /** Roofing towns in Monmouth County — the rest of roofingTowns are in Somerset. */
@@ -64,8 +67,22 @@ const landing = (adServiceSlug: string): DirectoryTown[] =>
 const chimneyPdf = (): DirectoryTown[] =>
   chimneyRepairIndex.map((p) => ({ name: p.name, county: p.county, to: p.path }))
 
+/** "Bergen County" → its chimney repair county page, when the chimney PDF covers that county. */
+const chimneyCountyPages = new Set(chimneyRepairIndex.map((p) => p.county))
+const chimneyCountyLink = (county: string) =>
+  chimneyCountyPages.has(county) ? `/chimney-repair/${county.toLowerCase().replace(/\s+/g, '-')}/` : undefined
+
+/** "Bergen County" → /lp/<service>/bergen-county */
+const landingCountyLink = (adServiceSlug: string) => (county: string) =>
+  countyLandingPath(adServiceSlug, county.replace(/\s*County$/, ''))
+
 /** Merge sources in priority order, drop repeats, group by county A–Z. */
-function build(id: string, label: string, sources: DirectoryTown[][]): DirectoryService {
+function build(
+  id: string,
+  label: string,
+  sources: DirectoryTown[][],
+  countyLink?: (county: string) => string | undefined,
+): DirectoryService {
   const seen = new Set<string>()
   const groups = new Map<string, DirectoryTown[]>()
   for (const t of sources.flat()) {
@@ -76,7 +93,11 @@ function build(id: string, label: string, sources: DirectoryTown[][]): Directory
     groups.get(t.county)!.push(t)
   }
   const list = [...groups.entries()]
-    .map(([county, ts]) => ({ county, towns: ts.sort((a, b) => a.name.localeCompare(b.name)) }))
+    .map(([county, ts]) => ({
+      county,
+      towns: ts.sort((a, b) => a.name.localeCompare(b.name)),
+      countyLink: countyLink?.(county),
+    }))
     .sort((a, b) => a.county.localeCompare(b.county))
   return { id, label, groups: list, count: seen.size }
 }
@@ -92,12 +113,12 @@ export const serviceDirectory: DirectoryService[] = [
     count: townsByCounty.reduce((n, g) => n + g.towns.length, 0),
   },
   build('roofing', 'Roofing', [flagship('roofing'), generated('roofing')]),
-  build('roof-repair', 'Roof Repair', [landing('roof-repair')]),
-  build('roof-replacement', 'Roof Replacement', [landing('roof-replacement')]),
+  build('roof-repair', 'Roof Repair', [landing('roof-repair')], landingCountyLink('roof-repair')),
+  build('roof-replacement', 'Roof Replacement', [landing('roof-replacement')], landingCountyLink('roof-replacement')),
   build('commercial-roofing', 'Commercial Roofing', [generated('commercial')]),
   build('siding', 'Siding', [flagship('siding'), generated('siding')]),
   build('windows-gutters', 'Windows & Gutters', [generated('exterior')]),
-  build('chimney', 'Chimney Repair', [chimneyPdf(), flagship('chimney-repair'), generated('chimney')]),
+  build('chimney', 'Chimney Repair', [chimneyPdf(), flagship('chimney-repair'), generated('chimney')], chimneyCountyLink),
   build('masonry', 'Masonry', [flagship('masonry'), generated('chimney')]),
   build('stucco', 'Stucco', [flagship('stucco')]),
   build('decks-pavers', 'Decks & Pavers', [generated('decks'), flagship('paver-driveways')]),
