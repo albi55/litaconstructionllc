@@ -178,11 +178,7 @@ export function RoofingTownPage({ town }: { town: RoofingTown }) {
         <div ref={replaceRef} className="reveal container-x">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
             <div className="lg:sticky lg:top-28 lg:self-start">
-              {/* Drawing-set sheet tag — this section is a sheet in the job set */}
-              <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-                Sheet R-101 · Replacement
-              </span>
-              <h2 className="mt-6 font-display text-display-md text-ink-900">
+              <h2 className="font-display text-display-md text-ink-900">
                 {town.replacement.heading}
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-cloud-600">{town.replacement.lead}</p>
@@ -226,11 +222,7 @@ export function RoofingTownPage({ town }: { town: RoofingTown }) {
         <div ref={repairRef} className="reveal container-x relative">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
             <div className="lg:sticky lg:top-28 lg:self-start">
-              {/* Drawing-set sheet tag — navy variant */}
-              <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/40 bg-white/[0.05] px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-400">
-                Sheet R-201 · Leak &amp; Flashing
-              </span>
-              <h2 className="mt-6 font-display text-display-md text-white">{town.repair.heading}</h2>
+              <h2 className="font-display text-display-md text-white">{town.repair.heading}</h2>
               <p className="mt-5 text-lg leading-relaxed text-white/70">{town.repair.lead}</p>
               <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.05] p-6">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-600 text-white">

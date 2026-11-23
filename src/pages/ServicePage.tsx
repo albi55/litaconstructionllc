@@ -105,26 +105,6 @@ const galleryCategory: Record<string, string> = {
   'chimney-services': 'Masonry',
 }
 
-/** Drawing-set sheet code per trade — the document spine shared with the town pages. */
-const sheetCode: Record<string, string> = {
-  roofing: 'R-100',
-  'roof-repair': 'R-102',
-  'roof-replacement': 'R-101',
-  'commercial-roofing': 'R-103',
-  'residential-roofing': 'R-104',
-  'chimney-services': 'C-100',
-  siding: 'SD-100',
-  'siding-installation': 'SD-101',
-  'siding-repair': 'SD-102',
-  'siding-replacement': 'SD-103',
-  masonry: 'M-100',
-  'masonry-work': 'M-100',
-  gutters: 'GT-100',
-  'windows-doors': 'W-100',
-  'decks-pavers': 'P-100',
-  painting: 'PT-100',
-}
-
 /** Matrix service slug per trade, for deep links into /service-areas/<town>/<service>. */
 const matrixService: Record<string, string> = {
   roofing: 'roofing',
@@ -216,7 +196,7 @@ export function ServicePage() {
 
             <span className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-400">
               <span className="h-px w-9 bg-brand-400/70" />
-              Since 2004 · Sheet {sheetCode[service.slug] ?? 'A-100'}
+              Since 2004
             </span>
             <ServiceTownHeading serviceSlug={service.slug} serviceName={service.name} />
 
@@ -273,10 +253,7 @@ export function ServicePage() {
           className="reveal container-x grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16"
         >
           <div>
-            <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-              Sheet A-001 · Overview
-            </span>
-            <h2 className="mt-6 font-display text-display-md text-ink-900">
+            <h2 className="font-display text-display-md text-ink-900">
               {service.name}, the Lita Construction way.
             </h2>
             <div className="mt-6 space-y-5 text-lg leading-relaxed text-cloud-600">
@@ -354,11 +331,7 @@ export function ServicePage() {
           </div>
 
           <div>
-            {/* Drawing-set sheet tag — the site-protocol sheet, shared with the town pages */}
-            <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-              Sheet G-002 · Site Protocol
-            </span>
-            <h2 className="mt-6 font-display text-display-md text-ink-900">
+            <h2 className="font-display text-display-md text-ink-900">
               What to expect, start to finish.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-cloud-600">

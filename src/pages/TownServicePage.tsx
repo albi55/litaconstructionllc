@@ -164,7 +164,7 @@ export function TownServicePage() {
 
             <span className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-400">
               <span className="h-px w-9 bg-brand-400/70" />
-              Since 2004 · Sheet {svc.sheet}
+              Since 2004
             </span>
             <h1 className="mt-5 max-w-3xl font-display text-display-lg text-white">
               {svc.name} in <span className="text-brand-400">{townName}, NJ.</span>
@@ -238,10 +238,7 @@ export function TownServicePage() {
         >
           {/* Pinned sheet header + trade photo */}
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-              Sheet {svc.sheet} · Scope of Work
-            </span>
-            <h2 className="mt-6 font-display text-display-md text-ink-900">
+            <h2 className="font-display text-display-md text-ink-900">
               {svc.name} scope we cover in {townName}.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-cloud-600">
@@ -260,7 +257,7 @@ export function TownServicePage() {
               />
               <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-3 bg-navy-950/85 px-5 py-2.5 backdrop-blur-sm">
                 <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-sand-400">
-                  Sheet {svc.sheet} — {svc.name}
+                  {svc.name}
                 </span>
                 <span className="hidden text-[10px] font-semibold uppercase tracking-[0.18em] text-white/60 sm:block">
                   Lita · Est. 2004
@@ -361,10 +358,7 @@ export function TownServicePage() {
             className="reveal container-x grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16"
           >
             <div className="lg:sticky lg:top-28 lg:self-start">
-              <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-                Sheet G-003 · Local Notes
-              </span>
-              <h2 className="mt-6 font-display text-display-md text-ink-900">
+              <h2 className="font-display text-display-md text-ink-900">
                 Built for {townName} — not a generic spec.
               </h2>
               <ul className="mt-8 space-y-3">
@@ -397,10 +391,7 @@ export function TownServicePage() {
         />
         <div ref={processRef} className="reveal container-x relative">
           <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/40 bg-white/[0.05] px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-400">
-              Sheet G-002 · Site Protocol
-            </span>
-            <h2 className="mt-6 font-display text-display-md text-white">
+            <h2 className="font-display text-display-md text-white">
               How your {townName} job runs.
             </h2>
           </div>
@@ -433,10 +424,7 @@ export function TownServicePage() {
             className="reveal container-x grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start"
           >
             <div className="lg:sticky lg:top-28">
-              <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-                Sheet G-004 · Field Questions
-              </span>
-              <h2 className="mt-6 font-display text-display-md text-ink-900">
+              <h2 className="font-display text-display-md text-ink-900">
                 {svc.name} questions from {townName} homeowners.
               </h2>
               <p className="mt-5 text-cloud-600">

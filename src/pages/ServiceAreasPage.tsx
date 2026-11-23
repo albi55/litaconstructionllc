@@ -171,11 +171,7 @@ export function ServiceAreasPage() {
           </div>
 
           <div className="order-1 lg:order-2">
-            {/* Drawing-set sheet tag — this section is the job set's plat sheet */}
-            <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-              Plat G-100 · County Coverage
-            </span>
-            <h2 className="mt-6 font-display text-display-md text-ink-900">
+            <h2 className="font-display text-display-md text-ink-900">
               {serviceAreas.length} counties. One trusted contractor.
             </h2>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-cloud-600">
@@ -213,11 +209,7 @@ export function ServiceAreasPage() {
         <div ref={townsRef} className="reveal container-x">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl">
-              {/* Sheet G-000 — the sheet index is always the first page of a drawing set */}
-              <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-                Sheet G-000 · Town Index
-              </span>
-              <h2 className="mt-6 font-display text-display-md text-ink-900">Find your town.</h2>
+              <h2 className="font-display text-display-md text-ink-900">Find your town.</h2>
               <p className="mt-5 text-lg leading-relaxed text-cloud-600">
                 Pick a service, then your town, to open that service&apos;s page for your town —
                 don&apos;t see yours? Call us; we very likely cover it too.

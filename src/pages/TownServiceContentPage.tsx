@@ -276,12 +276,9 @@ export function TownServiceContentPage({
           <SpecBlock
             key={`${sec.heading}-${i}`}
             section={sec}
-            index={i}
             dark={dark}
             surface={surface}
             cardSurface={cardSurface}
-            sheet={info.sheet}
-            townName={town.name}
           />
         )
       })}
@@ -298,10 +295,7 @@ export function TownServiceContentPage({
             className="reveal container-x relative grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center"
           >
             <div>
-              <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/40 bg-white/[0.05] px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-400">
-                Sheet G-001 · {guaranteeSection.heading}
-              </span>
-              <h2 className="mt-6 font-display text-display-md text-white">
+              <h2 className="font-display text-display-md text-white">
                 Our {town.name} promise, in writing.
               </h2>
               {guaranteeSection.lead && (
@@ -350,10 +344,7 @@ export function TownServiceContentPage({
             className="reveal container-x grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start"
           >
             <div className="lg:sticky lg:top-28">
-              <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-                Sheet G-004 · Field Questions
-              </span>
-              <h2 className="mt-6 font-display text-display-md text-ink-900">
+              <h2 className="font-display text-display-md text-ink-900">
                 {info.shortLabel} questions from {town.name} homeowners.
               </h2>
               <p className="mt-5 text-cloud-600">
@@ -409,9 +400,6 @@ export function TownServiceContentPage({
                       decoding="async"
                     />
                     <div className="min-w-0">
-                      <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-sand-700">
-                        Sheet {s.sheet}
-                      </p>
                       <p className="truncate font-display text-base font-bold text-ink-900 transition-colors group-hover:text-brand-600">
                         {s.shortLabel}
                       </p>
@@ -469,23 +457,16 @@ export function TownServiceContentPage({
 /** One scope-of-work spec block: pinned heading + lead on the left, bullet cards on the right. */
 function SpecBlock({
   section,
-  index,
   dark,
   surface,
   cardSurface,
-  sheet,
-  townName,
 }: {
   section: ContentSection
-  index: number
   dark: boolean
   surface: string
   cardSurface: string
-  sheet: string
-  townName: string
 }) {
   const ref = useReveal()
-  const sheetCode = `${sheet.split('-')[0]}-${101 + index}`
   return (
     <section className={`${surface} py-20 sm:py-28`}>
       {dark && (
@@ -499,17 +480,8 @@ function SpecBlock({
         className="reveal container-x relative grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16"
       >
         <div className="lg:sticky lg:top-28 lg:self-start">
-          <span
-            className={`inline-flex items-center gap-2.5 rounded-lg border px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] ${
-              dark
-                ? 'border-sand-400/40 bg-white/[0.05] text-sand-400'
-                : 'border-sand-400/60 bg-sand-100/70 text-sand-700'
-            }`}
-          >
-            Sheet {sheetCode} · {townName}
-          </span>
           <h2
-            className={`mt-6 font-display text-display-md ${dark ? 'text-white' : 'text-ink-900'}`}
+            className={`font-display text-display-md ${dark ? 'text-white' : 'text-ink-900'}`}
           >
             {section.heading}
           </h2>

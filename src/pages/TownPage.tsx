@@ -324,17 +324,8 @@ function MasonryTownPage({ town }: { town: Town }) {
             >
               {/* Pinned sheet header + trade photo */}
               <div className="lg:sticky lg:top-28 lg:self-start">
-                <span
-                  className={`inline-flex items-center gap-2.5 rounded-lg border px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] ${
-                    dark
-                      ? 'border-sand-400/40 bg-white/[0.05] text-sand-400'
-                      : 'border-sand-400/60 bg-sand-100/70 text-sand-700'
-                  }`}
-                >
-                  Sheet {b.code} · {b.tag}
-                </span>
                 <h2
-                  className={`mt-6 font-display text-display-md ${dark ? 'text-white' : 'text-ink-900'}`}
+                  className={`font-display text-display-md ${dark ? 'text-white' : 'text-ink-900'}`}
                 >
                   {b.title}
                 </h2>
@@ -355,7 +346,7 @@ function MasonryTownPage({ town }: { town: Town }) {
                   />
                   <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-3 bg-navy-950/85 px-5 py-2.5 backdrop-blur-sm">
                     <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-sand-400">
-                      Sheet {b.code} — {b.tag}
+                      {b.tag}
                     </span>
                     <span className="hidden text-[10px] font-semibold uppercase tracking-[0.18em] text-white/60 sm:block">
                       Lita · Est. 2004
@@ -417,11 +408,7 @@ function MasonryTownPage({ town }: { town: Town }) {
         />
         <div ref={permitsRef} className="reveal container-x relative grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
-            {/* Drawing-set sheet tag — the general/administrative sheet */}
-            <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/40 bg-white/[0.05] px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-400">
-              Sheet G-001 · Permits &amp; Zoning
-            </span>
-            <h2 className="mt-6 font-display text-display-md text-white">
+            <h2 className="font-display text-display-md text-white">
               We handle all {town.name} masonry permits and zoning paperwork.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-white/70">
@@ -470,11 +457,7 @@ function MasonryTownPage({ town }: { town: Town }) {
       <section className="bg-white py-20 sm:py-28">
         <div ref={processRef} className="reveal container-x">
           <div className="max-w-2xl">
-            {/* Sheet tag — the site-protocol sheet of the job set */}
-            <span className="inline-flex items-center gap-2.5 rounded-lg border border-sand-400/60 bg-sand-100/70 px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-sand-700">
-              Sheet G-002 · Site Protocol
-            </span>
-            <h2 className="mt-6 font-display text-display-md text-ink-900">
+            <h2 className="font-display text-display-md text-ink-900">
               The Lita Construction 3-step build.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-cloud-600">

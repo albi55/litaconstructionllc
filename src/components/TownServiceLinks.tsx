@@ -43,9 +43,6 @@ export function TownServiceLinks({
               decoding="async"
             />
             <div className="min-w-0">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-sand-700">
-                Sheet {s.sheet}
-              </p>
               <p className="truncate font-display text-base font-bold text-ink-900 transition-colors group-hover:text-brand-600">
                 {s.name}
               </p>
