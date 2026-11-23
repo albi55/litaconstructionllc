@@ -10,11 +10,14 @@
  *   1. the chimney repair pages from the chimney PDF (/chimney-repair/...)
  *   2. the hand-built town pages (13 Bergen + 24 Monmouth/Somerset towns)
  *   3. the generated town × service pages
+ * Roof Repair and Roof Replacement link to the Google Ads landing pages
+ * (/lp/roof-repair/<town>, /lp/roof-replacement/<town>).
  */
 import { towns } from './towns'
 import { roofingTowns } from './roofingTowns'
 import { townsByService, townsByCounty, SERVICE_INFO, type ServiceKey } from './serviceTownContent'
 import { chimneyRepairIndex } from './chimneyRepairIndex'
+import { adTownsByCounty, landingPath } from './adLandingPages'
 
 export type DirectoryTown = { name: string; county: string; to: string }
 export type DirectoryGroup = { county: string; towns: DirectoryTown[] }
@@ -52,6 +55,12 @@ const generated = (key: ServiceKey): DirectoryTown[] =>
     to: `/service-areas/${t.slug}/${SERVICE_INFO[key].slug}`,
   }))
 
+/** The Google Ads landing page for this service in every town (/lp/<service>/<town>). */
+const landing = (adServiceSlug: string): DirectoryTown[] =>
+  adTownsByCounty.flatMap((g) =>
+    g.towns.map((t) => ({ name: t.name, county: withCounty(g.county), to: landingPath(adServiceSlug, t.slug) })),
+  )
+
 const chimneyPdf = (): DirectoryTown[] =>
   chimneyRepairIndex.map((p) => ({ name: p.name, county: p.county, to: p.path }))
 
@@ -83,6 +92,8 @@ export const serviceDirectory: DirectoryService[] = [
     count: townsByCounty.reduce((n, g) => n + g.towns.length, 0),
   },
   build('roofing', 'Roofing', [flagship('roofing'), generated('roofing')]),
+  build('roof-repair', 'Roof Repair', [landing('roof-repair')]),
+  build('roof-replacement', 'Roof Replacement', [landing('roof-replacement')]),
   build('commercial-roofing', 'Commercial Roofing', [generated('commercial')]),
   build('siding', 'Siding', [flagship('siding'), generated('siding')]),
   build('windows-gutters', 'Windows & Gutters', [generated('exterior')]),
