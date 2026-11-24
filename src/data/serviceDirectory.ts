@@ -11,15 +11,15 @@
  *   2. the hand-built town pages (13 Bergen + 24 Monmouth/Somerset towns)
  *   3. the generated town × service pages
  * Roof Repair and Roof Replacement link to the Google Ads landing pages
- * (/lp/roof-repair/<town>, /lp/roof-replacement/<town>), and their county
- * headings to the county landing page (/lp/roof-repair/bergen-county).
- * Chimney Repair county headings open the chimney county pages.
+ * (/lp/roof-repair/<town>, /lp/roof-replacement/<town>).
+ * County headings open that service's county landing page
+ * (/lp/masonry/morris-county); Chimney Repair prefers the chimney PDF county pages.
  */
 import { towns } from './towns'
 import { roofingTowns } from './roofingTowns'
 import { townsByService, townsByCounty, SERVICE_INFO, type ServiceKey } from './serviceTownContent'
 import { chimneyRepairIndex } from './chimneyRepairIndex'
-import { adTownsByCounty, landingPath, countyLandingPath } from './adLandingPages'
+import { adTownsByCounty, landingPath, countyLandingPath, hasCountyLanding } from './adLandingPages'
 
 export type DirectoryTown = { name: string; county: string; to: string }
 /** `countyLink` is set when the county itself has a page for this service. */
@@ -67,14 +67,19 @@ const landing = (adServiceSlug: string): DirectoryTown[] =>
 const chimneyPdf = (): DirectoryTown[] =>
   chimneyRepairIndex.map((p) => ({ name: p.name, county: p.county, to: p.path }))
 
-/** "Bergen County" → its chimney repair county page, when the chimney PDF covers that county. */
+/** "Bergen County" → /lp/<service>/bergen-county, when that county has landing pages. */
+const landingCountyLink = (adServiceSlug: string) => (county: string) =>
+  hasCountyLanding(county) ? countyLandingPath(adServiceSlug, county.replace(/\s*County$/, '')) : undefined
+
+/**
+ * "Bergen County" → its chimney repair county page from the chimney PDF;
+ * counties the PDF doesn't cover fall back to the chimney repair county landing page.
+ */
 const chimneyCountyPages = new Set(chimneyRepairIndex.map((p) => p.county))
 const chimneyCountyLink = (county: string) =>
-  chimneyCountyPages.has(county) ? `/chimney-repair/${county.toLowerCase().replace(/\s+/g, '-')}/` : undefined
-
-/** "Bergen County" → /lp/<service>/bergen-county */
-const landingCountyLink = (adServiceSlug: string) => (county: string) =>
-  countyLandingPath(adServiceSlug, county.replace(/\s*County$/, ''))
+  chimneyCountyPages.has(county)
+    ? `/chimney-repair/${county.toLowerCase().replace(/\s+/g, '-')}/`
+    : landingCountyLink('chimney-repair')(county)
 
 /** Merge sources in priority order, drop repeats, group by county A–Z. */
 function build(
@@ -112,14 +117,15 @@ export const serviceDirectory: DirectoryService[] = [
     })),
     count: townsByCounty.reduce((n, g) => n + g.towns.length, 0),
   },
-  build('roofing', 'Roofing', [flagship('roofing'), generated('roofing')]),
+  build('roofing', 'Roofing', [flagship('roofing'), generated('roofing')], landingCountyLink('roof-replacement')),
   build('roof-repair', 'Roof Repair', [landing('roof-repair')], landingCountyLink('roof-repair')),
   build('roof-replacement', 'Roof Replacement', [landing('roof-replacement')], landingCountyLink('roof-replacement')),
-  build('commercial-roofing', 'Commercial Roofing', [generated('commercial')]),
-  build('siding', 'Siding', [flagship('siding'), generated('siding')]),
-  build('windows-gutters', 'Windows & Gutters', [generated('exterior')]),
+  build('commercial-roofing', 'Commercial Roofing', [generated('commercial')], landingCountyLink('commercial-roofing')),
+  build('siding', 'Siding', [flagship('siding'), generated('siding')], landingCountyLink('siding-replacement')),
+  build('windows-gutters', 'Windows & Gutters', [generated('exterior')], landingCountyLink('window-replacement')),
   build('chimney', 'Chimney Repair', [chimneyPdf(), flagship('chimney-repair'), generated('chimney')], chimneyCountyLink),
-  build('masonry', 'Masonry', [flagship('masonry'), generated('chimney')]),
+  build('masonry', 'Masonry', [flagship('masonry'), generated('chimney')], landingCountyLink('masonry')),
+  // No stucco landing page exists yet, so Stucco county headings stay plain text.
   build('stucco', 'Stucco', [flagship('stucco')]),
-  build('decks-pavers', 'Decks & Pavers', [generated('decks'), flagship('paver-driveways')]),
+  build('decks-pavers', 'Decks & Pavers', [generated('decks'), flagship('paver-driveways')], landingCountyLink('decks')),
 ]

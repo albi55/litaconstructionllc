@@ -544,8 +544,14 @@ export function countyLandingPath(serviceSlug: string, county: string): string {
   return landingPath(serviceSlug, countySlug(county))
 }
 
-/** Services that have county landing pages (the rest are town-only). */
-export const countyLandingServices = new Set(['roof-repair', 'roof-replacement'])
+/** Every landing service also has a page per county (/lp/masonry/morris-county). */
+export const countyLandingServices = new Set(adServices.map((s) => s.slug))
+
+/** True when /lp/<service>/<county>-county exists ("Bergen" or "Bergen County"). */
+export function hasCountyLanding(county: string): boolean {
+  const name = county.replace(/\s*County$/, '')
+  return adTownsByCounty.some((g) => g.county === name)
+}
 
 /**
  * Treats a county as the page's "town" so every layout and block renders it
@@ -582,9 +588,11 @@ export function buildLandingPage(serviceSlug: string, townSlug: string): Landing
   if (intro.length === 0) {
     const names = [...new Set(countyHit?.towns.map((t) => t.name) ?? [])]
     const sample = names.slice(0, 4)
+    // The service name, not the ad keyword: "provides deck building", never "provides deck builder".
+    const what = service.name.toLowerCase()
     const lead = countyHit
-      ? `Lita Construction provides ${service.keyword} for ${customer} in every town across ${town.name} — ${sample.join(', ')}${names.length > sample.length ? ` and ${names.length - sample.length} more` : ''}.`
-      : `Lita Construction provides ${service.keyword} for ${customer} in ${town.name}${zip ? ` (${zip})` : ''} and across ${town.county} County.`
+      ? `Lita Construction provides ${what} for ${customer} in every town across ${town.name} — ${sample.join(', ')}${names.length > sample.length ? ` and ${names.length - sample.length} more` : ''}.`
+      : `Lita Construction provides ${what} for ${customer} in ${town.name}${zip ? ` (${zip})` : ''} and across ${town.county} County.`
     const body = base?.intro.split(/\n+/)[0] ?? base?.blurb ?? ''
     intro = [`${lead} ${body}`.trim()]
   }
