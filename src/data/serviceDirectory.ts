@@ -125,7 +125,7 @@ export const serviceDirectory: DirectoryService[] = [
   build('windows-gutters', 'Windows & Gutters', [generated('exterior')], landingCountyLink('window-replacement')),
   build('chimney', 'Chimney Repair', [chimneyPdf(), flagship('chimney-repair'), generated('chimney')], chimneyCountyLink),
   build('masonry', 'Masonry', [flagship('masonry'), generated('chimney')], landingCountyLink('masonry')),
-  // No stucco landing page exists yet, so Stucco county headings stay plain text.
-  build('stucco', 'Stucco', [flagship('stucco')]),
+  // Hand-built stucco pages where a town has one, the stucco landing page everywhere else.
+  build('stucco', 'Stucco', [flagship('stucco'), landing('stucco')], landingCountyLink('stucco')),
   build('decks-pavers', 'Decks & Pavers', [generated('decks'), flagship('paver-driveways')], landingCountyLink('decks')),
 ]

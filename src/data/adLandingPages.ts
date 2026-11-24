@@ -25,6 +25,7 @@ import {
 } from './serviceTownContent'
 import { roofingTowns } from './roofingTowns'
 import { flagshipRoofingNotes } from './flagshipRoofingNotes'
+import { stuccoService } from './stuccoService'
 
 /* ───────────────────────────── ad services ───────────────────────────── */
 
@@ -43,6 +44,8 @@ export type AdService = {
   sectionPatterns: RegExp[]
   /** business.ts service supplying FAQs, process and materials */
   baseService: string
+  /** Generic copy for a trade with no business.ts service (stucco); overrides baseService */
+  base?: Service
   /** Photo pool for hero + gallery */
   images: string[]
   /** The offer shown on the page and in ads */
@@ -241,6 +244,24 @@ export const adServices: AdService[] = [
     copy: { need: 'a mason', project: 'masonry project', contractor: 'Masonry Contractor' },
     customer: 'homeowners',
     path1: 'masonry',
+    group: 'Masonry',
+  },
+  {
+    slug: 'stucco',
+    name: 'Stucco Repair & Installation',
+    keyword: 'stucco contractor',
+    altKeywords: ['stucco repair', 'eifs contractor', 'stucco installation'],
+    // No town has stucco-specific copy, so every stucco page uses the generic text.
+    sources: [],
+    sectionPatterns: [/stucco/i, GUARANTEE],
+    baseService: 'stucco',
+    base: stuccoService,
+    images: masonryPhotos,
+    offer: 'Free stucco & exterior assessment',
+    hooks: ['Stucco Crack & Leak Repair', 'Hard-Coat Stucco & EIFS', 'Moisture-Managed Stucco'],
+    copy: { need: 'stucco work', project: 'stucco project', contractor: 'Stucco Contractor' },
+    customer: 'homeowners',
+    path1: 'stucco',
     group: 'Masonry',
   },
   {
@@ -575,7 +596,7 @@ export function buildLandingPage(serviceSlug: string, townSlug: string): Landing
 
   const seed = hash(`${service.slug}/${town.slug}`)
   const layout = LAYOUTS[seed % LAYOUTS.length]
-  const base = serviceBySlug(service.baseService)
+  const base = service.base ?? serviceBySlug(service.baseService)
   const content = findContent(service, town)
   const label = townLabel(town)
   const zip = town.zips[0] ?? ''
